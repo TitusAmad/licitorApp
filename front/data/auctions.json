@@ -387,7 +387,7 @@
     },
     "trib_anom": true,
     "visite": "Visites sur place mercredi 21 octobre 2026 de 14h30 à 15h30 et mercredi 28 octobre 2026 de 14h30 à 15h30",
-    "visite_dt": "2026-10-28 14:30",
+    "visite_dt": "2026-10-21 14:30",
     "visite_state": 1,
     "type": [
       "Une propriété"
@@ -440,7 +440,7 @@
     "trib_anom": true,
     "visite": "Visite sur place mercredi 21 octobre 2026 à 15h",
     "visite_dt": "2026-10-21 15:00",
-    "visite_state": 0,
+    "visite_state": 1,
     "type": [
       "Une maison d'habitation"
     ],
@@ -489,7 +489,7 @@
     },
     "trib_anom": true,
     "visite": "Visites sur place mercredi 21 octobre 2026 de 15h à 17h et mercredi 28 octobre 2026 de 15h à 17h",
-    "visite_dt": "2026-10-28 15:00",
+    "visite_dt": "2026-10-21 15:00",
     "visite_state": 1,
     "type": [
       "Une maison à usage d'habitation"
@@ -538,7 +538,7 @@
     "trib_anom": true,
     "visite": "Visite sur place mercredi 21 octobre 2026 de 15h30 à 16h30",
     "visite_dt": "2026-10-21 15:30",
-    "visite_state": 0,
+    "visite_state": 1,
     "type": [
       "Une maison à usage d'habitation et de commerce"
     ],
