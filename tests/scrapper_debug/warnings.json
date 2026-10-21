@@ -1,0 +1,23 @@
+[
+  {
+    "url": "https://www.licitor.com/annonce/11/01/48/vente-aux-encheres/un-ensemble-immobilier/cesny-les-sources/calvados/110148.html",
+    "id": "110148",
+    "warnings": [
+      "coordonnées géographiques manquantes"
+    ]
+  },
+  {
+    "url": "https://www.licitor.com/annonce/11/00/35/vente-aux-encheres/une-parcelle-en-nature-de-vigne/belleville-en-beaujolais/rhone/110035.html",
+    "id": "110035",
+    "warnings": [
+      "coordonnées géographiques manquantes"
+    ]
+  },
+  {
+    "url": "https://www.licitor.com/annonce/11/00/87/vente-aux-encheres/un-immeuble/la-charite-sur-loire/nievre/110087.html",
+    "id": "110087",
+    "warnings": [
+      "adresse manquante"
+    ]
+  }
+]

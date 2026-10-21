@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Licitor - Ventes immobilières aux enchères</title>
+
+    <!-- Leaflet -->
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    >
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="header-content">
+        <h1>Licitor</h1>
+        <p>Ventes immobilières aux enchères</p>
+    </div>
+</header>
+
+<main class="app">
+
+    <div class="toolbar">
+
+        <div class="search-box">
+
+            <svg
+                class="search-icon"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+            >
+                <circle
+                    cx="11"
+                    cy="11"
+                    r="7"
+                ></circle>
+
+                <path
+                    d="m20 20-4-4"
+                ></path>
+            </svg>
+
+            <input
+                id="announcement-search"
+                type="search"
+                placeholder="Rechercher une ville, un département ou une région..."
+                autocomplete="off"
+            >
+
+            <button
+                id="clear-search"
+                class="clear-search"
+                type="button"
+                aria-label="Effacer la recherche"
+                title="Effacer la recherche"
+            >
+                ×
+            </button>
+
+        </div>
+
+        <!-- Filtre surface -->
+        <div class="filter-dropdown">
+            <button type="button" class="filter-button"
+                    data-filter="surface" aria-expanded="false">
+                Surface <span class="filter-arrow">⌄</span>
+            </button>
+
+            <div class="filter-panel" id="panel-surface" hidden>
+                <label>
+                    Minimum (m²)
+                    <input type="number" id="surface-min" min="0"
+                        placeholder="Sans minimum">
+                </label>
+                <label>
+                    Maximum (m²)
+                    <input type="number" id="surface-max" min="0"
+                        placeholder="Sans maximum">
+                </label>
+            </div>
+        </div>
+
+        <!-- Filtre mise à prix -->
+        <div class="filter-dropdown">
+            <button type="button" class="filter-button"
+                    data-filter="prix" aria-expanded="false">
+                Mise à prix <span class="filter-arrow">⌄</span>
+            </button>
+
+            <div class="filter-panel" id="panel-prix" hidden>
+                <label>
+                    Minimum (€)
+                    <input type="number" id="prix-min" min="0"
+                        placeholder="Sans minimum">
+                </label>
+                <label>
+                    Maximum (€)
+                    <input type="number" id="prix-max" min="0"
+                        placeholder="Sans maximum">
+                </label>
+            </div>
+        </div>
+
+        <!-- Filtre estimation -->
+        <div class="filter-dropdown">
+            <button type="button" class="filter-button"
+                    data-filter="estimation" aria-expanded="false">
+                Prix estimé <span class="filter-arrow">⌄</span>
+            </button>
+
+            <div class="filter-panel" id="panel-estimation" hidden>
+                <label>
+                    Minimum (€)
+                    <input type="number" id="estimation-min" min="0"
+                        placeholder="Sans minimum">
+                </label>
+                <label>
+                    Maximum (€)
+                    <input type="number" id="estimation-max" min="0"
+                        placeholder="Sans maximum">
+                </label>
+            </div>
+        </div>
+
+        <!-- Filtre tribunaux -->
+        <div class="filter-dropdown">
+            <button type="button" class="filter-button"
+                    data-filter="tribunaux" aria-expanded="false">
+                Tribunaux <span class="filter-arrow">⌄</span>
+            </button>
+
+            <div class="filter-panel tribunal-panel"
+                id="panel-tribunaux" hidden>
+                <label class="select-all-option">
+                    <input type="checkbox" id="tribunal-select-all">
+                    Tout sélectionner
+                </label>
+
+                <div id="tribunal-filters"></div>
+            </div>
+        </div>
+
+        <!-- Actions -->
+        <button type="button" id="apply-filters" class="apply-button">
+            Appliquer
+        </button>
+
+        <button type="button" id="reset-filters" class="reset-button">
+            Réinitialiser
+        </button>
+
+    </div>
+
+    <div class="app-content">
+
+        <section class="map-container">
+            <div id="map"></div>
+
+            <div
+                id="map-no-results"
+                class="map-no-results"
+            >
+                <div class="map-no-results-title">
+                    Aucun résultat
+                </div>
+
+                <div class="map-no-results-text">
+                    Aucune annonce ne correspond à votre recherche.
+                </div>
+            </div>
+        </section>
+
+        <aside class="list-container">
+
+            <div class="list-header">
+                <h2>Annonces</h2>
+
+                <div class="list-header-actions">
+                    <span id="announcement-count">0</span>
+
+                    <button
+                        id="sort-announcements"
+                        class="sort-button"
+                        type="button"
+                        title="Trier par date de vente"
+                        aria-label="Trier par date de vente"
+                        aria-pressed="false"
+                    >
+                        ↑
+                    </button>
+                </div>
+            </div>
+
+            <div id="announcement-list">
+                <!-- Les annonces seront injectées ici -->
+            </div>
+
+        </aside>
+
+    </div>
+
+</main>
+
+<!-- Leaflet -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<script src="./js/app.js"></script>
+
+</body>
+</html>
