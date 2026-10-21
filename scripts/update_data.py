@@ -5,12 +5,19 @@ Created on Wed Oct  7 14:02:07 2026
 @author: benja
 """
 
+from pathlib import Path
 import sys
-base_path = r"C:\Users\benja\Documents\licitor_app"
-sys.path.insert(0, base_path)
+from datetime import datetime, timedelta
+
+# Racine du projet : dossier parent de scripts/
+try:
+    BASE_DIR = Path(__file__).resolve().parent.parent
+except NameError:
+    BASE_DIR = Path.cwd() / "Documents" / "licitor_app"
+
+sys.path.insert(0, str(BASE_DIR))
 
 from back.scrapper_licit.licitor_scrapper import scrapper_handler
-from datetime import datetime, timedelta
 
 #PARAMS
 

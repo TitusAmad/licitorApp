@@ -1442,9 +1442,15 @@ def scrapper_handler(max_pages, max_announces,
     
     SEARCH_URL = URLS_DICT[method_key]
     
-    loc_dir = Path(r"C:/Users/benja/Documents/licitor_app/")
-    OUTPUT_PATH = loc_dir / "front" / "data"
-    DEBUG_PATH = loc_dir / "tests" / "scrapper_debug"
+    #loc_dir = Path(r"C:/Users/benja/Documents/licitor_app/")
+    
+    try:
+        BASE_DIR = Path(__file__).resolve().parents[2]
+    except NameError:
+        BASE_DIR = Path.cwd() / "Documents" / "licitor_app"
+    
+    OUTPUT_PATH = BASE_DIR / "front" / "data"
+    DEBUG_PATH = BASE_DIR / "tests" / "scrapper_debug"
     
     session = build_soup_session()
     

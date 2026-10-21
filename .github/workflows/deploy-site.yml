@@ -8,6 +8,9 @@ on:
       - 'front/**'
       - '.github/workflows/deploy-site.yml'
   workflow_dispatch:
+  workflow_run:
+    workflows: ["Mise à jour des données Licitor"]
+    types: [completed]
 
 permissions:
   contents: read
@@ -20,6 +23,7 @@ concurrency:
 
 jobs:
   deploy:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

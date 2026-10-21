@@ -145,8 +145,14 @@ def build_geo_dicts(file_path):
 
 def enrich_handler(scrapper_results):
     
-    loc_dir = Path(r"C:/Users/benja/Documents/licitor_app/")
-    file_path = loc_dir / "data" / "comm_data.csv"
+    #loc_dir = Path(r"C:/Users/benja/Documents/licitor_app/")
+    
+    try:
+        BASE_DIR = Path(__file__).resolve().parents[2]
+    except NameError:
+        BASE_DIR = Path.cwd() / "Documents" / "licitor_app"
+        
+    file_path = BASE_DIR / "data" / "comm_data.csv"
     
     dicts_out = build_geo_dicts(file_path)
     codes_dict = dicts_out[0]
