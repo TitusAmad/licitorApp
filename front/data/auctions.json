@@ -1,2181 +1,4 @@
 {
-  "110115": {
-    "titre": "Annonce n°110115 : une maison à usage d'habitation à Perpignan (Pyrénées-Orientales), mise à prix : 12 000 €",
-    "date_publication": "2026-09-25T00:00:00+02:00",
-    "tribunal": "Tribunal Judiciaire de Perpignan (Pyrénées orientales)",
-    "type_vente": "Vente aux enchères publiques",
-    "dt_vente": "2026-11-13 09:00",
-    "dt_vente_limit": "2026-11-23",
-    "sell_state": 1,
-    "avocats": [
-      "Maître Cendrine Tobailem, Avocat",
-      "Maître Sarah Sahnoun, de la SELARL Sahnoun et Avocats Associés, Avocat"
-    ],
-    "telephones": [
-      "06 09 31 19 25",
-      "04 93 30 30 70"
-    ],
-    "documents": [],
-    "url": "https://www.licitor.com/annonce/11/01/15/vente-aux-encheres/une-maison-a-usage-d-habitation/perpignan/pyrenees-orientales/110115.html",
-    "id": "110115",
-    "mise_a_prix": 12000,
-    "est_price": null,
-    "fac_baisse": null,
-    "prix_final": null,
-    "ville": "Perpignan",
-    "adresse": "15, rue Luc Dagobert",
-    "coords": {
-      "latitude": 42.6949539,
-      "longitude": 2.8914149
-    },
-    "trib_anom": true,
-    "visite": "Visites sur place mercredi 21 octobre 2026 à 9h30 et lundi 26 octobre 2026 à 9h30",
-    "visite_dt": "2026-10-26 09:30",
-    "visite_state": 1,
-    "type": [
-      "Une maison à usage d'habitation"
-    ],
-    "description": [
-      "Une maison à usage d'habitation de 76,05 m², mitoyenne sur trois faces, élevée de deux étages sur rez-de-chaussée, avec combles, comprenant : Au rez-de-chaussée : séjour avec cuisine Au 1er étage : chambre, salle d'eau Au 2ème étage : chambre, balcon, pièce aveugle Libre d'occupation"
-    ],
-    "occupation": "Libre",
-    "surface_m2": 76.05,
-    "stats_bien": {
-      "min": 1630,
-      "avg": 2074,
-      "max": 2720
-    },
-    "est_price_m2": 2074,
-    "code_insee": "66136",
-    "code_postal": 66000,
-    "code_departement": "66",
-    "code_region": 76.0,
-    "nom_departement": "Pyrénées-Orientales",
-    "nom_region": "Occitanie"
-  },
-  "110100": {
-    "titre": "Annonce n°110100 : une maison d'habitation à Vendargues (Hérault), mise à prix : 270 000 €",
-    "date_publication": "2026-09-23T00:00:00+02:00",
-    "tribunal": "Tribunal Judiciaire de Montpellier (Hérault)",
-    "type_vente": "Vente aux enchères publiques sur licitation",
-    "dt_vente": "2026-11-09 14:00",
-    "dt_vente_limit": "2026-11-19",
-    "sell_state": 1,
-    "avocats": [
-      "SCP Coste et Associés, Avocats"
-    ],
-    "telephones": [
-      "04 67 04 89 89"
-    ],
-    "documents": [],
-    "url": "https://www.licitor.com/annonce/11/01/00/vente-aux-encheres/une-maison-d-habitation/vendargues/herault/110100.html",
-    "id": "110100",
-    "mise_a_prix": 270000,
-    "est_price": null,
-    "fac_baisse": true,
-    "prix_final": null,
-    "ville": "Vendargues",
-    "adresse": "Le Parc de Vendargues 1, rue des Pins",
-    "coords": {
-      "latitude": 43.662941,
-      "longitude": 3.977077
-    },
-    "trib_anom": true,
-    "visite": "Visite sur place mercredi 21 octobre 2026 de 10h à 11h",
-    "visite_dt": "2026-10-21 10:00",
-    "visite_state": 0,
-    "type": [
-      "Une maison d'habitation"
-    ],
-    "description": [
-      "Une maison d'habitation de 113,09 m², avec terrain attenant de 423 m², comprenant : séjour/cuisine, couloir, wc, trois chambres avec placards, salle de bains, bureau ou chambre, salle d'eau/buanderie À l'extérieur : jardin, piscine avec petite terrasse autour, cabanon avec wc, jardin arrière, garage avec mezzanine Occupée"
-    ],
-    "occupation": null,
-    "surface_m2": 536.09,
-    "stats_bien": {
-      "min": 3022,
-      "avg": 3777,
-      "max": 4713
-    },
-    "est_price_m2": 3777,
-    "code_insee": "34327",
-    "code_postal": 34740,
-    "code_departement": "34",
-    "code_region": 76.0,
-    "nom_departement": "Hérault",
-    "nom_region": "Occitanie"
-  },
-  "110152": {
-    "titre": "Annonce n°110152 : un appartement à Lyon 9ème (Rhône), mise à prix : 30 000 €",
-    "date_publication": "2026-09-29T00:00:00+02:00",
-    "tribunal": "Tribunal Judiciaire de Lyon (Rhône)",
-    "type_vente": "Vente aux enchères publiques",
-    "dt_vente": "2026-11-05 13:30",
-    "dt_vente_limit": "2026-11-15",
-    "sell_state": 1,
-    "avocats": [
-      "Maître Laurent Burgy, de la SELARL Link Associés, Avocat"
-    ],
-    "telephones": [
-      "04 78 29 50 62"
-    ],
-    "documents": [],
-    "url": "https://www.licitor.com/annonce/11/01/52/vente-aux-encheres/un-appartement/lyon-9eme/rhone/110152.html",
-    "id": "110152",
-    "mise_a_prix": 30000,
-    "est_price": null,
-    "fac_baisse": null,
-    "prix_final": null,
-    "ville": "Lyon 9ème",
-    "adresse": "34, quai Jayr",
-    "coords": {
-      "latitude": 45.7758484,
-      "longitude": 4.8076243
-    },
-    "trib_anom": true,
-    "visite": "Visite sur place mercredi 21 octobre 2026 de 10h à 12h",
-    "visite_dt": "2026-10-21 10:00",
-    "visite_state": 0,
-    "type": [
-      "Un appartement"
-    ],
-    "description": [
-      "Un appartement au 2ème étage, consistant en deux appartements réunis en un Deux greniers, portant les n°6 et 5 Occupé"
-    ],
-    "occupation": null,
-    "surface_m2": null,
-    "stats_bien": {
-      "min": 3734,
-      "avg": 4186,
-      "max": 4933
-    },
-    "est_price_m2": 4186,
-    "code_insee": "69389",
-    "code_postal": 69009,
-    "code_departement": "69",
-    "code_region": 84.0,
-    "nom_departement": "Rhône",
-    "nom_region": "Auvergne-Rhône-Alpes"
-  },
-  "110007": {
-    "titre": "Annonce n°110007 : un studio à Paris 11ème, mise à prix : 100 000 €",
-    "date_publication": "2026-09-15T00:00:00+02:00",
-    "tribunal": "Tribunal Judiciaire de Paris",
-    "type_vente": "Vente aux enchères publiques en un lot",
-    "dt_vente": "2026-10-29 14:00",
-    "dt_vente_limit": "2026-11-08",
-    "sell_state": 1,
-    "avocats": [
-      "Maître Benjamin Bayi, Avocat"
-    ],
-    "telephones": [
-      "01 39 24 88 46"
-    ],
-    "documents": [],
-    "url": "https://www.licitor.com/annonce/11/00/07/vente-aux-encheres/un-studio/paris-11eme/paris/110007.html",
-    "id": "110007",
-    "mise_a_prix": 100000,
-    "est_price": null,
-    "fac_baisse": false,
-    "prix_final": null,
-    "ville": "Paris 11ème",
-    "adresse": "4-6, Cité de l'Industrie et 100, rue Oberkampf",
-    "coords": {
-      "latitude": 48.8653297,
-      "longitude": 2.3784778
-    },
-    "trib_anom": true,
-    "visite": "Visite sur place mercredi 21 octobre 2026 de 11h à 12h",
-    "visite_dt": "2026-10-21 11:00",
-    "visite_state": 0,
-    "type": [
-      "Un studio"
-    ],
-    "description": [
-      "Un studio de 18,38 m² , au 2ème étage, escaliers A-B et C, porte n°207, comprenant : entrée avec coin cuisine, une pièce principale, salle d'eau avec wc (lot n° 73) Les lieux sont loués (bail commercial)"
-    ],
-    "occupation": null,
-    "surface_m2": 18.38,
-    "stats_bien": {
-      "min": 8611,
-      "avg": 10000,
-      "max": 11118
-    },
-    "est_price_m2": 10000,
-    "code_insee": "75111",
-    "code_postal": 75011,
-    "code_departement": "75",
-    "code_region": 11.0,
-    "nom_departement": "Paris",
-    "nom_region": "Île-de-France"
-  },
-  "110169": {
-    "titre": "Annonce n°110169 : un appartement à Troyes (Aube), mise à prix : 20 000 €",
-    "date_publication": "2026-09-30T00:00:00+02:00",
-    "tribunal": "Tribunal Judiciaire de Troyes (Aube)",
-    "type_vente": "Vente aux enchères publiques",
-    "dt_vente": "2026-11-10 10:30",
-    "dt_vente_limit": "2026-11-20",
-    "sell_state": 1,
-    "avocats": [
-      "Maître Charlotte Thibault, de la SCP Colomes - Mathieu - Zanchi - Thibault, Avocat"
-    ],
-    "telephones": [
-      "03 25 73 29 46"
-    ],
-    "documents": [],
-    "url": "https://www.licitor.com/annonce/11/01/69/vente-aux-encheres/un-appartement/troyes/aube/110169.html",
-    "id": "110169",
-    "mise_a_prix": 20000,
-    "est_price": null,
-    "fac_baisse": null,
-    "prix_final": null,
-    "ville": "Troyes",
-    "adresse": "94 à 96, av. Edouard Herriot",
-    "coords": {
-      "latitude": 48.2728806,
-      "longitude": 4.0816846
-    },
-    "trib_anom": true,
-    "visite": "Visite sur place mercredi 21 octobre 2026 de 11h à 12h",
-    "visite_dt": "2026-10-21 11:00",
-    "visite_state": 0,
-    "type": [
-      "Un appartement"
-    ],
-    "description": [
-      "Un appartement de 64,03 m², au 1er étage, de type 3, comprenant : entrée, cuisine, séjour/salon avec balcon, deux chambres, salle de bains, wc Cave Loué"
-    ],
-    "occupation": "Loué",
-    "surface_m2": 64.03,
-    "stats_bien": {
-      "min": 1108,
-      "avg": 1387,
-      "max": 1879
-    },
-    "est_price_m2": 1387,
-    "code_insee": "10387",
-    "code_postal": 10000,
-    "code_departement": "10",
-    "code_region": 44.0,
-    "nom_departement": "Aube",
-    "nom_region": "Grand Est"
-  },
-  "110132": {
-    "titre": "Annonce n°110132 : un appartement à Lyon 3ème (Rhône), mise à prix : 22 000 €",
-    "date_publication": "2026-09-28T00:00:00+02:00",
-    "tribunal": "Tribunal Judiciaire de Lyon (Rhône)",
-    "type_vente": "Vente aux enchères publiques",
-    "dt_vente": "2026-11-05 13:30",
-    "dt_vente_limit": "2026-11-15",
-    "sell_state": 1,
-    "avocats": [
-      "Cabinet Juge - Fialaire Avocats, Avocats"
-    ],
-    "telephones": [
-      "04 72 81 28 40"
-    ],
-    "documents": [],
-    "url": "https://www.licitor.com/annonce/11/01/32/vente-aux-encheres/un-appartement/lyon-3eme/rhone/110132.html",
-    "id": "110132",
-    "mise_a_prix": 22000,
-    "est_price": null,
-    "fac_baisse": null,
-    "prix_final": null,
-    "ville": "Lyon 3ème",
-    "adresse": "47, av. Esquirol",
-    "coords": {
-      "latitude": 45.7423096,
-      "longitude": 4.8932109
-    },
-    "trib_anom": true,
-    "visite": "Visite sur place mercredi 21 octobre 2026 de 12h à 14h",
-    "visite_dt": "2026-10-21 12:00",
-    "visite_state": 0,
-    "type": [
-      "Un appartement"
-    ],
-    "description": [
-      "Un appartement de 89,36 m², au rez-de-chaussée, comprenant : hall d'entrée, séjour, trois chambres, cuisine, salle de bains, wc et loggia Cave et garage"
-    ],
-    "occupation": null,
-    "surface_m2": 89.36,
-    "stats_bien": {
-      "min": 3398,
-      "avg": 4286,
-      "max": 5241
-    },
-    "est_price_m2": 4286,
-    "code_insee": "69383",
-    "code_postal": 69003,
-    "code_departement": "69",
-    "code_region": 84.0,
-    "nom_departement": "Rhône",
-    "nom_region": "Auvergne-Rhône-Alpes"
-  },
-  "110148": {
-    "titre": "Annonce n°110148 : un ensemble immobilier à Cesny-les-Sources (Calvados), mise à prix : 300 000 €",
-    "date_publication": "2026-09-29T00:00:00+02:00",
-    "tribunal": "Tribunal Judiciaire de Caen (Calvados)",
-    "type_vente": "Vente aux enchères publiques",
-    "dt_vente": "2026-11-05 14:00",
-    "dt_vente_limit": "2026-11-15",
-    "sell_state": 1,
-    "avocats": [
-      "Maître Noël Lejard, du Cabinet Lejard - Bonneau, Avocat"
-    ],
-    "telephones": [
-      "02 31 50 38 00"
-    ],
-    "documents": [],
-    "url": "https://www.licitor.com/annonce/11/01/48/vente-aux-encheres/un-ensemble-immobilier/cesny-les-sources/calvados/110148.html",
-    "id": "110148",
-    "mise_a_prix": 300000,
-    "est_price": null,
-    "fac_baisse": true,
-    "prix_final": null,
-    "ville": "Cesny-les-Sources",
-    "adresse": "Tournebu Lieudit Les Houlles",
-    "coords": {},
-    "trib_anom": null,
-    "visite": "Visites sur place mercredi 21 octobre 2026 de 14h à 17h et jeudi 22 octobre 2026 de 14h à 17h",
-    "visite_dt": "2026-10-22 14:00",
-    "visite_state": 1,
-    "type": [
-      "Un ensemble immobilier"
-    ],
-    "description": [
-      "Un ensemble immobilier consistant en : une maison d'habitation, cinq gîtes meublés et équipés, salle de réception, salle avec sonorisation, cuisine professionnelle équipée, dépendances Libre"
-    ],
-    "occupation": "Libre",
-    "surface_m2": null,
-    "stats_bien": null,
-    "est_price_m2": null,
-    "code_insee": null,
-    "code_postal": null,
-    "code_departement": null,
-    "code_region": null,
-    "nom_departement": null,
-    "nom_region": null
-  },
-  "110175": {
-    "titre": "Annonce n°110175 : une propriété à Menton (Alpes-Maritimes), mise à prix : 4 700 000 €",
-    "date_publication": "2026-09-30T00:00:00+02:00",
-    "tribunal": "Tribunal Judiciaire de Nice (Alpes maritimes)",
-    "type_vente": "Vente aux enchères publiques",
-    "dt_vente": "2026-11-05 09:00",
-    "dt_vente_limit": "2026-11-15",
-    "sell_state": 1,
-    "avocats": [
-      "Maître Gilles Chatenet, Avocat"
-    ],
-    "telephones": [
-      "04 93 85 00 25"
-    ],
-    "documents": [],
-    "url": "https://www.licitor.com/annonce/11/01/75/vente-aux-encheres/une-propriete/menton/alpes-maritimes/110175.html",
-    "id": "110175",
-    "mise_a_prix": 4700000,
-    "est_price": null,
-    "fac_baisse": null,
-    "prix_final": null,
-    "ville": "Menton",
-    "adresse": "Lieudit La Siga 5215, Route du Val de Gorbio",
-    "coords": {
-      "latitude": 43.7779579,
-      "longitude": 7.4713802
-    },
-    "trib_anom": true,
-    "visite": "Visites sur place mercredi 21 octobre 2026 de 14h30 à 15h30 et mercredi 28 octobre 2026 de 14h30 à 15h30",
-    "visite_dt": "2026-10-21 14:30",
-    "visite_state": 1,
-    "type": [
-      "Une propriété"
-    ],
-    "description": [
-      "Une propriété comprenant : maison principale, maison d'origine en pierre, deux petites maisons de gardien et personnel et une maison d'invité, piscine, grand parc arboré avec deux étangs artificiels Occupée"
-    ],
-    "occupation": null,
-    "surface_m2": null,
-    "stats_bien": {
-      "min": 4752,
-      "avg": 6167,
-      "max": 8960
-    },
-    "est_price_m2": 6167,
-    "code_insee": "06067",
-    "code_postal": 6500,
-    "code_departement": "6",
-    "code_region": 93.0,
-    "nom_departement": "Alpes-Maritimes",
-    "nom_region": "Provence-Alpes-Côte d'Azur"
-  },
-  "110321": {
-    "titre": "Annonce n°110321 : une maison d'habitation à Lucenay-lès-Aix (Nièvre), mise à prix : 25 500 €",
-    "date_publication": "2026-10-16T00:00:00+02:00",
-    "tribunal": "Tribunal Judiciaire de Nevers (Nièvre)",
-    "type_vente": "Vente aux enchères publiques",
-    "dt_vente": "2026-11-10 10:45",
-    "dt_vente_limit": "2026-11-20",
-    "sell_state": 1,
-    "avocats": [
-      "SELARL Chasteau Avocats et Associés, Avocats"
-    ],
-    "telephones": [
-      "04 74 93 12 24"
-    ],
-    "documents": [],
-    "url": "https://www.licitor.com/annonce/11/03/21/vente-aux-encheres/une-maison-d-habitation/lucenay-les-aix/nievre/110321.html",
-    "id": "110321",
-    "mise_a_prix": 25500,
-    "est_price": null,
-    "fac_baisse": null,
-    "prix_final": null,
-    "ville": "Lucenay-lès-Aix",
-    "adresse": "La Garenne",
-    "coords": {
-      "latitude": 46.6979583473,
-      "longitude": 3.49166232072
-    },
-    "trib_anom": true,
-    "visite": "Visite sur place mercredi 21 octobre 2026 à 15h",
-    "visite_dt": "2026-10-21 15:00",
-    "visite_state": 1,
-    "type": [
-      "Une maison d'habitation"
-    ],
-    "description": [
-      "Une maison d'habitation de 65,75 m², de trois pièces Terrain"
-    ],
-    "occupation": null,
-    "surface_m2": 65.75,
-    "stats_bien": null,
-    "est_price_m2": null,
-    "code_insee": null,
-    "code_postal": 58380,
-    "code_departement": "58",
-    "code_region": 27.0,
-    "nom_departement": "Nièvre",
-    "nom_region": "Bourgogne-Franche-Comté"
-  },
-  "110119": {
-    "titre": "Annonce n°110119 : une maison à usage d'habitation à Lussac (Gironde), mise à prix : 190 000 €",
-    "date_publication": "2026-09-25T00:00:00+02:00",
-    "tribunal": "Tribunal Judiciaire de Libourne (Gironde)",
-    "type_vente": "Vente aux enchères publiques",
-    "dt_vente": "2026-11-06 14:00",
-    "dt_vente_limit": "2026-11-16",
-    "sell_state": 1,
-    "avocats": [
-      "Maître Céline Juliand, Avocat",
-      "Maître Marjorie Rodriguez, Avocat"
-    ],
-    "telephones": [
-      "04 50 76 78 41",
-      "05 57 50 10 50"
-    ],
-    "documents": [],
-    "url": "https://www.licitor.com/annonce/11/01/19/vente-aux-encheres/une-maison-a-usage-d-habitation/lussac/gironde/110119.html",
-    "id": "110119",
-    "mise_a_prix": 190000,
-    "est_price": null,
-    "fac_baisse": null,
-    "prix_final": null,
-    "ville": "Lussac",
-    "adresse": "10, lieudit La Grenière",
-    "coords": {
-      "latitude": 45.8580701828,
-      "longitude": 0.466519460774
-    },
-    "trib_anom": true,
-    "visite": "Visites sur place mercredi 21 octobre 2026 de 15h à 17h et mercredi 28 octobre 2026 de 15h à 17h",
-    "visite_dt": "2026-10-21 15:00",
-    "visite_state": 1,
-    "type": [
-      "Une maison à usage d'habitation"
-    ],
-    "description": [
-      "Une maison à usage d'habitation de 220,12 m², comprenant : trois chambres, cuisine, séjour, deux salons, salle de bains, salle d'eau, studio, cellier, chaufferie Dépendance avec deux appartements de 71,95 m² et 65,83 m² Garage Terrain clôturé avec terrasse, piscine, puits, abris vélo et cabanon Inoccupée"
-    ],
-    "occupation": null,
-    "surface_m2": 292.07,
-    "stats_bien": null,
-    "est_price_m2": null,
-    "code_insee": null,
-    "code_postal": 16450,
-    "code_departement": "16",
-    "code_region": 75.0,
-    "nom_departement": "Charente",
-    "nom_region": "Nouvelle-Aquitaine"
-  },
-  "110055": {
-    "titre": "Annonce n°110055 : une maison à usage d'habitation et de commerce à Étueffont (Territoire de Belfort), mise à prix : 60 000 €",
-    "date_publication": "2026-09-18T00:00:00+02:00",
-    "tribunal": "Tribunal Judiciaire de Belfort (Territoire de Belfort)",
-    "type_vente": "Vente aux enchères publiques",
-    "dt_vente": "2026-11-02 15:00",
-    "dt_vente_limit": "2026-11-12",
-    "sell_state": 1,
-    "avocats": [
-      "Maître Sylvie Marcon-Chopard, Avocat"
-    ],
-    "telephones": [
-      "03 84 90 45 10"
-    ],
-    "documents": [],
-    "url": "https://www.licitor.com/annonce/11/00/55/vente-aux-encheres/une-maison-a-usage-d-habitation-et-de-commerce/etueffont/territoire-de-belfort/110055.html",
-    "id": "110055",
-    "mise_a_prix": 60000,
-    "est_price": null,
-    "fac_baisse": null,
-    "prix_final": null,
-    "ville": "Étueffont",
-    "adresse": "7, Grande Rue",
-    "coords": {
-      "latitude": 47.7197838,
-      "longitude": 6.9214931
-    },
-    "trib_anom": true,
-    "visite": "Visite sur place mercredi 21 octobre 2026 de 15h30 à 16h30",
-    "visite_dt": "2026-10-21 15:30",
-    "visite_state": 1,
-    "type": [
-      "Une maison à usage d'habitation et de commerce"
-    ],
-    "description": [
-      "Une maison à usage d'habitation et de commerce comprenant : Au rez-de-chaussée : magasin et laboratoire, cuisine, couloir, wc, une pièce, salle à manger, salon À l'étage : chambre, salle de bains, une pièce, wc Au-dessus : chambre, une pièce, grenier Inoccupée"
-    ],
-    "occupation": null,
-    "surface_m2": null,
-    "stats_bien": {
-      "min": 1365,
-      "avg": 1720,
-      "max": 2255
-    },
-    "est_price_m2": 1720,
-    "code_insee": "90041",
-    "code_postal": 90170,
-    "code_departement": "90",
-    "code_region": 27.0,
-    "nom_departement": "Territoire de Belfort",
-    "nom_region": "Bourgogne-Franche-Comté"
-  },
-  "110203": {
-    "titre": "Annonce n°110203 : une maison d'habitation à Frontignan (Hérault), mise à prix : 180 000 €",
-    "date_publication": "2026-10-02T00:00:00+02:00",
-    "tribunal": "Tribunal Judiciaire de Montpellier (Hérault)",
-    "type_vente": "Vente aux enchères publiques",
-    "dt_vente": "2026-11-09 14:00",
-    "dt_vente_limit": "2026-11-19",
-    "sell_state": 1,
-    "avocats": [
-      "Maître Vincent Rieu, du Cabinet Doria Avocats, Avocat associé"
-    ],
-    "telephones": [
-      "04 67 04 07 40"
-    ],
-    "documents": [],
-    "url": "https://www.licitor.com/annonce/11/02/03/vente-aux-encheres/une-maison-d-habitation/frontignan/herault/110203.html",
-    "id": "110203",
-    "mise_a_prix": 180000,
-    "est_price": null,
-    "fac_baisse": null,
-    "prix_final": null,
-    "ville": "Frontignan",
-    "adresse": "Les Terres Blanches 55 bis, rue Jean Moulin",
-    "coords": {
-      "latitude": 43.4476547,
-      "longitude": 3.7453854
-    },
-    "trib_anom": true,
-    "visite": "Visite sur place jeudi 22 octobre 2026 à 9h",
-    "visite_dt": "2026-10-22 09:00",
-    "visite_state": 1,
-    "type": [
-      "Une maison d'habitation"
-    ],
-    "description": [
-      "Une maison d'habitation de 123,41 m², de type 4, comprenant : Au rez-de-chaussée : séjour-cuisine, cuisine, garage, dressing, wc, chambre avec placard À l'étage : palier, mezzanine, deux chambres, wc, salle de bains Occupée"
-    ],
-    "occupation": null,
-    "surface_m2": 123.41,
-    "stats_bien": {
-      "min": 2911,
-      "avg": 3399,
-      "max": 4056
-    },
-    "est_price_m2": 3399,
-    "code_insee": "34108",
-    "code_postal": 34110,
-    "code_departement": "34",
-    "code_region": 76.0,
-    "nom_departement": "Hérault",
-    "nom_region": "Occitanie"
-  },
-  "110116": {
-    "titre": "Annonce n°110116 : une maison de ville à Ortaffa (Pyrénées-Orientales), mise à prix : 45 000 €",
-    "date_publication": "2026-09-25T00:00:00+02:00",
-    "tribunal": "Tribunal Judiciaire de Perpignan (Pyrénées orientales)",
-    "type_vente": "Vente aux enchères publiques",
-    "dt_vente": "2026-11-13 09:00",
-    "dt_vente_limit": "2026-11-23",
-    "sell_state": 1,
-    "avocats": [
-      "Maître Cendrine Tobailem, Avocat",
-      "Maître Sarah Sahnoun, de la SELARL Sahnoun et Avocats Associés, Avocat"
-    ],
-    "telephones": [
-      "06 09 31 19 25",
-      "04 93 30 30 70"
-    ],
-    "documents": [],
-    "url": "https://www.licitor.com/annonce/11/01/16/vente-aux-encheres/une-maison-de-ville/ortaffa/pyrenees-orientales/110116.html",
-    "id": "110116",
-    "mise_a_prix": 45000,
-    "est_price": null,
-    "fac_baisse": null,
-    "prix_final": null,
-    "ville": "Ortaffa",
-    "adresse": "2, rue des Hirondelles",
-    "coords": {
-      "latitude": 42.5802574,
-      "longitude": 2.9266226
-    },
-    "trib_anom": true,
-    "visite": "Visites sur place jeudi 22 octobre 2026 à 9h30 et mardi 27 octobre 2026 à 10h",
-    "visite_dt": "2026-10-22 09:30",
-    "visite_state": 1,
-    "type": [
-      "Une maison de ville"
-    ],
-    "description": [
-      "Une maison de ville de 81,60 m², à usage d'habitation, mitoyenne sur trois faces, élevée de deux étages sur rez-de-chaussée, comprenant : Au rez-de-chaussée : dégagement, séjour avec cuisine ouverte, salle d'eau, toilettes séparées Au 1er étage : coin tv avec bibliothèque, chambre Au 2ème étage : salle d'eau, chambre, balcon Libre d'occupation"
-    ],
-    "occupation": "Libre",
-    "surface_m2": 81.6,
-    "stats_bien": {
-      "min": 1747,
-      "avg": 2260,
-      "max": 3132
-    },
-    "est_price_m2": 2260,
-    "code_insee": "66129",
-    "code_postal": 66560,
-    "code_departement": "66",
-    "code_region": 76.0,
-    "nom_departement": "Pyrénées-Orientales",
-    "nom_region": "Occitanie"
-  },
-  "110054": {
-    "titre": "Annonce n°110054 : deux appartements à Ornans (Doubs), mise à prix : 102 600 €",
-    "date_publication": "2026-09-18T00:00:00+02:00",
-    "tribunal": "Tribunal Judiciaire de Besançon (Doubs)",
-    "type_vente": "Vente aux enchères publiques",
-    "dt_vente": "2026-11-06 10:00",
-    "dt_vente_limit": "2026-11-16",
-    "sell_state": 1,
-    "avocats": [
-      "SELARL Aitali - Gros - Carpi - Le Denmat - de Bucy - Bechari, Avocats"
-    ],
-    "telephones": [],
-    "documents": [],
-    "url": "https://www.licitor.com/annonce/11/00/54/vente-aux-encheres/deux-appartements/ornans/doubs/110054.html",
-    "id": "110054",
-    "mise_a_prix": 102600,
-    "est_price": null,
-    "fac_baisse": null,
-    "prix_final": null,
-    "ville": "Ornans",
-    "adresse": "20-22, rue du Champliman",
-    "coords": {
-      "latitude": 47.1051941,
-      "longitude": 6.1429868
-    },
-    "trib_anom": true,
-    "visite": "Visite sur place jeudi 22 octobre 2026 à 10h",
-    "visite_dt": "2026-10-22 10:00",
-    "visite_state": 1,
-    "type": [
-      "Deux appartements"
-    ],
-    "description": [
-      "Deux appartements indépendants, d'une surface totale de 137,75 m² Quatorze caves Bûcher Terrain Deux emplacements de stationnement Seul l'appartement situé au rez-de-chaussé est occupé"
-    ],
-    "occupation": null,
-    "surface_m2": 137.75,
-    "stats_bien": {
-      "min": 1208,
-      "avg": 1595,
-      "max": 2245
-    },
-    "est_price_m2": 1595,
-    "code_insee": "25434",
-    "code_postal": 25290,
-    "code_departement": "25",
-    "code_region": 27.0,
-    "nom_departement": "Doubs",
-    "nom_region": "Bourgogne-Franche-Comté"
-  },
-  "110144": {
-    "titre": "Annonce n°110144 : une maison d'habitation à Le Mans (Sarthe), mise à prix : 100 000 €",
-    "date_publication": "2026-09-29T00:00:00+02:00",
-    "tribunal": "Tribunal Judiciaire du Mans (Sarthe)",
-    "type_vente": "Vente aux enchères publiques sur licitation",
-    "dt_vente": "2026-11-10 10:30",
-    "dt_vente_limit": "2026-11-20",
-    "sell_state": 1,
-    "avocats": [
-      "Maître Karine Dessevre, Avocate"
-    ],
-    "telephones": [
-      "02 43 81 54 80"
-    ],
-    "documents": [],
-    "url": "https://www.licitor.com/annonce/11/01/44/vente-aux-encheres/une-maison-d-habitation/le-mans/sarthe/110144.html",
-    "id": "110144",
-    "mise_a_prix": 100000,
-    "est_price": null,
-    "fac_baisse": true,
-    "prix_final": null,
-    "ville": "Le Mans",
-    "adresse": "22, rue des Colonies",
-    "coords": {
-      "latitude": 47.9748154,
-      "longitude": 0.2082716
-    },
-    "trib_anom": true,
-    "visite": "Visite sur place jeudi 22 octobre 2026 de 10h à 11h",
-    "visite_dt": "2026-10-22 10:00",
-    "visite_state": 1,
-    "type": [
-      "Une maison d'habitation"
-    ],
-    "description": [
-      "Une maison d'habitation comprenant : cuisine, séjour, salle de bains, trois chambres Deux caves Combles Deux garages, trois remises Terrasse, jardin Occupée"
-    ],
-    "occupation": null,
-    "surface_m2": null,
-    "stats_bien": {
-      "min": 1484,
-      "avg": 1926,
-      "max": 2481
-    },
-    "est_price_m2": 1926,
-    "code_insee": "72181",
-    "code_postal": 72000,
-    "code_departement": "72",
-    "code_region": 52.0,
-    "nom_departement": "Sarthe",
-    "nom_region": "Pays de la Loire"
-  },
-  "110120": {
-    "titre": "Annonce n°110120 : un ensemble immobilier à Soulac-sur-Mer (Gironde), mise à prix : 200 000 €",
-    "date_publication": "2026-09-25T00:00:00+02:00",
-    "tribunal": "Tribunal Judiciaire de Bordeaux (Gironde)",
-    "type_vente": "Vente aux enchères publiques",
-    "dt_vente": "2026-11-12 15:00",
-    "dt_vente_limit": "2026-11-22",
-    "sell_state": 1,
-    "avocats": [
-      "Maître Olivier Bouru, Avocat"
-    ],
-    "telephones": [
-      "05 64 12 05 05"
-    ],
-    "documents": [],
-    "url": "https://www.licitor.com/annonce/11/01/20/vente-aux-encheres/un-ensemble-immobilier/soulac-sur-mer/gironde/110120.html",
-    "id": "110120",
-    "mise_a_prix": 200000,
-    "est_price": null,
-    "fac_baisse": true,
-    "prix_final": null,
-    "ville": "Soulac-sur-Mer",
-    "adresse": "15, rue Lévêque",
-    "coords": {
-      "latitude": 45.5134048,
-      "longitude": -1.1149023
-    },
-    "trib_anom": true,
-    "visite": "Visites sur place jeudi 22 octobre 2026 de 10h à 12h et jeudi 29 octobre 2026 de 14h à 16h",
-    "visite_dt": "2026-10-22 10:00",
-    "visite_state": 1,
-    "type": [
-      "Un ensemble immobilier"
-    ],
-    "description": [
-      "Un ensemble immobilier consistant en un ancien restaurant, comprenant : diverses constructions en ruine, élevées sur terre-plein d'un simple rez-de-chaussée, sous-combles perdus, terrains attenants en nature de bassin et surplus recouvert de broussailles non accessible"
-    ],
-    "occupation": null,
-    "surface_m2": null,
-    "stats_bien": {
-      "min": 3756,
-      "avg": 4536,
-      "max": 7033
-    },
-    "est_price_m2": 4536,
-    "code_insee": "33514",
-    "code_postal": 33780,
-    "code_departement": "33",
-    "code_region": 75.0,
-    "nom_departement": "Gironde",
-    "nom_region": "Nouvelle-Aquitaine"
-  },
-  "110193": {
-    "titre": "Annonce n°110193 : six studios et un appartement à Villeurbanne (Rhône), mise à prix : 150 000 €",
-    "date_publication": "2026-10-01T00:00:00+02:00",
-    "tribunal": "Tribunal Judiciaire de Lyon (Rhône)",
-    "type_vente": "Vente aux enchères publiques",
-    "dt_vente": "2026-11-05 13:30",
-    "dt_vente_limit": "2026-11-15",
-    "sell_state": 1,
-    "avocats": [
-      "Maître Florence Charvolin, du Cabinet ADK Avocats, Avocat"
-    ],
-    "telephones": [],
-    "documents": [],
-    "url": "https://www.licitor.com/annonce/11/01/93/vente-aux-encheres/six-studios-et-un-appartement/villeurbanne/rhone/110193.html",
-    "id": "110193",
-    "mise_a_prix": 150000,
-    "est_price": null,
-    "fac_baisse": null,
-    "prix_final": null,
-    "ville": "Villeurbanne",
-    "adresse": "17, rue Raoul Durand",
-    "coords": {
-      "latitude": 45.7671242,
-      "longitude": 4.8850832
-    },
-    "trib_anom": true,
-    "visite": "Visite sur place jeudi 22 octobre 2026 de 10h à 12h",
-    "visite_dt": "2026-10-22 10:00",
-    "visite_state": 1,
-    "type": [
-      "Six studios et un appartement"
-    ],
-    "description": [
-      "Six studios et un appartement Au rez-de-chaussée : un studio et un appartement, de type 2 Au 1er étage : cinq studios Libre"
-    ],
-    "occupation": "Libre",
-    "surface_m2": null,
-    "stats_bien": {
-      "min": 3022,
-      "avg": 3581,
-      "max": 4359
-    },
-    "est_price_m2": 3581,
-    "code_insee": "69266",
-    "code_postal": 69100,
-    "code_departement": "69",
-    "code_region": 84.0,
-    "nom_departement": "Rhône",
-    "nom_region": "Auvergne-Rhône-Alpes"
-  },
-  "110182": {
-    "titre": "Annonce n°110182 : un local à usage de commerce ou de bureau à Marseille 5ème (Bouches-du-Rhône), mise à prix : 17 000 €",
-    "date_publication": "2026-10-01T00:00:00+02:00",
-    "tribunal": "Tribunal Judiciaire de Marseille (Bouches du Rhône)",
-    "type_vente": "Vente aux enchères publiques",
-    "dt_vente": "2026-11-04 09:30",
-    "dt_vente_limit": "2026-11-14",
-    "sell_state": 1,
-    "avocats": [
-      "Maître Philippe Cornet, Avocat"
-    ],
-    "telephones": [
-      "04 91 15 76 90"
-    ],
-    "documents": [],
-    "url": "https://www.licitor.com/annonce/11/01/82/vente-aux-encheres/un-local-a-usage-de-commerce-ou-de-bureau/marseille-5eme/bouches-du-rhone/110182.html",
-    "id": "110182",
-    "mise_a_prix": 17000,
-    "est_price": null,
-    "fac_baisse": null,
-    "prix_final": null,
-    "ville": "Marseille 5ème",
-    "adresse": "La Closerie 6, Traverse des Hussards",
-    "coords": {
-      "latitude": 43.2850952,
-      "longitude": 5.3956776
-    },
-    "trib_anom": true,
-    "visite": "Visite sur place jeudi 22 octobre 2026 de 11h à 12h",
-    "visite_dt": "2026-10-22 11:00",
-    "visite_state": 1,
-    "type": [
-      "Un local à usage de commerce ou de bureau"
-    ],
-    "description": [
-      "Un local à usage de commerce ou de bureau bâtiment A, au rez-de-chaussée Serait loué"
-    ],
-    "occupation": "loué",
-    "surface_m2": null,
-    "stats_bien": null,
-    "est_price_m2": null,
-    "code_insee": "13205",
-    "code_postal": 13005,
-    "code_departement": "13",
-    "code_region": 93.0,
-    "nom_departement": "Bouches-du-Rhône",
-    "nom_region": "Provence-Alpes-Côte d'Azur"
-  },
-  "110039": {
-    "titre": "Annonce n°110039 : un appartement à Les Abrets-en-Dauphiné (Isère), mise à prix : 45 000 €",
-    "date_publication": "2026-09-17T00:00:00+02:00",
-    "tribunal": "Tribunal Judiciaire de Bourgoin-Jallieu (Isère)",
-    "type_vente": "Vente aux enchères publiques",
-    "dt_vente": "2026-11-06 10:00",
-    "dt_vente_limit": "2026-11-16",
-    "sell_state": 1,
-    "avocats": [
-      "Maître Philippe Chasteau, de la SELARL Chasteau Avocats et Associés, Avocat",
-      "Bastille Avocats - SELARL Eydoux-Modelski, Avocats"
-    ],
-    "telephones": [
-      "04 74 93 12 24",
-      "04 76 46 27 43"
-    ],
-    "documents": [],
-    "url": "https://www.licitor.com/annonce/11/00/39/vente-aux-encheres/un-appartement/les-abrets-en-dauphine/isere/110039.html",
-    "id": "110039",
-    "mise_a_prix": 45000,
-    "est_price": null,
-    "fac_baisse": null,
-    "prix_final": null,
-    "ville": "Les Abrets-en-Dauphiné",
-    "adresse": "314, rue d'Italie",
-    "coords": {
-      "latitude": 45.5369263,
-      "longitude": 5.589623
-    },
-    "trib_anom": true,
-    "visite": "Visite sur place jeudi 22 octobre 2026 à 14h",
-    "visite_dt": "2026-10-22 14:00",
-    "visite_state": 1,
-    "type": [
-      "Un appartement"
-    ],
-    "description": [
-      "Un appartement de 61,11 m², au 4ème étage, comprenant : salon avec balcon et cuisine ouverte, deux chambres, salle de bains, wc Cave au sous-sol"
-    ],
-    "occupation": null,
-    "surface_m2": 61.11,
-    "stats_bien": {
-      "min": 1351,
-      "avg": 1737,
-      "max": 2396
-    },
-    "est_price_m2": 1737,
-    "code_insee": "38001",
-    "code_postal": 38490,
-    "code_departement": "38",
-    "code_region": 84.0,
-    "nom_departement": "Isère",
-    "nom_region": "Auvergne-Rhône-Alpes"
-  },
-  "110041": {
-    "titre": "Annonce n°110041 : un appartement à Le Bourget (Seine-Saint-Denis), mise à prix : 50 000 €",
-    "date_publication": "2026-09-17T00:00:00+02:00",
-    "tribunal": "Tribunal Judiciaire de Bobigny (Seine Saint Denis)",
-    "type_vente": "Vente aux enchères publiques en un lot",
-    "dt_vente": "2026-11-03 14:00",
-    "dt_vente_limit": "2026-11-13",
-    "sell_state": 1,
-    "avocats": [
-      "Maître Valérie Garçon, Avocat"
-    ],
-    "telephones": [
-      "01 48 54 90 87"
-    ],
-    "documents": [
-      {
-        "type": "Cahier des conditions de vente",
-        "url": "https://www.licitor.com/data/pub/media/annonce/11/00/41/110041.000.001.85fd7c46c100.pdf"
-      },
-      {
-        "type": "PV descriptif",
-        "url": "https://www.licitor.com/data/pub/media/annonce/11/00/41/110041.000.002.a5480dd2cb8b.pdf"
-      },
-      {
-        "type": "Diagnostics",
-        "url": "https://www.licitor.com/data/pub/media/annonce/11/00/41/110041.000.003.0ddb4c918a03.pdf"
-      }
-    ],
-    "url": "https://www.licitor.com/annonce/11/00/41/vente-aux-encheres/un-appartement/le-bourget/seine-saint-denis/110041.html",
-    "id": "110041",
-    "mise_a_prix": 50000,
-    "est_price": null,
-    "fac_baisse": false,
-    "prix_final": null,
-    "ville": "Le Bourget",
-    "adresse": "44, rue Anizan Cavillon",
-    "coords": {
-      "latitude": 48.9349442,
-      "longitude": 2.4214716
-    },
-    "trib_anom": true,
-    "visite": "Visite sur place jeudi 22 octobre 2026 de 14h à 15h",
-    "visite_dt": "2026-10-22 14:00",
-    "visite_state": 1,
-    "type": [
-      "Un appartement",
-      "Double parking"
-    ],
-    "description": [
-      "Un appartement de 59,64 m² , au 3ème étage, comprenant : salon/cuisine, balcon, wc, salle de bains, deux chambres",
-      "Double parking au sous-sol Occupés"
-    ],
-    "occupation": null,
-    "surface_m2": 59.64,
-    "stats_bien": {
-      "min": 2722,
-      "avg": 3175,
-      "max": 4165
-    },
-    "est_price_m2": 3175,
-    "code_insee": "93013",
-    "code_postal": 93350,
-    "code_departement": "93",
-    "code_region": 11.0,
-    "nom_departement": "Seine-Saint-Denis",
-    "nom_region": "Île-de-France"
-  },
-  "110171": {
-    "titre": "Annonce n°110171 : une maison d'habitation à Pont-sur-Seine (Aube), mise à prix : 64 000 €",
-    "date_publication": "2026-09-30T00:00:00+02:00",
-    "tribunal": "Tribunal Judiciaire de Troyes (Aube)",
-    "type_vente": "Vente aux enchères publiques",
-    "dt_vente": "2026-11-10 10:30",
-    "dt_vente_limit": "2026-11-20",
-    "sell_state": 1,
-    "avocats": [
-      "Maître Matthieu Collin, de la SCP Thémis Troyes, Avocat associé"
-    ],
-    "telephones": [
-      "03 25 78 12 02"
-    ],
-    "documents": [],
-    "url": "https://www.licitor.com/annonce/11/01/71/vente-aux-encheres/une-maison-d-habitation/pont-sur-seine/aube/110171.html",
-    "id": "110171",
-    "mise_a_prix": 64000,
-    "est_price": null,
-    "fac_baisse": null,
-    "prix_final": null,
-    "ville": "Pont-sur-Seine",
-    "adresse": "10B, rue le Chapon",
-    "coords": {
-      "latitude": 48.5111656,
-      "longitude": 3.6038368
-    },
-    "trib_anom": true,
-    "visite": "Visite sur place jeudi 22 octobre 2026 de 14h à 15h",
-    "visite_dt": "2026-10-22 14:00",
-    "visite_state": 1,
-    "type": [
-      "Une maison d'habitation"
-    ],
-    "description": [
-      "Une maison d'habitation de 99,07 m², comprenant : séjour, entrée, cuisine ouverte, salle de bains, wc, trois chambres, dressing, salle d'eau non aménagée, terrain Occupée"
-    ],
-    "occupation": null,
-    "surface_m2": 99.07,
-    "stats_bien": {
-      "min": 1007,
-      "avg": 1357,
-      "max": 1872
-    },
-    "est_price_m2": 1357,
-    "code_insee": "10298",
-    "code_postal": 10400,
-    "code_departement": "10",
-    "code_region": 44.0,
-    "nom_departement": "Aube",
-    "nom_region": "Grand Est"
-  },
-  "110186": {
-    "titre": "Annonce n°110186 : un appartement à Andrésy (Yvelines), mise à prix : 27 742,81 €",
-    "date_publication": "2026-10-01T00:00:00+02:00",
-    "tribunal": "Tribunal Judiciaire de Versailles (Yvelines)",
-    "type_vente": "Vente aux enchères publiques",
-    "dt_vente": "2026-11-04 09:30",
-    "dt_vente_limit": "2026-11-14",
-    "sell_state": 1,
-    "avocats": [
-      "Maître Catherine Cizeron, de la SELARL Cartesio Avocats, Avocat",
-      "Maître Gaëlle Le Deun, de la SELARL Le Nair-Bouyer et associés, Avocat"
-    ],
-    "telephones": [
-      "01 39 51 78 32",
-      "01 34 15 95 04"
-    ],
-    "documents": [],
-    "url": "https://www.licitor.com/annonce/11/01/86/vente-aux-encheres/un-appartement/andresy/yvelines/110186.html",
-    "id": "110186",
-    "mise_a_prix": 27742,
-    "est_price": null,
-    "fac_baisse": null,
-    "prix_final": null,
-    "ville": "Andrésy",
-    "adresse": "9, allée Émile Zola 66, av. des Robaresses",
-    "coords": {
-      "latitude": 48.9912682,
-      "longitude": 2.059828
-    },
-    "trib_anom": true,
-    "visite": "Visites sur place jeudi 15 octobre 2026 de 14h à 15h et jeudi 22 octobre 2026 de 14h à 15h",
-    "visite_dt": "2026-10-22 14:00",
-    "visite_state": 1,
-    "type": [
-      "Un appartement"
-    ],
-    "description": [
-      "Un appartement de 118,96 m², bâtiment D, au rez-de-chaussée bas de l'escalier 2, porte à droite en entrant, en triplex, de type 5D, comprenant : Au rez-de-chaussée bas : entrée, séjour, cuisine, buanderie, dégagement Au rez-de-chaussée haut : palier, deux chambres, salle de bains avec wc, dressing, loggia À l'étage : palier, deux chambres, salle d'eau avec wc, dressing Jardinet, emplacement de parking extérieur, emplacement de parking couvert Libre"
-    ],
-    "occupation": "Libre",
-    "surface_m2": 118.96,
-    "stats_bien": {
-      "min": 2345,
-      "avg": 2672,
-      "max": 3161
-    },
-    "est_price_m2": 2672,
-    "code_insee": "78015",
-    "code_postal": 78570,
-    "code_departement": "78",
-    "code_region": 11.0,
-    "nom_departement": "Yvelines",
-    "nom_region": "Île-de-France"
-  },
-  "109839": {
-    "titre": "Annonce n°109839 : un ensemble immobilier à Montchauvet (Yvelines), mise à prix : 30 000 €",
-    "date_publication": "2026-09-08T00:00:00+02:00",
-    "tribunal": "Tribunal Judiciaire de Versailles (Yvelines)",
-    "type_vente": "Vente aux enchères publiques sur liquidation judiciaire en un seul lot",
-    "dt_vente": "2026-11-04 09:30",
-    "dt_vente_limit": "2026-11-14",
-    "sell_state": 1,
-    "avocats": [
-      "Maître Élisa Gueilhers, Avocat"
-    ],
-    "telephones": [
-      "01 88 60 37 37"
-    ],
-    "documents": [],
-    "url": "https://www.licitor.com/annonce/10/98/39/vente-aux-encheres/un-ensemble-immobilier/montchauvet/yvelines/109839.html",
-    "id": "109839",
-    "mise_a_prix": 30000,
-    "est_price": null,
-    "fac_baisse": true,
-    "prix_final": null,
-    "ville": "Montchauvet",
-    "adresse": "2, rue de la Fontaine de Manet",
-    "coords": {
-      "latitude": 48.892807,
-      "longitude": 1.6354367
-    },
-    "trib_anom": true,
-    "visite": "Visites sur place mardi 20 octobre 2026 de 10h à 12h et jeudi 22 octobre 2026 de 14h à 16h",
-    "visite_dt": "2026-10-22 14:00",
-    "visite_state": 1,
-    "type": [
-      "Un ensemble immobilier",
-      "Bâtiment 1",
-      "Bâtiment 2",
-      "Bâtiment 3",
-      "Algeco"
-    ],
-    "description": [
-      "Un ensemble immobilier très ancien et en état d'abandon , comprenant : trois bâtiments, à savoir :",
-      "Bâtiment 1 de 118.50 m² , sur deux niveaux, comprenant 5 volumes Libre",
-      "Bâtiment 2 de 163.50 m² , sur un niveau, comprenant 5 volumes Libre",
-      "Bâtiment 3 de 24.00 m² , sur deux niveaux, comprenant 2 volumes Libre Avec présence d'un",
-      "Algeco (abri provisoire type cantonnement de chantier) constitué de deux espaces en enfilade"
-    ],
-    "occupation": "Libre",
-    "surface_m2": 306.0,
-    "stats_bien": {
-      "min": 2165,
-      "avg": 2785,
-      "max": 4243
-    },
-    "est_price_m2": 2785,
-    "code_insee": "78417",
-    "code_postal": 78790,
-    "code_departement": "78",
-    "code_region": 11.0,
-    "nom_departement": "Yvelines",
-    "nom_region": "Île-de-France"
-  },
-  "110028": {
-    "titre": "Annonce n°110028 : un local à Lyon 2ème (Rhône), mise à prix : 20 000 €",
-    "date_publication": "2026-09-15T00:00:00+02:00",
-    "tribunal": "Tribunal Judiciaire de Lyon (Rhône)",
-    "type_vente": "Vente aux enchères publiques",
-    "dt_vente": "2026-11-05 13:30",
-    "dt_vente_limit": "2026-11-15",
-    "sell_state": 1,
-    "avocats": [
-      "Maître Drezet, de la SELARL Drezet - Pelet, Avocat"
-    ],
-    "telephones": [
-      "04 81 09 17 20"
-    ],
-    "documents": [],
-    "url": "https://www.licitor.com/annonce/11/00/28/vente-aux-encheres/un-local/lyon-2eme/rhone/110028.html",
-    "id": "110028",
-    "mise_a_prix": 20000,
-    "est_price": null,
-    "fac_baisse": null,
-    "prix_final": null,
-    "ville": "Lyon 2ème",
-    "adresse": "6, rue des Templiers",
-    "coords": {
-      "latitude": 45.7594185,
-      "longitude": 4.8310876
-    },
-    "trib_anom": true,
-    "visite": "Visite sur place jeudi 22 octobre 2026 de 14h à 16h",
-    "visite_dt": "2026-10-22 14:00",
-    "visite_state": 1,
-    "type": [
-      "Un local"
-    ],
-    "description": [
-      "Un local de 32,25 m² loi Carrez, au rez-de-chaussée Trois caves, portant les n°1, 2 et 3 Occupé"
-    ],
-    "occupation": null,
-    "surface_m2": 32.25,
-    "stats_bien": null,
-    "est_price_m2": null,
-    "code_insee": "69382",
-    "code_postal": 69002,
-    "code_departement": "69",
-    "code_region": 84.0,
-    "nom_departement": "Rhône",
-    "nom_region": "Auvergne-Rhône-Alpes"
-  },
-  "110081": {
-    "titre": "Annonce n°110081 : un terrain à Sossais (Vienne), mise à prix : 7 500 €",
-    "date_publication": "2026-09-22T00:00:00+02:00",
-    "tribunal": "Tribunal Judiciaire de Poitiers (Vienne)",
-    "type_vente": "Vente aux enchères publiques",
-    "dt_vente": "2026-11-10 09:00",
-    "dt_vente_limit": "2026-11-20",
-    "sell_state": 1,
-    "avocats": [
-      "SELARL 1927 Avocats, SELARL Marie-Anne Bussières Avocats, membres de l'AARPI Drouineau 1927, Avocats"
-    ],
-    "telephones": [
-      "05 49 88 02 38"
-    ],
-    "documents": [],
-    "url": "https://www.licitor.com/annonce/11/00/81/vente-aux-encheres/un-terrain/sossais/vienne/110081.html",
-    "id": "110081",
-    "mise_a_prix": 7500,
-    "est_price": null,
-    "fac_baisse": null,
-    "prix_final": null,
-    "ville": "Sossais",
-    "adresse": "Le Prieuré",
-    "coords": {
-      "latitude": 46.8616371,
-      "longitude": 0.385694
-    },
-    "trib_anom": true,
-    "visite": "Visite sur place vendredi 23 octobre 2026 à 9h",
-    "visite_dt": "2026-10-23 09:00",
-    "visite_state": 1,
-    "type": [
-      "Un terrain"
-    ],
-    "description": [
-      "Un terrain Bail rural verbal"
-    ],
-    "occupation": null,
-    "surface_m2": null,
-    "stats_bien": null,
-    "est_price_m2": null,
-    "code_insee": null,
-    "code_postal": 86230,
-    "code_departement": "86",
-    "code_region": 75.0,
-    "nom_departement": "Vienne",
-    "nom_region": "Nouvelle-Aquitaine"
-  },
-  "110081_1": {
-    "titre": "Annonce n°110081 : un terrain à Sossais (Vienne), mise à prix : 7 500 €",
-    "date_publication": "2026-09-22T00:00:00+02:00",
-    "tribunal": "Tribunal Judiciaire de Poitiers (Vienne)",
-    "type_vente": "Vente aux enchères publiques",
-    "dt_vente": "2026-11-10 09:00",
-    "dt_vente_limit": "2026-11-20",
-    "sell_state": 1,
-    "avocats": [
-      "SELARL 1927 Avocats, SELARL Marie-Anne Bussières Avocats, membres de l'AARPI Drouineau 1927, Avocats"
-    ],
-    "telephones": [
-      "05 49 88 02 38"
-    ],
-    "documents": [],
-    "url": "https://www.licitor.com/annonce/11/00/81/vente-aux-encheres/un-terrain/sossais/vienne/110081.html",
-    "id": "110081_1",
-    "mise_a_prix": 32500,
-    "est_price": null,
-    "fac_baisse": null,
-    "prix_final": null,
-    "ville": "Sossais",
-    "adresse": "Le Prieuré",
-    "coords": {
-      "latitude": 46.8616371,
-      "longitude": 0.385694
-    },
-    "trib_anom": true,
-    "visite": "Visite sur place vendredi 23 octobre 2026 à 9h",
-    "visite_dt": "2026-10-23 09:00",
-    "visite_state": 1,
-    "type": [
-      "Un ensemble immobilier"
-    ],
-    "description": [
-      "Un ensemble immobilier correspondant à des biens bâtis et non bâtis d'un ancien prieuré, comprenant : partie habitable, deux granges, appentis, puits, deux petites dépendances, garage, cellier, cave, jardin L'immeuble est occupé"
-    ],
-    "occupation": null,
-    "surface_m2": null,
-    "stats_bien": null,
-    "est_price_m2": null,
-    "code_insee": null,
-    "code_postal": 86230,
-    "code_departement": "86",
-    "code_region": 75.0,
-    "nom_departement": "Vienne",
-    "nom_region": "Nouvelle-Aquitaine"
-  },
-  "110189": {
-    "titre": "Annonce n°110189 : un appartement à Lattes (Hérault), mise à prix : 40 000 €",
-    "date_publication": "2026-10-01T00:00:00+02:00",
-    "tribunal": "Tribunal Judiciaire de Montpellier (Hérault)",
-    "type_vente": "Vente aux enchères publiques",
-    "dt_vente": "2026-11-09 14:00",
-    "dt_vente_limit": "2026-11-19",
-    "sell_state": 1,
-    "avocats": [
-      "Maître Vincent Rieu, du Cabinet Doria Avocats, Avocat"
-    ],
-    "telephones": [
-      "04 67 04 07 40"
-    ],
-    "documents": [],
-    "url": "https://www.licitor.com/annonce/11/01/89/vente-aux-encheres/un-appartement/lattes/herault/110189.html",
-    "id": "110189",
-    "mise_a_prix": 40000,
-    "est_price": null,
-    "fac_baisse": null,
-    "prix_final": null,
-    "ville": "Lattes",
-    "adresse": "Mas de Gau Route de Carnon",
-    "coords": {
-      "latitude": 43.5638594056,
-      "longitude": 3.90226222861
-    },
-    "trib_anom": true,
-    "visite": "Visite sur place vendredi 23 octobre 2026 à 9h",
-    "visite_dt": "2026-10-23 09:00",
-    "visite_state": 1,
-    "type": [
-      "Un appartement"
-    ],
-    "description": [
-      "Un appartement de 87,82 m², comprenant : Au rez-de-chaussée : entrée, cuisine, salle à manger, salle de bains, salon À l'étage : dégagement, deux chambres, mezzanine Inoccupé"
-    ],
-    "occupation": null,
-    "surface_m2": 87.82,
-    "stats_bien": null,
-    "est_price_m2": null,
-    "code_insee": null,
-    "code_postal": 34970,
-    "code_departement": "34",
-    "code_region": 76.0,
-    "nom_departement": "Hérault",
-    "nom_region": "Occitanie"
-  },
-  "110173": {
-    "titre": "Annonce n°110173 : un appartement à Cagnes-sur-Mer (Alpes-Maritimes), mise à prix : 30 000 €",
-    "date_publication": "2026-09-30T00:00:00+02:00",
-    "tribunal": "Tribunal Judiciaire de Grasse (Alpes maritimes)",
-    "type_vente": "Vente aux enchères publiques",
-    "dt_vente": "2026-11-05 09:00",
-    "dt_vente_limit": "2026-11-15",
-    "sell_state": 1,
-    "avocats": [
-      "Maître Sarah Sahnoun, de la SELARL Sahnoun et Avocats Associés, Avocat"
-    ],
-    "telephones": [
-      "04 93 30 30 70"
-    ],
-    "documents": [],
-    "url": "https://www.licitor.com/annonce/11/01/73/vente-aux-encheres/un-appartement/cagnes-sur-mer/alpes-maritimes/110173.html",
-    "id": "110173",
-    "mise_a_prix": 30000,
-    "est_price": null,
-    "fac_baisse": null,
-    "prix_final": null,
-    "ville": "Cagnes-sur-Mer",
-    "adresse": "Le Crystal 1, av. de Passau",
-    "coords": {
-      "latitude": 43.6641159,
-      "longitude": 7.1530509
-    },
-    "trib_anom": true,
-    "visite": "Visites sur place vendredi 23 octobre 2026 de 9h à 10h et mardi 27 octobre 2026 de 17h à 18h",
-    "visite_dt": "2026-10-23 09:00",
-    "visite_state": 1,
-    "type": [
-      "Un appartement"
-    ],
-    "description": [
-      "Un appartement de 30,61 m², bâtiment B, au 3ème étage, de deux pièces, comprenant : salon avec coin-cuisine, chambre, salle d'eau, wc Balcon, parking Loué à des saisonniers, actuellement inoccupés Emplacement de stationnement"
-    ],
-    "occupation": "Loué",
-    "surface_m2": 30.61,
-    "stats_bien": {
-      "min": 3536,
-      "avg": 4698,
-      "max": 5405
-    },
-    "est_price_m2": 4698,
-    "code_insee": "06027",
-    "code_postal": 6800,
-    "code_departement": "6",
-    "code_region": 93.0,
-    "nom_departement": "Alpes-Maritimes",
-    "nom_region": "Provence-Alpes-Côte d'Azur"
-  },
-  "110180": {
-    "titre": "Annonce n°110180 : un bâtiment à usage d'habitation à Villepinte (Seine-Saint-Denis), mise à prix : 300 000 €",
-    "date_publication": "2026-09-30T00:00:00+02:00",
-    "tribunal": "Tribunal Judiciaire de Bobigny (Seine Saint Denis)",
-    "type_vente": "Vente aux enchères publiques",
-    "dt_vente": "2026-11-03 14:00",
-    "dt_vente_limit": "2026-11-13",
-    "sell_state": 1,
-    "avocats": [
-      "Maître Sylvie Langlais, de la SCP Langlais - Chopin, Avocat associé"
-    ],
-    "telephones": [
-      "01 48 70 71 75"
-    ],
-    "documents": [],
-    "url": "https://www.licitor.com/annonce/11/01/80/vente-aux-encheres/un-batiment-a-usage-d-habitation/villepinte/seine-saint-denis/110180.html",
-    "id": "110180",
-    "mise_a_prix": 300000,
-    "est_price": null,
-    "fac_baisse": null,
-    "prix_final": null,
-    "ville": "Villepinte",
-    "adresse": "63-65, chemin du Loup",
-    "coords": {
-      "latitude": 48.9474602,
-      "longitude": 2.5639186
-    },
-    "trib_anom": true,
-    "visite": "Visite sur place vendredi 23 octobre 2026 de 10h à 11h",
-    "visite_dt": "2026-10-23 10:00",
-    "visite_state": 1,
-    "type": [
-      "Un bâtiment à usage d'habitation"
-    ],
-    "description": [
-      "Un bâtiment à usage d'habitation comprenant : Au rez-de-chaussée : Appartement, de 29,51 m² Occupé Appartement, de 25,33 m² Occupé Au 1er étage : Appartement, de 32,78 m² Occupé Appartement, de 22,14 m² Occupé Au 2ème étage : Appartement, de 34,37 m² Occupé Appartement, de 18,38 m² Occupé Immeuble en construction, de 599,65 m² Vide"
-    ],
-    "occupation": null,
-    "surface_m2": 762.16,
-    "stats_bien": null,
-    "est_price_m2": null,
-    "code_insee": "93078",
-    "code_postal": 93420,
-    "code_departement": "93",
-    "code_region": 11.0,
-    "nom_departement": "Seine-Saint-Denis",
-    "nom_region": "Île-de-France"
-  },
-  "110092": {
-    "titre": "Annonce n°110092 : une maison à Marignier (Haute-Savoie), mise à prix : 300 000 €",
-    "date_publication": "2026-09-22T00:00:00+02:00",
-    "tribunal": "Tribunal Judiciaire de Bonneville (Haute Savoie)",
-    "type_vente": "Vente aux enchères publiques sur licitation",
-    "dt_vente": "2026-11-05 14:00",
-    "dt_vente_limit": "2026-11-15",
-    "sell_state": 1,
-    "avocats": [
-      "SCP Briffod - Puthod - Chappaz, Avocats"
-    ],
-    "telephones": [
-      "04 50 97 00 07"
-    ],
-    "documents": [],
-    "url": "https://www.licitor.com/annonce/11/00/92/vente-aux-encheres/une-maison/marignier/haute-savoie/110092.html",
-    "id": "110092",
-    "mise_a_prix": 300000,
-    "est_price": null,
-    "fac_baisse": true,
-    "prix_final": null,
-    "ville": "Marignier",
-    "adresse": "407, av. de la Gare",
-    "coords": {
-      "latitude": 46.0887566,
-      "longitude": 6.5112896
-    },
-    "trib_anom": true,
-    "visite": "Visite sur place vendredi 23 octobre 2026 de 11h à 12h",
-    "visite_dt": "2026-10-23 11:00",
-    "visite_state": 1,
-    "type": [
-      "Une maison"
-    ],
-    "description": [
-      "Une maison de 410,27 m², comprenant six appartements Vide de toute occupation"
-    ],
-    "occupation": null,
-    "surface_m2": 410.27,
-    "stats_bien": {
-      "min": 3048,
-      "avg": 3933,
-      "max": 5620
-    },
-    "est_price_m2": 3933,
-    "code_insee": "74164",
-    "code_postal": 74970,
-    "code_departement": "74",
-    "code_region": 84.0,
-    "nom_departement": "Haute-Savoie",
-    "nom_region": "Auvergne-Rhône-Alpes"
-  },
-  "110104": {
-    "titre": "Annonce n°110104 : un box à Le Mée-sur-Seine (Seine-et-Marne), mise à prix : 5 000 €",
-    "date_publication": "2026-10-01T00:00:00+02:00",
-    "tribunal": "Tribunal Judiciaire de Melun (Seine et Marne)",
-    "type_vente": "Vente aux enchères publiques en un seul lot",
-    "dt_vente": "2026-11-05 14:00",
-    "dt_vente_limit": "2026-11-15",
-    "sell_state": 1,
-    "avocats": [
-      "Maître Guillaume Méar, Avocat"
-    ],
-    "telephones": [],
-    "documents": [],
-    "url": "https://www.licitor.com/annonce/11/01/04/vente-aux-encheres/un-box/le-mee-sur-seine/seine-et-marne/110104.html",
-    "id": "110104",
-    "mise_a_prix": 5000,
-    "est_price": null,
-    "fac_baisse": false,
-    "prix_final": null,
-    "ville": "Le Mée-sur-Seine",
-    "adresse": "328, av. de Bir Hakeim",
-    "coords": {
-      "latitude": 48.5449257,
-      "longitude": 2.64257
-    },
-    "trib_anom": true,
-    "visite": "Visite sur place vendredi 23 octobre 2026 de 11h à 12h",
-    "visite_dt": "2026-10-23 11:00",
-    "visite_state": 1,
-    "type": [
-      "Un box"
-    ],
-    "description": [
-      "Un box au niveau inférieur du groupe C de l'ensemble immobilier n°14 du plan de division Formant le lot n°678, et les 74/200.000èmes de la propriété du sol et des parties communes générales Les biens et droits immobiliers dépendant d'un ensemble immobilier cadastré : section BP n°228, lieudit Plaine du Marché Marais, pour une contenance de 64a 41ca section BP n°230, lieudit Plaine du Marché Marais, pour une contenance de 1ha 72a 68ca Occupation : Les lieux sont encombrés"
-    ],
-    "occupation": null,
-    "surface_m2": null,
-    "stats_bien": null,
-    "est_price_m2": null,
-    "code_insee": "77285",
-    "code_postal": 77350,
-    "code_departement": "77",
-    "code_region": 11.0,
-    "nom_departement": "Seine-et-Marne",
-    "nom_region": "Île-de-France"
-  },
-  "110136": {
-    "titre": "Annonce n°110136 : un appartement à Chaville (Hauts-de-Seine), mise à prix : 57 000 €",
-    "date_publication": "2026-09-28T00:00:00+02:00",
-    "tribunal": "À l'Annexe du Tribunal Judiciaire de Nanterre (Hauts de Seine)",
-    "type_vente": "Vente aux enchères publiques",
-    "dt_vente": "2026-11-05 14:00",
-    "dt_vente_limit": "2026-11-15",
-    "sell_state": 1,
-    "avocats": [
-      "Maître Florence Fricaudet, membre de la SARL Fricaudet - Larroumet - Salomoni, Avocat",
-      "Maître Dominique Demeyere, Avocat"
-    ],
-    "telephones": [
-      "01 88 61 05 18"
-    ],
-    "documents": [],
-    "url": "https://www.licitor.com/annonce/11/01/36/vente-aux-encheres/un-appartement/chaville/hauts-de-seine/110136.html",
-    "id": "110136",
-    "mise_a_prix": 57000,
-    "est_price": null,
-    "fac_baisse": false,
-    "prix_final": null,
-    "ville": "Chaville",
-    "adresse": "67, av. Roger Salengro",
-    "coords": {
-      "latitude": 48.8190041,
-      "longitude": 2.1992314
-    },
-    "trib_anom": true,
-    "visite": "Visite sur place vendredi 23 octobre 2026 de 11h à 12h",
-    "visite_dt": "2026-10-23 11:00",
-    "visite_state": 1,
-    "type": [
-      "Un appartement",
-      "Une cave"
-    ],
-    "description": [
-      "Un appartement de 42,08 m² , bâtiment A, escalier unique, au 10ème étage, 1ère porte à droite, comprenant : entrée, séjour, chambre, cuisine, salle de bain, wc, dégagement, loggia, placard Inoccupé",
-      "Une cave au rez-de-chaussée"
-    ],
-    "occupation": null,
-    "surface_m2": 42.08,
-    "stats_bien": {
-      "min": 5651,
-      "avg": 6074,
-      "max": 7026
-    },
-    "est_price_m2": 6074,
-    "code_insee": "92022",
-    "code_postal": 92370,
-    "code_departement": "92",
-    "code_region": 11.0,
-    "nom_departement": "Hauts-de-Seine",
-    "nom_region": "Île-de-France"
-  },
-  "110170": {
-    "titre": "Annonce n°110170 : un pavillon d'habitation à Bercenay-le-Hayer (Aube), mise à prix : 20 000 €",
-    "date_publication": "2026-09-30T00:00:00+02:00",
-    "tribunal": "Tribunal Judiciaire de Troyes (Aube)",
-    "type_vente": "Vente aux enchères publiques",
-    "dt_vente": "2026-11-10 10:30",
-    "dt_vente_limit": "2026-11-20",
-    "sell_state": 1,
-    "avocats": [
-      "Maître Charlotte Thibault, de la SCP Colomes - Mathieu - Zanchi - Thibault, Avocat"
-    ],
-    "telephones": [
-      "03 25 73 29 46"
-    ],
-    "documents": [],
-    "url": "https://www.licitor.com/annonce/11/01/70/vente-aux-encheres/un-pavillon-d-habitation/bercenay-le-hayer/aube/110170.html",
-    "id": "110170",
-    "mise_a_prix": 20000,
-    "est_price": null,
-    "fac_baisse": null,
-    "prix_final": null,
-    "ville": "Bercenay-le-Hayer",
-    "adresse": "8, chemin du Moulin",
-    "coords": {
-      "latitude": 48.3318095412,
-      "longitude": 3.58999948378
-    },
-    "trib_anom": true,
-    "visite": "Visite sur place vendredi 23 octobre 2026 de 11h à 12h",
-    "visite_dt": "2026-10-23 11:00",
-    "visite_state": 1,
-    "type": [
-      "Un pavillon d'habitation"
-    ],
-    "description": [
-      "Un pavillon d'habitation élevé sur sous-sol total en travaux"
-    ],
-    "occupation": null,
-    "surface_m2": null,
-    "stats_bien": null,
-    "est_price_m2": null,
-    "code_insee": null,
-    "code_postal": 10290,
-    "code_departement": "10",
-    "code_region": 44.0,
-    "nom_departement": "Aube",
-    "nom_region": "Grand Est"
-  },
-  "110270": {
-    "titre": "Annonce n°110270 : un studio à Paris 18ème, mise à prix : 20 000 €",
-    "date_publication": "2026-10-12T00:00:00+02:00",
-    "tribunal": "Tribunal Judiciaire de Paris",
-    "type_vente": "Vente aux enchères publiques",
-    "dt_vente": "2026-11-05 14:00",
-    "dt_vente_limit": "2026-11-15",
-    "sell_state": 1,
-    "avocats": [
-      "Maître Éric Simonnet, de la SELARL Simonnet Avocats, Avocat"
-    ],
-    "telephones": [
-      "01 47 64 48 00"
-    ],
-    "documents": [],
-    "url": "https://www.licitor.com/annonce/11/02/70/vente-aux-encheres/un-studio/paris-18eme/paris/110270.html",
-    "id": "110270",
-    "mise_a_prix": 20000,
-    "est_price": null,
-    "fac_baisse": null,
-    "prix_final": null,
-    "ville": "Paris 18ème",
-    "adresse": "35, rue Myrha",
-    "coords": {
-      "latitude": 48.8870239,
-      "longitude": 2.3533368
-    },
-    "trib_anom": true,
-    "visite": "Visite sur place vendredi 23 octobre 2026 de 12h30 à 13h30",
-    "visite_dt": "2026-10-23 12:30",
-    "visite_state": 1,
-    "type": [
-      "Un studio"
-    ],
-    "description": [
-      "Un studio de 17,04 m², au 2ème étage, porte en face, sur la gauche dans le dégagement, comprenant : pièce principale avec coin-cuisine, salle de douche avec lave-mains et wc Occupé"
-    ],
-    "occupation": null,
-    "surface_m2": 17.04,
-    "stats_bien": {
-      "min": 6290,
-      "avg": 7207,
-      "max": 8672
-    },
-    "est_price_m2": 7207,
-    "code_insee": "75118",
-    "code_postal": 75018,
-    "code_departement": "75",
-    "code_region": 11.0,
-    "nom_departement": "Paris",
-    "nom_region": "Île-de-France"
-  },
-  "110037": {
-    "titre": "Annonce n°110037 : un appartement à Nice (Alpes-Maritimes), mise à prix : 11 928 €",
-    "date_publication": "2026-09-16T00:00:00+02:00",
-    "tribunal": "Tribunal Judiciaire de Nice (Alpes maritimes)",
-    "type_vente": "Vente aux enchères publiques",
-    "dt_vente": "2026-11-05 09:00",
-    "dt_vente_limit": "2026-11-15",
-    "sell_state": 1,
-    "avocats": [
-      "Maître David Jacquemin, de la SELARLU David Jacquemin, membre de l'association Démès, Avocat"
-    ],
-    "telephones": [
-      "04 92 47 73 17"
-    ],
-    "documents": [],
-    "url": "https://www.licitor.com/annonce/11/00/37/vente-aux-encheres/un-appartement/nice/alpes-maritimes/110037.html",
-    "id": "110037",
-    "mise_a_prix": 11928,
-    "est_price": null,
-    "fac_baisse": null,
-    "prix_final": null,
-    "ville": "Nice",
-    "adresse": "Résidence L'Ariane 16 à 20, rue Amédée VII Comte Route et rue Guigliona de Sainte Agathe",
-    "coords": {
-      "latitude": 43.7356911,
-      "longitude": 7.2984252
-    },
-    "trib_anom": true,
-    "visite": "Visites sur place vendredi 23 octobre 2026 de 14h à 15h et lundi 26 octobre 2026 de 14h à 15h",
-    "visite_dt": "2026-10-23 14:00",
-    "visite_state": 1,
-    "type": [
-      "Un appartement"
-    ],
-    "description": [
-      "Un appartement de 82,20 m², bâtiment M, escalier 1, au 2ème étage, de type F4, comprenant : hall d'entrée, salle de séjour, trois chambres, cuisine, salle de bains, wc, rangements et séchoir Cave, bâtiment M, au sous-sol, portant le n°41 Parking semi couvert, au rez-de-sol, portant le n°112 Loué"
-    ],
-    "occupation": "Loué",
-    "surface_m2": 82.2,
-    "stats_bien": {
-      "min": 3136,
-      "avg": 3890,
-      "max": 5425
-    },
-    "est_price_m2": 3890,
-    "code_insee": "06088",
-    "code_postal": 6000,
-    "code_departement": "6",
-    "code_region": 93.0,
-    "nom_departement": "Alpes-Maritimes",
-    "nom_region": "Provence-Alpes-Côte d'Azur"
-  },
-  "110071": {
-    "titre": "Annonce n°110071 : une maison d'habitation à Savigny-le-Temple (Seine-et-Marne), mise à prix : 98 000 €",
-    "date_publication": "2026-09-22T00:00:00+02:00",
-    "tribunal": "Tribunal Judiciaire de Melun (Seine et Marne)",
-    "type_vente": "Vente aux enchères publiques en un seul lot",
-    "dt_vente": "2026-11-05 14:00",
-    "dt_vente_limit": "2026-11-15",
-    "sell_state": 1,
-    "avocats": [
-      "SELAS Negrevergne - Fontaine - Desenlis, Avocats"
-    ],
-    "telephones": [
-      "01 64 34 93 45"
-    ],
-    "documents": [],
-    "url": "https://www.licitor.com/annonce/11/00/71/vente-aux-encheres/une-maison-d-habitation/savigny-le-temple/seine-et-marne/110071.html",
-    "id": "110071",
-    "mise_a_prix": 98000,
-    "est_price": null,
-    "fac_baisse": null,
-    "prix_final": null,
-    "ville": "Savigny-le-Temple",
-    "adresse": "21, rue du Hameau",
-    "coords": {
-      "latitude": 48.597065,
-      "longitude": 2.5734718
-    },
-    "trib_anom": true,
-    "visite": "Visite sur place vendredi 23 octobre 2026 de 14h à 15h",
-    "visite_dt": "2026-10-23 14:00",
-    "visite_state": 1,
-    "type": [
-      "Une maison d'habitation"
-    ],
-    "description": [
-      "Une maison d'habitation Superficie : 90,70 m² DPE : F Cadastrée section AO n°129 pour 1a 93ca"
-    ],
-    "occupation": null,
-    "surface_m2": null,
-    "stats_bien": {
-      "min": 2451,
-      "avg": 2757,
-      "max": 3086
-    },
-    "est_price_m2": 2757,
-    "code_insee": "77445",
-    "code_postal": 77176,
-    "code_departement": "77",
-    "code_region": 11.0,
-    "nom_departement": "Seine-et-Marne",
-    "nom_region": "Île-de-France"
-  },
-  "110172": {
-    "titre": "Annonce n°110172 : une propriété à Saint-Jean-Cap-Ferrat (Alpes-Maritimes), mise à prix : 35 000 000 €",
-    "date_publication": "2026-09-30T00:00:00+02:00",
-    "tribunal": "Tribunal Judiciaire de Nice (Alpes maritimes)",
-    "type_vente": "Vente aux enchères publiques",
-    "dt_vente": "2026-11-05 09:00",
-    "dt_vente_limit": "2026-11-15",
-    "sell_state": 1,
-    "avocats": [
-      "Maître Audrey Essner, Avocat",
-      "Maître Bernard Bensa, Avocat"
-    ],
-    "telephones": [
-      "04 97 06 68 80",
-      "00 377 97 97 96 60"
-    ],
-    "documents": [],
-    "url": "https://www.licitor.com/annonce/11/01/72/vente-aux-encheres/une-propriete/saint-jean-cap-ferrat/alpes-maritimes/110172.html",
-    "id": "110172",
-    "mise_a_prix": 35000000,
-    "est_price": null,
-    "fac_baisse": null,
-    "prix_final": null,
-    "ville": "Saint-Jean-Cap-Ferrat",
-    "adresse": "Casa Ventura Lieudit Romp Talon 6, bd Dominique Durandy",
-    "coords": {
-      "latitude": 43.6960335,
-      "longitude": 7.3307748
-    },
-    "trib_anom": true,
-    "visite": "Visites sur place vendredi 23 octobre 2026 de 14h à 15h et mercredi 28 octobre 2026 de 11h à 12h",
-    "visite_dt": "2026-10-23 14:00",
-    "visite_state": 1,
-    "type": [
-      "Une propriété"
-    ],
-    "description": [
-      "Une propriété de 900 m², comprenant : deux maisons, piscine, jacuzzi, salle de sports, salle de cinéma, dépendances, terrain Occupée"
-    ],
-    "occupation": null,
-    "surface_m2": 900.0,
-    "stats_bien": {
-      "min": 16996,
-      "avg": 22233,
-      "max": 33763
-    },
-    "est_price_m2": 22233,
-    "code_insee": "06121",
-    "code_postal": 6230,
-    "code_departement": "6",
-    "code_region": 93.0,
-    "nom_departement": "Alpes-Maritimes",
-    "nom_region": "Provence-Alpes-Côte d'Azur"
-  },
-  "110113": {
-    "titre": "Annonce n°110113 : une maison d'habitation à Les Sables-d'Olonne (Vendée), mise à prix : 260 000 €",
-    "date_publication": "2026-09-25T00:00:00+02:00",
-    "tribunal": "Tribunal Judiciaire des Sables-d'Olonne (Vendée)",
-    "type_vente": "Vente aux enchères publiques",
-    "dt_vente": "2026-11-06 09:30",
-    "dt_vente_limit": "2026-11-16",
-    "sell_state": 1,
-    "avocats": [
-      "Maître Annabelle Texier, de la SELARL CNTD, Avocat"
-    ],
-    "telephones": [
-      "02 51 95 05 78"
-    ],
-    "documents": [],
-    "url": "https://www.licitor.com/annonce/11/01/13/vente-aux-encheres/une-maison-d-habitation/les-sables-d-olonne/vendee/110113.html",
-    "id": "110113",
-    "mise_a_prix": 260000,
-    "est_price": null,
-    "fac_baisse": true,
-    "prix_final": null,
-    "ville": "Les Sables-d'Olonne",
-    "adresse": "11, route du Château d'Olonne",
-    "coords": {
-      "latitude": 46.5007612799,
-      "longitude": -1.79255128677
-    },
-    "trib_anom": true,
-    "visite": "Visite sur place vendredi 23 octobre 2026 de 14h à 16h",
-    "visite_dt": "2026-10-23 14:00",
-    "visite_state": 1,
-    "type": [
-      "Une maison d'habitation"
-    ],
-    "description": [
-      "Une maison d'habitation comprenant : Au rez-de-chaussée : garage, chaufferie, bureau, buanderie, wc, deux chambres À l'étage : couloir, salon, salle à manger, cuisine, deux chambres, salle de bains, wc Extérieur"
-    ],
-    "occupation": null,
-    "surface_m2": null,
-    "stats_bien": null,
-    "est_price_m2": null,
-    "code_insee": null,
-    "code_postal": 85100,
-    "code_departement": "85",
-    "code_region": 52.0,
-    "nom_departement": "Vendée",
-    "nom_region": "Pays de la Loire"
-  },
-  "110044": {
-    "titre": "Annonce n°110044 : un appartement à Livry-Gargan (Seine-Saint-Denis), mise à prix : 45 000 €",
-    "date_publication": "2026-09-19T00:00:00+02:00",
-    "tribunal": "Tribunal Judiciaire de Bobigny (Seine Saint Denis)",
-    "type_vente": "Vente aux enchères publiques",
-    "dt_vente": "2026-11-03 14:00",
-    "dt_vente_limit": "2026-11-13",
-    "sell_state": 1,
-    "avocats": [
-      "Maître Florence Louis, membre de la SELARL Grimaud - Louis - Capraro, Avocat",
-      "Maître Florian Candan, membre du Cabinet Candan Avocat, Avocat"
-    ],
-    "telephones": [],
-    "documents": [
-      {
-        "type": "PV descriptif",
-        "url": "https://www.licitor.com/data/pub/media/annonce/11/00/44/110044.000.001.3de5e5fbab6c.pdf"
-      }
-    ],
-    "url": "https://www.licitor.com/annonce/11/00/44/vente-aux-encheres/un-appartement/livry-gargan/seine-saint-denis/110044.html",
-    "id": "110044",
-    "mise_a_prix": 45000,
-    "est_price": null,
-    "fac_baisse": false,
-    "prix_final": null,
-    "ville": "Livry-Gargan",
-    "adresse": "1, allée des Aubépines",
-    "coords": {
-      "latitude": 48.9128151,
-      "longitude": 2.5389566
-    },
-    "trib_anom": true,
-    "visite": "Visite sur place vendredi 23 octobre 2026 de 14h30 à 15h",
-    "visite_dt": "2026-10-23 14:30",
-    "visite_state": 1,
-    "type": [
-      "Un appartement",
-      "Une terrasse",
-      "Un jardin",
-      "Un emplacement de stationnement double"
-    ],
-    "description": [
-      "Un appartement de 65,62 m² , bâtiment C, au rez-de-chaussée, porte face, comprenant : entrée-dégagement, séjour avec cuisine ouverte, deux chambres, salle de bain, wc et placards",
-      "Une terrasse",
-      "Un jardin",
-      "Un emplacement de stationnement double en sous-sol Occupé"
-    ],
-    "occupation": null,
-    "surface_m2": 65.62,
-    "stats_bien": {
-      "min": 1892,
-      "avg": 2302,
-      "max": 2908
-    },
-    "est_price_m2": 2302,
-    "code_insee": "93046",
-    "code_postal": 93190,
-    "code_departement": "93",
-    "code_region": 11.0,
-    "nom_departement": "Seine-Saint-Denis",
-    "nom_region": "Île-de-France"
-  },
-  "110272": {
-    "titre": "Annonce n°110272 : une maison à usage d'habitation à Sos (Lot-et-Garonne), mise à prix : 6 000 €",
-    "date_publication": "2026-10-12T00:00:00+02:00",
-    "tribunal": "Tribunal Judiciaire d'Agen (Lot et Garonne)",
-    "type_vente": "Vente aux enchères publiques",
-    "dt_vente": "2026-11-19 14:30",
-    "dt_vente_limit": "2026-11-29",
-    "sell_state": 1,
-    "avocats": [
-      "Maître Jobic Vimont, de la SELARL Lex Alliance, Avocat"
-    ],
-    "telephones": [
-      "05 53 66 09 83"
-    ],
-    "documents": [],
-    "url": "https://www.licitor.com/annonce/11/02/72/vente-aux-encheres/une-maison-a-usage-d-habitation/sos/lot-et-garonne/110272.html",
-    "id": "110272",
-    "mise_a_prix": 6000,
-    "est_price": null,
-    "fac_baisse": null,
-    "prix_final": null,
-    "ville": "Sos",
-    "adresse": "2, rue de l'Église",
-    "coords": {
-      "latitude": 44.0420227,
-      "longitude": 0.1410205
-    },
-    "trib_anom": true,
-    "visite": "Visites sur place mercredi 14 octobre 2026 de 10h30 à 11h30 et vendredi 23 octobre 2026 de 14h30 à 15h30",
-    "visite_dt": "2026-10-23 14:30",
-    "visite_state": 1,
-    "type": [
-      "Une maison à usage d'habitation"
-    ],
-    "description": [
-      "Une maison à usage d'habitation comprenant : entrée, ancienne cuisine, salle de bains, séjour, deux pièces, dégagement, grenier, autre pièce Garage"
-    ],
-    "occupation": null,
-    "surface_m2": null,
-    "stats_bien": {
-      "min": 722,
-      "avg": 986,
-      "max": 1340
-    },
-    "est_price_m2": 986,
-    "code_insee": "47302",
-    "code_postal": 47170,
-    "code_departement": "47",
-    "code_region": 75.0,
-    "nom_departement": "Lot-et-Garonne",
-    "nom_region": "Nouvelle-Aquitaine"
-  },
-  "110121": {
-    "titre": "Annonce n°110121 : un immeuble à Cluses (Haute-Savoie), mise à prix : 190 000 €",
-    "date_publication": "2026-09-25T00:00:00+02:00",
-    "tribunal": "Tribunal Judiciaire de Bonneville (Haute Savoie)",
-    "type_vente": "Vente aux enchères publiques",
-    "dt_vente": "2026-11-05 14:00",
-    "dt_vente_limit": "2026-11-15",
-    "sell_state": 1,
-    "avocats": [
-      "Maître Jean-François Pessey-Magnifique, de la SARL Christinaz - Pessey-Magnifique, Avocat",
-      "Maître Aude Manterola, de la SELARLU Manterola Avocats, Avocat"
-    ],
-    "telephones": [
-      "04 50 03 49 85",
-      "01 85 61 03 70"
-    ],
-    "documents": [],
-    "url": "https://www.licitor.com/annonce/11/01/21/vente-aux-encheres/un-immeuble/cluses/haute-savoie/110121.html",
-    "id": "110121",
-    "mise_a_prix": 190000,
-    "est_price": null,
-    "fac_baisse": null,
-    "prix_final": null,
-    "ville": "Cluses",
-    "adresse": "12, rue Pierre Trappier",
-    "coords": {
-      "latitude": 46.0697021,
-      "longitude": 6.5629616
-    },
-    "trib_anom": true,
-    "visite": "Visite sur place vendredi 23 octobre 2026 de 15h à 16h",
-    "visite_dt": "2026-10-23 15:00",
-    "visite_state": 1,
-    "type": [
-      "Un immeuble"
-    ],
-    "description": [
-      "Un immeuble comprenant : Au rez-de-chaussée : local commercial de 96,90 m² loi Carrez Au 1er étage : appartement de 68,25 m² loi Carrez, de trois pièces principales Au 2ème étage : appartement de 67,78 m² loi Carrez, de trois pièces principales Au 3ème étage : appartement de 43,01 m² loi Carrez, de deux pièces principales Sous-sol Terrain attenant Libre"
-    ],
-    "occupation": "Libre",
-    "surface_m2": 275.94,
-    "stats_bien": {
-      "min": 2660,
-      "avg": 3442,
-      "max": 4875
-    },
-    "est_price_m2": 3442,
-    "code_insee": "74081",
-    "code_postal": 74300,
-    "code_departement": "74",
-    "code_region": 84.0,
-    "nom_departement": "Haute-Savoie",
-    "nom_region": "Auvergne-Rhône-Alpes"
-  },
-  "110211": {
-    "titre": "Annonce n°110211 : une maison d'habitation à Requeil (Sarthe), mise à prix : 120 000 €",
-    "date_publication": "2026-10-05T00:00:00+02:00",
-    "tribunal": "Tribunal Judiciaire du Mans (Sarthe)",
-    "type_vente": "Vente aux enchères publiques",
-    "dt_vente": "2026-11-10 10:30",
-    "dt_vente_limit": "2026-11-20",
-    "sell_state": 1,
-    "avocats": [
-      "Maître Cécile Drouet, Avocat"
-    ],
-    "telephones": [
-      "02 43 77 36 63"
-    ],
-    "documents": [],
-    "url": "https://www.licitor.com/annonce/11/02/11/vente-aux-encheres/une-maison-d-habitation/requeil/sarthe/110211.html",
-    "id": "110211",
-    "mise_a_prix": 120000,
-    "est_price": null,
-    "fac_baisse": null,
-    "prix_final": null,
-    "ville": "Requeil",
-    "adresse": "11, rue Constances Dutay",
-    "coords": {
-      "latitude": 47.7903023,
-      "longitude": 0.1659007
-    },
-    "trib_anom": true,
-    "visite": "Visite sur place vendredi 23 octobre 2026 de 17h à 18h",
-    "visite_dt": "2026-10-23 17:00",
-    "visite_state": 1,
-    "type": [
-      "Une maison d'habitation"
-    ],
-    "description": [
-      "Une maison d'habitation comprenant : séjour-cuisine, cellier, couloir de desserte, wc, salle de bains, quatre chambres, garage, cabanon de jardin, jardin Occupée"
-    ],
-    "occupation": null,
-    "surface_m2": null,
-    "stats_bien": {
-      "min": 1061,
-      "avg": 1406,
-      "max": 1913
-    },
-    "est_price_m2": 1406,
-    "code_insee": "72252",
-    "code_postal": 72510,
-    "code_departement": "72",
-    "code_region": 52.0,
-    "nom_departement": "Sarthe",
-    "nom_region": "Pays de la Loire"
-  },
   "110030": {
     "titre": "Annonce n°110030 : un appartement à Montpellier (Hérault), mise à prix : 14 687,32 €",
     "date_publication": "2026-09-15T00:00:00+02:00",
@@ -2673,6 +496,60 @@
     "code_region": 11.0,
     "nom_departement": "Yvelines",
     "nom_region": "Île-de-France"
+  },
+  "110115": {
+    "titre": "Annonce n°110115 : une maison à usage d'habitation à Perpignan (Pyrénées-Orientales), mise à prix : 12 000 €",
+    "date_publication": "2026-09-25T00:00:00+02:00",
+    "tribunal": "Tribunal Judiciaire de Perpignan (Pyrénées orientales)",
+    "type_vente": "Vente aux enchères publiques",
+    "dt_vente": "2026-11-13 09:00",
+    "dt_vente_limit": "2026-11-23",
+    "sell_state": 1,
+    "avocats": [
+      "Maître Cendrine Tobailem, Avocat",
+      "Maître Sarah Sahnoun, de la SELARL Sahnoun et Avocats Associés, Avocat"
+    ],
+    "telephones": [
+      "06 09 31 19 25",
+      "04 93 30 30 70"
+    ],
+    "documents": [],
+    "url": "https://www.licitor.com/annonce/11/01/15/vente-aux-encheres/une-maison-a-usage-d-habitation/perpignan/pyrenees-orientales/110115.html",
+    "id": "110115",
+    "mise_a_prix": 12000,
+    "est_price": null,
+    "fac_baisse": null,
+    "prix_final": null,
+    "ville": "Perpignan",
+    "adresse": "15, rue Luc Dagobert",
+    "coords": {
+      "latitude": 42.6949539,
+      "longitude": 2.8914149
+    },
+    "trib_anom": true,
+    "visite": "Visites sur place mercredi 21 octobre 2026 à 9h30 et lundi 26 octobre 2026 à 9h30",
+    "visite_dt": "2026-10-26 09:30",
+    "visite_state": 1,
+    "type": [
+      "Une maison à usage d'habitation"
+    ],
+    "description": [
+      "Une maison à usage d'habitation de 76,05 m², mitoyenne sur trois faces, élevée de deux étages sur rez-de-chaussée, avec combles, comprenant : Au rez-de-chaussée : séjour avec cuisine Au 1er étage : chambre, salle d'eau Au 2ème étage : chambre, balcon, pièce aveugle Libre d'occupation"
+    ],
+    "occupation": "Libre",
+    "surface_m2": 76.05,
+    "stats_bien": {
+      "min": 1630,
+      "avg": 2074,
+      "max": 2720
+    },
+    "est_price_m2": 2074,
+    "code_insee": "66136",
+    "code_postal": 66000,
+    "code_departement": "66",
+    "code_region": 76.0,
+    "nom_departement": "Pyrénées-Orientales",
+    "nom_region": "Occitanie"
   },
   "110105": {
     "titre": "Annonce n°110105 : un appartement à Neuilly-sur-Marne (Seine-Saint-Denis), mise à prix : 86 000 €",
@@ -3222,6 +1099,58 @@
     "code_region": 32.0,
     "nom_departement": "Nord",
     "nom_region": "Hauts-de-France"
+  },
+  "110037": {
+    "titre": "Annonce n°110037 : un appartement à Nice (Alpes-Maritimes), mise à prix : 11 928 €",
+    "date_publication": "2026-09-16T00:00:00+02:00",
+    "tribunal": "Tribunal Judiciaire de Nice (Alpes maritimes)",
+    "type_vente": "Vente aux enchères publiques",
+    "dt_vente": "2026-11-05 09:00",
+    "dt_vente_limit": "2026-11-15",
+    "sell_state": 1,
+    "avocats": [
+      "Maître David Jacquemin, de la SELARLU David Jacquemin, membre de l'association Démès, Avocat"
+    ],
+    "telephones": [
+      "04 92 47 73 17"
+    ],
+    "documents": [],
+    "url": "https://www.licitor.com/annonce/11/00/37/vente-aux-encheres/un-appartement/nice/alpes-maritimes/110037.html",
+    "id": "110037",
+    "mise_a_prix": 11928,
+    "est_price": null,
+    "fac_baisse": null,
+    "prix_final": null,
+    "ville": "Nice",
+    "adresse": "Résidence L'Ariane 16 à 20, rue Amédée VII Comte Route et rue Guigliona de Sainte Agathe",
+    "coords": {
+      "latitude": 43.7356911,
+      "longitude": 7.2984252
+    },
+    "trib_anom": true,
+    "visite": "Visites sur place vendredi 23 octobre 2026 de 14h à 15h et lundi 26 octobre 2026 de 14h à 15h",
+    "visite_dt": "2026-10-26 14:00",
+    "visite_state": 1,
+    "type": [
+      "Un appartement"
+    ],
+    "description": [
+      "Un appartement de 82,20 m², bâtiment M, escalier 1, au 2ème étage, de type F4, comprenant : hall d'entrée, salle de séjour, trois chambres, cuisine, salle de bains, wc, rangements et séchoir Cave, bâtiment M, au sous-sol, portant le n°41 Parking semi couvert, au rez-de-sol, portant le n°112 Loué"
+    ],
+    "occupation": "Loué",
+    "surface_m2": 82.2,
+    "stats_bien": {
+      "min": 3136,
+      "avg": 3890,
+      "max": 5425
+    },
+    "est_price_m2": 3890,
+    "code_insee": "06088",
+    "code_postal": 6000,
+    "code_departement": "6",
+    "code_region": 93.0,
+    "nom_departement": "Alpes-Maritimes",
+    "nom_region": "Provence-Alpes-Côte d'Azur"
   },
   "110066": {
     "titre": "Annonce n°110066 : une maison à usage d'habitation à Monts (Indre-et-Loire), mise à prix : 100 000 €",
@@ -3849,6 +1778,60 @@
     "nom_departement": "Yvelines",
     "nom_region": "Île-de-France"
   },
+  "110116": {
+    "titre": "Annonce n°110116 : une maison de ville à Ortaffa (Pyrénées-Orientales), mise à prix : 45 000 €",
+    "date_publication": "2026-09-25T00:00:00+02:00",
+    "tribunal": "Tribunal Judiciaire de Perpignan (Pyrénées orientales)",
+    "type_vente": "Vente aux enchères publiques",
+    "dt_vente": "2026-11-13 09:00",
+    "dt_vente_limit": "2026-11-23",
+    "sell_state": 1,
+    "avocats": [
+      "Maître Cendrine Tobailem, Avocat",
+      "Maître Sarah Sahnoun, de la SELARL Sahnoun et Avocats Associés, Avocat"
+    ],
+    "telephones": [
+      "06 09 31 19 25",
+      "04 93 30 30 70"
+    ],
+    "documents": [],
+    "url": "https://www.licitor.com/annonce/11/01/16/vente-aux-encheres/une-maison-de-ville/ortaffa/pyrenees-orientales/110116.html",
+    "id": "110116",
+    "mise_a_prix": 45000,
+    "est_price": null,
+    "fac_baisse": null,
+    "prix_final": null,
+    "ville": "Ortaffa",
+    "adresse": "2, rue des Hirondelles",
+    "coords": {
+      "latitude": 42.5802574,
+      "longitude": 2.9266226
+    },
+    "trib_anom": true,
+    "visite": "Visites sur place jeudi 22 octobre 2026 à 9h30 et mardi 27 octobre 2026 à 10h",
+    "visite_dt": "2026-10-27 10:00",
+    "visite_state": 1,
+    "type": [
+      "Une maison de ville"
+    ],
+    "description": [
+      "Une maison de ville de 81,60 m², à usage d'habitation, mitoyenne sur trois faces, élevée de deux étages sur rez-de-chaussée, comprenant : Au rez-de-chaussée : dégagement, séjour avec cuisine ouverte, salle d'eau, toilettes séparées Au 1er étage : coin tv avec bibliothèque, chambre Au 2ème étage : salle d'eau, chambre, balcon Libre d'occupation"
+    ],
+    "occupation": "Libre",
+    "surface_m2": 81.6,
+    "stats_bien": {
+      "min": 1747,
+      "avg": 2260,
+      "max": 3132
+    },
+    "est_price_m2": 2260,
+    "code_insee": "66129",
+    "code_postal": 66560,
+    "code_departement": "66",
+    "code_region": 76.0,
+    "nom_departement": "Pyrénées-Orientales",
+    "nom_region": "Occitanie"
+  },
   "110267": {
     "titre": "Annonce n°110267 : une maison à usage d'habitation à Signes (Var), mise à prix : 300 000 €",
     "date_publication": "2026-10-14T00:00:00+02:00",
@@ -4418,6 +2401,58 @@
     "nom_departement": "Morbihan",
     "nom_region": "Bretagne"
   },
+  "110173": {
+    "titre": "Annonce n°110173 : un appartement à Cagnes-sur-Mer (Alpes-Maritimes), mise à prix : 30 000 €",
+    "date_publication": "2026-09-30T00:00:00+02:00",
+    "tribunal": "Tribunal Judiciaire de Grasse (Alpes maritimes)",
+    "type_vente": "Vente aux enchères publiques",
+    "dt_vente": "2026-11-05 09:00",
+    "dt_vente_limit": "2026-11-15",
+    "sell_state": 1,
+    "avocats": [
+      "Maître Sarah Sahnoun, de la SELARL Sahnoun et Avocats Associés, Avocat"
+    ],
+    "telephones": [
+      "04 93 30 30 70"
+    ],
+    "documents": [],
+    "url": "https://www.licitor.com/annonce/11/01/73/vente-aux-encheres/un-appartement/cagnes-sur-mer/alpes-maritimes/110173.html",
+    "id": "110173",
+    "mise_a_prix": 30000,
+    "est_price": null,
+    "fac_baisse": null,
+    "prix_final": null,
+    "ville": "Cagnes-sur-Mer",
+    "adresse": "Le Crystal 1, av. de Passau",
+    "coords": {
+      "latitude": 43.6641159,
+      "longitude": 7.1530509
+    },
+    "trib_anom": true,
+    "visite": "Visites sur place vendredi 23 octobre 2026 de 9h à 10h et mardi 27 octobre 2026 de 17h à 18h",
+    "visite_dt": "2026-10-27 17:00",
+    "visite_state": 1,
+    "type": [
+      "Un appartement"
+    ],
+    "description": [
+      "Un appartement de 30,61 m², bâtiment B, au 3ème étage, de deux pièces, comprenant : salon avec coin-cuisine, chambre, salle d'eau, wc Balcon, parking Loué à des saisonniers, actuellement inoccupés Emplacement de stationnement"
+    ],
+    "occupation": "Loué",
+    "surface_m2": 30.61,
+    "stats_bien": {
+      "min": 3536,
+      "avg": 4698,
+      "max": 5405
+    },
+    "est_price_m2": 4698,
+    "code_insee": "06027",
+    "code_postal": 6800,
+    "code_departement": "6",
+    "code_region": 93.0,
+    "nom_departement": "Alpes-Maritimes",
+    "nom_region": "Provence-Alpes-Côte d'Azur"
+  },
   "110249": {
     "titre": "Annonce n°110249 : un immeuble à usage d'habitation à Élincourt (Nord), mise à prix : 45 000 €",
     "date_publication": "2026-10-12T00:00:00+02:00",
@@ -4567,6 +2602,60 @@
     "code_departement": "13",
     "code_region": 93.0,
     "nom_departement": "Bouches-du-Rhône",
+    "nom_region": "Provence-Alpes-Côte d'Azur"
+  },
+  "110172": {
+    "titre": "Annonce n°110172 : une propriété à Saint-Jean-Cap-Ferrat (Alpes-Maritimes), mise à prix : 35 000 000 €",
+    "date_publication": "2026-09-30T00:00:00+02:00",
+    "tribunal": "Tribunal Judiciaire de Nice (Alpes maritimes)",
+    "type_vente": "Vente aux enchères publiques",
+    "dt_vente": "2026-11-05 09:00",
+    "dt_vente_limit": "2026-11-15",
+    "sell_state": 1,
+    "avocats": [
+      "Maître Audrey Essner, Avocat",
+      "Maître Bernard Bensa, Avocat"
+    ],
+    "telephones": [
+      "04 97 06 68 80",
+      "00 377 97 97 96 60"
+    ],
+    "documents": [],
+    "url": "https://www.licitor.com/annonce/11/01/72/vente-aux-encheres/une-propriete/saint-jean-cap-ferrat/alpes-maritimes/110172.html",
+    "id": "110172",
+    "mise_a_prix": 35000000,
+    "est_price": null,
+    "fac_baisse": null,
+    "prix_final": null,
+    "ville": "Saint-Jean-Cap-Ferrat",
+    "adresse": "Casa Ventura Lieudit Romp Talon 6, bd Dominique Durandy",
+    "coords": {
+      "latitude": 43.6960335,
+      "longitude": 7.3307748
+    },
+    "trib_anom": true,
+    "visite": "Visites sur place vendredi 23 octobre 2026 de 14h à 15h et mercredi 28 octobre 2026 de 11h à 12h",
+    "visite_dt": "2026-10-28 11:00",
+    "visite_state": 1,
+    "type": [
+      "Une propriété"
+    ],
+    "description": [
+      "Une propriété de 900 m², comprenant : deux maisons, piscine, jacuzzi, salle de sports, salle de cinéma, dépendances, terrain Occupée"
+    ],
+    "occupation": null,
+    "surface_m2": 900.0,
+    "stats_bien": {
+      "min": 16996,
+      "avg": 22233,
+      "max": 33763
+    },
+    "est_price_m2": 22233,
+    "code_insee": "06121",
+    "code_postal": 6230,
+    "code_departement": "6",
+    "code_region": 93.0,
+    "nom_departement": "Alpes-Maritimes",
     "nom_region": "Provence-Alpes-Côte d'Azur"
   },
   "110257": {
@@ -4720,6 +2809,108 @@
     "code_region": 53.0,
     "nom_departement": "Morbihan",
     "nom_region": "Bretagne"
+  },
+  "110175": {
+    "titre": "Annonce n°110175 : une propriété à Menton (Alpes-Maritimes), mise à prix : 4 700 000 €",
+    "date_publication": "2026-09-30T00:00:00+02:00",
+    "tribunal": "Tribunal Judiciaire de Nice (Alpes maritimes)",
+    "type_vente": "Vente aux enchères publiques",
+    "dt_vente": "2026-11-05 09:00",
+    "dt_vente_limit": "2026-11-15",
+    "sell_state": 1,
+    "avocats": [
+      "Maître Gilles Chatenet, Avocat"
+    ],
+    "telephones": [
+      "04 93 85 00 25"
+    ],
+    "documents": [],
+    "url": "https://www.licitor.com/annonce/11/01/75/vente-aux-encheres/une-propriete/menton/alpes-maritimes/110175.html",
+    "id": "110175",
+    "mise_a_prix": 4700000,
+    "est_price": null,
+    "fac_baisse": null,
+    "prix_final": null,
+    "ville": "Menton",
+    "adresse": "Lieudit La Siga 5215, Route du Val de Gorbio",
+    "coords": {
+      "latitude": 43.7779579,
+      "longitude": 7.4713802
+    },
+    "trib_anom": true,
+    "visite": "Visites sur place mercredi 21 octobre 2026 de 14h30 à 15h30 et mercredi 28 octobre 2026 de 14h30 à 15h30",
+    "visite_dt": "2026-10-28 14:30",
+    "visite_state": 1,
+    "type": [
+      "Une propriété"
+    ],
+    "description": [
+      "Une propriété comprenant : maison principale, maison d'origine en pierre, deux petites maisons de gardien et personnel et une maison d'invité, piscine, grand parc arboré avec deux étangs artificiels Occupée"
+    ],
+    "occupation": null,
+    "surface_m2": null,
+    "stats_bien": {
+      "min": 4752,
+      "avg": 6167,
+      "max": 8960
+    },
+    "est_price_m2": 6167,
+    "code_insee": "06067",
+    "code_postal": 6500,
+    "code_departement": "6",
+    "code_region": 93.0,
+    "nom_departement": "Alpes-Maritimes",
+    "nom_region": "Provence-Alpes-Côte d'Azur"
+  },
+  "110119": {
+    "titre": "Annonce n°110119 : une maison à usage d'habitation à Lussac (Gironde), mise à prix : 190 000 €",
+    "date_publication": "2026-09-25T00:00:00+02:00",
+    "tribunal": "Tribunal Judiciaire de Libourne (Gironde)",
+    "type_vente": "Vente aux enchères publiques",
+    "dt_vente": "2026-11-06 14:00",
+    "dt_vente_limit": "2026-11-16",
+    "sell_state": 1,
+    "avocats": [
+      "Maître Céline Juliand, Avocat",
+      "Maître Marjorie Rodriguez, Avocat"
+    ],
+    "telephones": [
+      "04 50 76 78 41",
+      "05 57 50 10 50"
+    ],
+    "documents": [],
+    "url": "https://www.licitor.com/annonce/11/01/19/vente-aux-encheres/une-maison-a-usage-d-habitation/lussac/gironde/110119.html",
+    "id": "110119",
+    "mise_a_prix": 190000,
+    "est_price": null,
+    "fac_baisse": null,
+    "prix_final": null,
+    "ville": "Lussac",
+    "adresse": "10, lieudit La Grenière",
+    "coords": {
+      "latitude": 45.8580701828,
+      "longitude": 0.466519460774
+    },
+    "trib_anom": true,
+    "visite": "Visites sur place mercredi 21 octobre 2026 de 15h à 17h et mercredi 28 octobre 2026 de 15h à 17h",
+    "visite_dt": "2026-10-28 15:00",
+    "visite_state": 1,
+    "type": [
+      "Une maison à usage d'habitation"
+    ],
+    "description": [
+      "Une maison à usage d'habitation de 220,12 m², comprenant : trois chambres, cuisine, séjour, deux salons, salle de bains, salle d'eau, studio, cellier, chaufferie Dépendance avec deux appartements de 71,95 m² et 65,83 m² Garage Terrain clôturé avec terrasse, piscine, puits, abris vélo et cabanon Inoccupée"
+    ],
+    "occupation": null,
+    "surface_m2": 292.07,
+    "stats_bien": null,
+    "est_price_m2": null,
+    "code_insee": null,
+    "code_postal": 16450,
+    "code_departement": "16",
+    "code_region": 75.0,
+    "nom_departement": "Charente",
+    "nom_region": "Nouvelle-Aquitaine"
   },
   "110099": {
     "titre": "Annonce n°110099 : un appartement à Montpellier (Hérault), mise à prix : 105 000 €",
@@ -5267,6 +3458,58 @@
     "code_region": 76.0,
     "nom_departement": "Gard",
     "nom_region": "Occitanie"
+  },
+  "110120": {
+    "titre": "Annonce n°110120 : un ensemble immobilier à Soulac-sur-Mer (Gironde), mise à prix : 200 000 €",
+    "date_publication": "2026-09-25T00:00:00+02:00",
+    "tribunal": "Tribunal Judiciaire de Bordeaux (Gironde)",
+    "type_vente": "Vente aux enchères publiques",
+    "dt_vente": "2026-11-12 15:00",
+    "dt_vente_limit": "2026-11-22",
+    "sell_state": 1,
+    "avocats": [
+      "Maître Olivier Bouru, Avocat"
+    ],
+    "telephones": [
+      "05 64 12 05 05"
+    ],
+    "documents": [],
+    "url": "https://www.licitor.com/annonce/11/01/20/vente-aux-encheres/un-ensemble-immobilier/soulac-sur-mer/gironde/110120.html",
+    "id": "110120",
+    "mise_a_prix": 200000,
+    "est_price": null,
+    "fac_baisse": true,
+    "prix_final": null,
+    "ville": "Soulac-sur-Mer",
+    "adresse": "15, rue Lévêque",
+    "coords": {
+      "latitude": 45.5134048,
+      "longitude": -1.1149023
+    },
+    "trib_anom": true,
+    "visite": "Visites sur place jeudi 22 octobre 2026 de 10h à 12h et jeudi 29 octobre 2026 de 14h à 16h",
+    "visite_dt": "2026-10-29 14:00",
+    "visite_state": 1,
+    "type": [
+      "Un ensemble immobilier"
+    ],
+    "description": [
+      "Un ensemble immobilier consistant en un ancien restaurant, comprenant : diverses constructions en ruine, élevées sur terre-plein d'un simple rez-de-chaussée, sous-combles perdus, terrains attenants en nature de bassin et surplus recouvert de broussailles non accessible"
+    ],
+    "occupation": null,
+    "surface_m2": null,
+    "stats_bien": {
+      "min": 3756,
+      "avg": 4536,
+      "max": 7033
+    },
+    "est_price_m2": 4536,
+    "code_insee": "33514",
+    "code_postal": 33780,
+    "code_departement": "33",
+    "code_region": 75.0,
+    "nom_departement": "Gironde",
+    "nom_region": "Nouvelle-Aquitaine"
   },
   "110165": {
     "titre": "Annonce n°110165 : un appartement à Rosny-sous-Bois (Seine-Saint-Denis), mise à prix : 30 000 €",
@@ -9959,6 +8202,63 @@
     "nom_departement": "Seine-Saint-Denis",
     "nom_region": "Île-de-France"
   },
+  "110418": {
+    "titre": "Annonce n°110418 : un appartement à Dijon (Côte-d'Or), mise à prix : 38 500 €",
+    "date_publication": "2026-10-23T00:00:00+02:00",
+    "tribunal": "Tribunal Judiciaire de Nanterre (Hauts de Seine)",
+    "type_vente": "Vente aux enchères publiques sur liquidation judiciaire en un lot",
+    "dt_vente": "2026-12-03 14:00",
+    "dt_vente_limit": "2026-12-13",
+    "sell_state": 1,
+    "avocats": [
+      "Maître Claire Jäger, Avocat",
+      "Maître J-P. Petreschi, de l'AARPI Saint-Louis Avocats, Avocat associé"
+    ],
+    "telephones": [
+      "01 44 32 07 00"
+    ],
+    "documents": [],
+    "url": "https://www.licitor.com/annonce/11/04/18/vente-aux-encheres/un-appartement/dijon/cote-d-or/110418.html",
+    "id": "110418",
+    "mise_a_prix": 38500,
+    "est_price": null,
+    "fac_baisse": true,
+    "prix_final": null,
+    "ville": "Dijon (Côte-d'Or)",
+    "adresse": "Résidence du Lac 33, av. du Lac",
+    "coords": {
+      "latitude": 47.3207397,
+      "longitude": 5.0032125
+    },
+    "trib_anom": true,
+    "visite": "Visite sur place lundi 9 novembre 2026 à 14h par la SARL Reflex , Commissaires de Justice 9, bd Clémenceau - 21000 Dijon ( Tél.: 03 80 74 69 69 - [email protected] )",
+    "visite_dt": "2026-11-09 14:00",
+    "visite_state": 1,
+    "type": [
+      "Un appartement",
+      "Une cave",
+      "Un parking"
+    ],
+    "description": [
+      "Un appartement escalier \"R\" à droite, au 4ème étage, portant le n°286, comprenant : quatre pièces principales, entrée, dégagement, cuisine, salle d'eau, wc, loggia, rangements, séchoir",
+      "Une cave au sous-sol, n°286",
+      "Un parking au 1er sous-sol, n°275"
+    ],
+    "occupation": null,
+    "surface_m2": null,
+    "stats_bien": {
+      "min": 1272,
+      "avg": 1578,
+      "max": 2076
+    },
+    "est_price_m2": 1578,
+    "code_insee": "21231",
+    "code_postal": 21000,
+    "code_departement": "21",
+    "code_region": 27.0,
+    "nom_departement": "Côte-d'Or",
+    "nom_region": "Bourgogne-Franche-Comté"
+  },
   "110185": {
     "titre": "Annonce n°110185 : un appartement à Antony (Hauts-de-Seine), mise à prix : 90 000 €",
     "date_publication": "2026-10-03T00:00:00+02:00",
@@ -11783,5 +10083,2125 @@
     "code_region": 76.0,
     "nom_departement": "Lot",
     "nom_region": "Occitanie"
+  },
+  "110331": {
+    "titre": "Annonce n°110331 : une maison à usage d'habitation à Dallon (Aisne), mise à prix : 25 000 €",
+    "date_publication": "2026-10-16T00:00:00+02:00",
+    "tribunal": "Tribunal Judiciaire de Saint-Quentin (Aisne)",
+    "type_vente": "Vente aux enchères publiques",
+    "dt_vente": "2026-11-25 09:30",
+    "dt_vente_limit": "2026-12-05",
+    "sell_state": 1,
+    "avocats": [
+      "Maître Pierre Lombard, Avocat",
+      "Maître Noémie Fouque, de la SELARL Dejans, Avocat"
+    ],
+    "telephones": [
+      "03 23 67 85 01"
+    ],
+    "documents": [],
+    "url": "https://www.licitor.com/annonce/11/03/31/vente-aux-encheres/une-maison-a-usage-d-habitation/dallon/aisne/110331.html",
+    "id": "110331",
+    "mise_a_prix": 25000,
+    "est_price": null,
+    "fac_baisse": null,
+    "prix_final": null,
+    "ville": "Dallon",
+    "adresse": "9 et 9 bis, rue de Dallon",
+    "coords": {
+      "latitude": 49.8391304,
+      "longitude": 3.2263491
+    },
+    "trib_anom": true,
+    "visite": "Visite sur place vendredi 13 novembre 2026 de 15h à 17h",
+    "visite_dt": "2026-11-13 15:00",
+    "visite_state": 1,
+    "type": [
+      "Une maison à usage d'habitation"
+    ],
+    "description": [
+      "Une maison à usage d'habitation de 142,40 m², comprenant : entrée, pièce de séjour, wc, cuisine, salle de douche, couloir, buanderie, trois chambres, dressing, grenier Cave, chaufferie, terrasse, jardin Une maison secondaire ancienne Deux dépendances, serre, aire de stationnement, garage Occupée"
+    ],
+    "occupation": null,
+    "surface_m2": 142.4,
+    "stats_bien": {
+      "min": 1119,
+      "avg": 1527,
+      "max": 2151
+    },
+    "est_price_m2": 1527,
+    "code_insee": "02257",
+    "code_postal": 2680,
+    "code_departement": "2",
+    "code_region": 32.0,
+    "nom_departement": "Aisne",
+    "nom_region": "Hauts-de-France"
+  },
+  "110302": {
+    "titre": "Annonce n°110302 : un local commercial à Noiseau (Val-de-Marne), mise à prix : 200 000 €",
+    "date_publication": "2026-10-19T00:00:00+02:00",
+    "tribunal": "Tribunal Judiciaire de Créteil (Val de Marne)",
+    "type_vente": "Vente aux enchères publiques",
+    "dt_vente": "2026-11-26 09:30",
+    "dt_vente_limit": "2026-12-06",
+    "sell_state": 1,
+    "avocats": [
+      "Maître Michel Miorini, Avocat",
+      "Maître Stéphanie Arfeuillère, de la SELARL Cremer - Arfeuillère, Avocat"
+    ],
+    "telephones": [
+      "01 60 79 20 65"
+    ],
+    "documents": [],
+    "url": "https://www.licitor.com/annonce/11/03/02/vente-aux-encheres/un-local-commercial/noiseau/val-de-marne/110302.html",
+    "id": "110302",
+    "mise_a_prix": 200000,
+    "est_price": null,
+    "fac_baisse": false,
+    "prix_final": null,
+    "ville": "Noiseau",
+    "adresse": "1-3, route de la Queue en Brie",
+    "coords": {
+      "latitude": 48.7565079,
+      "longitude": 2.5270212
+    },
+    "trib_anom": true,
+    "visite": "Visite sur place lundi 16 novembre 2026 de 9h à 10h",
+    "visite_dt": "2026-11-16 09:00",
+    "visite_state": 1,
+    "type": [
+      "Un local commercial",
+      "UN LOCAL D'ACTIVITÉS",
+      "UNE CAVE",
+      "CINQ PARKINGS"
+    ],
+    "description": [
+      "Un local commercial de 171 m² (hors surface au sol de 42,7 m²), au rez-de-chaussée, comprenant : entrée donnant sur bar/four à pizzas, salle de restaurant, cuisine, wc (Lot n°45)",
+      "UN LOCAL D'ACTIVITÉS de 27,7 m² (hors surface au sol de 0,6 m²), au 1er étage, comprenant : pièce principale avec coin-cuisine, pièce à usage de remise, salle d'eau avec wc (Lot n°48)",
+      "UNE CAVE de 26,5 m² , au sous-sol (Lot n°50) Les lots n°s 45, 48 et 50 ne peuvent être vendus séparément",
+      "CINQ PARKINGS au rez-de-chaussée Occupés"
+    ],
+    "occupation": null,
+    "surface_m2": 268.5,
+    "stats_bien": null,
+    "est_price_m2": null,
+    "code_insee": "94071",
+    "code_postal": 94370,
+    "code_departement": "94",
+    "code_region": 11.0,
+    "nom_departement": "Val-de-Marne",
+    "nom_region": "Île-de-France"
+  },
+  "110230": {
+    "titre": "Annonce n°110230 : un local à usage commercial à Nogent-sur-Marne (Val-de-Marne), mise à prix : 35 000 €",
+    "date_publication": "2026-10-10T00:00:00+02:00",
+    "tribunal": "Tribunal Judiciaire de Créteil (Val de Marne)",
+    "type_vente": "Vente aux enchères publiques",
+    "dt_vente": "2026-11-26 09:30",
+    "dt_vente_limit": "2026-12-06",
+    "sell_state": 1,
+    "avocats": [
+      "Maître Macha Pariente, Avocat"
+    ],
+    "telephones": [
+      "09 86 29 51 01"
+    ],
+    "documents": [
+      {
+        "type": "Cahier des conditions de vente",
+        "url": "https://www.licitor.com/data/pub/media/annonce/11/02/30/110230.000.001.94dd85399608.pdf"
+      },
+      {
+        "type": "PV descriptif",
+        "url": "https://www.licitor.com/data/pub/media/annonce/11/02/30/110230.000.002.424af9dbdc4b.pdf"
+      },
+      {
+        "type": "Diagnostics",
+        "url": "https://www.licitor.com/data/pub/media/annonce/11/02/30/110230.000.003.4e24ef9dbfac.pdf"
+      }
+    ],
+    "url": "https://www.licitor.com/annonce/11/02/30/vente-aux-encheres/un-local-a-usage-commercial/nogent-sur-marne/val-de-marne/110230.html",
+    "id": "110230",
+    "mise_a_prix": 35000,
+    "est_price": null,
+    "fac_baisse": null,
+    "prix_final": null,
+    "ville": "Nogent-sur-Marne",
+    "adresse": "30, rue Paul Bert",
+    "coords": {
+      "latitude": 48.8387833,
+      "longitude": 2.4829781
+    },
+    "trib_anom": true,
+    "visite": "Visite sur place lundi 16 novembre 2026 de 9h30 à 10h30",
+    "visite_dt": "2026-11-16 09:30",
+    "visite_state": 1,
+    "type": [
+      "Un local à usage commercial"
+    ],
+    "description": [
+      "Un local à usage commercial de 20,27 m² , bâtiment A, rez-de-chaussée, hall d'entrée à droite"
+    ],
+    "occupation": null,
+    "surface_m2": 20.27,
+    "stats_bien": null,
+    "est_price_m2": null,
+    "code_insee": "94052",
+    "code_postal": 94130,
+    "code_departement": "94",
+    "code_region": 11.0,
+    "nom_departement": "Val-de-Marne",
+    "nom_region": "Île-de-France"
+  },
+  "110319": {
+    "titre": "Annonce n°110319 : une maison à usage d'habitation à Saint-Hernin (Finistère), mise à prix : 36 000 €",
+    "date_publication": "2026-10-16T00:00:00+02:00",
+    "tribunal": "Tribunal Judiciaire de Brest (Finistère)",
+    "type_vente": "Vente aux enchères publiques",
+    "dt_vente": "2026-12-01 14:00",
+    "dt_vente_limit": "2026-12-11",
+    "sell_state": 1,
+    "avocats": [
+      "Maître Marie-Agnès Bernard-Hurstel, Avocat",
+      "SELARL Quesnel - Demay - Le Gall-Guineau - Ouairy-Jallais - Boucher - Beucher-Flament, Avocats"
+    ],
+    "telephones": [
+      "02 99 79 23 22"
+    ],
+    "documents": [],
+    "url": "https://www.licitor.com/annonce/11/03/19/vente-aux-encheres/une-maison-a-usage-d-habitation/saint-hernin/finistere/110319.html",
+    "id": "110319",
+    "mise_a_prix": 36000,
+    "est_price": null,
+    "fac_baisse": null,
+    "prix_final": null,
+    "ville": "Saint-Hernin",
+    "adresse": "Lieudit Coat Quévéran",
+    "coords": {
+      "latitude": 48.2081261,
+      "longitude": -3.6421428
+    },
+    "trib_anom": true,
+    "visite": "Visite sur place lundi 16 novembre 2026 de 10h à 11h",
+    "visite_dt": "2026-11-16 10:00",
+    "visite_state": 1,
+    "type": [
+      "Une maison à usage d'habitation"
+    ],
+    "description": [
+      "Une maison à usage d'habitation de 89,80 m², de type T4, de plain-pied, comprenant : grande pièce de vie salon-salle à manger, cuisine, wc, salle de bains, trois chambres Abri de voiture Jardin Inoccupée"
+    ],
+    "occupation": null,
+    "surface_m2": 89.8,
+    "stats_bien": null,
+    "est_price_m2": null,
+    "code_insee": "29250",
+    "code_postal": 29270,
+    "code_departement": "29",
+    "code_region": 53.0,
+    "nom_departement": "Finistère",
+    "nom_region": "Bretagne"
+  },
+  "110349": {
+    "titre": "Annonce n°110349 : un appartement à Toulouse (Haute-Garonne), mise à prix : 75 000 €",
+    "date_publication": "2026-10-20T00:00:00+02:00",
+    "tribunal": "Tribunal Judiciaire de Toulouse (Haute Garonne)",
+    "type_vente": "Vente aux enchères publiques",
+    "dt_vente": "2026-11-26 14:00",
+    "dt_vente_limit": "2026-12-06",
+    "sell_state": 1,
+    "avocats": [
+      "SELARL Desarnauts - Robert - Despierres, Avocats"
+    ],
+    "telephones": [
+      "05 32 09 49 45"
+    ],
+    "documents": [],
+    "url": "https://www.licitor.com/annonce/11/03/49/vente-aux-encheres/un-appartement/toulouse/haute-garonne/110349.html",
+    "id": "110349",
+    "mise_a_prix": 75000,
+    "est_price": null,
+    "fac_baisse": null,
+    "prix_final": null,
+    "ville": "Toulouse",
+    "adresse": "3, rue Maurice Mélat",
+    "coords": {
+      "latitude": 43.6368332,
+      "longitude": 1.4520977
+    },
+    "trib_anom": true,
+    "visite": "Visite sur place lundi 16 novembre 2026 de 10h à 11h",
+    "visite_dt": "2026-11-16 10:00",
+    "visite_state": 1,
+    "type": [
+      "Un appartement"
+    ],
+    "description": [
+      "Un appartement de type T4 Emplacement de parking Inoccupé"
+    ],
+    "occupation": null,
+    "surface_m2": null,
+    "stats_bien": {
+      "min": 2053,
+      "avg": 2562,
+      "max": 3457
+    },
+    "est_price_m2": 2562,
+    "code_insee": "31555",
+    "code_postal": 31000,
+    "code_departement": "31",
+    "code_region": 76.0,
+    "nom_departement": "Haute-Garonne",
+    "nom_region": "Occitanie"
+  },
+  "110371": {
+    "titre": "Annonce n°110371 : un appartement à Carcassonne (Aude), mise à prix : 40 000 €",
+    "date_publication": "2026-10-21T00:00:00+02:00",
+    "tribunal": "Tribunal Judiciaire de Carcassonne (Aude)",
+    "type_vente": "Vente aux enchères publiques",
+    "dt_vente": "2026-12-01 09:30",
+    "dt_vente_limit": "2026-12-11",
+    "sell_state": 1,
+    "avocats": [
+      "Cabinet de Brisis - Del Alamo, Avocats",
+      "Maître Sabine Pépin, de la SELAS Chopin - Pépin et Associés, Avocat"
+    ],
+    "telephones": [
+      "05 58 90 10 62",
+      "04 68 25 85 00"
+    ],
+    "documents": [],
+    "url": "https://www.licitor.com/annonce/11/03/71/vente-aux-encheres/un-appartement/carcassonne/aude/110371.html",
+    "id": "110371",
+    "mise_a_prix": 40000,
+    "est_price": null,
+    "fac_baisse": null,
+    "prix_final": null,
+    "ville": "Carcassonne",
+    "adresse": "Lotissement Les Troubadours 2, rue Peire Cardenal",
+    "coords": {
+      "latitude": 43.2273903,
+      "longitude": 2.3878057
+    },
+    "trib_anom": true,
+    "visite": "Visite sur place lundi 16 novembre 2026 de 10h à 11h",
+    "visite_dt": "2026-11-16 10:00",
+    "visite_state": 1,
+    "type": [
+      "Un appartement"
+    ],
+    "description": [
+      "Un appartement au 2ème étage du bâtiment M, de type T2, comprenant : séjour, cuisine, chambre, salle de bains-wc, terrasse Zone privative de stationnement pour personne à mobilité réduite Loué"
+    ],
+    "occupation": "Loué",
+    "surface_m2": null,
+    "stats_bien": {
+      "min": 1125,
+      "avg": 1249,
+      "max": 1393
+    },
+    "est_price_m2": 1249,
+    "code_insee": "11069",
+    "code_postal": 11000,
+    "code_departement": "11",
+    "code_region": 76.0,
+    "nom_departement": "Aude",
+    "nom_region": "Occitanie"
+  },
+  "110422": {
+    "titre": "Annonce n°110422 : un appartement à Marseille 3ème (Bouches-du-Rhône), mise à prix : 35 000 €",
+    "date_publication": "2026-10-22T00:00:00+02:00",
+    "tribunal": "Tribunal Judiciaire de Marseille (Bouches du Rhône)",
+    "type_vente": "Vente aux enchères publiques",
+    "dt_vente": "2026-11-25 09:30",
+    "dt_vente_limit": "2026-12-05",
+    "sell_state": 1,
+    "avocats": [
+      "Maître Jeanne Giraud, de la SELARL Roussel - Cabayé et Associés, Avocat associé"
+    ],
+    "telephones": [
+      "04 91 33 14 59"
+    ],
+    "documents": [],
+    "url": "https://www.licitor.com/annonce/11/04/22/vente-aux-encheres/un-appartement/marseille-3eme/bouches-du-rhone/110422.html",
+    "id": "110422",
+    "mise_a_prix": 35000,
+    "est_price": null,
+    "fac_baisse": null,
+    "prix_final": null,
+    "ville": "Marseille 3ème",
+    "adresse": "L'Envol 91, bd de Plombières",
+    "coords": {
+      "latitude": 43.3159294,
+      "longitude": 5.3817101
+    },
+    "trib_anom": true,
+    "visite": "Visite sur place lundi 16 novembre 2026 de 10h à 11h",
+    "visite_dt": "2026-11-16 10:00",
+    "visite_state": 1,
+    "type": [
+      "Un appartement"
+    ],
+    "description": [
+      "Un appartement de 58,69 m², au 7ème étage du bâtiment 7, comprenant : entrée, wc, séjour, cuisine, deux chambres, couloir, salle de bains, balcon de 13,95 m² Box garage au 3ème étage du bâtiment \"Parking\" Occupé par son propriétaire"
+    ],
+    "occupation": null,
+    "surface_m2": 72.64,
+    "stats_bien": {
+      "min": 1194,
+      "avg": 1455,
+      "max": 1838
+    },
+    "est_price_m2": 1455,
+    "code_insee": "13203",
+    "code_postal": 13003,
+    "code_departement": "13",
+    "code_region": 93.0,
+    "nom_departement": "Bouches-du-Rhône",
+    "nom_region": "Provence-Alpes-Côte d'Azur"
+  },
+  "110420": {
+    "titre": "Annonce n°110420 : six appartements à Marseille 7ème (Bouches-du-Rhône), mise à prix : 490 000 €",
+    "date_publication": "2026-10-22T00:00:00+02:00",
+    "tribunal": "Tribunal Judiciaire de Marseille (Bouches du Rhône)",
+    "type_vente": "Vente aux enchères publiques",
+    "dt_vente": "2026-12-02 09:30",
+    "dt_vente_limit": "2026-12-12",
+    "sell_state": 1,
+    "avocats": [
+      "Maître Rémi Desbordes, de la SELARL Eklar Avocats, Avocat associé",
+      "Maître Philippe Barbier, Avocat"
+    ],
+    "telephones": [
+      "04 94 92 42 81"
+    ],
+    "documents": [],
+    "url": "https://www.licitor.com/annonce/11/04/20/vente-aux-encheres/six-appartements/marseille-7eme/bouches-du-rhone/110420.html",
+    "id": "110420",
+    "mise_a_prix": 490000,
+    "est_price": null,
+    "fac_baisse": null,
+    "prix_final": null,
+    "ville": "Marseille 7ème",
+    "adresse": "6, bd de la Rade",
+    "coords": {
+      "latitude": 43.2868423,
+      "longitude": 5.3522973
+    },
+    "trib_anom": true,
+    "visite": "Visite sur place lundi 16 novembre 2026 de 10h à 12h",
+    "visite_dt": "2026-11-16 10:00",
+    "visite_state": 1,
+    "type": [
+      "Six appartements"
+    ],
+    "description": [
+      "Six appartements respectivement : - de 45,75 m², au rez-de-chaussée, de type T3 (loué) - de 32,46 m², au rez-de-chaussée, avec jouissance d'une cour (loué) - de 18,98 m², au 1er étage, de type studio (loué) - de 22,41 m², au 1er étage, de type T2 et avec jouissance d'une terrasse (loué) - de 43,40 m², au rez-de-chaussée, de type T2 avec mezzanine (occupé) - de 29,99 m², au 1er étage, de type T2 (loué)"
+    ],
+    "occupation": "loué",
+    "surface_m2": 192.99,
+    "stats_bien": {
+      "min": 4979,
+      "avg": 5967,
+      "max": 8441
+    },
+    "est_price_m2": 5967,
+    "code_insee": "13207",
+    "code_postal": 13007,
+    "code_departement": "13",
+    "code_region": 93.0,
+    "nom_departement": "Bouches-du-Rhône",
+    "nom_region": "Provence-Alpes-Côte d'Azur"
+  },
+  "110281": {
+    "titre": "Annonce n°110281 : un appartement à Palaiseau (Essonne), mise à prix : 70 000 €",
+    "date_publication": "2026-10-14T00:00:00+02:00",
+    "tribunal": "Tribunal Judiciaire d'Évry-Courcouronnes (Essonne)",
+    "type_vente": "Vente aux enchères publiques",
+    "dt_vente": "2026-11-25 10:00",
+    "dt_vente_limit": "2026-12-05",
+    "sell_state": 1,
+    "avocats": [
+      "Maître Charlotte Guittard, membre de la SCP Damoiseau et Associés, Avocat"
+    ],
+    "telephones": [
+      "01 60 78 23 81"
+    ],
+    "documents": [],
+    "url": "https://www.licitor.com/annonce/11/02/81/vente-aux-encheres/un-appartement/palaiseau/essonne/110281.html",
+    "id": "110281",
+    "mise_a_prix": 70000,
+    "est_price": null,
+    "fac_baisse": false,
+    "prix_final": null,
+    "ville": "Palaiseau",
+    "adresse": "1, allée du Clos Tonnerre",
+    "coords": {
+      "latitude": 48.7130775,
+      "longitude": 2.2592363
+    },
+    "trib_anom": true,
+    "visite": "Visite organisée sur place par la SELARL Cojustice , Commissaire de Justice à Longjumeau (91) Tél.: 01 64 48 81 32 le lundi 16 novembre 2026 de 10h30 à 11h30",
+    "visite_dt": "2026-11-16 10:30",
+    "visite_state": 1,
+    "type": [
+      "Un appartement",
+      "Un emplacement pour véhicule automobile"
+    ],
+    "description": [
+      "Un appartement de 56,38 m² , bâtiment D, au rez-de-chaussée, de trois pièces principales, comprenant : entrée avec placard, wc, séjour, cuisine, deux chambres, salle de bains Jouissance exclusive d' une terrasse et d' une jardinière incluse dans ce lot",
+      "Un emplacement pour véhicule automobile groupe de bâtiments C et D (parking Q), escalier D, au sous-sol Les biens sont, semble-t-il, inoccupés"
+    ],
+    "occupation": null,
+    "surface_m2": 56.38,
+    "stats_bien": {
+      "min": 2670,
+      "avg": 3177,
+      "max": 3983
+    },
+    "est_price_m2": 3177,
+    "code_insee": "91477",
+    "code_postal": 91120,
+    "code_departement": "91",
+    "code_region": 11.0,
+    "nom_departement": "Essonne",
+    "nom_region": "Île-de-France"
+  },
+  "110388": {
+    "titre": "Annonce n°110388 : un appartement à Cannes (Alpes-Maritimes), mise à prix : 120 000 €",
+    "date_publication": "2026-10-21T00:00:00+02:00",
+    "tribunal": "Tribunal Judiciaire de Grasse (Alpes maritimes)",
+    "type_vente": "Vente aux enchères publiques",
+    "dt_vente": "2026-12-03 09:00",
+    "dt_vente_limit": "2026-12-13",
+    "sell_state": 1,
+    "avocats": [
+      "SELARL Hautecoeur - Ducray, Avocats",
+      "Maître Audrey Bagarri, SELARL Ab-Juris, Avocat"
+    ],
+    "telephones": [
+      "04 93 16 36 90",
+      "04 97 02 09 37"
+    ],
+    "documents": [],
+    "url": "https://www.licitor.com/annonce/11/03/88/vente-aux-encheres/un-appartement/cannes/alpes-maritimes/110388.html",
+    "id": "110388",
+    "mise_a_prix": 120000,
+    "est_price": null,
+    "fac_baisse": null,
+    "prix_final": null,
+    "ville": "Cannes",
+    "adresse": "4, rue de Colmar",
+    "coords": {
+      "latitude": 43.5549393,
+      "longitude": 7.0278449
+    },
+    "trib_anom": true,
+    "visite": "Visites sur place lundi 16 novembre 2026 de 11h à 12h et lundi 23 novembre 2026 de 14h à 15h",
+    "visite_dt": "2026-11-16 11:00",
+    "visite_state": 1,
+    "type": [
+      "Un appartement"
+    ],
+    "description": [
+      "Un appartement de 108,20 m², au 1er étage, comprenant : hall, séjour-cuisine, cellier, dégagement, wc, salle de bains/placard, trois chambres avec placards, chambre, dressing avec placard, salle de bains, mezzanine, wc Occupé"
+    ],
+    "occupation": null,
+    "surface_m2": 108.2,
+    "stats_bien": {
+      "min": 5455,
+      "avg": 7126,
+      "max": 9197
+    },
+    "est_price_m2": 7126,
+    "code_insee": "06029",
+    "code_postal": 6150,
+    "code_departement": "6",
+    "code_region": 93.0,
+    "nom_departement": "Alpes-Maritimes",
+    "nom_region": "Provence-Alpes-Côte d'Azur"
+  },
+  "110296": {
+    "titre": "Annonce n°110296 : une pièce unique à Paris 5ème, mise à prix : 20 000 €",
+    "date_publication": "2026-10-19T00:00:00+02:00",
+    "tribunal": "Tribunal Judiciaire de Paris, Parvis Robert Badinter, à Paris 17ème",
+    "type_vente": "Vente aux enchères publiques en deux lots",
+    "dt_vente": "2026-11-26 14:00",
+    "dt_vente_limit": "2026-12-06",
+    "sell_state": 1,
+    "avocats": [
+      "Maître Vanessa Grynwajc, membre de l'AARPI DGS - Grynwajc - Stibbe, Avocat",
+      "Maître Laurine Salomoni, de la SARL Fricaudet - Larroumet - Salomoni, Avocat"
+    ],
+    "telephones": [
+      "01 45 63 55 55",
+      "09 72 53 65 89"
+    ],
+    "documents": [],
+    "url": "https://www.licitor.com/annonce/11/02/96/vente-aux-encheres/une-piece-unique/paris-5eme/paris/110296.html",
+    "id": "110296",
+    "mise_a_prix": 20000,
+    "est_price": null,
+    "fac_baisse": null,
+    "prix_final": null,
+    "ville": "Paris 5ème",
+    "adresse": "50, rue Broca",
+    "coords": {
+      "latitude": 48.8376427,
+      "longitude": 2.3472219
+    },
+    "trib_anom": true,
+    "visite": "Visite sur place lundi 16 novembre 2026 de 12h30 à 13h30",
+    "visite_dt": "2026-11-16 12:30",
+    "visite_state": 1,
+    "type": [
+      "Une pièce unique"
+    ],
+    "description": [
+      "Une pièce unique de 7,70 m² , bâtiment B (bâtiment sur cour), au 7ème étage, 2ème porte côté droit dans le couloir de gauche, numéro 5, comprenant : petit plan de travail ; lave-main, cuvette wc, espace douche, trappe au plafond avec accès aux combles aménagés en espace nuit (lot 32) Inoccupé"
+    ],
+    "occupation": null,
+    "surface_m2": 7.7,
+    "stats_bien": {
+      "min": 9444,
+      "avg": 10767,
+      "max": 12485
+    },
+    "est_price_m2": 10767,
+    "code_insee": "75105",
+    "code_postal": 75005,
+    "code_departement": "75",
+    "code_region": 11.0,
+    "nom_departement": "Paris",
+    "nom_region": "Île-de-France"
+  },
+  "110296_1": {
+    "titre": "Annonce n°110296 : une pièce unique à Paris 5ème, mise à prix : 20 000 €",
+    "date_publication": "2026-10-19T00:00:00+02:00",
+    "tribunal": "Tribunal Judiciaire de Paris, Parvis Robert Badinter, à Paris 17ème",
+    "type_vente": "Vente aux enchères publiques en deux lots",
+    "dt_vente": "2026-11-26 14:00",
+    "dt_vente_limit": "2026-12-06",
+    "sell_state": 1,
+    "avocats": [
+      "Maître Vanessa Grynwajc, membre de l'AARPI DGS - Grynwajc - Stibbe, Avocat",
+      "Maître Laurine Salomoni, de la SARL Fricaudet - Larroumet - Salomoni, Avocat"
+    ],
+    "telephones": [
+      "01 45 63 55 55",
+      "09 72 53 65 89"
+    ],
+    "documents": [],
+    "url": "https://www.licitor.com/annonce/11/02/96/vente-aux-encheres/une-piece-unique/paris-5eme/paris/110296.html",
+    "id": "110296_1",
+    "mise_a_prix": 20000,
+    "est_price": null,
+    "fac_baisse": null,
+    "prix_final": null,
+    "ville": "Paris 5ème",
+    "adresse": "50, rue Broca",
+    "coords": {
+      "latitude": 48.8376427,
+      "longitude": 2.3472219
+    },
+    "trib_anom": true,
+    "visite": "Visite sur place lundi 16 novembre 2026 de 12h30 à 13h30",
+    "visite_dt": "2026-11-16 12:30",
+    "visite_state": 1,
+    "type": [
+      "Une pièce unique"
+    ],
+    "description": [
+      "Une pièce unique de 7,30 m² , bâtiment B (bâtiment sur cour), au 7ème étage, 3ème porte côté droit dans le couloir de gauche, comprenant : espace kitchenette avec accès aux combles, douche et cuvette wc avec sanibroyeur (lot 33) Inoccupé"
+    ],
+    "occupation": null,
+    "surface_m2": 7.3,
+    "stats_bien": {
+      "min": 9444,
+      "avg": 10767,
+      "max": 12485
+    },
+    "est_price_m2": 10767,
+    "code_insee": "75105",
+    "code_postal": 75005,
+    "code_departement": "75",
+    "code_region": 11.0,
+    "nom_departement": "Paris",
+    "nom_region": "Île-de-France"
+  },
+  "110277": {
+    "titre": "Annonce n°110277 : une maison d'habitation et professionnelle à Villotte-devant-Louppy (Meuse), mise à prix : 220 000 €",
+    "date_publication": "2026-10-14T00:00:00+02:00",
+    "tribunal": "Tribunal Judiciaire de Bar-le-Duc (Meuse)",
+    "type_vente": "Vente aux enchères publiques sur liquidation judiciaire en un lot",
+    "dt_vente": "2026-12-02 10:30",
+    "dt_vente_limit": "2026-12-12",
+    "sell_state": 1,
+    "avocats": [
+      "Maître Sylvain Beyna, de la SELARL Légiconseil Avocats, Avocat",
+      "Maître Édith Saint-Cène, Avocat"
+    ],
+    "telephones": [
+      "03 29 73 71 56",
+      "01 88 61 49 40"
+    ],
+    "documents": [
+      {
+        "type": "Cahier des conditions de vente",
+        "url": "https://www.licitor.com/data/pub/media/annonce/11/02/77/110277.000.001.52400ccc762d.pdf"
+      },
+      {
+        "type": "PV descriptif et Diagnostics",
+        "url": "https://www.licitor.com/data/pub/media/annonce/11/02/77/110277.000.002.526a86d735c5.pdf"
+      }
+    ],
+    "url": "https://www.licitor.com/annonce/11/02/77/vente-aux-encheres/une-maison-d-habitation-et-professionnelle/villotte-devant-louppy/meuse/110277.html",
+    "id": "110277",
+    "mise_a_prix": 220000,
+    "est_price": null,
+    "fac_baisse": true,
+    "prix_final": null,
+    "ville": "Villotte-devant-Louppy",
+    "adresse": "1, Grande Rue",
+    "coords": {
+      "latitude": 48.8913774589,
+      "longitude": 5.0757136176
+    },
+    "trib_anom": true,
+    "visite": "Visite lundi 16 novembre 2026 à 14h assurée par la SELARL Angle Droit Nancy-Commercy RDV sur place sans inscription",
+    "visite_dt": "2026-11-16 14:00",
+    "visite_state": 1,
+    "type": [
+      "Une maison d'habitation et professionnelle",
+      "Dépendances",
+      "Serre - Jardin - Piscine"
+    ],
+    "description": [
+      "Une maison d'habitation et professionnelle comprenant : Au rez-de-chaussée : sas d'entrée, salon avec cheminée, salle à manger, cuisine, salle d'eau, bureau, wc Au 1er étage : une chambre avec salle de bains attenante/wc, deux chambres, salle de bains, wc, dressing avec salle de bains attenante, buanderie Au 2ème étage : bibliothèque, dressing Grenier Cave voûtée",
+      "Dépendances à savoir : deux garages , débarras/atelier, buanderie, local chaufferie, local technique aquarium, combles",
+      "Serre - Jardin - Piscine (Occupés)"
+    ],
+    "occupation": null,
+    "surface_m2": null,
+    "stats_bien": null,
+    "est_price_m2": null,
+    "code_insee": null,
+    "code_postal": 55250,
+    "code_departement": "55",
+    "code_region": 44.0,
+    "nom_departement": "Meuse",
+    "nom_region": "Grand Est"
+  },
+  "110385": {
+    "titre": "Annonce n°110385 : un appartement à Antibes (Alpes-Maritimes), mise à prix : 70 000 €",
+    "date_publication": "2026-10-21T00:00:00+02:00",
+    "tribunal": "Tribunal Judiciaire de Grasse (Alpes maritimes)",
+    "type_vente": "Vente aux enchères publiques",
+    "dt_vente": "2026-12-03 09:00",
+    "dt_vente_limit": "2026-12-13",
+    "sell_state": 1,
+    "avocats": [
+      "SELARL Lauga et associés, Avocats"
+    ],
+    "telephones": [
+      "04 93 38 09 72"
+    ],
+    "documents": [],
+    "url": "https://www.licitor.com/annonce/11/03/85/vente-aux-encheres/un-appartement/antibes/alpes-maritimes/110385.html",
+    "id": "110385",
+    "mise_a_prix": 70000,
+    "est_price": null,
+    "fac_baisse": null,
+    "prix_final": null,
+    "ville": "Antibes",
+    "adresse": "La Palmeraire 27, bd de la Pinède",
+    "coords": {
+      "latitude": 43.5698051,
+      "longitude": 7.1172271
+    },
+    "trib_anom": true,
+    "visite": "Visites sur place lundi 16 novembre 2026 à 14h et lundi 23 novembre 2026 à 11h",
+    "visite_dt": "2026-11-16 14:00",
+    "visite_state": 1,
+    "type": [
+      "Un appartement"
+    ],
+    "description": [
+      "Un appartement de 66,01 m², de deux pièces, comprenant : entrée, chambre, salon, dressing, cuisine, wc, salle de bains Emplacement de parking, cave Occupé"
+    ],
+    "occupation": null,
+    "surface_m2": 66.01,
+    "stats_bien": {
+      "min": 5128,
+      "avg": 6332,
+      "max": 7738
+    },
+    "est_price_m2": 6332,
+    "code_insee": "06004",
+    "code_postal": 6160,
+    "code_departement": "6",
+    "code_region": 93.0,
+    "nom_departement": "Alpes-Maritimes",
+    "nom_region": "Provence-Alpes-Côte d'Azur"
+  },
+  "110316": {
+    "titre": "Annonce n°110316 : un logement à Choisy-le-Roi (Val-de-Marne), mise à prix : 25 000 €",
+    "date_publication": "2026-10-20T00:00:00+02:00",
+    "tribunal": "Tribunal Judiciaire de Créteil (Val de Marne)",
+    "type_vente": "Vente aux enchères publiques",
+    "dt_vente": "2026-11-26 09:30",
+    "dt_vente_limit": "2026-12-06",
+    "sell_state": 1,
+    "avocats": [
+      "Maître Laurine Salomoni, de la SARL Fricaudet - Larroumet - Salomoni, Avocat",
+      "SELAFA Cabinet Cassel, Avocats"
+    ],
+    "telephones": [
+      "01 44 70 60 19"
+    ],
+    "documents": [
+      {
+        "type": "Cahier des conditions de vente",
+        "url": "https://www.licitor.com/data/pub/media/annonce/11/03/16/110316.000.001.db390be0bd7c.pdf"
+      },
+      {
+        "type": "PV descriptif",
+        "url": "https://www.licitor.com/data/pub/media/annonce/11/03/16/110316.000.002.1a3e1a8242fd.pdf"
+      }
+    ],
+    "url": "https://www.licitor.com/annonce/11/03/16/vente-aux-encheres/un-logement/choisy-le-roi/val-de-marne/110316.html",
+    "id": "110316",
+    "mise_a_prix": 25000,
+    "est_price": null,
+    "fac_baisse": null,
+    "prix_final": null,
+    "ville": "Choisy-le-Roi",
+    "adresse": "29, av. Anatole France",
+    "coords": {
+      "latitude": 48.763073,
+      "longitude": 2.4108779
+    },
+    "trib_anom": true,
+    "visite": "Visite sur place lundi 16 novembre 2026 de 14h à 15h",
+    "visite_dt": "2026-11-16 14:00",
+    "visite_state": 1,
+    "type": [
+      "Un logement"
+    ],
+    "description": [
+      "Un logement de 24,70 m² (hors grenier), au 5ème et dernier étage, porte face, comprenant : deux pièces (en travaux), future salle d'eau, grenier divisé en trois espaces Libre et en travaux à la date du PVD (27/03/2026)"
+    ],
+    "occupation": "Libre",
+    "surface_m2": 24.7,
+    "stats_bien": {
+      "min": 2494,
+      "avg": 2843,
+      "max": 3819
+    },
+    "est_price_m2": 2843,
+    "code_insee": "94022",
+    "code_postal": 94600,
+    "code_departement": "94",
+    "code_region": 11.0,
+    "nom_departement": "Val-de-Marne",
+    "nom_region": "Île-de-France"
+  },
+  "110379": {
+    "titre": "Annonce n°110379 : une maison d'habitation à Saint-Maximin-la-Sainte-Baume (Var), mise à prix : 250 000 €",
+    "date_publication": "2026-10-21T00:00:00+02:00",
+    "tribunal": "Tribunal Judiciaire de Draguignan (Var)",
+    "type_vente": "Vente aux enchères publiques sur licitation",
+    "dt_vente": "2026-12-04 09:30",
+    "dt_vente_limit": "2026-12-14",
+    "sell_state": 1,
+    "avocats": [
+      "Maître Hubert Drevet, Avocat"
+    ],
+    "telephones": [
+      "07 52 04 04 35"
+    ],
+    "documents": [],
+    "url": "https://www.licitor.com/annonce/11/03/79/vente-aux-encheres/une-maison-d-habitation/saint-maximin-la-sainte-baume/var/110379.html",
+    "id": "110379",
+    "mise_a_prix": 250000,
+    "est_price": null,
+    "fac_baisse": true,
+    "prix_final": null,
+    "ville": "Saint-Maximin-la-Sainte-Baume",
+    "adresse": "Quartier du Rubébéou 43, allée des Mésanges, chemin des Régalettes",
+    "coords": {
+      "latitude": 43.47258,
+      "longitude": 5.8774257
+    },
+    "trib_anom": true,
+    "visite": "Visite sur place lundi 16 novembre 2026 de 14h à 15h",
+    "visite_dt": "2026-11-16 14:00",
+    "visite_state": 1,
+    "type": [
+      "Une maison d'habitation"
+    ],
+    "description": [
+      "Une maison d'habitation de plain-pied, désignée bâtiment A, comprenant : hall intégré dans le salon séjour, trois chambres, cuisine, cellier, salle de bains, cabinet de toilettes, garage La jouissance privative et particulière du jardin attenant Occupée"
+    ],
+    "occupation": null,
+    "surface_m2": null,
+    "stats_bien": {
+      "min": 3428,
+      "avg": 4007,
+      "max": 4775
+    },
+    "est_price_m2": 4007,
+    "code_insee": "83116",
+    "code_postal": 83470,
+    "code_departement": "83",
+    "code_region": 93.0,
+    "nom_departement": "Var",
+    "nom_region": "Provence-Alpes-Côte d'Azur"
+  },
+  "110386": {
+    "titre": "Annonce n°110386 : une villa à Villeneuve-Loubet (Alpes-Maritimes), mise à prix : 200 000 €",
+    "date_publication": "2026-10-21T00:00:00+02:00",
+    "tribunal": "Tribunal Judiciaire de Grasse (Alpes maritimes)",
+    "type_vente": "Vente aux enchères publiques",
+    "dt_vente": "2026-12-03 09:00",
+    "dt_vente_limit": "2026-12-13",
+    "sell_state": 1,
+    "avocats": [
+      "SELARL Kieffer - Monasse et Associés, Avocats"
+    ],
+    "telephones": [
+      "04 93 34 88 40"
+    ],
+    "documents": [],
+    "url": "https://www.licitor.com/annonce/11/03/86/vente-aux-encheres/une-villa/villeneuve-loubet/alpes-maritimes/110386.html",
+    "id": "110386",
+    "mise_a_prix": 200000,
+    "est_price": null,
+    "fac_baisse": null,
+    "prix_final": null,
+    "ville": "Villeneuve-Loubet",
+    "adresse": "Les Hameaux du Soleil 7, allée des Hortensias 753, chemin de la Colle",
+    "coords": {
+      "latitude": 43.6687012,
+      "longitude": 7.1180682
+    },
+    "trib_anom": true,
+    "visite": "Visites sur place lundi 16 novembre 2026 de 14h à 15h et vendredi 20 novembre 2026 de 11h à 12h",
+    "visite_dt": "2026-11-16 14:00",
+    "visite_state": 1,
+    "type": [
+      "Une villa"
+    ],
+    "description": [
+      "Une villa de 88,85 m², mitoyenne, comprenant : Au rez-de-chaussée : entrée, cuisine, wc, cellier, séjour/salle à manger, véranda À l'étage : deux chambres, bureau, salle de douche, wc Parking Occupé"
+    ],
+    "occupation": null,
+    "surface_m2": 88.85,
+    "stats_bien": {
+      "min": 4221,
+      "avg": 5072,
+      "max": 6553
+    },
+    "est_price_m2": 5072,
+    "code_insee": "06161",
+    "code_postal": 6270,
+    "code_departement": "6",
+    "code_region": 93.0,
+    "nom_departement": "Alpes-Maritimes",
+    "nom_region": "Provence-Alpes-Côte d'Azur"
+  },
+  "110354": {
+    "titre": "Annonce n°110354 : des surfaces aménagées en entrepôt à Roubaix (Nord), mise à prix : 15 000 €",
+    "date_publication": "2026-10-20T00:00:00+02:00",
+    "tribunal": "Tribunal Judiciaire de Lille (Nord)",
+    "type_vente": "Vente aux enchères publiques",
+    "dt_vente": "2026-12-02 14:00",
+    "dt_vente_limit": "2026-12-12",
+    "sell_state": 1,
+    "avocats": [
+      "Maître François-Xavier Wibault, de la SELAS Wibault Avocat, Avocat",
+      "Maître Geneviève Ferretti, Avocat"
+    ],
+    "telephones": [],
+    "documents": [],
+    "url": "https://www.licitor.com/annonce/11/03/54/vente-aux-encheres/des-surfaces-amenagees-en-entrepot/roubaix/nord/110354.html",
+    "id": "110354",
+    "mise_a_prix": 15000,
+    "est_price": null,
+    "fac_baisse": null,
+    "prix_final": null,
+    "ville": "Roubaix",
+    "adresse": "101-103 et 113, rue Boucher de Perthes",
+    "coords": {
+      "latitude": 50.6930008,
+      "longitude": 3.154933
+    },
+    "trib_anom": true,
+    "visite": "Visite sur place lundi 16 novembre 2026 de 14h30 à 15h",
+    "visite_dt": "2026-11-16 14:30",
+    "visite_state": 1,
+    "type": [
+      "Des surfaces aménagées en entrepôt"
+    ],
+    "description": [
+      "Des surfaces aménagées en entrepôt de 116,99 m², de 149,39 m², de 123,19 m², de 122,74 m², de 123,27 m², de 122,93 m², de 122,60 m², dans le bâtiment C, au 1er et 2ème étage Inoccupées"
+    ],
+    "occupation": null,
+    "surface_m2": 881.11,
+    "stats_bien": null,
+    "est_price_m2": null,
+    "code_insee": "59512",
+    "code_postal": 59100,
+    "code_departement": "59",
+    "code_region": 32.0,
+    "nom_departement": "Nord",
+    "nom_region": "Hauts-de-France"
+  },
+  "110373": {
+    "titre": "Annonce n°110373 : une maison d'habitation à Aussonne (Haute-Garonne), mise à prix : 190 000 €",
+    "date_publication": "2026-10-21T00:00:00+02:00",
+    "tribunal": "Tribunal Judiciaire de Toulouse (Haute Garonne)",
+    "type_vente": "Vente aux enchères publiques",
+    "dt_vente": "2026-11-26 14:00",
+    "dt_vente_limit": "2026-12-06",
+    "sell_state": 1,
+    "avocats": [
+      "SELARL Desarnauts - Robert - Despierres, Avocats"
+    ],
+    "telephones": [
+      "05 32 09 49 45"
+    ],
+    "documents": [],
+    "url": "https://www.licitor.com/annonce/11/03/73/vente-aux-encheres/une-maison-d-habitation/aussonne/haute-garonne/110373.html",
+    "id": "110373",
+    "mise_a_prix": 190000,
+    "est_price": null,
+    "fac_baisse": null,
+    "prix_final": null,
+    "ville": "Aussonne",
+    "adresse": "9, lotissement Le Bois de Paucy",
+    "coords": {
+      "latitude": 43.6835289,
+      "longitude": 1.3315578
+    },
+    "trib_anom": true,
+    "visite": "Visite sur place lundi 16 novembre 2026 de 14h30 à 15h30",
+    "visite_dt": "2026-11-16 14:30",
+    "visite_state": 1,
+    "type": [
+      "Une maison d'habitation"
+    ],
+    "description": [
+      "Une maison d'habitation de 133,95 m², de type T5 Terrain, aire de stationnement, jardin, appentis, terrasse, piscine Occupée"
+    ],
+    "occupation": null,
+    "surface_m2": 133.95,
+    "stats_bien": {
+      "min": 2269,
+      "avg": 2862,
+      "max": 3692
+    },
+    "est_price_m2": 2862,
+    "code_insee": "31032",
+    "code_postal": 31840,
+    "code_departement": "31",
+    "code_region": 76.0,
+    "nom_departement": "Haute-Garonne",
+    "nom_region": "Occitanie"
+  },
+  "110279": {
+    "titre": "Annonce n°110279 : une maison d'habitation à Yerres (Essonne), mise à prix : 170 000 €",
+    "date_publication": "2026-10-14T00:00:00+02:00",
+    "tribunal": "Tribunal Judiciaire d'Évry-Courcouronnes (Essonne)",
+    "type_vente": "Vente aux enchères publiques",
+    "dt_vente": "2026-11-25 10:00",
+    "dt_vente_limit": "2026-12-05",
+    "sell_state": 1,
+    "avocats": [
+      "Maître Charlotte Guittard, membre de la SCP Damoiseau et Associés, Avocat"
+    ],
+    "telephones": [
+      "01 60 78 23 81"
+    ],
+    "documents": [],
+    "url": "https://www.licitor.com/annonce/11/02/79/vente-aux-encheres/une-maison-d-habitation/yerres/essonne/110279.html",
+    "id": "110279",
+    "mise_a_prix": 170000,
+    "est_price": null,
+    "fac_baisse": false,
+    "prix_final": null,
+    "ville": "Yerres",
+    "adresse": "20, av. de l'Abbaye",
+    "coords": {
+      "latitude": 48.7111473,
+      "longitude": 2.4976442
+    },
+    "trib_anom": true,
+    "visite": "Visite organisée par la SELARL Cojustice , Commissaire de Justice à Longjumeau (91) Tél.: 01 64 48 81 32 le mardi 17 novembre 2026 de 9h à 10h",
+    "visite_dt": "2026-11-17 09:00",
+    "visite_state": 1,
+    "type": [
+      "Une maison d'habitation",
+      "Une cave",
+      "Un jardin"
+    ],
+    "description": [
+      "Une maison d'habitation d'une surface habitable totale de 164,01 m² et d'une surface au sol totale de 168,32 m² , comprenant : Au rez-de-chaussée : entrée, cuisine, salle à manger avec cheminée, salon, dégagement, wc, buanderie Au 1er étage : palier, deux chambres (dont une avec cheminée et salle d'eau attenante), salle de bains, wc, dressing Au 2ème étage : palier, deux chambres (dont une avec cheminée et salle d'eau attenante), débarras, grenier",
+      "Une cave au niveau R-1",
+      "Un jardin avec appentis Cadastrée section AM n°484 pour 11a 44ca Les biens sont, semble-t-il, inoccupés"
+    ],
+    "occupation": null,
+    "surface_m2": 332.33,
+    "stats_bien": {
+      "min": 3300,
+      "avg": 3822,
+      "max": 4869
+    },
+    "est_price_m2": 3822,
+    "code_insee": "91691",
+    "code_postal": 91330,
+    "code_departement": "91",
+    "code_region": 11.0,
+    "nom_departement": "Essonne",
+    "nom_region": "Île-de-France"
+  },
+  "110174": {
+    "titre": "Annonce n°110174 : une maison d'habitation à Montesson (Yvelines), mise à prix : 500 000 €",
+    "date_publication": "2026-10-01T00:00:00+02:00",
+    "tribunal": "Tribunal Judiciaire de Versailles (Yvelines)",
+    "type_vente": "Vente aux enchères publiques sur licitation judiciaire et sur réitération des enchères en un seul lot",
+    "dt_vente": "2026-11-25 09:30",
+    "dt_vente_limit": "2026-12-05",
+    "sell_state": 1,
+    "avocats": [
+      "Maître Élisa Gueilhers, Avocat"
+    ],
+    "telephones": [
+      "01 88 60 37 37"
+    ],
+    "documents": [],
+    "url": "https://www.licitor.com/annonce/11/01/74/vente-aux-encheres/une-maison-d-habitation/montesson/yvelines/110174.html",
+    "id": "110174",
+    "mise_a_prix": 500000,
+    "est_price": null,
+    "fac_baisse": true,
+    "prix_final": null,
+    "ville": "Montesson",
+    "adresse": "11, rue Félix Philippe",
+    "coords": {
+      "latitude": 48.9068222,
+      "longitude": 2.148632
+    },
+    "trib_anom": true,
+    "visite": "Visites sur place mardi 17 novembre 2026 de 9h30 à 11h30 et de 13h à 15h",
+    "visite_dt": "2026-11-17 09:30",
+    "visite_state": 1,
+    "type": [
+      "Une maison d'habitation"
+    ],
+    "description": [
+      "Une maison d'habitation de 301,45 m² , sur trois niveaux, de treize pièces principales, comprenant : Au rez-de-chaussée : entrée, deux pièces, wc, cave et garage Au 1er étage : cuisine et séjour, deux pièces, deux chambres, wc, terrasse à l'arrière de la maison et un studio et douche/hammam Au 2ème étage : cinq chambres, salle de bains Passage aboutissant rue Félix Philippe Inoccupée"
+    ],
+    "occupation": null,
+    "surface_m2": 301.45,
+    "stats_bien": {
+      "min": 4782,
+      "avg": 5387,
+      "max": 6653
+    },
+    "est_price_m2": 5387,
+    "code_insee": "78418",
+    "code_postal": 78360,
+    "code_departement": "78",
+    "code_region": 11.0,
+    "nom_departement": "Yvelines",
+    "nom_region": "Île-de-France"
+  },
+  "110322": {
+    "titre": "Annonce n°110322 : une ancienne maison de village à Bissey-la-Côte (Côte-d'Or), mise à prix : 65 000 €",
+    "date_publication": "2026-10-16T00:00:00+02:00",
+    "tribunal": "Tribunal Judiciaire de Dijon (Côte d'Or)",
+    "type_vente": "Vente aux enchères publiques",
+    "dt_vente": "2026-12-02 10:30",
+    "dt_vente_limit": "2026-12-12",
+    "sell_state": 1,
+    "avocats": [
+      "SELAS Lancelin - Lambert, Avocats"
+    ],
+    "telephones": [
+      "03 80 67 20 86"
+    ],
+    "documents": [],
+    "url": "https://www.licitor.com/annonce/11/03/22/vente-aux-encheres/une-ancienne-maison-de-village/bissey-la-cote/cote-d-or/110322.html",
+    "id": "110322",
+    "mise_a_prix": 65000,
+    "est_price": null,
+    "fac_baisse": null,
+    "prix_final": null,
+    "ville": "Bissey-la-Côte",
+    "adresse": "10, Grande Rue",
+    "coords": {
+      "latitude": 47.9127579,
+      "longitude": 4.7116847
+    },
+    "trib_anom": true,
+    "visite": "Visite sur place mardi 17 novembre 2026 à 10h",
+    "visite_dt": "2026-11-17 10:00",
+    "visite_state": 1,
+    "type": [
+      "Une ancienne maison de village"
+    ],
+    "description": [
+      "Une ancienne maison de village de 128 m², à usage d'habitation, comprenant : Au rez-de-chaussée : entrée avec placard, cuisine, bureau, cabinet de toilettes, salon avec cheminée Au 1er étage : escalier desservant un palier, deux chambres, salle de bains, cabinet de toilettes Au 2ème étage : palier, placard, deux chambres, pièce d'eau à aménager, cabinet de toilettes Remise, construction avec four à pain, local, cave, grange, jardin Libre"
+    ],
+    "occupation": "Libre",
+    "surface_m2": 128.0,
+    "stats_bien": {
+      "min": 678,
+      "avg": 930,
+      "max": 1267
+    },
+    "est_price_m2": 930,
+    "code_insee": "21077",
+    "code_postal": 21520,
+    "code_departement": "21",
+    "code_region": 27.0,
+    "nom_departement": "Côte-d'Or",
+    "nom_region": "Bourgogne-Franche-Comté"
+  },
+  "110382": {
+    "titre": "Annonce n°110382 : un appartement à Cannes (Alpes-Maritimes), mise à prix : 25 000 €",
+    "date_publication": "2026-10-21T00:00:00+02:00",
+    "tribunal": "Tribunal Judiciaire de Grasse (Alpes maritimes)",
+    "type_vente": "Vente aux enchères publiques",
+    "dt_vente": "2026-12-03 09:00",
+    "dt_vente_limit": "2026-12-13",
+    "sell_state": 1,
+    "avocats": [
+      "Maître Renaud Essner, de la SELARL Cabinet Essner, Avocat associé",
+      "Maître Emmanuel Voisin-Moncho, Avocat"
+    ],
+    "telephones": [
+      "04 97 06 68 80",
+      "04 93 99 05 31"
+    ],
+    "documents": [],
+    "url": "https://www.licitor.com/annonce/11/03/82/vente-aux-encheres/un-appartement/cannes/alpes-maritimes/110382.html",
+    "id": "110382",
+    "mise_a_prix": 25000,
+    "est_price": null,
+    "fac_baisse": null,
+    "prix_final": null,
+    "ville": "Cannes",
+    "adresse": "Lieudit Le Suquet 26, rue du Pré",
+    "coords": {
+      "latitude": 43.5500717,
+      "longitude": 7.0089927
+    },
+    "trib_anom": true,
+    "visite": "Visites sur place mardi 17 novembre 2026 de 11h à 12h et mardi 24 novembre 2026 de 14h à 15h",
+    "visite_dt": "2026-11-17 11:00",
+    "visite_state": 1,
+    "type": [
+      "Un appartement"
+    ],
+    "description": [
+      "Un appartement de 74,18 m² Garage Un autre appartement dégradé par des squatteurs Cour, cave Occupés"
+    ],
+    "occupation": null,
+    "surface_m2": 74.18,
+    "stats_bien": {
+      "min": 5313,
+      "avg": 6540,
+      "max": 9619
+    },
+    "est_price_m2": 6540,
+    "code_insee": "06029",
+    "code_postal": 6150,
+    "code_departement": "6",
+    "code_region": 93.0,
+    "nom_departement": "Alpes-Maritimes",
+    "nom_region": "Provence-Alpes-Côte d'Azur"
+  },
+  "110421": {
+    "titre": "Annonce n°110421 : un appartement meublé à Marseille 2ème (Bouches-du-Rhône), mise à prix : 60 000 €",
+    "date_publication": "2026-10-22T00:00:00+02:00",
+    "tribunal": "Tribunal Judiciaire de Marseille (Bouches du Rhône)",
+    "type_vente": "Vente aux enchères publiques",
+    "dt_vente": "2026-11-25 09:30",
+    "dt_vente_limit": "2026-12-05",
+    "sell_state": 1,
+    "avocats": [
+      "Maître Hubert Roussel, de la SELARL Roussel - Cabayé et Associés, Avocat associé"
+    ],
+    "telephones": [
+      "04 91 33 14 59"
+    ],
+    "documents": [],
+    "url": "https://www.licitor.com/annonce/11/04/21/vente-aux-encheres/un-appartement-meuble/marseille-2eme/bouches-du-rhone/110421.html",
+    "id": "110421",
+    "mise_a_prix": 60000,
+    "est_price": null,
+    "fac_baisse": null,
+    "prix_final": null,
+    "ville": "Marseille 2ème",
+    "adresse": "La Coutellerie 4, rue Coutellerie",
+    "coords": {
+      "latitude": 43.2968979,
+      "longitude": 5.3730483
+    },
+    "trib_anom": true,
+    "visite": "Visite sur place mardi 17 novembre 2026 de 11h30 à 12h30",
+    "visite_dt": "2026-11-17 11:30",
+    "visite_state": 1,
+    "type": [
+      "Un appartement meublé"
+    ],
+    "description": [
+      "Un appartement meublé d'une surface Loi Carrez de 27,15 m², au 5ème étage, exploité dans une résidence de service à caractère para-hôtelier, comprenant : entrée avec coin cuisine, chambre, dégagement avec placard, salle de douche avec wc Fait l'objet d'un bail commercial de locaux meublés"
+    ],
+    "occupation": null,
+    "surface_m2": 27.15,
+    "stats_bien": {
+      "min": 3063,
+      "avg": 4059,
+      "max": 5774
+    },
+    "est_price_m2": 4059,
+    "code_insee": "13202",
+    "code_postal": 13002,
+    "code_departement": "13",
+    "code_region": 93.0,
+    "nom_departement": "Bouches-du-Rhône",
+    "nom_region": "Provence-Alpes-Côte d'Azur"
+  },
+  "110263": {
+    "titre": "Annonce n°110263 : bureaux à Sassenage (Isère), mise à prix : 40 000 €",
+    "date_publication": "2026-10-12T00:00:00+02:00",
+    "tribunal": "Tribunal Judiciaire de Grenoble (Isère)",
+    "type_vente": "Vente aux enchères publiques",
+    "dt_vente": "2026-11-24 14:00",
+    "dt_vente_limit": "2026-12-04",
+    "sell_state": 1,
+    "avocats": [
+      "SELARL Dauphin - Mihajlovic, Avocats associés"
+    ],
+    "telephones": [],
+    "documents": [],
+    "url": "https://www.licitor.com/annonce/11/02/63/vente-aux-encheres/bureaux/sassenage/isere/110263.html",
+    "id": "110263",
+    "mise_a_prix": 40000,
+    "est_price": null,
+    "fac_baisse": null,
+    "prix_final": null,
+    "ville": "Sassenage",
+    "adresse": "6, rue de Chamechaude",
+    "coords": {
+      "latitude": 45.2060471,
+      "longitude": 5.6842151
+    },
+    "trib_anom": true,
+    "visite": "Visite sur place mardi 17 novembre 2026 de 14h à 15h",
+    "visite_dt": "2026-11-17 14:00",
+    "visite_state": 1,
+    "type": [
+      "Bureaux"
+    ],
+    "description": [
+      "Bureaux de 65,83 m², au rez-de-chaussée, accès au bâtiment B par l'entrée B et une place de parking non couverte de 10 m² Libres"
+    ],
+    "occupation": null,
+    "surface_m2": 75.83,
+    "stats_bien": null,
+    "est_price_m2": null,
+    "code_insee": "38474",
+    "code_postal": 38360,
+    "code_departement": "38",
+    "code_region": 84.0,
+    "nom_departement": "Isère",
+    "nom_region": "Auvergne-Rhône-Alpes"
+  },
+  "110340": {
+    "titre": "Annonce n°110340 : une maison à usage d'habitation à Le Mans (Sarthe), mise à prix : 150 000 €",
+    "date_publication": "2026-10-20T00:00:00+02:00",
+    "tribunal": "Tribunal Judiciaire du Mans (Sarthe)",
+    "type_vente": "Vente aux enchères publiques",
+    "dt_vente": "2026-12-08 10:30",
+    "dt_vente_limit": "2026-12-18",
+    "sell_state": 1,
+    "avocats": [
+      "Maître Valérie Leblanc, de la SELARL Ares, Avocat",
+      "SCP Hautemaine Avocats, Avocats"
+    ],
+    "telephones": [
+      "02 99 67 83 91"
+    ],
+    "documents": [],
+    "url": "https://www.licitor.com/annonce/11/03/40/vente-aux-encheres/une-maison-a-usage-d-habitation/le-mans/sarthe/110340.html",
+    "id": "110340",
+    "mise_a_prix": 150000,
+    "est_price": null,
+    "fac_baisse": null,
+    "prix_final": null,
+    "ville": "Le Mans",
+    "adresse": "20, rue Colin-Thomas",
+    "coords": {
+      "latitude": 48.0086403,
+      "longitude": 0.1741916
+    },
+    "trib_anom": true,
+    "visite": "Visite sur place mardi 17 novembre 2026 de 14h à 15h",
+    "visite_dt": "2026-11-17 14:00",
+    "visite_state": 1,
+    "type": [
+      "Une maison à usage d'habitation"
+    ],
+    "description": [
+      "Une maison à usage d'habitation de 114,51 m², comprenant : Au rez-de-chaussée : entrée, dégagement, cuisine, salle à manger, salon, salle d'eau, wc, chambre À l'étage : palier, trois chambres, salle d'eau Cave, garage, buanderie, deux remises, poulailler Jardin, terrasse Occupée"
+    ],
+    "occupation": null,
+    "surface_m2": 114.51,
+    "stats_bien": {
+      "min": 1815,
+      "avg": 2259,
+      "max": 2838
+    },
+    "est_price_m2": 2259,
+    "code_insee": "72181",
+    "code_postal": 72000,
+    "code_departement": "72",
+    "code_region": 52.0,
+    "nom_departement": "Sarthe",
+    "nom_region": "Pays de la Loire"
+  },
+  "110196": {
+    "titre": "Annonce n°110196 : une maison principale à Marnes-la-Coquette (Hauts-de-Seine), mise à prix : 2 900 000 €",
+    "date_publication": "2026-10-05T00:00:00+02:00",
+    "tribunal": "Tribunal Judiciaire de Nanterre (Hauts de Seine)",
+    "type_vente": "Vente aux enchères publiques sur licitation en un lot",
+    "dt_vente": "2026-12-03 14:30",
+    "dt_vente_limit": "2026-12-13",
+    "sell_state": 1,
+    "avocats": [
+      "Maître Sophie Jean, Avocat",
+      "Maître Stéphanie Dalet-Venot, Avocat"
+    ],
+    "telephones": [],
+    "documents": [
+      {
+        "type": "PV descriptif",
+        "url": "https://www.licitor.com/data/pub/media/annonce/11/01/96/110196.000.001.5bd10d1ad328.pdf"
+      },
+      {
+        "type": "Diagnostics",
+        "url": "https://www.licitor.com/data/pub/media/annonce/11/01/96/110196.000.002.680930ed9af3.pdf"
+      }
+    ],
+    "url": "https://www.licitor.com/annonce/11/01/96/vente-aux-encheres/une-maison-principale/marnes-la-coquette/hauts-de-seine/110196.html",
+    "id": "110196",
+    "mise_a_prix": 2900000,
+    "est_price": null,
+    "fac_baisse": true,
+    "prix_final": null,
+    "ville": "Marnes-la-Coquette",
+    "adresse": "5, rue Georges et Xavier Schlumberger",
+    "coords": {
+      "latitude": 48.8300285,
+      "longitude": 2.1763844
+    },
+    "trib_anom": true,
+    "visite": "Visite sur place mardi 17 novembre 2026 de 14h à 16h",
+    "visite_dt": "2026-11-17 14:00",
+    "visite_state": 1,
+    "type": [
+      "Une maison principale",
+      "UNE MAISON ANNEXE",
+      "Un jardin",
+      "Caves",
+      "Une chaufferie"
+    ],
+    "description": [
+      "Une maison principale de 621,59 m² , élevée sur sous-sol d'un rez-de-chaussée et trois étages",
+      "UNE MAISON ANNEXE composée d'un rez-de-chaussée servant de garage et d'un étage La moitié indivise d'un chemin",
+      "Un jardin de 5.300 m²",
+      "Caves",
+      "Une chaufferie Cadastrés section AD n°255, lieudit \"5 rue G et X Schlumberger\" pour 81a"
+    ],
+    "occupation": null,
+    "surface_m2": 626.89,
+    "stats_bien": {
+      "min": 6749,
+      "avg": 7988,
+      "max": 10486
+    },
+    "est_price_m2": 7988,
+    "code_insee": "92047",
+    "code_postal": 92430,
+    "code_departement": "92",
+    "code_region": 11.0,
+    "nom_departement": "Hauts-de-Seine",
+    "nom_region": "Île-de-France"
+  },
+  "110405": {
+    "titre": "Annonce n°110405 : un bâtiment à usage de dépôt à Le Bugue (Dordogne), mise à prix : 10 000 €",
+    "date_publication": "2026-10-21T00:00:00+02:00",
+    "tribunal": "Tribunal Judiciaire de Bergerac (Dordogne)",
+    "type_vente": "Vente aux enchères publiques",
+    "dt_vente": "2026-12-18 14:00",
+    "dt_vente_limit": "2026-12-28",
+    "sell_state": 1,
+    "avocats": [
+      "Maître Aurélie Giraudier, de la SELARL Juris Aquitaine, Avocat"
+    ],
+    "telephones": [
+      "05 53 61 59 15"
+    ],
+    "documents": [],
+    "url": "https://www.licitor.com/annonce/11/04/05/vente-aux-encheres/un-batiment-a-usage-de-depot/le-bugue/dordogne/110405.html",
+    "id": "110405",
+    "mise_a_prix": 10000,
+    "est_price": null,
+    "fac_baisse": true,
+    "prix_final": null,
+    "ville": "Le Bugue",
+    "adresse": "Lieudit Grand Camp 225, rue de la Faure Basse",
+    "coords": {
+      "latitude": 44.9106407,
+      "longitude": 0.9380459
+    },
+    "trib_anom": true,
+    "visite": "Visite sur place mardi 17 novembre 2026 de 14h à 16h",
+    "visite_dt": "2026-11-17 14:00",
+    "visite_state": 1,
+    "type": [
+      "Un bâtiment à usage de dépôt"
+    ],
+    "description": [
+      "Un bâtiment à usage de dépôt de 181 m², comprenant : grand espace de stockage avec petite mezzanine, bureau, remise"
+    ],
+    "occupation": null,
+    "surface_m2": 181.0,
+    "stats_bien": null,
+    "est_price_m2": null,
+    "code_insee": "24067",
+    "code_postal": 24260,
+    "code_departement": "24",
+    "code_region": 75.0,
+    "nom_departement": "Dordogne",
+    "nom_region": "Nouvelle-Aquitaine"
+  },
+  "110339": {
+    "titre": "Annonce n°110339 : une maison à Thiais (Val-de-Marne), mise à prix : 160 000 €",
+    "date_publication": "2026-10-19T00:00:00+02:00",
+    "tribunal": "Tribunal Judiciaire de Créteil (Val de Marne)",
+    "type_vente": "Vente aux enchères publiques sur licitation en un seul lot",
+    "dt_vente": "2026-11-26 09:30",
+    "dt_vente_limit": "2026-12-06",
+    "sell_state": 1,
+    "avocats": [
+      "Maître Martin Isal, Avocat"
+    ],
+    "telephones": [],
+    "documents": [
+      {
+        "type": "Diagnostics",
+        "url": "https://www.licitor.com/data/pub/media/annonce/11/03/39/110339.000.001.71634a5d0f70.pdf"
+      },
+      {
+        "type": "PV descriptif",
+        "url": "https://www.licitor.com/data/pub/media/annonce/11/03/39/110339.000.002.c743b96fe4d1.pdf"
+      }
+    ],
+    "url": "https://www.licitor.com/annonce/11/03/39/vente-aux-encheres/une-maison/thiais/val-de-marne/110339.html",
+    "id": "110339",
+    "mise_a_prix": 160000,
+    "est_price": null,
+    "fac_baisse": false,
+    "prix_final": null,
+    "ville": "Thiais",
+    "adresse": "2 bis, rue d'Estienne d'Orves",
+    "coords": {
+      "latitude": 48.7616158,
+      "longitude": 2.3892174
+    },
+    "trib_anom": true,
+    "visite": "Visite sur place mardi 17 novembre 2026 de 15h à 16h",
+    "visite_dt": "2026-11-17 15:00",
+    "visite_state": 1,
+    "type": [
+      "Une maison"
+    ],
+    "description": [
+      "Une maison de 91 m² , comprenant : 1ère partie : entrée, salon, chambre, cuisine, salle de bains, wc 2ème partie : entrée, salon, cuisine, deux chambres, salle d'eau, wc Terrasse Jardin Occupée"
+    ],
+    "occupation": null,
+    "surface_m2": 91.0,
+    "stats_bien": {
+      "min": 3743,
+      "avg": 4297,
+      "max": 5111
+    },
+    "est_price_m2": 4297,
+    "code_insee": "94073",
+    "code_postal": 94320,
+    "code_departement": "94",
+    "code_region": 11.0,
+    "nom_departement": "Val-de-Marne",
+    "nom_region": "Île-de-France"
+  },
+  "110205": {
+    "titre": "Annonce n°110205 : un studio à Villeneuve-Saint-Georges (Val-de-Marne), mise à prix : 15 000 €",
+    "date_publication": "2026-10-05T00:00:00+02:00",
+    "tribunal": "Tribunal Judiciaire de Créteil (Val de Marne)",
+    "type_vente": "Vente aux enchères publiques en deux lots",
+    "dt_vente": "2026-11-26 09:30",
+    "dt_vente_limit": "2026-12-06",
+    "sell_state": 1,
+    "avocats": [
+      "Maître Harry Orhon, de la SELARL Makosso - Orhon, Avocat",
+      "Maître Grégoire Azzaro, membre de JCD Avocats, Avocat"
+    ],
+    "telephones": [
+      "01 49 77 10 04",
+      "01 89 40 84 20"
+    ],
+    "documents": [
+      {
+        "type": "Cahier des conditions de vente",
+        "url": "https://www.licitor.com/data/pub/media/annonce/11/02/05/110205.000.001.53d84a7013d3.pdf"
+      },
+      {
+        "type": "PV descriptif",
+        "url": "https://www.licitor.com/data/pub/media/annonce/11/02/05/110205.000.002.6751f8326f96.pdf"
+      }
+    ],
+    "url": "https://www.licitor.com/annonce/11/02/05/vente-aux-encheres/un-studio/villeneuve-saint-georges/val-de-marne/110205.html",
+    "id": "110205",
+    "mise_a_prix": 15000,
+    "est_price": null,
+    "fac_baisse": false,
+    "prix_final": null,
+    "ville": "Villeneuve-Saint-Georges",
+    "adresse": "38, rue de Paris (l'accès se fait par le 36, rue de Paris)",
+    "coords": {
+      "latitude": 48.7269707,
+      "longitude": 2.4463193
+    },
+    "trib_anom": true,
+    "visite": "Visite sur place mercredi 18 novembre 2026 de 9h30 à 10h",
+    "visite_dt": "2026-11-18 09:30",
+    "visite_state": 1,
+    "type": [
+      "Un studio"
+    ],
+    "description": [
+      "Un studio de 19,12 m² , bâtiment A, au 1er étage, comprenant : entrée, deux pièces et salle de bains avec wc Les biens sont en travaux et inoccupés"
+    ],
+    "occupation": null,
+    "surface_m2": 19.12,
+    "stats_bien": {
+      "min": 1894,
+      "avg": 2418,
+      "max": 3106
+    },
+    "est_price_m2": 2418,
+    "code_insee": "94078",
+    "code_postal": 94190,
+    "code_departement": "94",
+    "code_region": 11.0,
+    "nom_departement": "Val-de-Marne",
+    "nom_region": "Île-de-France"
+  },
+  "110205_1": {
+    "titre": "Annonce n°110205 : un studio à Villeneuve-Saint-Georges (Val-de-Marne), mise à prix : 15 000 €",
+    "date_publication": "2026-10-05T00:00:00+02:00",
+    "tribunal": "Tribunal Judiciaire de Créteil (Val de Marne)",
+    "type_vente": "Vente aux enchères publiques en deux lots",
+    "dt_vente": "2026-11-26 09:30",
+    "dt_vente_limit": "2026-12-06",
+    "sell_state": 1,
+    "avocats": [
+      "Maître Harry Orhon, de la SELARL Makosso - Orhon, Avocat",
+      "Maître Grégoire Azzaro, membre de JCD Avocats, Avocat"
+    ],
+    "telephones": [
+      "01 49 77 10 04",
+      "01 89 40 84 20"
+    ],
+    "documents": [
+      {
+        "type": "Cahier des conditions de vente",
+        "url": "https://www.licitor.com/data/pub/media/annonce/11/02/05/110205.000.001.53d84a7013d3.pdf"
+      },
+      {
+        "type": "PV descriptif",
+        "url": "https://www.licitor.com/data/pub/media/annonce/11/02/05/110205.000.002.6751f8326f96.pdf"
+      }
+    ],
+    "url": "https://www.licitor.com/annonce/11/02/05/vente-aux-encheres/un-studio/villeneuve-saint-georges/val-de-marne/110205.html",
+    "id": "110205_1",
+    "mise_a_prix": 15000,
+    "est_price": null,
+    "fac_baisse": false,
+    "prix_final": null,
+    "ville": "Villeneuve-Saint-Georges",
+    "adresse": "38, rue de Paris (l'accès se fait par le 36, rue de Paris)",
+    "coords": {
+      "latitude": 48.7269707,
+      "longitude": 2.4463193
+    },
+    "trib_anom": true,
+    "visite": "Visite sur place mercredi 18 novembre 2026 de 9h30 à 10h",
+    "visite_dt": "2026-11-18 09:30",
+    "visite_state": 1,
+    "type": [
+      "Un studio"
+    ],
+    "description": [
+      "Un studio de 19,86 m² , bâtiment A, au 2ème étage, comprenant : couloir avec placards, pièce principale, salle d'eau avec wc, cuisine, pièce Les biens seraient occupés (conditions d'occupation inconnues - à vérifier lors de la visite)"
+    ],
+    "occupation": null,
+    "surface_m2": 19.86,
+    "stats_bien": {
+      "min": 1894,
+      "avg": 2418,
+      "max": 3106
+    },
+    "est_price_m2": 2418,
+    "code_insee": "94078",
+    "code_postal": 94190,
+    "code_departement": "94",
+    "code_region": 11.0,
+    "nom_departement": "Val-de-Marne",
+    "nom_region": "Île-de-France"
+  },
+  "110366": {
+    "titre": "Annonce n°110366 : un appartement à Lyon 2ème (Rhône), mise à prix : 8 000 €",
+    "date_publication": "2026-10-21T00:00:00+02:00",
+    "tribunal": "Tribunal Judiciaire de Lyon (Rhône)",
+    "type_vente": "Vente aux enchères publiques",
+    "dt_vente": "2026-12-03 13:30",
+    "dt_vente_limit": "2026-12-13",
+    "sell_state": 1,
+    "avocats": [
+      "Cabinet Juge - Fialaire Avocats, Avocat"
+    ],
+    "telephones": [
+      "04 72 81 28 40"
+    ],
+    "documents": [],
+    "url": "https://www.licitor.com/annonce/11/03/66/vente-aux-encheres/un-appartement/lyon-2eme/rhone/110366.html",
+    "id": "110366",
+    "mise_a_prix": 8000,
+    "est_price": null,
+    "fac_baisse": null,
+    "prix_final": null,
+    "ville": "Lyon 2ème",
+    "adresse": "16, rue Palais Grillet",
+    "coords": {
+      "latitude": 45.7625198,
+      "longitude": 4.835001
+    },
+    "trib_anom": true,
+    "visite": "Visite sur place mercredi 18 novembre 2026 de 10h à 12h",
+    "visite_dt": "2026-11-18 10:00",
+    "visite_state": 1,
+    "type": [
+      "Un appartement"
+    ],
+    "description": [
+      "Un appartement de 34,88 m², au 2ème étage, comprenant : hall d'entrée, chambre, salle de bains, séjour-cuisine, wc, placard de rangement"
+    ],
+    "occupation": null,
+    "surface_m2": 34.88,
+    "stats_bien": {
+      "min": 4275,
+      "avg": 5293,
+      "max": 6285
+    },
+    "est_price_m2": 5293,
+    "code_insee": "69382",
+    "code_postal": 69002,
+    "code_departement": "69",
+    "code_region": 84.0,
+    "nom_departement": "Rhône",
+    "nom_region": "Auvergne-Rhône-Alpes"
+  },
+  "110289": {
+    "titre": "Annonce n°110289 : un appartement à Nice (Alpes-Maritimes), mise à prix : 30 000 €",
+    "date_publication": "2026-10-14T00:00:00+02:00",
+    "tribunal": "Tribunal Judiciaire de Nice (Alpes maritimes)",
+    "type_vente": "Vente aux enchères publiques",
+    "dt_vente": "2026-12-03 09:00",
+    "dt_vente_limit": "2026-12-13",
+    "sell_state": 1,
+    "avocats": [
+      "Maître Christophe Nani, Avocat"
+    ],
+    "telephones": [
+      "04 93 16 03 32"
+    ],
+    "documents": [],
+    "url": "https://www.licitor.com/annonce/11/02/89/vente-aux-encheres/un-appartement/nice/alpes-maritimes/110289.html",
+    "id": "110289",
+    "mise_a_prix": 30000,
+    "est_price": null,
+    "fac_baisse": null,
+    "prix_final": null,
+    "ville": "Nice",
+    "adresse": "8, rue Abbé Grégoire",
+    "coords": {
+      "latitude": 43.7053986,
+      "longitude": 7.2575674
+    },
+    "trib_anom": true,
+    "visite": "Visites sur place mercredi 18 novembre 2026 de 11h à 12h et mardi 24 novembre 2026 de 14h à 15h",
+    "visite_dt": "2026-11-18 11:00",
+    "visite_state": 1,
+    "type": [
+      "Un appartement"
+    ],
+    "description": [
+      "Un appartement de 35,01 m², au 1er étage, comprenant : entrée, cuisine, séjour, chambre, wc, balcon Inoccupé"
+    ],
+    "occupation": null,
+    "surface_m2": 35.01,
+    "stats_bien": {
+      "min": 3446,
+      "avg": 4117,
+      "max": 5211
+    },
+    "est_price_m2": 4117,
+    "code_insee": "06088",
+    "code_postal": 6000,
+    "code_departement": "6",
+    "code_region": 93.0,
+    "nom_departement": "Alpes-Maritimes",
+    "nom_region": "Provence-Alpes-Côte d'Azur"
+  },
+  "110345": {
+    "titre": "Annonce n°110345 : une maison d'habitation à Eaunes (Haute-Garonne), mise à prix : 55 000 €",
+    "date_publication": "2026-10-20T00:00:00+02:00",
+    "tribunal": "Tribunal Judiciaire de Toulouse (Haute Garonne)",
+    "type_vente": "Vente aux enchères publiques",
+    "dt_vente": "2026-11-26 14:00",
+    "dt_vente_limit": "2026-12-06",
+    "sell_state": 1,
+    "avocats": [
+      "SELARL Decker, Avocats"
+    ],
+    "telephones": [
+      "05 61 21 96 84"
+    ],
+    "documents": [],
+    "url": "https://www.licitor.com/annonce/11/03/45/vente-aux-encheres/une-maison-d-habitation/eaunes/haute-garonne/110345.html",
+    "id": "110345",
+    "mise_a_prix": 55000,
+    "est_price": null,
+    "fac_baisse": null,
+    "prix_final": null,
+    "ville": "Eaunes",
+    "adresse": "105, chemine de Beaumont",
+    "coords": {
+      "latitude": 43.4305496,
+      "longitude": 1.3473964
+    },
+    "trib_anom": true,
+    "visite": "Visite sur place mercredi 18 novembre 2026 de 12h à 13h",
+    "visite_dt": "2026-11-18 12:00",
+    "visite_state": 1,
+    "type": [
+      "Une maison d'habitation"
+    ],
+    "description": [
+      "Une maison d'habitation Terrasse, loggia"
+    ],
+    "occupation": null,
+    "surface_m2": null,
+    "stats_bien": {
+      "min": 2222,
+      "avg": 2754,
+      "max": 3522
+    },
+    "est_price_m2": 2754,
+    "code_insee": "31165",
+    "code_postal": 31600,
+    "code_departement": "31",
+    "code_region": 76.0,
+    "nom_departement": "Haute-Garonne",
+    "nom_region": "Occitanie"
+  },
+  "110276": {
+    "titre": "Annonce n°110276 : un appartement à Cergy (Val-d'Oise), mise à prix : 70 000 €",
+    "date_publication": "2026-10-14T00:00:00+02:00",
+    "tribunal": "Tribunal Judiciaire de Pontoise (Val d'Oise)",
+    "type_vente": "Vente aux enchères publiques en un seul lot",
+    "dt_vente": "2026-12-08 14:00",
+    "dt_vente_limit": "2026-12-18",
+    "sell_state": 1,
+    "avocats": [
+      "Maître Julien Semeria, membre de la SELARL 9 Janvier, Avocat"
+    ],
+    "telephones": [
+      "01 34 24 94 40"
+    ],
+    "documents": [
+      {
+        "type": "PV descriptif",
+        "url": "https://www.licitor.com/data/pub/media/annonce/11/02/76/110276.000.001.b4e48bbf7171.pdf"
+      },
+      {
+        "type": "ERP",
+        "url": "https://www.licitor.com/data/pub/media/annonce/11/02/76/110276.000.002.75c32ece028d.pdf"
+      },
+      {
+        "type": "DPE",
+        "url": "https://www.licitor.com/data/pub/media/annonce/11/02/76/110276.000.003.bc09108cf312.pdf"
+      }
+    ],
+    "url": "https://www.licitor.com/annonce/11/02/76/vente-aux-encheres/un-appartement/cergy/val-d-oise/110276.html",
+    "id": "110276",
+    "mise_a_prix": 70000,
+    "est_price": null,
+    "fac_baisse": false,
+    "prix_final": null,
+    "ville": "Cergy",
+    "adresse": "29, rue des Marjoberts",
+    "coords": {
+      "latitude": 49.0419502,
+      "longitude": 2.0731516
+    },
+    "trib_anom": true,
+    "visite": "Visite sur place mercredi 18 novembre 2026 de 14h à 14h45",
+    "visite_dt": "2026-11-18 14:00",
+    "visite_state": 1,
+    "type": [
+      "Un appartement",
+      "Un parking"
+    ],
+    "description": [
+      "Un appartement de 46,20 m² , bâtiment AB, au rez-de-chaussée, composé de : entrée, salle d'eau avec wc, salon-séjour avec cuisine ouverte avec accès à la terrasse, une chambre",
+      "Un parking au 1er sous-sol, n°1.006"
+    ],
+    "occupation": null,
+    "surface_m2": 46.2,
+    "stats_bien": {
+      "min": 2128,
+      "avg": 2568,
+      "max": 3206
+    },
+    "est_price_m2": 2568,
+    "code_insee": "95127",
+    "code_postal": 95000,
+    "code_departement": "95",
+    "code_region": 11.0,
+    "nom_departement": "Val-d'Oise",
+    "nom_region": "Île-de-France"
+  },
+  "110303": {
+    "titre": "Annonce n°110303 : un appartement à Grenoble (Isère), mise à prix : 15 000 €",
+    "date_publication": "2026-10-15T00:00:00+02:00",
+    "tribunal": "Tribunal Judiciaire de Grenoble (Isère)",
+    "type_vente": "Vente aux enchères publiques",
+    "dt_vente": "2026-11-24 14:00",
+    "dt_vente_limit": "2026-12-04",
+    "sell_state": 1,
+    "avocats": [
+      "SCP Poli-Cabanes - Devigny - Martin, Avocats associés"
+    ],
+    "telephones": [
+      "04 76 46 88 02"
+    ],
+    "documents": [],
+    "url": "https://www.licitor.com/annonce/11/03/03/vente-aux-encheres/un-appartement/grenoble/isere/110303.html",
+    "id": "110303",
+    "mise_a_prix": 15000,
+    "est_price": null,
+    "fac_baisse": null,
+    "prix_final": null,
+    "ville": "Grenoble",
+    "adresse": "19, rue Marx Dormoy",
+    "coords": {
+      "latitude": 45.1871452,
+      "longitude": 5.71135
+    },
+    "trib_anom": true,
+    "visite": "Visite sur place mercredi 18 novembre 2026 de 14h à 15h",
+    "visite_dt": "2026-11-18 14:00",
+    "visite_state": 1,
+    "type": [
+      "Un appartement"
+    ],
+    "description": [
+      "Un appartement de 29,61 m², au 5ème étage à droite sur le palier, comprenant : entrée, salon, cuisine, balcon, salle d'eau/wc, galetas dans les combles et cave Inoccupé"
+    ],
+    "occupation": null,
+    "surface_m2": 29.61,
+    "stats_bien": {
+      "min": 1731,
+      "avg": 2476,
+      "max": 2907
+    },
+    "est_price_m2": 2476,
+    "code_insee": "38185",
+    "code_postal": 38000,
+    "code_departement": "38",
+    "code_region": 84.0,
+    "nom_departement": "Isère",
+    "nom_region": "Auvergne-Rhône-Alpes"
+  },
+  "110292": {
+    "titre": "Annonce n°110292 : une maison à usage d'habitation à Lille (Nord), mise à prix : 90 000 €",
+    "date_publication": "2026-10-14T00:00:00+02:00",
+    "tribunal": "Tribunal Judiciaire de Lille (Nord)",
+    "type_vente": "Vente aux enchères publiques",
+    "dt_vente": "2026-12-02 14:00",
+    "dt_vente_limit": "2026-12-12",
+    "sell_state": 1,
+    "avocats": [
+      "Maître François-Xavier Wibault, de la SELAS Wibault Avocat, Avocat",
+      "Maître Geneviève Ferretti, Avocat"
+    ],
+    "telephones": [],
+    "documents": [],
+    "url": "https://www.licitor.com/annonce/11/02/92/vente-aux-encheres/une-maison-a-usage-d-habitation/lille/nord/110292.html",
+    "id": "110292",
+    "mise_a_prix": 90000,
+    "est_price": null,
+    "fac_baisse": true,
+    "prix_final": null,
+    "ville": "Lille",
+    "adresse": "3, impasse Blériot",
+    "coords": {
+      "latitude": 50.6161156,
+      "longitude": 3.0270188
+    },
+    "trib_anom": true,
+    "visite": "Visite sur place mercredi 18 novembre 2026 de 14h30 à 15h30",
+    "visite_dt": "2026-11-18 14:30",
+    "visite_state": 1,
+    "type": [
+      "Une maison à usage d'habitation"
+    ],
+    "description": [
+      "Une maison à usage d'habitation"
+    ],
+    "occupation": null,
+    "surface_m2": null,
+    "stats_bien": {
+      "min": 1943,
+      "avg": 2502,
+      "max": 3394
+    },
+    "est_price_m2": 2502,
+    "code_insee": "59350",
+    "code_postal": 59000,
+    "code_departement": "59",
+    "code_region": 32.0,
+    "nom_departement": "Nord",
+    "nom_region": "Hauts-de-France"
+  },
+  "110293": {
+    "titre": "Annonce n°110293 : une maison à usage d'habitation à Lille (Nord), mise à prix : 85 000 €",
+    "date_publication": "2026-10-14T00:00:00+02:00",
+    "tribunal": "Tribunal Judiciaire de Lille (Nord)",
+    "type_vente": "Vente aux enchères publiques",
+    "dt_vente": "2026-12-02 14:00",
+    "dt_vente_limit": "2026-12-12",
+    "sell_state": 1,
+    "avocats": [
+      "Maître François-Xavier Wibault, de la SELAS Wibault Avocat, Avocat",
+      "Maître Geneviève Ferretti, Avocat"
+    ],
+    "telephones": [],
+    "documents": [],
+    "url": "https://www.licitor.com/annonce/11/02/93/vente-aux-encheres/une-maison-a-usage-d-habitation/lille/nord/110293.html",
+    "id": "110293",
+    "mise_a_prix": 85000,
+    "est_price": null,
+    "fac_baisse": true,
+    "prix_final": null,
+    "ville": "Lille",
+    "adresse": "2, impasse Blériot",
+    "coords": {
+      "latitude": 50.6163673,
+      "longitude": 3.0269976
+    },
+    "trib_anom": true,
+    "visite": "Visite sur place mercredi 18 novembre 2026 de 14h30 à 15h30",
+    "visite_dt": "2026-11-18 14:30",
+    "visite_state": 1,
+    "type": [
+      "Une maison à usage d'habitation"
+    ],
+    "description": [
+      "Une maison à usage d'habitation"
+    ],
+    "occupation": null,
+    "surface_m2": null,
+    "stats_bien": {
+      "min": 1902,
+      "avg": 2470,
+      "max": 3280
+    },
+    "est_price_m2": 2470,
+    "code_insee": "59350",
+    "code_postal": 59000,
+    "code_departement": "59",
+    "code_region": 32.0,
+    "nom_departement": "Nord",
+    "nom_region": "Hauts-de-France"
+  },
+  "110378": {
+    "titre": "Annonce n°110378 : un appartement à Roubaix (Nord), mise à prix : 31 000 €",
+    "date_publication": "2026-10-21T00:00:00+02:00",
+    "tribunal": "Tribunal Judiciaire de Lille (Nord)",
+    "type_vente": "Vente aux enchères publiques",
+    "dt_vente": "2026-12-02 14:00",
+    "dt_vente_limit": "2026-12-12",
+    "sell_state": 1,
+    "avocats": [
+      "Cabinet de Maître Patrick Dupont-Thieffry et de Maître Joséphine Dupont-Willot, de l'AARPI DTW Avocats, Avocats"
+    ],
+    "telephones": [
+      "03 20 74 01 01"
+    ],
+    "documents": [],
+    "url": "https://www.licitor.com/annonce/11/03/78/vente-aux-encheres/un-appartement/roubaix/nord/110378.html",
+    "id": "110378",
+    "mise_a_prix": 31000,
+    "est_price": null,
+    "fac_baisse": null,
+    "prix_final": null,
+    "ville": "Roubaix",
+    "adresse": "12, rue Vauban",
+    "coords": {
+      "latitude": 50.6838646,
+      "longitude": 3.1649966
+    },
+    "trib_anom": true,
+    "visite": "Visites sur place mercredi 18 novembre 2026 à 15h et vendredi 20 novembre 2026 à 15h",
+    "visite_dt": "2026-11-18 15:00",
+    "visite_state": 1,
+    "type": [
+      "Un appartement"
+    ],
+    "description": [
+      "Un appartement de 70,1 m², au 2ème et 3ème étage"
+    ],
+    "occupation": null,
+    "surface_m2": 70.1,
+    "stats_bien": {
+      "min": 1554,
+      "avg": 2039,
+      "max": 2891
+    },
+    "est_price_m2": 2039,
+    "code_insee": "59512",
+    "code_postal": 59100,
+    "code_departement": "59",
+    "code_region": 32.0,
+    "nom_departement": "Nord",
+    "nom_region": "Hauts-de-France"
   }
 }
