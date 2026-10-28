@@ -17,7 +17,7 @@ except NameError:
 
 sys.path.insert(0, str(BASE_DIR))
 
-from back.scrapper_licit.licitor_scrapper import scrapper_handler
+from back.scrapper_licit.new_scrapper import scrapper_handler
 
 #PARAMS
 

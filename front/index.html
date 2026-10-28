@@ -6,10 +6,19 @@
 
     <title>Licitor - Ventes immobilières aux enchères</title>
 
+
     <!-- Leaflet -->
     <link
         rel="stylesheet"
         href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    >
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css"
+    >
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css"
     >
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -27,22 +36,12 @@
 
     <div class="toolbar">
 
+        <!-- Recherche instantanée -->
         <div class="search-box">
-
-            <svg
-                class="search-icon"
-                viewBox="0 0 24 24"
-                aria-hidden="true"
-            >
-                <circle
-                    cx="11"
-                    cy="11"
-                    r="7"
-                ></circle>
-
-                <path
-                    d="m20 20-4-4"
-                ></path>
+            <svg class="search-icon" viewBox="0 0 24 24"
+                aria-hidden="true">
+                <circle cx="11" cy="11" r="7"></circle>
+                <path d="m20 20-4-4"></path>
             </svg>
 
             <input
@@ -52,109 +51,152 @@
                 autocomplete="off"
             >
 
-            <button
-                id="clear-search"
-                class="clear-search"
-                type="button"
-                aria-label="Effacer la recherche"
-                title="Effacer la recherche"
-            >
+            <button id="clear-search" class="clear-search"
+                    type="button" aria-label="Effacer la recherche">
                 ×
             </button>
-
         </div>
 
-        <!-- Filtre surface -->
-        <div class="filter-dropdown">
-            <button type="button" class="filter-button"
-                    data-filter="surface" aria-expanded="false">
-                Surface <span class="filter-arrow">⌄</span>
+        <!-- Bouton unique d'accès aux filtres -->
+        <div class="filters-dropdown">
+
+            <button
+                type="button"
+                id="filters-toggle"
+                class="filters-toggle"
+                aria-expanded="false"
+                aria-controls="filters-panel"
+            >
+                <svg xmlns="http://www.w3.org/2000/svg"
+                    width="18" height="18" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor"
+                    stroke-width="1.8" stroke-linecap="round"
+                    stroke-linejoin="round" aria-hidden="true">
+                    <path d="M4 7h16"/>
+                    <path d="M7 12h10"/>
+                    <path d="M10 17h4"/>
+                </svg>
+
+                <span>Filtres</span>
+                <span id="active-filter-count" class="filter-count"
+                    hidden>0</span>
+
+                <svg class="filters-chevron"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="15" height="15" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" aria-hidden="true">
+                    <path d="m6 9 6 6 6-6"/>
+                </svg>
             </button>
 
-            <div class="filter-panel" id="panel-surface" hidden>
-                <label>
-                    Minimum (m²)
-                    <input type="number" id="surface-min" min="0"
-                        placeholder="Sans minimum">
-                </label>
-                <label>
-                    Maximum (m²)
-                    <input type="number" id="surface-max" min="0"
-                        placeholder="Sans maximum">
-                </label>
+            <!-- Panneau unique -->
+            <div id="filters-panel" class="filters-panel" hidden>
+
+                <div class="filters-panel-header">
+                    <div>
+                        <h3>Filtrer les annonces</h3>
+                        <p>Affinez votre recherche immobilière</p>
+                    </div>
+                </div>
+
+                <!-- Mise à prix -->
+                <section class="filter-section">
+                    <label class="filter-section-title" for="prix-min">
+                        Mise à prix (€)
+                    </label>
+
+                    <div class="filter-inputs">
+                        <input type="number" id="prix-min"
+                            min="0" placeholder="Minimum">
+                        <input type="number" id="prix-max"
+                            min="0" placeholder="Maximum">
+                    </div>
+                </section>
+
+                <!-- Surface -->
+                <section class="filter-section">
+                    <label class="filter-section-title" for="surface-min">
+                        Surface (m²)
+                    </label>
+
+                    <div class="filter-inputs">
+                        <input type="number" id="surface-min"
+                            min="0" placeholder="Minimum">
+                        <input type="number" id="surface-max"
+                            min="0" placeholder="Maximum">
+                    </div>
+                </section>
+
+                <!-- Prix estimé -->
+                <section class="filter-section">
+                    <label class="filter-section-title" for="estimation-min">
+                        Prix estimé (€)
+                    </label>
+
+                    <div class="filter-inputs">
+                        <input type="number" id="estimation-min"
+                            min="0" placeholder="Minimum">
+                        <input type="number" id="estimation-max"
+                            min="0" placeholder="Maximum">
+                    </div>
+                </section>
+
+                <!-- Dates -->
+                <section class="filter-section">
+                    <label class="filter-section-title" for="date-filter-field">
+                        Période
+                    </label>
+
+                    <select id="date-filter-field" class="filter-select">
+                        <option value="dt_vente">Date de vente</option>
+                        <option value="visite_dt">Date de visite</option>
+                    </select>
+
+                    <div class="filter-inputs filter-date-inputs">
+                        <label>
+                            <span>Du</span>
+                            <input type="date" id="date-start">
+                        </label>
+
+                        <label>
+                            <span>Au</span>
+                            <input type="date" id="date-end">
+                        </label>
+                    </div>
+                </section>
+
+                <!-- Tribunaux -->
+                <section class="filter-section">
+                    <div class="filter-section-title">Tribunaux</div>
+
+                    <label class="tribunal-select-all">
+                        <input type="checkbox" id="tribunal-select-all">
+                        <span>Tout sélectionner</span>
+                    </label>
+
+                    <div id="tribunal-filters" class="tribunal-filters"></div>
+                </section>
+
+                <!-- Actions du panneau -->
+                <div class="filters-panel-footer">
+                    <button type="button" id="reset-filters"
+                            class="reset-filters-link">
+                        Tout effacer
+                    </button>
+
+                    <button type="button" id="apply-filters"
+                            class="apply-filters-button">
+                        Afficher les résultats
+                    </button>
+                </div>
+
             </div>
         </div>
-
-        <!-- Filtre mise à prix -->
-        <div class="filter-dropdown">
-            <button type="button" class="filter-button"
-                    data-filter="prix" aria-expanded="false">
-                Mise à prix <span class="filter-arrow">⌄</span>
-            </button>
-
-            <div class="filter-panel" id="panel-prix" hidden>
-                <label>
-                    Minimum (€)
-                    <input type="number" id="prix-min" min="0"
-                        placeholder="Sans minimum">
-                </label>
-                <label>
-                    Maximum (€)
-                    <input type="number" id="prix-max" min="0"
-                        placeholder="Sans maximum">
-                </label>
-            </div>
-        </div>
-
-        <!-- Filtre estimation -->
-        <div class="filter-dropdown">
-            <button type="button" class="filter-button"
-                    data-filter="estimation" aria-expanded="false">
-                Prix estimé <span class="filter-arrow">⌄</span>
-            </button>
-
-            <div class="filter-panel" id="panel-estimation" hidden>
-                <label>
-                    Minimum (€)
-                    <input type="number" id="estimation-min" min="0"
-                        placeholder="Sans minimum">
-                </label>
-                <label>
-                    Maximum (€)
-                    <input type="number" id="estimation-max" min="0"
-                        placeholder="Sans maximum">
-                </label>
-            </div>
-        </div>
-
-        <!-- Filtre tribunaux -->
-        <div class="filter-dropdown">
-            <button type="button" class="filter-button"
-                    data-filter="tribunaux" aria-expanded="false">
-                Tribunaux <span class="filter-arrow">⌄</span>
-            </button>
-
-            <div class="filter-panel tribunal-panel"
-                id="panel-tribunaux" hidden>
-                <label class="select-all-option">
-                    <input type="checkbox" id="tribunal-select-all">
-                    Tout sélectionner
-                </label>
-
-                <div id="tribunal-filters"></div>
-            </div>
-        </div>
-
-        <!-- Actions -->
-        <button type="button" id="apply-filters" class="apply-button">
-            Appliquer
-        </button>
-
-        <button type="button" id="reset-filters" class="reset-button">
-            Réinitialiser
-        </button>
 
     </div>
+
 
     <div class="app-content">
 
@@ -178,22 +220,140 @@
         <aside class="list-container">
 
             <div class="list-header">
-                <h2>Annonces</h2>
 
-                <div class="list-header-actions">
-                    <span id="announcement-count">0</span>
-
-                    <button
-                        id="sort-announcements"
-                        class="sort-button"
-                        type="button"
-                        title="Trier par date de vente"
-                        aria-label="Trier par date de vente"
-                        aria-pressed="false"
+                <div 
+                    id="back-to-announcements"
+                    class="announcement-counter"
+                    role="button"
+                    tabindex="0"
+                    title="Revenir au début des annonces"
+                    aria-label="Revenir au début des annonces"
+                >
+                    <svg
+                        class="announcement-count-icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.8"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
                     >
-                        ↑
-                    </button>
+                        <path d="m3 10 9-7 9 7"/>
+                        <path d="M5 9v12h14V9"/>
+                        <path d="M9 21v-7h6v7"/>
+                    </svg>
+
+                    <span id="announcement-count">0</span>
                 </div>
+
+
+                <div class="sort-dropdown">
+                    <button
+                        id="sort-menu-button"
+                        class="sort-menu-button"
+                        type="button"
+                        aria-expanded="false"
+                        aria-haspopup="true"
+                        aria-controls="sort-menu"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="17"
+                            height="17"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="1.8"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            aria-hidden="true"
+                        >
+                            <path d="M4 7h16"/>
+                            <path d="M7 12h10"/>
+                            <path d="M10 17h4"/>
+                        </svg>
+
+                        <span id="sort-current-label">Vente</span>
+
+                        <svg
+                            class="sort-chevron"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="14"
+                            height="14"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            aria-hidden="true"
+                        >
+                            <path d="m6 9 6 6 6-6"/>
+                        </svg>
+                    </button>
+
+                    <div
+                        id="sort-menu"
+                        class="sort-menu"
+                        role="group"
+                        aria-label="Choisir le classement des annonces"
+                        hidden
+                    >
+                        <div class="sort-menu-heading">
+                            Trier les annonces
+                        </div>
+
+                        <button
+                            type="button"
+                            class="sort-option"
+                            data-sort="dt_vente"
+                        >
+                            <span>Date de vente</span>
+                            <span class="sort-option-check"></span>
+                        </button>
+
+                        <button
+                            type="button"
+                            class="sort-option"
+                            data-sort="visite_dt"
+                        >
+                            <span>Date de visite</span>
+                            <span class="sort-option-check"></span>
+                        </button>
+
+                        <button
+                            type="button"
+                            class="sort-option"
+                            data-sort="mise_a_prix"
+                        >
+                            <span>Mise à prix</span>
+                            <span class="sort-option-check"></span>
+                        </button>
+
+                        <button
+                            type="button"
+                            class="sort-option"
+                            data-sort="surface_m2"
+                        >
+                            <span>Surface</span>
+                            <span class="sort-option-check"></span>
+                        </button>
+
+                        <button
+                            type="button"
+                            class="sort-option"
+                            data-sort="prix_estime"
+                        >
+                            <span>Prix estimé</span>
+                            <span class="sort-option-check"></span>
+                        </button>
+                    </div>
+                </div>
+
             </div>
 
             <div id="announcement-list">
@@ -208,6 +368,7 @@
 
 <!-- Leaflet -->
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
 
 <script src="./js/app.js"></script>
 
