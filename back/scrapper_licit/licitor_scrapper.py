@@ -1260,7 +1260,8 @@ def build_warnings(clean_results):
     return warnings
 
 
-def run_scrapper(session,
+def run_scrapper(past_dict,
+         session,
          request_delay,
          base_url, search_url, 
          output_path, debug_path,
@@ -1374,6 +1375,17 @@ def run_scrapper(session,
     ###########
     
     clean_results = enrich_handler(results)
+    new_els = len(clean_results)
+    print(new_els, " nouveaux biens identifiés.")
+    
+    ###########
+    #ADD OLD VISITS DATA BUT AUCTIONS NOT BE PASSED
+    ###########
+    
+    clean_results = merge_output(clean_results, past_dict)
+    final_els = len(clean_results)
+    past_els = (final_els - new_els)
+    print(past_els, "biens conservés pour ventes à venir.")
     
     ###########
     #WARNINGS
@@ -1406,7 +1418,7 @@ def run_scrapper(session,
     )
     
     print(
-        f"Annonces récupérées : {len(clean_results)}"
+        f"Annonces récupérées : {new_els}"
     )
     
     print(
@@ -1421,6 +1433,29 @@ def run_scrapper(session,
     
     return results
 
+def keep_next_selling(past_dict):
+    
+    now_date = datetime.date(datetime.now())
+    out_dict = {}
+    
+    for ann_id in past_dict.keys():
+        bien = past_dict[ann_id]
+        dt_vente =  datetime.strptime(bien["dt_vente"], "%Y-%m-%d %H:%M").date()
+        visite_dt  =  datetime.strptime(bien["visite_dt"], "%Y-%m-%d %H:%M").date()
+        if (now_date > visite_dt) and (now_date <= dt_vente):
+            out_dict[ann_id] = bien
+    
+    return out_dict
+    
+def merge_output(new_dict, past_dict):
+    
+    past_keys = past_dict.keys()
+    new_keys = new_dict.keys()
+    for ann_id in past_keys:
+        if (ann_id not in new_keys):
+            new_dict[ann_id] = past_dict[ann_id]
+    return new_dict
+    
 
 def scrapper_handler(max_pages, max_announces,
                      max_pub_dt, max_visit_dt,
@@ -1452,9 +1487,18 @@ def scrapper_handler(max_pages, max_announces,
     OUTPUT_PATH = BASE_DIR / "front" / "data"
     DEBUG_PATH = BASE_DIR / "tests" / "scrapper_debug"
     
+    #OLD DATA
+    past_path = OUTPUT_PATH / "auctions.json"
+    with open(past_path, "r") as file:
+        past_data = json.load(file)
+    
+    
+    #NEW DATA
+    
     session = build_soup_session()
     
-    scrapper_out = run_scrapper(session,
+    scrapper_out = run_scrapper(past_data,
+         session,
          request_delay,
          BASE_URL, SEARCH_URL, 
          OUTPUT_PATH, DEBUG_PATH, 
