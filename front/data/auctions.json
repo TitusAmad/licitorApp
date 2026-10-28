@@ -181,7 +181,7 @@
     },
     "trib_anom": true,
     "visite": "Visites sur place vendredi 23 octobre 2026 de 14h à 15h et mercredi 28 octobre 2026 de 11h à 12h",
-    "visite_dt": "2026-10-23 14:00",
+    "visite_dt": "2026-10-28 11:00",
     "visite_state": 0,
     "type": [
       "Une propriété"
@@ -488,7 +488,7 @@
     },
     "trib_anom": true,
     "visite": "Visites sur place mercredi 21 octobre 2026 de 14h30 à 15h30 et mercredi 28 octobre 2026 de 14h30 à 15h30",
-    "visite_dt": "2026-10-21 14:30",
+    "visite_dt": "2026-10-28 14:30",
     "visite_state": 0,
     "type": [
       "Une propriété"
@@ -542,7 +542,7 @@
     },
     "trib_anom": true,
     "visite": "Visites sur place mercredi 21 octobre 2026 de 15h à 17h et mercredi 28 octobre 2026 de 15h à 17h",
-    "visite_dt": "2026-10-21 15:00",
+    "visite_dt": "2026-10-28 15:00",
     "visite_state": 0,
     "type": [
       "Une maison à usage d'habitation"
@@ -12136,7 +12136,7 @@
     },
     "trib_anom": true,
     "visite": "Visites sur place mercredi 21 octobre 2026 à 9h30 et lundi 26 octobre 2026 à 9h30",
-    "visite_dt": "2026-10-26 09:30",
+    "visite_dt": "",
     "visite_state": 1,
     "type": [
       "Une maison à usage d'habitation"
@@ -12188,7 +12188,7 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place mercredi 21 octobre 2026 de 10h à 11h",
-    "visite_dt": "2026-10-21 10:00",
+    "visite_dt": "",
     "visite_state": 0,
     "type": [
       "Une maison d'habitation"
@@ -12240,7 +12240,7 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place mercredi 21 octobre 2026 de 10h à 12h",
-    "visite_dt": "2026-10-21 10:00",
+    "visite_dt": "",
     "visite_state": 0,
     "type": [
       "Un appartement"
@@ -12292,7 +12292,7 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place mercredi 21 octobre 2026 de 11h à 12h",
-    "visite_dt": "2026-10-21 11:00",
+    "visite_dt": "",
     "visite_state": 0,
     "type": [
       "Un studio"
@@ -12344,7 +12344,7 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place mercredi 21 octobre 2026 de 11h à 12h",
-    "visite_dt": "2026-10-21 11:00",
+    "visite_dt": "",
     "visite_state": 0,
     "type": [
       "Un appartement"
@@ -12396,7 +12396,7 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place mercredi 21 octobre 2026 de 12h à 14h",
-    "visite_dt": "2026-10-21 12:00",
+    "visite_dt": "",
     "visite_state": 0,
     "type": [
       "Un appartement"
@@ -12445,7 +12445,7 @@
     "coords": {},
     "trib_anom": null,
     "visite": "Visites sur place mercredi 21 octobre 2026 de 14h à 17h et jeudi 22 octobre 2026 de 14h à 17h",
-    "visite_dt": "2026-10-22 14:00",
+    "visite_dt": "",
     "visite_state": 1,
     "type": [
       "Un ensemble immobilier"
@@ -12493,7 +12493,7 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place mercredi 21 octobre 2026 à 15h",
-    "visite_dt": "2026-10-21 15:00",
+    "visite_dt": "",
     "visite_state": 1,
     "type": [
       "Une maison d'habitation"
@@ -12541,7 +12541,7 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place mercredi 21 octobre 2026 de 15h30 à 16h30",
-    "visite_dt": "2026-10-21 15:30",
+    "visite_dt": "",
     "visite_state": 1,
     "type": [
       "Une maison à usage d'habitation et de commerce"
@@ -12593,7 +12593,7 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place jeudi 22 octobre 2026 à 9h",
-    "visite_dt": "2026-10-22 09:00",
+    "visite_dt": "",
     "visite_state": 1,
     "type": [
       "Une maison d'habitation"
@@ -12647,7 +12647,7 @@
     },
     "trib_anom": true,
     "visite": "Visites sur place jeudi 22 octobre 2026 à 9h30 et mardi 27 octobre 2026 à 10h",
-    "visite_dt": "2026-10-22 09:30",
+    "visite_dt": "",
     "visite_state": 1,
     "type": [
       "Une maison de ville"
@@ -12697,7 +12697,7 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place jeudi 22 octobre 2026 à 10h",
-    "visite_dt": "2026-10-22 10:00",
+    "visite_dt": "",
     "visite_state": 1,
     "type": [
       "Deux appartements"
@@ -12749,7 +12749,7 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place jeudi 22 octobre 2026 de 10h à 11h",
-    "visite_dt": "2026-10-22 10:00",
+    "visite_dt": "",
     "visite_state": 1,
     "type": [
       "Une maison d'habitation"
@@ -12799,7 +12799,7 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place jeudi 22 octobre 2026 de 10h à 12h",
-    "visite_dt": "2026-10-22 10:00",
+    "visite_dt": "",
     "visite_state": 1,
     "type": [
       "Six studios et un appartement"
@@ -12851,7 +12851,7 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place jeudi 22 octobre 2026 de 11h à 12h",
-    "visite_dt": "2026-10-22 11:00",
+    "visite_dt": "",
     "visite_state": 1,
     "type": [
       "Un local à usage de commerce ou de bureau"
@@ -12901,7 +12901,7 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place jeudi 22 octobre 2026 à 14h",
-    "visite_dt": "2026-10-22 14:00",
+    "visite_dt": "",
     "visite_state": 1,
     "type": [
       "Un appartement"
@@ -12966,7 +12966,7 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place jeudi 22 octobre 2026 de 14h à 15h",
-    "visite_dt": "2026-10-22 14:00",
+    "visite_dt": "",
     "visite_state": 1,
     "type": [
       "Un appartement",
@@ -13020,7 +13020,7 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place jeudi 22 octobre 2026 de 14h à 15h",
-    "visite_dt": "2026-10-22 14:00",
+    "visite_dt": "",
     "visite_state": 1,
     "type": [
       "Une maison d'habitation"
@@ -13074,7 +13074,7 @@
     },
     "trib_anom": true,
     "visite": "Visites sur place jeudi 15 octobre 2026 de 14h à 15h et jeudi 22 octobre 2026 de 14h à 15h",
-    "visite_dt": "2026-10-22 14:00",
+    "visite_dt": "",
     "visite_state": 1,
     "type": [
       "Un appartement"
@@ -13126,7 +13126,7 @@
     },
     "trib_anom": true,
     "visite": "Visites sur place mardi 20 octobre 2026 de 10h à 12h et jeudi 22 octobre 2026 de 14h à 16h",
-    "visite_dt": "2026-10-22 14:00",
+    "visite_dt": "",
     "visite_state": 1,
     "type": [
       "Un ensemble immobilier",
@@ -13186,7 +13186,7 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place jeudi 22 octobre 2026 de 14h à 16h",
-    "visite_dt": "2026-10-22 14:00",
+    "visite_dt": "",
     "visite_state": 1,
     "type": [
       "Un local"
@@ -13234,7 +13234,7 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place vendredi 23 octobre 2026 à 9h",
-    "visite_dt": "2026-10-23 09:00",
+    "visite_dt": "",
     "visite_state": 1,
     "type": [
       "Un terrain"
@@ -13282,7 +13282,7 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place vendredi 23 octobre 2026 à 9h",
-    "visite_dt": "2026-10-23 09:00",
+    "visite_dt": "",
     "visite_state": 1,
     "type": [
       "Un ensemble immobilier"
@@ -13330,7 +13330,7 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place vendredi 23 octobre 2026 à 9h",
-    "visite_dt": "2026-10-23 09:00",
+    "visite_dt": "",
     "visite_state": 1,
     "type": [
       "Un appartement"
@@ -13378,7 +13378,7 @@
     },
     "trib_anom": true,
     "visite": "Visites sur place vendredi 23 octobre 2026 de 9h à 10h et mardi 27 octobre 2026 de 17h à 18h",
-    "visite_dt": "2026-10-23 09:00",
+    "visite_dt": "",
     "visite_state": 1,
     "type": [
       "Un appartement"
@@ -13430,7 +13430,7 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place vendredi 23 octobre 2026 de 10h à 11h",
-    "visite_dt": "2026-10-23 10:00",
+    "visite_dt": "",
     "visite_state": 1,
     "type": [
       "Un bâtiment à usage d'habitation"
@@ -13478,7 +13478,7 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place vendredi 23 octobre 2026 de 11h à 12h",
-    "visite_dt": "2026-10-23 11:00",
+    "visite_dt": "",
     "visite_state": 1,
     "type": [
       "Une maison"
@@ -13528,7 +13528,7 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place vendredi 23 octobre 2026 de 11h à 12h",
-    "visite_dt": "2026-10-23 11:00",
+    "visite_dt": "",
     "visite_state": 1,
     "type": [
       "Un box"
@@ -13577,7 +13577,7 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place vendredi 23 octobre 2026 de 11h à 12h",
-    "visite_dt": "2026-10-23 11:00",
+    "visite_dt": "",
     "visite_state": 1,
     "type": [
       "Un appartement",
@@ -13631,7 +13631,7 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place vendredi 23 octobre 2026 de 11h à 12h",
-    "visite_dt": "2026-10-23 11:00",
+    "visite_dt": "",
     "visite_state": 1,
     "type": [
       "Un pavillon d'habitation"
@@ -13679,7 +13679,7 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place vendredi 23 octobre 2026 de 12h30 à 13h30",
-    "visite_dt": "2026-10-23 12:30",
+    "visite_dt": "",
     "visite_state": 1,
     "type": [
       "Un studio"
@@ -13731,7 +13731,7 @@
     },
     "trib_anom": true,
     "visite": "Visites sur place vendredi 23 octobre 2026 de 14h à 15h et lundi 26 octobre 2026 de 14h à 15h",
-    "visite_dt": "2026-10-23 14:00",
+    "visite_dt": "",
     "visite_state": 1,
     "type": [
       "Un appartement"
@@ -13783,7 +13783,7 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place vendredi 23 octobre 2026 de 14h à 15h",
-    "visite_dt": "2026-10-23 14:00",
+    "visite_dt": "",
     "visite_state": 1,
     "type": [
       "Une maison d'habitation"
@@ -13835,7 +13835,7 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place vendredi 23 octobre 2026 de 14h à 16h",
-    "visite_dt": "2026-10-23 14:00",
+    "visite_dt": "",
     "visite_state": 1,
     "type": [
       "Une maison d'habitation"
@@ -13887,7 +13887,7 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place vendredi 23 octobre 2026 de 14h30 à 15h",
-    "visite_dt": "2026-10-23 14:30",
+    "visite_dt": "",
     "visite_state": 1,
     "type": [
       "Un appartement",
@@ -13945,7 +13945,7 @@
     },
     "trib_anom": true,
     "visite": "Visites sur place mercredi 14 octobre 2026 de 10h30 à 11h30 et vendredi 23 octobre 2026 de 14h30 à 15h30",
-    "visite_dt": "2026-10-23 14:30",
+    "visite_dt": "",
     "visite_state": 1,
     "type": [
       "Une maison à usage d'habitation"
@@ -13999,7 +13999,7 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place vendredi 23 octobre 2026 de 15h à 16h",
-    "visite_dt": "2026-10-23 15:00",
+    "visite_dt": "",
     "visite_state": 1,
     "type": [
       "Un immeuble"
@@ -14051,7 +14051,7 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place vendredi 23 octobre 2026 de 17h à 18h",
-    "visite_dt": "2026-10-23 17:00",
+    "visite_dt": "",
     "visite_state": 1,
     "type": [
       "Une maison d'habitation"
@@ -14103,7 +14103,7 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place lundi 26 octobre 2026 à 9h",
-    "visite_dt": "2026-10-26 09:00",
+    "visite_dt": "",
     "visite_state": 1,
     "type": [
       "Un appartement"
@@ -14155,7 +14155,7 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place lundi 26 octobre 2026 à 9h",
-    "visite_dt": "2026-10-26 09:00",
+    "visite_dt": "",
     "visite_state": 1,
     "type": [
       "Une maison d'habitation"
@@ -14207,7 +14207,7 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place lundi 26 octobre 2026 à 9h",
-    "visite_dt": "2026-10-26 09:00",
+    "visite_dt": "",
     "visite_state": 1,
     "type": [
       "Une maison à usage d'habitation"
@@ -14259,7 +14259,7 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place lundi 26 octobre 2026 de 9h à 9h30",
-    "visite_dt": "2026-10-26 09:00",
+    "visite_dt": "",
     "visite_state": 1,
     "type": [
       "Un appartement",
@@ -14315,7 +14315,7 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place lundi 26 octobre 2026 de 9h à 10h",
-    "visite_dt": "2026-10-26 09:00",
+    "visite_dt": "",
     "visite_state": 1,
     "type": [
       "Un appartement"
@@ -14376,7 +14376,7 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place lundi 26 octobre 2026 de 9h à 10h",
-    "visite_dt": "2026-10-26 09:00",
+    "visite_dt": "",
     "visite_state": 1,
     "type": [
       "Un immeuble",
@@ -14443,7 +14443,7 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place lundi 26 octobre 2026 de 9h à 10h",
-    "visite_dt": "2026-10-26 09:00",
+    "visite_dt": "",
     "visite_state": 1,
     "type": [
       "Une maison d'habitation",
@@ -14497,7 +14497,7 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place lundi 26 octobre 2026 de 9h à 10h",
-    "visite_dt": "2026-10-26 09:00",
+    "visite_dt": "",
     "visite_state": 1,
     "type": [
       "Un appartement"
@@ -14549,7 +14549,7 @@
     },
     "trib_anom": true,
     "visite": "Visites sur place lundi 26 octobre 2026 de 9h à 11h et de 11h30 à 13h30",
-    "visite_dt": "2026-10-26 09:00",
+    "visite_dt": "",
     "visite_state": 1,
     "type": [
       "Un local à usage d'habitation"
@@ -14602,7 +14602,7 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place lundi 26 octobre 2026 de 9h30 à 10h",
-    "visite_dt": "2026-10-26 09:30",
+    "visite_dt": "",
     "visite_state": 1,
     "type": [
       "Un appartement",
@@ -14664,7 +14664,7 @@
     "coords": {},
     "trib_anom": null,
     "visite": "Visite sur place lundi 26 octobre 2026 de 10h à 11h",
-    "visite_dt": "2026-10-26 10:00",
+    "visite_dt": "",
     "visite_state": 1,
     "type": [
       "Une parcelle en nature de vigne"
@@ -14712,7 +14712,7 @@
     },
     "trib_anom": true,
     "visite": "Visites sur place lundi 26 octobre 2026 de 10h à 12h et mardi 27 octobre 2026 de 14h à 16h",
-    "visite_dt": "2026-10-26 10:00",
+    "visite_dt": "",
     "visite_state": 1,
     "type": [
       "Un appartement",
@@ -14766,7 +14766,7 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place lundi 26 octobre 2026 de 10h à 12h",
-    "visite_dt": "2026-10-26 10:00",
+    "visite_dt": "",
     "visite_state": 1,
     "type": [
       "Deux appartements"
@@ -14818,7 +14818,7 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place lundi 26 octobre 2026 de 10h30 à 11h30",
-    "visite_dt": "2026-10-26 10:30",
+    "visite_dt": "",
     "visite_state": 1,
     "type": [
       "Un appartement"
@@ -14871,7 +14871,7 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place lundi 26 octobre 2026 de 10h45 à 11h15",
-    "visite_dt": "2026-10-26 10:45",
+    "visite_dt": "",
     "visite_state": 1,
     "type": [
       "Un appartement"
@@ -14923,7 +14923,7 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place lundi 26 octobre 2026 de 11h à 12h",
-    "visite_dt": "2026-10-26 11:00",
+    "visite_dt": "",
     "visite_state": 1,
     "type": [
       "Une maison d'habitation"
@@ -14977,7 +14977,7 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place lundi 26 octobre 2026 de 11h à 12h",
-    "visite_dt": "2026-10-26 11:00",
+    "visite_dt": "",
     "visite_state": 1,
     "type": [
       "Une maison de ville"
@@ -15044,7 +15044,7 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place lundi 26 octobre 2026 à 14h",
-    "visite_dt": "2026-10-26 14:00",
+    "visite_dt": "",
     "visite_state": 1,
     "type": [
       "Une maison individuelle",
@@ -15098,7 +15098,7 @@
     },
     "trib_anom": true,
     "visite": "Visites sur place vendredi 16 octobre 2026 de 11h à 12h et lundi 26 octobre 2026 de 14h à 15h",
-    "visite_dt": "2026-10-26 14:00",
+    "visite_dt": "",
     "visite_state": 1,
     "type": [
       "Une maison à usage d'habitation"
@@ -15150,7 +15150,7 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place lundi 26 octobre 2026 de 14h à 15h",
-    "visite_dt": "2026-10-26 14:00",
+    "visite_dt": "",
     "visite_state": 1,
     "type": [
       "Un appartement"
@@ -15204,7 +15204,7 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place lundi 26 octobre 2026 de 14h à 15h",
-    "visite_dt": "2026-10-26 14:00",
+    "visite_dt": "",
     "visite_state": 1,
     "type": [
       "Un appartement"
@@ -15256,7 +15256,7 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place lundi 26 octobre 2026 de 14h à 15h",
-    "visite_dt": "2026-10-26 14:00",
+    "visite_dt": "",
     "visite_state": 1,
     "type": [
       "Un appartement"
@@ -15308,7 +15308,7 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place lundi 26 octobre 2026 de 14h à 16h",
-    "visite_dt": "2026-10-26 14:00",
+    "visite_dt": "",
     "visite_state": 1,
     "type": [
       "Une maison"
@@ -15360,7 +15360,7 @@
     },
     "trib_anom": true,
     "visite": "Visites sur place lundi 19 octobre 2026 de 14h30 à 15h30 et lundi 26 octobre 2026 de 14h30 à 15h30",
-    "visite_dt": "2026-10-26 14:30",
+    "visite_dt": "",
     "visite_state": 1,
     "type": [
       "Un appartement"
@@ -15412,7 +15412,7 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place lundi 26 octobre 2026 de 16h30 à 17h",
-    "visite_dt": "2026-10-26 16:30",
+    "visite_dt": "",
     "visite_state": 1,
     "type": [
       "Un terrain"
@@ -15462,7 +15462,7 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place mardi 27 octobre 2026 à 9h",
-    "visite_dt": "2026-10-27 09:00",
+    "visite_dt": "",
     "visite_state": 1,
     "type": [
       "Une maison d'habitation"
@@ -15514,7 +15514,7 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place mardi 27 octobre 2026 à 9h",
-    "visite_dt": "2026-10-27 09:00",
+    "visite_dt": "",
     "visite_state": 1,
     "type": [
       "Une maison"
@@ -15566,7 +15566,7 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place mardi 27 octobre 2026 de 9h à 10h",
-    "visite_dt": "2026-10-27 09:00",
+    "visite_dt": "",
     "visite_state": 1,
     "type": [
       "Un appartement duplex"
@@ -15618,7 +15618,7 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place mardi 27 octobre 2026 de 9h à 10h",
-    "visite_dt": "2026-10-27 09:00",
+    "visite_dt": "",
     "visite_state": 1,
     "type": [
       "Une maison d'habitation"
@@ -15670,7 +15670,7 @@
     },
     "trib_anom": true,
     "visite": "Visites sur place mardi 27 octobre 2026 de 9h à 11h et de 12h à 14h",
-    "visite_dt": "2026-10-27 09:00",
+    "visite_dt": "",
     "visite_state": 1,
     "type": [
       "Une maison",
@@ -15724,7 +15724,7 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place mardi 27 octobre 2026 de 10h à 11h",
-    "visite_dt": "2026-10-27 10:00",
+    "visite_dt": "",
     "visite_state": 1,
     "type": [
       "Une maison à usage d'habitation"
@@ -15776,7 +15776,7 @@
     },
     "trib_anom": true,
     "visite": "Visites sur place mardi 27 octobre 2026 de 10h à 12h et de 13h à 15h",
-    "visite_dt": "2026-10-27 10:00",
+    "visite_dt": "",
     "visite_state": 1,
     "type": [
       "Un appartement",
@@ -15830,7 +15830,7 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place mardi 27 octobre 2026 de 10h à 12h",
-    "visite_dt": "2026-10-27 10:00",
+    "visite_dt": "",
     "visite_state": 1,
     "type": [
       "Une maison à usage d'habitation"
@@ -15882,7 +15882,7 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place mardi 27 octobre 2026 de 10h30 à 11h30",
-    "visite_dt": "2026-10-27 10:30",
+    "visite_dt": "",
     "visite_state": 1,
     "type": [
       "Un appartement"
@@ -15940,7 +15940,7 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place mardi 27 octobre 2026 de 11h à 12h",
-    "visite_dt": "2026-10-27 11:00",
+    "visite_dt": "",
     "visite_state": 1,
     "type": [
       "Dix emplacements couverts pour voiture"
@@ -15988,7 +15988,7 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place mardi 27 octobre 2026 de 11h à 12h",
-    "visite_dt": "2026-10-27 11:00",
+    "visite_dt": "",
     "visite_state": 1,
     "type": [
       "L'aile ouest d'un ensemble immobilier"
@@ -16038,7 +16038,7 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place mardi 27 octobre 2026 de 14h à 15h",
-    "visite_dt": "2026-10-27 14:00",
+    "visite_dt": "",
     "visite_state": 1,
     "type": [
       "Un local"
@@ -16085,7 +16085,7 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place mardi 27 octobre 2026 de 14h à 15h",
-    "visite_dt": "2026-10-27 14:00",
+    "visite_dt": "",
     "visite_state": 1,
     "type": [
       "Une maison à usage d'habitation"
@@ -16137,7 +16137,7 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place mardi 27 octobre 2026 de 14h à 15h",
-    "visite_dt": "2026-10-27 14:00",
+    "visite_dt": "",
     "visite_state": 1,
     "type": [
       "Un appartement"
@@ -16191,7 +16191,7 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place mardi 27 octobre 2026 de 14h à 15h30",
-    "visite_dt": "2026-10-27 14:00",
+    "visite_dt": "",
     "visite_state": 1,
     "type": [
       "Une habitation"
@@ -16245,7 +16245,7 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place mardi 27 octobre 2026 de 14h à 15h30",
-    "visite_dt": "2026-10-27 14:00",
+    "visite_dt": "",
     "visite_state": 1,
     "type": [
       "Une maison d'habitation"

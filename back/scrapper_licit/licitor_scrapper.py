@@ -623,7 +623,7 @@ def parse_visite_dt(visite):
                     if dt >= datetime.now()
                 ]
         if len(dates_futures) == 0:
-            result = min([dt for dt in matches], default=None)
+            result = max([dt for dt in matches], default=None)
         else:
             result = min(dates_futures, default=None)
         
@@ -1441,8 +1441,13 @@ def keep_next_selling(past_dict):
     for ann_id in past_dict.keys():
         bien = past_dict[ann_id]
         dt_vente =  datetime.strptime(bien["dt_vente"], "%Y-%m-%d %H:%M").date()
-        visite_dt  =  datetime.strptime(bien["visite_dt"], "%Y-%m-%d %H:%M").date()
+        raw_visite_dt = bien["visite_dt"]
+        if raw_visite_dt == "":
+            visite_dt = datetime.now().date() - timedelta(days=1)
+        else:
+            visite_dt  =  datetime.strptime(bien["visite_dt"], "%Y-%m-%d %H:%M").date()
         if (now_date > visite_dt) and (now_date <= dt_vente):
+            bien["visite_dt"] = ""
             out_dict[ann_id] = bien
     
     return out_dict
@@ -1491,13 +1496,14 @@ def scrapper_handler(max_pages, max_announces,
     past_path = OUTPUT_PATH / "auctions.json"
     with open(past_path, "r") as file:
         past_data = json.load(file)
+    clean_past = keep_next_selling(past_data)
     
     
     #NEW DATA
     
     session = build_soup_session()
     
-    scrapper_out = run_scrapper(past_data,
+    scrapper_out = run_scrapper(clean_past,
          session,
          request_delay,
          BASE_URL, SEARCH_URL, 
