@@ -13,7 +13,7 @@ from datetime import datetime
 from datetime import timedelta
 
 from back.geo_infos.geo_data import enrich_handler
-from licitor_scrapper import (build_soup_session, 
+from back.scrapper_licit.licitor_scrapper import (build_soup_session, 
                              extract_announcement_urls, 
                              parse_announcement,
                              build_warnings,
