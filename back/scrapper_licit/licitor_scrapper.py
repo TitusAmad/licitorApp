@@ -630,7 +630,8 @@ def parse_visite_dt(visite):
     return clean_result
 
 
-def validate_announcement(data):
+def validate_announcement(data, mode):
+    
     """
     Vérifie la présence des champs importants.
     Retourne une liste de warnings.
@@ -671,9 +672,11 @@ def validate_announcement(data):
         
     if not data["coords"]:
         warnings.append("coordonnées géographiques manquantes")
+    
+    if mode == "visits":
         
-    if not data["visite"]:
-        warnings.append("visite manquant")
+        if not data["visite"]:
+            warnings.append("visite manquant")
 
     return warnings
 
@@ -1228,7 +1231,7 @@ def build_soup_session():
     
     return session
 
-def build_warnings(clean_results):
+def build_warnings(clean_results, mode):
     
     warnings = []
     
@@ -1237,7 +1240,7 @@ def build_warnings(clean_results):
         annonce = clean_results[id_bien]
         
         annonce_warnings = validate_announcement(
-            annonce
+            annonce, mode
         )
 
         if annonce_warnings:

@@ -1,0 +1,1344 @@
+{
+  "109735": {
+    "titre": "Annonce n°109735 : un appartement à Mantes-la-Jolie (Yvelines), mise à prix : 20 000 €",
+    "date_publication": "2026-09-07T00:00:00+02:00",
+    "tribunal": "Tribunal Judiciaire de Versailles (Yvelines)",
+    "type_vente": "Vente aux enchères publiques en un lot",
+    "dt_vente": "2026-11-04 09:30",
+    "dt_vente_limit": "2026-11-14",
+    "sell_state": 0,
+    "avocats": [
+      "Maître Aude Alexandre, membre de l'AARPI Trianon Avocats, Avocat"
+    ],
+    "telephones": [
+      "01 39 56 04 13"
+    ],
+    "documents": [],
+    "url": "https://www.licitor.com/annonce/10/97/35/vente-aux-encheres/un-appartement/mantes-la-jolie/yvelines/109735.html",
+    "id": "109735",
+    "mise_a_prix": 20000,
+    "est_price": null,
+    "fac_baisse": null,
+    "prix_final": 140000,
+    "ville": "Mantes-la-Jolie",
+    "adresse": "12, place de la République",
+    "coords": {
+      "latitude": 48.9897652,
+      "longitude": 1.7147566
+    },
+    "trib_anom": true,
+    "visite": null,
+    "visite_dt": null,
+    "visite_state": -1,
+    "type": [
+      "Un appartement",
+      "Une cave",
+      "Un box"
+    ],
+    "description": [
+      "Un appartement d'une superficie privative de 39,17 m², classé D au diagnostic de performance énergétique, dans le bâtiment C, escalier C1, au 3ème étage (NFG.47.25), 2ème porte à droite à la sortie de l'ascenseur C, comprenant : entrée, espace principal avec kitchenette, chambre, salle de bains avec wc",
+      "Une cave au 2ème sous-sol",
+      "Un box au 2ème sous-sol, pour voiture automobile Les lieux sont occupés"
+    ],
+    "occupation": null,
+    "surface_m2": 39.17,
+    "stats_bien": {
+      "min": 2378,
+      "avg": 2979,
+      "max": 3686
+    },
+    "est_price_m2": 2979,
+    "code_insee": "78361",
+    "code_postal": 78200,
+    "code_departement": "78",
+    "code_region": 11.0,
+    "nom_departement": "Yvelines",
+    "nom_region": "Île-de-France"
+  },
+  "109838": {
+    "titre": "Annonce n°109838 : une maison à Bazemont (Yvelines), mise à prix : 150 000 €",
+    "date_publication": "2026-09-08T00:00:00+02:00",
+    "tribunal": "Tribunal Judiciaire de Versailles (Yvelines)",
+    "type_vente": "Vente aux enchères publiques en un seul lot",
+    "dt_vente": "2026-11-04 09:30",
+    "dt_vente_limit": "2026-11-14",
+    "sell_state": 0,
+    "avocats": [
+      "Maître Élisa Gueilhers, Avocat"
+    ],
+    "telephones": [
+      "01 88 60 37 37"
+    ],
+    "documents": [],
+    "url": "https://www.licitor.com/annonce/10/98/38/vente-aux-encheres/une-maison/bazemont/yvelines/109838.html",
+    "id": "109838",
+    "mise_a_prix": 150000,
+    "est_price": null,
+    "fac_baisse": null,
+    "prix_final": 258000,
+    "ville": "Bazemont",
+    "adresse": "60 bis, rue d'Aulnay",
+    "coords": {
+      "latitude": 48.9309196,
+      "longitude": 1.8543819
+    },
+    "trib_anom": true,
+    "visite": null,
+    "visite_dt": null,
+    "visite_state": -1,
+    "type": [
+      "Une maison",
+      "Une piscine"
+    ],
+    "description": [
+      "Une maison de 212 m², de neuf pièces principales , élevée d'un étage sur sous-sol total avec garage (Occupée)",
+      "Une piscine"
+    ],
+    "occupation": null,
+    "surface_m2": 212.0,
+    "stats_bien": {
+      "min": 2503,
+      "avg": 3216,
+      "max": 4874
+    },
+    "est_price_m2": 3216,
+    "code_insee": "78049",
+    "code_postal": 78580,
+    "code_departement": "78",
+    "code_region": 11.0,
+    "nom_departement": "Yvelines",
+    "nom_region": "Île-de-France"
+  },
+  "109839": {
+    "titre": "Annonce n°109839 : un ensemble immobilier à Montchauvet (Yvelines), mise à prix : 30 000 €",
+    "date_publication": "2026-09-08T00:00:00+02:00",
+    "tribunal": "Tribunal Judiciaire de Versailles (Yvelines)",
+    "type_vente": "Vente aux enchères publiques sur liquidation judiciaire en un seul lot",
+    "dt_vente": "2026-11-04 09:30",
+    "dt_vente_limit": "2026-11-14",
+    "sell_state": 0,
+    "avocats": [
+      "Maître Élisa Gueilhers, Avocat"
+    ],
+    "telephones": [
+      "01 88 60 37 37"
+    ],
+    "documents": [],
+    "url": "https://www.licitor.com/annonce/10/98/39/vente-aux-encheres/un-ensemble-immobilier/montchauvet/yvelines/109839.html",
+    "id": "109839",
+    "mise_a_prix": 30000,
+    "est_price": null,
+    "fac_baisse": null,
+    "prix_final": 111000,
+    "ville": "Montchauvet",
+    "adresse": "2, rue de la Fontaine de Manet",
+    "coords": {
+      "latitude": 48.892807,
+      "longitude": 1.6354367
+    },
+    "trib_anom": true,
+    "visite": null,
+    "visite_dt": null,
+    "visite_state": -1,
+    "type": [
+      "Un ensemble immobilier",
+      "Bâtiment 1",
+      "Bâtiment 2",
+      "Bâtiment 3",
+      "Algeco"
+    ],
+    "description": [
+      "Un ensemble immobilier très ancien et en état d'abandon , comprenant : trois bâtiments, à savoir :",
+      "Bâtiment 1 de 118.50 m² , sur deux niveaux, comprenant 5 volumes Libre",
+      "Bâtiment 2 de 163.50 m² , sur un niveau, comprenant 5 volumes Libre",
+      "Bâtiment 3 de 24.00 m² , sur deux niveaux, comprenant 2 volumes Libre Avec présence d'un",
+      "Algeco (abri provisoire type cantonnement de chantier) constitué de deux espaces en enfilade"
+    ],
+    "occupation": "Libre",
+    "surface_m2": 306.0,
+    "stats_bien": {
+      "min": 2165,
+      "avg": 2785,
+      "max": 4243
+    },
+    "est_price_m2": 2785,
+    "code_insee": "78417",
+    "code_postal": 78790,
+    "code_departement": "78",
+    "code_region": 11.0,
+    "nom_departement": "Yvelines",
+    "nom_region": "Île-de-France"
+  },
+  "110083": {
+    "titre": "Annonce n°110083 : un appartement à Conflans-Sainte-Honorine (Yvelines), mise à prix : 30 000 €",
+    "date_publication": "2026-09-24T00:00:00+02:00",
+    "tribunal": "Tribunal Judiciaire de Versailles (Yvelines)",
+    "type_vente": "Vente aux enchères publiques",
+    "dt_vente": "2026-11-04 09:30",
+    "dt_vente_limit": "2026-11-14",
+    "sell_state": 0,
+    "avocats": [
+      "Maître Marion Cordier, membre de la SELARL Sillard - Cordier et Associés, Avocat"
+    ],
+    "telephones": [
+      "01 39 20 15 75"
+    ],
+    "documents": [],
+    "url": "https://www.licitor.com/annonce/11/00/83/vente-aux-encheres/un-appartement/conflans-sainte-honorine/yvelines/110083.html",
+    "id": "110083",
+    "mise_a_prix": 30000,
+    "est_price": null,
+    "fac_baisse": null,
+    "prix_final": 122000,
+    "ville": "Conflans-Sainte-Honorine",
+    "adresse": "120, av. du Maréchal Foch",
+    "coords": {
+      "latitude": 49.0033875,
+      "longitude": 2.1082377
+    },
+    "trib_anom": true,
+    "visite": null,
+    "visite_dt": null,
+    "visite_state": -1,
+    "type": [
+      "Un appartement",
+      "Une cave"
+    ],
+    "description": [
+      "Un appartement de 68,64 m² (hors balcons), bâtiment 1, au 3ème étage à droite, comprenant : séjour en entrant, deux chambres, cuisine, salle de bain, couloir, wc et deux balcons ( de 1,25 m² chacun )",
+      "Une cave au sous-sol Libre"
+    ],
+    "occupation": "Libre",
+    "surface_m2": 69.89,
+    "stats_bien": {
+      "min": 2417,
+      "avg": 2898,
+      "max": 3742
+    },
+    "est_price_m2": 2898,
+    "code_insee": "78172",
+    "code_postal": 78700,
+    "code_departement": "78",
+    "code_region": 11.0,
+    "nom_departement": "Yvelines",
+    "nom_region": "Île-de-France"
+  },
+  "110041": {
+    "titre": "Annonce n°110041 : un appartement à Le Bourget (Seine-Saint-Denis), mise à prix : 50 000 €",
+    "date_publication": "2026-09-17T00:00:00+02:00",
+    "tribunal": "Tribunal Judiciaire de Bobigny (Seine Saint Denis)",
+    "type_vente": "Vente aux enchères publiques en un lot",
+    "dt_vente": "2026-11-03 14:00",
+    "dt_vente_limit": "2026-11-13",
+    "sell_state": 0,
+    "avocats": [
+      "Maître Valérie Garçon, Avocat"
+    ],
+    "telephones": [
+      "01 48 54 90 87"
+    ],
+    "documents": [
+      {
+        "type": "Cahier des conditions de vente",
+        "url": "https://www.licitor.com/data/pub/media/annonce/11/00/41/110041.000.001.85fd7c46c100.pdf"
+      },
+      {
+        "type": "PV descriptif",
+        "url": "https://www.licitor.com/data/pub/media/annonce/11/00/41/110041.000.002.a5480dd2cb8b.pdf"
+      },
+      {
+        "type": "Diagnostics",
+        "url": "https://www.licitor.com/data/pub/media/annonce/11/00/41/110041.000.003.0ddb4c918a03.pdf"
+      }
+    ],
+    "url": "https://www.licitor.com/annonce/11/00/41/vente-aux-encheres/un-appartement/le-bourget/seine-saint-denis/110041.html",
+    "id": "110041",
+    "mise_a_prix": 50000,
+    "est_price": null,
+    "fac_baisse": null,
+    "prix_final": 138000,
+    "ville": "Le Bourget",
+    "adresse": "44, rue Anizan Cavillon",
+    "coords": {
+      "latitude": 48.9349442,
+      "longitude": 2.4214716
+    },
+    "trib_anom": true,
+    "visite": null,
+    "visite_dt": null,
+    "visite_state": -1,
+    "type": [
+      "Un appartement",
+      "Double parking"
+    ],
+    "description": [
+      "Un appartement de 59,64 m² , au 3ème étage, comprenant : salon/cuisine, balcon, wc, salle de bains, deux chambres",
+      "Double parking au sous-sol Occupés"
+    ],
+    "occupation": null,
+    "surface_m2": 59.64,
+    "stats_bien": {
+      "min": 2722,
+      "avg": 3175,
+      "max": 4165
+    },
+    "est_price_m2": 3175,
+    "code_insee": "93013",
+    "code_postal": 93350,
+    "code_departement": "93",
+    "code_region": 11.0,
+    "nom_departement": "Seine-Saint-Denis",
+    "nom_region": "Île-de-France"
+  },
+  "110044": {
+    "titre": "Annonce n°110044 : un appartement à Livry-Gargan (Seine-Saint-Denis), mise à prix : 45 000 €",
+    "date_publication": "2026-09-19T00:00:00+02:00",
+    "tribunal": "Tribunal Judiciaire de Bobigny (Seine Saint Denis)",
+    "type_vente": "Vente aux enchères publiques",
+    "dt_vente": "2026-11-03 14:00",
+    "dt_vente_limit": "2026-11-13",
+    "sell_state": 0,
+    "avocats": [
+      "Maître Florence Louis, membre de la SELARL Grimaud - Louis - Capraro, Avocat",
+      "Maître Florian Candan, membre du Cabinet Candan Avocat, Avocat"
+    ],
+    "telephones": [],
+    "documents": [
+      {
+        "type": "PV descriptif",
+        "url": "https://www.licitor.com/data/pub/media/annonce/11/00/44/110044.000.001.3de5e5fbab6c.pdf"
+      }
+    ],
+    "url": "https://www.licitor.com/annonce/11/00/44/vente-aux-encheres/un-appartement/livry-gargan/seine-saint-denis/110044.html",
+    "id": "110044",
+    "mise_a_prix": 45000,
+    "est_price": null,
+    "fac_baisse": null,
+    "prix_final": 140000,
+    "ville": "Livry-Gargan",
+    "adresse": "1, allée des Aubépines",
+    "coords": {
+      "latitude": 48.9128151,
+      "longitude": 2.5389566
+    },
+    "trib_anom": true,
+    "visite": null,
+    "visite_dt": null,
+    "visite_state": -1,
+    "type": [
+      "Un appartement",
+      "Une terrasse",
+      "Un jardin",
+      "Un emplacement de stationnement double"
+    ],
+    "description": [
+      "Un appartement de 65,62 m² , bâtiment C, au rez-de-chaussée, porte face, comprenant : entrée-dégagement, séjour avec cuisine ouverte, deux chambres, salle de bain, wc et placards",
+      "Une terrasse",
+      "Un jardin",
+      "Un emplacement de stationnement double en sous-sol Occupé"
+    ],
+    "occupation": null,
+    "surface_m2": 65.62,
+    "stats_bien": {
+      "min": 1892,
+      "avg": 2302,
+      "max": 2908
+    },
+    "est_price_m2": 2302,
+    "code_insee": "93046",
+    "code_postal": 93190,
+    "code_departement": "93",
+    "code_region": 11.0,
+    "nom_departement": "Seine-Saint-Denis",
+    "nom_region": "Île-de-France"
+  },
+  "110105": {
+    "titre": "Annonce n°110105 : un appartement à Neuilly-sur-Marne (Seine-Saint-Denis), mise à prix : 86 000 €",
+    "date_publication": "2026-09-28T00:00:00+02:00",
+    "tribunal": "Tribunal Judiciaire de Bobigny (Seine Saint Denis)",
+    "type_vente": "Vente aux enchères publiques",
+    "dt_vente": "2026-11-03 14:00",
+    "dt_vente_limit": "2026-11-13",
+    "sell_state": 0,
+    "avocats": [
+      "Maître Élise Baraniack, membre du Cabinet Olney Avocats Associés, Avocat",
+      "Maître Paul Buisson, Buisson Alaimo Associés, Avocat"
+    ],
+    "telephones": [
+      "01 34 20 15 64"
+    ],
+    "documents": [],
+    "url": "https://www.licitor.com/annonce/11/01/05/vente-aux-encheres/un-appartement/neuilly-sur-marne/seine-saint-denis/110105.html",
+    "id": "110105",
+    "mise_a_prix": 86000,
+    "est_price": null,
+    "fac_baisse": null,
+    "prix_final": 150000,
+    "ville": "Neuilly-sur-Marne",
+    "adresse": "6, allée Duperrey",
+    "coords": {
+      "latitude": 48.8668861,
+      "longitude": 2.5381711
+    },
+    "trib_anom": true,
+    "visite": null,
+    "visite_dt": null,
+    "visite_state": -1,
+    "type": [
+      "Un appartement",
+      "Une cave",
+      "Un emplacement"
+    ],
+    "description": [
+      "Un appartement de 97,79 m² (hors balcon), bâtiment Iroise, au 2ème étage, porte à gauche, comprenant : entrée, salle à manger, quatre chambres, cuisine, deux salles d'eau, wc, deux couloirs, placards et balcon",
+      "Une cave",
+      "Un emplacement pour véhicule automobile Occupé à la date du PVD (au 26.04.2024)"
+    ],
+    "occupation": null,
+    "surface_m2": 97.79,
+    "stats_bien": {
+      "min": 1758,
+      "avg": 2127,
+      "max": 2591
+    },
+    "est_price_m2": 2127,
+    "code_insee": "93050",
+    "code_postal": 93330,
+    "code_departement": "93",
+    "code_region": 11.0,
+    "nom_departement": "Seine-Saint-Denis",
+    "nom_region": "Île-de-France"
+  },
+  "110108": {
+    "titre": "Annonce n°110108 : un appartement à Saint-Denis (Seine-Saint-Denis), mise à prix : 10 000 €",
+    "date_publication": "2026-09-26T00:00:00+02:00",
+    "tribunal": "Tribunal Judiciaire de Bobigny (Seine Saint Denis)",
+    "type_vente": "Vente aux enchères publiques",
+    "dt_vente": "2026-11-03 14:00",
+    "dt_vente_limit": "2026-11-13",
+    "sell_state": 0,
+    "avocats": [
+      "SCP Droux - Baquet, Avocats"
+    ],
+    "telephones": [
+      "01 48 47 43 47"
+    ],
+    "documents": [],
+    "url": "https://www.licitor.com/annonce/11/01/08/vente-aux-encheres/un-appartement/saint-denis/seine-saint-denis/110108.html",
+    "id": "110108",
+    "mise_a_prix": 10000,
+    "est_price": null,
+    "fac_baisse": null,
+    "prix_final": 165000,
+    "ville": "Saint-Denis",
+    "adresse": "108 bis, rue Gabriel Péri",
+    "coords": {
+      "latitude": 48.9395943,
+      "longitude": 2.3570254
+    },
+    "trib_anom": true,
+    "visite": null,
+    "visite_dt": null,
+    "visite_state": -1,
+    "type": [
+      "Un appartement",
+      "Une cave",
+      "Un parking"
+    ],
+    "description": [
+      "Un appartement de 60,48 m² , bâtiment A, au 2ème étage, comprenant : entrée avec placards, séjour, deux chambres, cuisine, salle de bain, wc et balcon",
+      "Une cave",
+      "Un parking Occupé à la date du P.V de constat (19.03.2026)"
+    ],
+    "occupation": null,
+    "surface_m2": 60.48,
+    "stats_bien": {
+      "min": 2894,
+      "avg": 3595,
+      "max": 4191
+    },
+    "est_price_m2": 3595,
+    "code_insee": "93066",
+    "code_postal": 93200,
+    "code_departement": "93",
+    "code_region": 11.0,
+    "nom_departement": "Seine-Saint-Denis",
+    "nom_region": "Île-de-France"
+  },
+  "110109": {
+    "titre": "Annonce n°110109 : un logement à Bagnolet (Seine-Saint-Denis), mise à prix : 42 000 €",
+    "date_publication": "2026-09-24T00:00:00+02:00",
+    "tribunal": "Tribunal Judiciaire de Bobigny (Seine Saint Denis)",
+    "type_vente": "Vente aux enchères publiques en un lot",
+    "dt_vente": "2026-11-03 14:00",
+    "dt_vente_limit": "2026-11-13",
+    "sell_state": 0,
+    "avocats": [
+      "SELARL Puget - Léopold-Couturier, Avocats",
+      "Maître Thierry Baquet, membre de la SCP Droux - Baquet, Avocat"
+    ],
+    "telephones": [
+      "01 47 66 59 89",
+      "01 48 47 43 47"
+    ],
+    "documents": [],
+    "url": "https://www.licitor.com/annonce/11/01/09/vente-aux-encheres/un-logement/bagnolet/seine-saint-denis/110109.html",
+    "id": "110109",
+    "mise_a_prix": 42000,
+    "est_price": null,
+    "fac_baisse": null,
+    "prix_final": 161000,
+    "ville": "Bagnolet",
+    "adresse": "65, rue Marie-Anne Colombier",
+    "coords": {
+      "latitude": 48.8719559,
+      "longitude": 2.4144347
+    },
+    "trib_anom": true,
+    "visite": null,
+    "visite_dt": null,
+    "visite_state": -1,
+    "type": [
+      "Un logement",
+      "Deux pièces"
+    ],
+    "description": [
+      "Un logement bâtiment A, au rez-de-chaussée, accessible depuis la cour, de deux pièces principales , en travaux (Lot n°1)",
+      "Deux pièces au sous-sol, reliées au lot n°1 par une trémie (Lot n°32)"
+    ],
+    "occupation": null,
+    "surface_m2": null,
+    "stats_bien": {
+      "min": 3884,
+      "avg": 4807,
+      "max": 6119
+    },
+    "est_price_m2": 4807,
+    "code_insee": "93006",
+    "code_postal": 93170,
+    "code_departement": "93",
+    "code_region": 11.0,
+    "nom_departement": "Seine-Saint-Denis",
+    "nom_region": "Île-de-France"
+  },
+  "110110": {
+    "titre": "Annonce n°110110 : un appartement à Montfermeil (Seine-Saint-Denis), mise à prix : 80 000 €",
+    "date_publication": "2026-09-24T00:00:00+02:00",
+    "tribunal": "Tribunal Judiciaire de Bobigny (Seine Saint Denis)",
+    "type_vente": "Vente aux enchères publiques en un lot",
+    "dt_vente": "2026-11-03 14:00",
+    "dt_vente_limit": "2026-11-13",
+    "sell_state": 0,
+    "avocats": [
+      "SELARL Puget - Léopold-Couturier, Avocats",
+      "Maître Thierry Baquet, membre de la SCP Droux - Baquet, Avocat"
+    ],
+    "telephones": [
+      "01 47 66 59 89",
+      "01 48 47 43 47"
+    ],
+    "documents": [],
+    "url": "https://www.licitor.com/annonce/11/01/10/vente-aux-encheres/un-appartement/montfermeil/seine-saint-denis/110110.html",
+    "id": "110110",
+    "mise_a_prix": 80000,
+    "est_price": null,
+    "fac_baisse": null,
+    "prix_final": 144000,
+    "ville": "Montfermeil",
+    "adresse": "46, allée Notre Dame des Anges",
+    "coords": {
+      "latitude": 48.9006271,
+      "longitude": 2.5557604
+    },
+    "trib_anom": true,
+    "visite": null,
+    "visite_dt": null,
+    "visite_state": -1,
+    "type": [
+      "Un appartement",
+      "Deux parkings extérieurs"
+    ],
+    "description": [
+      "Un appartement lot volume 1, bâtiment 3, au 1er étage, à gauche en sortant de l'ascenseur, porte au fond du couloir, de quatre pièces principales avec balcon (Lot n°58)",
+      "Deux parkings extérieurs sous pergola, n°s 14 et 13 (Lots n°s 134 et 135)"
+    ],
+    "occupation": null,
+    "surface_m2": null,
+    "stats_bien": {
+      "min": 2380,
+      "avg": 3168,
+      "max": 3505
+    },
+    "est_price_m2": 3168,
+    "code_insee": "93047",
+    "code_postal": 93370,
+    "code_departement": "93",
+    "code_region": 11.0,
+    "nom_departement": "Seine-Saint-Denis",
+    "nom_region": "Île-de-France"
+  },
+  "110179": {
+    "titre": "Annonce n°110179 : un logement à Pantin (Seine-Saint-Denis), mise à prix : 25 000 €",
+    "date_publication": "2026-09-30T00:00:00+02:00",
+    "tribunal": "Tribunal Judiciaire de Bobigny (Seine Saint Denis)",
+    "type_vente": "Vente aux enchères publiques",
+    "dt_vente": "2026-11-03 14:00",
+    "dt_vente_limit": "2026-11-13",
+    "sell_state": 0,
+    "avocats": [
+      "SCP Droux et Baquet, Avocats",
+      "Maître Julien Semeria, de la SELARL 9 Janvier, Avocat"
+    ],
+    "telephones": [
+      "01 48 47 43 47",
+      "01 34 24 94 40"
+    ],
+    "documents": [],
+    "url": "https://www.licitor.com/annonce/11/01/79/vente-aux-encheres/un-logement/pantin/seine-saint-denis/110179.html",
+    "id": "110179",
+    "mise_a_prix": 25000,
+    "est_price": null,
+    "fac_baisse": null,
+    "prix_final": 25000,
+    "ville": "Pantin",
+    "adresse": "30/32, rue Cartier Bresson",
+    "coords": {
+      "latitude": 48.9030991,
+      "longitude": 2.3962307
+    },
+    "trib_anom": true,
+    "visite": null,
+    "visite_dt": null,
+    "visite_state": -1,
+    "type": [
+      "Un logement"
+    ],
+    "description": [
+      "Un logement 1ère porte à gauche dans l'entrée commune, au rez-de-chaussée, comprenant : entrée, salle de séjour, chambre, débarras Deux locaux"
+    ],
+    "occupation": null,
+    "surface_m2": null,
+    "stats_bien": {
+      "min": 4338,
+      "avg": 4977,
+      "max": 5820
+    },
+    "est_price_m2": 4977,
+    "code_insee": "93055",
+    "code_postal": 93500,
+    "code_departement": "93",
+    "code_region": 11.0,
+    "nom_departement": "Seine-Saint-Denis",
+    "nom_region": "Île-de-France"
+  },
+  "110180": {
+    "titre": "Annonce n°110180 : un bâtiment à usage d'habitation à Villepinte (Seine-Saint-Denis), mise à prix : 300 000 €",
+    "date_publication": "2026-09-30T00:00:00+02:00",
+    "tribunal": "Tribunal Judiciaire de Bobigny (Seine Saint Denis)",
+    "type_vente": "Vente aux enchères publiques",
+    "dt_vente": "2026-11-03 14:00",
+    "dt_vente_limit": "2026-11-13",
+    "sell_state": 0,
+    "avocats": [
+      "Maître Sylvie Langlais, de la SCP Langlais - Chopin, Avocat associé"
+    ],
+    "telephones": [
+      "01 48 70 71 75"
+    ],
+    "documents": [],
+    "url": "https://www.licitor.com/annonce/11/01/80/vente-aux-encheres/un-batiment-a-usage-d-habitation/villepinte/seine-saint-denis/110180.html",
+    "id": "110180",
+    "mise_a_prix": 300000,
+    "est_price": null,
+    "fac_baisse": null,
+    "prix_final": 918000,
+    "ville": "Villepinte",
+    "adresse": "63-65, chemin du Loup",
+    "coords": {
+      "latitude": 48.9474602,
+      "longitude": 2.5639186
+    },
+    "trib_anom": true,
+    "visite": null,
+    "visite_dt": null,
+    "visite_state": -1,
+    "type": [
+      "Un bâtiment à usage d'habitation"
+    ],
+    "description": [
+      "Un bâtiment à usage d'habitation comprenant : Au rez-de-chaussée : Appartement, de 29,51 m² Occupé Appartement, de 25,33 m² Occupé Au 1er étage : Appartement, de 32,78 m² Occupé Appartement, de 22,14 m² Occupé Au 2ème étage : Appartement, de 34,37 m² Occupé Appartement, de 18,38 m² Occupé Immeuble en construction, de 599,65 m² Vide"
+    ],
+    "occupation": null,
+    "surface_m2": 762.16,
+    "stats_bien": null,
+    "est_price_m2": null,
+    "code_insee": "93078",
+    "code_postal": 93420,
+    "code_departement": "93",
+    "code_region": 11.0,
+    "nom_departement": "Seine-Saint-Denis",
+    "nom_region": "Île-de-France"
+  },
+  "110007": {
+    "titre": "Annonce n°110007 : un studio à Paris 11ème, mise à prix : 100 000 €",
+    "date_publication": "2026-09-15T00:00:00+02:00",
+    "tribunal": "Tribunal Judiciaire de Paris",
+    "type_vente": "Vente aux enchères publiques en un lot",
+    "dt_vente": "2026-10-29 14:00",
+    "dt_vente_limit": "2026-11-08",
+    "sell_state": 0,
+    "avocats": [
+      "Maître Benjamin Bayi, Avocat"
+    ],
+    "telephones": [
+      "01 39 24 88 46"
+    ],
+    "documents": [],
+    "url": "https://www.licitor.com/annonce/11/00/07/vente-aux-encheres/un-studio/paris-11eme/paris/110007.html",
+    "id": "110007",
+    "mise_a_prix": 100000,
+    "est_price": null,
+    "fac_baisse": null,
+    "prix_final": 100000,
+    "ville": "Paris 11ème",
+    "adresse": "4-6, Cité de l'Industrie et 100, rue Oberkampf",
+    "coords": {
+      "latitude": 48.8653297,
+      "longitude": 2.3784778
+    },
+    "trib_anom": true,
+    "visite": null,
+    "visite_dt": null,
+    "visite_state": -1,
+    "type": [
+      "Un studio"
+    ],
+    "description": [
+      "Un studio de 18,38 m² , au 2ème étage, escaliers A-B et C, porte n°207, comprenant : entrée avec coin cuisine, une pièce principale, salle d'eau avec wc (lot n° 73) Les lieux sont loués (bail commercial)"
+    ],
+    "occupation": null,
+    "surface_m2": 18.38,
+    "stats_bien": {
+      "min": 8611,
+      "avg": 10000,
+      "max": 11118
+    },
+    "est_price_m2": 10000,
+    "code_insee": "75111",
+    "code_postal": 75011,
+    "code_departement": "75",
+    "code_region": 11.0,
+    "nom_departement": "Paris",
+    "nom_region": "Île-de-France"
+  },
+  "110034": {
+    "titre": "Annonce n°110034 : un local à usage d'habitation à Paris 18ème, mise à prix : 20 000 €",
+    "date_publication": "2026-09-19T00:00:00+02:00",
+    "tribunal": "Tribunal Judiciaire de Paris, Parvis Robert Badinter, à Paris 17ème",
+    "type_vente": "Vente aux enchères publiques",
+    "dt_vente": "2026-10-29 14:00",
+    "dt_vente_limit": "2026-11-08",
+    "sell_state": 0,
+    "avocats": [
+      "Maître Vincent Derer, de la SELAFA Cabinet Cassel, Avocat"
+    ],
+    "telephones": [
+      "01 44 70 60 19"
+    ],
+    "documents": [
+      {
+        "type": "Cahier des conditions de vente",
+        "url": "https://www.licitor.com/data/pub/media/annonce/11/00/34/110034.000.001.581761c7f813.pdf"
+      },
+      {
+        "type": "PV descriptif",
+        "url": "https://www.licitor.com/data/pub/media/annonce/11/00/34/110034.000.002.da3d03829ef9.pdf"
+      }
+    ],
+    "url": "https://www.licitor.com/annonce/11/00/34/vente-aux-encheres/un-local-a-usage-d-habitation/paris-18eme/paris/110034.html",
+    "id": "110034",
+    "mise_a_prix": 20000,
+    "est_price": null,
+    "fac_baisse": null,
+    "prix_final": 67000,
+    "ville": "Paris 18ème",
+    "adresse": "71, rue Riquet",
+    "coords": {
+      "latitude": 48.8896179,
+      "longitude": 2.3620806
+    },
+    "trib_anom": true,
+    "visite": null,
+    "visite_dt": null,
+    "visite_state": -1,
+    "type": [
+      "Un local à usage d'habitation"
+    ],
+    "description": [
+      "Un local à usage d'habitation de 15,43 m² , bâtiment A, sur cour, au rez-de-chaussée droite, comprenant : petite entrée avec point d'eau, chambre et débarras Semble squatté"
+    ],
+    "occupation": null,
+    "surface_m2": 15.43,
+    "stats_bien": null,
+    "est_price_m2": null,
+    "code_insee": "75118",
+    "code_postal": 75018,
+    "code_departement": "75",
+    "code_region": 11.0,
+    "nom_departement": "Paris",
+    "nom_region": "Île-de-France"
+  },
+  "110075": {
+    "titre": "Annonce n°110075 : un appartement à Paris 18ème, mise à prix : 65 000 €",
+    "date_publication": "2026-09-24T00:00:00+02:00",
+    "tribunal": "Tribunal Judiciaire de Paris",
+    "type_vente": "Vente aux enchères publiques en un lot",
+    "dt_vente": "2026-10-29 14:00",
+    "dt_vente_limit": "2026-11-08",
+    "sell_state": 0,
+    "avocats": [
+      "Maître F. Puget, de la SELARL Puget - Léopold-Couturier, Avocat"
+    ],
+    "telephones": [
+      "01 47 66 59 89"
+    ],
+    "documents": [],
+    "url": "https://www.licitor.com/annonce/11/00/75/vente-aux-encheres/un-appartement/paris-18eme/paris/110075.html",
+    "id": "110075",
+    "mise_a_prix": 65000,
+    "est_price": null,
+    "fac_baisse": null,
+    "prix_final": 171000,
+    "ville": "Paris 18ème",
+    "adresse": "62, rue Marx Dormoy",
+    "coords": {
+      "latitude": 48.8886299,
+      "longitude": 2.3600709
+    },
+    "trib_anom": true,
+    "visite": null,
+    "visite_dt": null,
+    "visite_state": -1,
+    "type": [
+      "Un appartement"
+    ],
+    "description": [
+      "Un appartement au 1er étage du bâtiment C, escalier 2, de deux pièces principales, avec loggia (Lot n°109)"
+    ],
+    "occupation": null,
+    "surface_m2": null,
+    "stats_bien": {
+      "min": 6667,
+      "avg": 7583,
+      "max": 8963
+    },
+    "est_price_m2": 7583,
+    "code_insee": "75118",
+    "code_postal": 75018,
+    "code_departement": "75",
+    "code_region": 11.0,
+    "nom_departement": "Paris",
+    "nom_region": "Île-de-France"
+  },
+  "109659": {
+    "titre": "Annonce n°109659 : un appartement à Saint-Mandé (Val-de-Marne), mise à prix : 240 000 €",
+    "date_publication": "2026-08-24T00:00:00+02:00",
+    "tribunal": "Tribunal Judiciaire de Créteil (Val de Marne)",
+    "type_vente": "Vente aux enchères publiques",
+    "dt_vente": "2026-10-22 09:30",
+    "dt_vente_limit": "2026-11-01",
+    "sell_state": 0,
+    "avocats": [
+      "Maître Laurine Salomoni, de la SARL Fricaudet - Larroumet - Salomoni, Avocat",
+      "Maître Élise Baraniack, de la SCP Wuilque - Bosqué - Taouil - Baraniack - Dewinne, Avocat"
+    ],
+    "telephones": [
+      "01 48 66 75 00"
+    ],
+    "documents": [],
+    "url": "https://www.licitor.com/annonce/10/96/59/vente-aux-encheres/un-appartement/saint-mande/val-de-marne/109659.html",
+    "id": "109659",
+    "mise_a_prix": 240000,
+    "est_price": null,
+    "fac_baisse": null,
+    "prix_final": 493000,
+    "ville": "Saint-Mandé",
+    "adresse": "54, rue de l'Alouette",
+    "coords": {
+      "latitude": 48.8375816,
+      "longitude": 2.413882
+    },
+    "trib_anom": true,
+    "visite": null,
+    "visite_dt": null,
+    "visite_state": -1,
+    "type": [
+      "Un appartement"
+    ],
+    "description": [
+      "Un appartement comprenant : couloir d'entrée, séjour, trois chambres, cuisine, salle de bains avec wc, salle d'eau, wc, dégagement Et le droit à la jouissance exclusive et privative d'un balcon Cadastré section G n°2 à G n°5 formant le lot n°1.012"
+    ],
+    "occupation": null,
+    "surface_m2": null,
+    "stats_bien": null,
+    "est_price_m2": null,
+    "code_insee": "94067",
+    "code_postal": 94160,
+    "code_departement": "94",
+    "code_region": 11.0,
+    "nom_departement": "Val-de-Marne",
+    "nom_region": "Île-de-France"
+  },
+  "109728": {
+    "titre": "Annonce n°109728 : un pavillon à Villiers-sur-Marne (Val-de-Marne), mise à prix : 100 000 €",
+    "date_publication": "2026-08-28T00:00:00+02:00",
+    "tribunal": "Tribunal Judiciaire de Créteil (Val de Marne)",
+    "type_vente": "Vente aux enchères publiques sur réitération en un seul lot",
+    "dt_vente": "2026-10-22 09:30",
+    "dt_vente_limit": "2026-11-01",
+    "sell_state": 0,
+    "avocats": [
+      "Maître Ayi D'Almeida, Avocat"
+    ],
+    "telephones": [
+      "09 81 60 25 47"
+    ],
+    "documents": [],
+    "url": "https://www.licitor.com/annonce/10/97/28/vente-aux-encheres/un-pavillon/villiers-sur-marne/val-de-marne/109728.html",
+    "id": "109728",
+    "mise_a_prix": 100000,
+    "est_price": null,
+    "fac_baisse": null,
+    "prix_final": 183000,
+    "ville": "Villiers-sur-Marne",
+    "adresse": "11, rue du Docteur Fillioux",
+    "coords": {
+      "latitude": 48.8244667,
+      "longitude": 2.55335
+    },
+    "trib_anom": true,
+    "visite": null,
+    "visite_dt": null,
+    "visite_state": -1,
+    "type": [
+      "Un pavillon"
+    ],
+    "description": [
+      "Un pavillon d'une surface habitable de 105,69 m² , élevé d'un rez-de-chaussée et d'un étage mansardé, comprenant : cinq pièces, cuisine, salle de bains, wc, entrée, garage Jouissance privative du terrain d'une superficie de 234 m²"
+    ],
+    "occupation": null,
+    "surface_m2": 339.69,
+    "stats_bien": null,
+    "est_price_m2": null,
+    "code_insee": "94079",
+    "code_postal": 94350,
+    "code_departement": "94",
+    "code_region": 11.0,
+    "nom_departement": "Val-de-Marne",
+    "nom_region": "Île-de-France"
+  },
+  "109793": {
+    "titre": "Annonce n°109793 : un appartement à Nogent-sur-Marne (Val-de-Marne), mise à prix : 25 000 €",
+    "date_publication": "2026-09-05T00:00:00+02:00",
+    "tribunal": "Tribunal Judiciaire de Créteil (Val de Marne)",
+    "type_vente": "Vente aux enchères publiques",
+    "dt_vente": "2026-10-22 09:30",
+    "dt_vente_limit": "2026-11-01",
+    "sell_state": 0,
+    "avocats": [
+      "Maître Laurine Salomoni, membre de la SARL Fricaudet - Larroumet - Salomoni, Avocat",
+      "Maître Adèle Orzoni, membre de la SELARL BJA, Avocat associée"
+    ],
+    "telephones": [
+      "09 72 53 65 89",
+      "01 84 25 34 30"
+    ],
+    "documents": [],
+    "url": "https://www.licitor.com/annonce/10/97/93/vente-aux-encheres/un-appartement/nogent-sur-marne/val-de-marne/109793.html",
+    "id": "109793",
+    "mise_a_prix": 25000,
+    "est_price": null,
+    "fac_baisse": null,
+    "prix_final": 206000,
+    "ville": "Nogent-sur-Marne",
+    "adresse": "155, bd de Strasbourg",
+    "coords": {
+      "latitude": 48.8463249,
+      "longitude": 2.4903953
+    },
+    "trib_anom": true,
+    "visite": null,
+    "visite_dt": null,
+    "visite_state": -1,
+    "type": [
+      "Un appartement",
+      "Une cave"
+    ],
+    "description": [
+      "Un appartement de 52,53 m² (hors balcon), au 7ème étage, 1ère porte à droite après l'ascenseur, comprenant : pièce principale avec cuisine ouverte en entrant, chambre, salle de bain, wc, dégagement, placards et balcon (2,77 m²)",
+      "Une cave Loué en meublé au 10/04/2025 (date du PVD)"
+    ],
+    "occupation": "Loué",
+    "surface_m2": 52.53,
+    "stats_bien": null,
+    "est_price_m2": null,
+    "code_insee": "94052",
+    "code_postal": 94130,
+    "code_departement": "94",
+    "code_region": 11.0,
+    "nom_departement": "Val-de-Marne",
+    "nom_region": "Île-de-France"
+  },
+  "109893": {
+    "titre": "Annonce n°109893 : un appartement à Ablon-sur-Seine (Val-de-Marne), mise à prix : 17 000 €",
+    "date_publication": "2026-09-08T00:00:00+02:00",
+    "tribunal": "Tribunal Judiciaire de Créteil (Val de Marne)",
+    "type_vente": "Vente aux enchères publiques",
+    "dt_vente": "2026-10-22 09:30",
+    "dt_vente_limit": "2026-11-01",
+    "sell_state": 0,
+    "avocats": [
+      "Maître Florence Chopin, de la SCP Langlais - Chopin, Avocat associé"
+    ],
+    "telephones": [
+      "01 48 70 71 75"
+    ],
+    "documents": [],
+    "url": "https://www.licitor.com/annonce/10/98/93/vente-aux-encheres/un-appartement/ablon-sur-seine/val-de-marne/109893.html",
+    "id": "109893",
+    "mise_a_prix": 17000,
+    "est_price": null,
+    "fac_baisse": null,
+    "prix_final": 212000,
+    "ville": "Ablon-sur-Seine",
+    "adresse": "4/17, allée de l'Orangerie Allée des Peupliers Allée de l'Ecole Allée du Bois Allée des Cèdres",
+    "coords": {
+      "latitude": 48.7223167,
+      "longitude": 2.4113476
+    },
+    "trib_anom": true,
+    "visite": null,
+    "visite_dt": null,
+    "visite_state": -1,
+    "type": [
+      "Un appartement",
+      "Un appartement"
+    ],
+    "description": [
+      "Un appartement de 68,23 m², au rez-de-chaussée gauche, comprenant : entrée, cuisine, quatre pièces, couloir, salle de bains/wc, wc Droit à la jouissance de la cave Occupé",
+      "Un appartement de 69,13 m², au 3ème étage, porte gauche, comprenant : entrée, cuisine, quatre pièces, couloir, débarras, salle de bains, wc Droit à la jouissance de la cave Parking Libre"
+    ],
+    "occupation": "Libre",
+    "surface_m2": 137.36,
+    "stats_bien": null,
+    "est_price_m2": null,
+    "code_insee": "94001",
+    "code_postal": 94480,
+    "code_departement": "94",
+    "code_region": 11.0,
+    "nom_departement": "Val-de-Marne",
+    "nom_region": "Île-de-France"
+  },
+  "109980": {
+    "titre": "Annonce n°109980 : un studio à Villeneuve-le-Roi (Val-de-Marne), mise à prix : 31 000 €",
+    "date_publication": "2026-09-10T00:00:00+02:00",
+    "tribunal": "Tribunal Judiciaire de Créteil (Val de Marne)",
+    "type_vente": "Vente aux enchères publiques en un lot",
+    "dt_vente": "2026-10-22 09:30",
+    "dt_vente_limit": "2026-11-01",
+    "sell_state": 0,
+    "avocats": [
+      "SELARL Puget - Léopold-Couturier, Avocats",
+      "Maître Harry Orhon, Avocat"
+    ],
+    "telephones": [
+      "01 47 66 59 89"
+    ],
+    "documents": [],
+    "url": "https://www.licitor.com/annonce/10/99/80/vente-aux-encheres/un-studio/villeneuve-le-roi/val-de-marne/109980.html",
+    "id": "109980",
+    "mise_a_prix": 31000,
+    "est_price": null,
+    "fac_baisse": null,
+    "prix_final": 51000,
+    "ville": "Villeneuve-le-Roi",
+    "adresse": "2, rue de Jouy",
+    "coords": {
+      "latitude": 48.7349052,
+      "longitude": 2.4097123
+    },
+    "trib_anom": true,
+    "visite": null,
+    "visite_dt": null,
+    "visite_state": -1,
+    "type": [
+      "Un studio"
+    ],
+    "description": [
+      "Un studio au rez-de-chaussée du bâtiment A (accès par le lot n°8), avec terrasse/jardin privatif à l'arrière, à rénover (Formant les lots n°3 - 8 - 16)"
+    ],
+    "occupation": null,
+    "surface_m2": null,
+    "stats_bien": null,
+    "est_price_m2": null,
+    "code_insee": "94077",
+    "code_postal": 94290,
+    "code_departement": "94",
+    "code_region": 11.0,
+    "nom_departement": "Val-de-Marne",
+    "nom_region": "Île-de-France"
+  },
+  "109978": {
+    "titre": "Annonce n°109978 : un appartement à Boulogne-Billancourt (Hauts-de-Seine), mise à prix : 560 000 €",
+    "date_publication": "2026-09-12T00:00:00+02:00",
+    "tribunal": "À l'Annexe du Tribunal Judiciaire de Nanterre (Hauts de Seine)",
+    "type_vente": "Vente aux enchères publiques",
+    "dt_vente": "2026-10-22 14:00",
+    "dt_vente_limit": "2026-11-01",
+    "sell_state": 0,
+    "avocats": [
+      "Maître Florence Fricaudet, membre de la SARL Fricaudet - Larroumet - Salomoni, Avocate",
+      "Maître Christophe Boré, membre de la SELARL A.K.P.R., Avocat"
+    ],
+    "telephones": [
+      "01 43 74 74 94"
+    ],
+    "documents": [],
+    "url": "https://www.licitor.com/annonce/10/99/78/vente-aux-encheres/un-appartement/boulogne-billancourt/hauts-de-seine/109978.html",
+    "id": "109978",
+    "mise_a_prix": 560000,
+    "est_price": null,
+    "fac_baisse": null,
+    "prix_final": 811000,
+    "ville": "Boulogne-Billancourt",
+    "adresse": "8-10, rue d'Aguesseau",
+    "coords": {
+      "latitude": 48.845089,
+      "longitude": 2.236095
+    },
+    "trib_anom": true,
+    "visite": null,
+    "visite_dt": null,
+    "visite_state": -1,
+    "type": [
+      "Un appartement",
+      "Une cave",
+      "Un parking"
+    ],
+    "description": [
+      "Un appartement de 95,1 m² (hors balcons), au 5ème étage, comprenant : entrée, séjour, deux chambres, cuisine, salle de bain/wc, cagibi, wc, couloir et deux balcons filants ( 13,3 m² et 4,9 m² )",
+      "Une cave",
+      "Un parking ( 11,5 m² ) fermé Occupé à la date du PVD (16/04/2026)"
+    ],
+    "occupation": null,
+    "surface_m2": 95.1,
+    "stats_bien": null,
+    "est_price_m2": null,
+    "code_insee": "92012",
+    "code_postal": 92100,
+    "code_departement": "92",
+    "code_region": 11.0,
+    "nom_departement": "Hauts-de-Seine",
+    "nom_region": "Île-de-France"
+  },
+  "110040": {
+    "titre": "Annonce n°110040 : une pièce à Saint-Cloud (Hauts-de-Seine), mise à prix : 18 000 €",
+    "date_publication": "2026-09-18T00:00:00+02:00",
+    "tribunal": "À l'Annexe du Tribunal Judiciaire de Nanterre (Hauts de Seine)",
+    "type_vente": "Vente aux enchères publiques",
+    "dt_vente": "2026-10-22 14:30",
+    "dt_vente_limit": "2026-11-01",
+    "sell_state": 0,
+    "avocats": [
+      "Maître Florence Fricaudet, membre de la SARL Fricaudet - Larroumet - Salomoni, Avocat"
+    ],
+    "telephones": [
+      "09 72 53 65 89"
+    ],
+    "documents": [],
+    "url": "https://www.licitor.com/annonce/11/00/40/vente-aux-encheres/une-piece/saint-cloud/hauts-de-seine/110040.html",
+    "id": "110040",
+    "mise_a_prix": 18000,
+    "est_price": null,
+    "fac_baisse": null,
+    "prix_final": 18001,
+    "ville": "Saint-Cloud",
+    "adresse": "14, rue du Mont Valérien",
+    "coords": {
+      "latitude": 48.8535614,
+      "longitude": 2.2162266
+    },
+    "trib_anom": true,
+    "visite": null,
+    "visite_dt": null,
+    "visite_state": -1,
+    "type": [
+      "Une pièce"
+    ],
+    "description": [
+      "Une pièce de 10,10 m² , en rez-de-jardin numéro 1, 3ème porte à gauche en sortant de l'ascenseur B, avec droit de jouissance en commun aux wc, cabinet de toilette et douche situés près de la chaufferie Occupé"
+    ],
+    "occupation": null,
+    "surface_m2": 10.1,
+    "stats_bien": null,
+    "est_price_m2": null,
+    "code_insee": "92064",
+    "code_postal": 92210,
+    "code_departement": "92",
+    "code_region": 11.0,
+    "nom_departement": "Hauts-de-Seine",
+    "nom_region": "Île-de-France"
+  },
+  "110057": {
+    "titre": "Annonce n°110057 : un appartement à Rueil-Malmaison (Hauts-de-Seine), mise à prix : 45 000 €",
+    "date_publication": "2026-09-21T00:00:00+02:00",
+    "tribunal": "À l'Extension du Tribunal Judiciaire de Nanterre (Hauts de Seine)",
+    "type_vente": "Vente aux enchères publiques",
+    "dt_vente": "2026-10-22 14:30",
+    "dt_vente_limit": "2026-11-01",
+    "sell_state": 0,
+    "avocats": [
+      "Maître Cécile Turon, Avocat"
+    ],
+    "telephones": [
+      "01 47 32 03 85"
+    ],
+    "documents": [],
+    "url": "https://www.licitor.com/annonce/11/00/57/vente-aux-encheres/un-appartement/rueil-malmaison/hauts-de-seine/110057.html",
+    "id": "110057",
+    "mise_a_prix": 45000,
+    "est_price": null,
+    "fac_baisse": null,
+    "prix_final": 370000,
+    "ville": "Rueil-Malmaison",
+    "adresse": "14, place des Impressionnistes",
+    "coords": {
+      "latitude": 48.8895302,
+      "longitude": 2.165329
+    },
+    "trib_anom": true,
+    "visite": null,
+    "visite_dt": null,
+    "visite_state": -1,
+    "type": [
+      "Un appartement",
+      "Une cave",
+      "Deux emplacements de parking"
+    ],
+    "description": [
+      "Un appartement de 93,32 m² , au 4ème étage à gauche porte face, comprenant : entrée, séjour, deux chambres, cuisine, dégagement, salle d'eau, salle de bains, dégagement, wc et balcon",
+      "Une cave",
+      "Deux emplacements de parking aux 1er et 2ème sous-sol"
+    ],
+    "occupation": null,
+    "surface_m2": 93.32,
+    "stats_bien": null,
+    "est_price_m2": null,
+    "code_insee": "92063",
+    "code_postal": 92500,
+    "code_departement": "92",
+    "code_region": 11.0,
+    "nom_departement": "Hauts-de-Seine",
+    "nom_region": "Île-de-France"
+  },
+  "109657": {
+    "titre": "Annonce n°109657 : une maison d'habitation à Chatou (Yvelines), mise à prix : 364 100 €",
+    "date_publication": "2026-08-22T00:00:00+02:00",
+    "tribunal": "Tribunal Judiciaire de Versailles (Yvelines)",
+    "type_vente": "Vente aux enchères publiques sur surenchère en un lot",
+    "dt_vente": "2026-10-21 09:30",
+    "dt_vente_limit": "2026-10-31",
+    "sell_state": 0,
+    "avocats": [
+      "Maître François Perrault, membre de la SELARL Mayet et Perrault, Avocat"
+    ],
+    "telephones": [
+      "01 39 20 36 90"
+    ],
+    "documents": [],
+    "url": "https://www.licitor.com/annonce/10/96/57/vente-aux-encheres/une-maison-d-habitation/chatou/yvelines/109657.html",
+    "id": "109657",
+    "mise_a_prix": 364100,
+    "est_price": null,
+    "fac_baisse": null,
+    "prix_final": 420000,
+    "ville": "Chatou",
+    "adresse": "16, rue des Paniers Gonds",
+    "coords": {
+      "latitude": 48.9083366,
+      "longitude": 2.1392229
+    },
+    "trib_anom": true,
+    "visite": null,
+    "visite_dt": null,
+    "visite_state": -1,
+    "type": [
+      "Une maison d'habitation",
+      "Un jardin"
+    ],
+    "description": [
+      "Une maison d'habitation Surface Loi Carrez : 115,91 m²",
+      "Un jardin Les lieux sont occupés"
+    ],
+    "occupation": null,
+    "surface_m2": null,
+    "stats_bien": null,
+    "est_price_m2": null,
+    "code_insee": "78146",
+    "code_postal": 78400,
+    "code_departement": "78",
+    "code_region": 11.0,
+    "nom_departement": "Yvelines",
+    "nom_region": "Île-de-France"
+  },
+  "109673": {
+    "titre": "Annonce n°109673 : un appartement à Carrières-sous-Poissy (Yvelines), mise à prix : 41 000 €",
+    "date_publication": "2026-08-26T00:00:00+02:00",
+    "tribunal": "Tribunal Judiciaire de Versailles (Yvelines)",
+    "type_vente": "Vente aux enchères publiques en un seul lot",
+    "dt_vente": "2026-10-21 09:30",
+    "dt_vente_limit": "2026-10-31",
+    "sell_state": 0,
+    "avocats": [
+      "Maître Marion Cordier, membre de la SELARL Sillard - Cordier et Associés, Avocat"
+    ],
+    "telephones": [
+      "01 39 20 15 75"
+    ],
+    "documents": [],
+    "url": "https://www.licitor.com/annonce/10/96/73/vente-aux-encheres/un-appartement/carrieres-sous-poissy/yvelines/109673.html",
+    "id": "109673",
+    "mise_a_prix": 41000,
+    "est_price": null,
+    "fac_baisse": null,
+    "prix_final": 138000,
+    "ville": "Carrières-sous-Poissy",
+    "adresse": "250, av. Charles de Gaulle",
+    "coords": {
+      "latitude": 48.9417038,
+      "longitude": 2.0369453
+    },
+    "trib_anom": true,
+    "visite": null,
+    "visite_dt": null,
+    "visite_state": -1,
+    "type": [
+      "Un appartement",
+      "Un parking"
+    ],
+    "description": [
+      "Un appartement de 46,62 m² , dans le bâtiment 1, escalier B, au 2ème étage de type F2, comprenant : entrée, salon/séjour, cuisine, chambre, salle de bains, rangement, wc",
+      "Un parking dans le bâtiment 1, escalier C, au sous-sol Dans un ensemble immobilier dénommé \"Les demeures des Coteaux\" sis 241, 243, 248 et 252 avenue Charles de Gaulle, figurant au cadastre section AI n°583 lieudit \"241 avenue Charles de Gaulle\" pour 22a et 23ca et section AI n°586 lieudit \"241 avenue Charles de Gaulle\" pour 18a et 1ca, soit une surface totale de 40a et 34ca Les biens sont libres"
+    ],
+    "occupation": null,
+    "surface_m2": 46.62,
+    "stats_bien": null,
+    "est_price_m2": null,
+    "code_insee": "78123",
+    "code_postal": 78955,
+    "code_departement": "78",
+    "code_region": 11.0,
+    "nom_departement": "Yvelines",
+    "nom_region": "Île-de-France"
+  }
+}

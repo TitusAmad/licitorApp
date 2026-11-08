@@ -20,7 +20,7 @@ from back.scrapper_licit.histo_scrapper import scrapper_handler
 
 #PARAMS
 
-MAX_PAGES = 2
+MAX_PAGES = 5
 MAX_ANNOUNCES = None
 
 MAX_PUB_DT = None

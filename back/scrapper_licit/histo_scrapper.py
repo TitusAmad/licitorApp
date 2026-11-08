@@ -15,6 +15,10 @@ from back.scrapper_licit.licitor_scrapper import (build_soup_session,
                              build_warnings,
                              save_output)
 
+from back.geo_infos.geo_data import enrich_handler
+
+MODE = "histo"
+
 def run_scrapper(
          session,
          request_delay,
@@ -113,7 +117,6 @@ def run_scrapper(
                 
                 
 
-    """
     ###########
     #ENRICHISSEMENT DONNEES AVEC INFOS GEO
     ###########
@@ -122,26 +125,18 @@ def run_scrapper(
     new_els = len(clean_results)
     print(new_els, " nouveaux biens identifiés.")
     
-    ###########
-    #ADD OLD VISITS DATA BUT AUCTIONS NOT BE PASSED
-    ###########
-    
-    clean_results = merge_output(clean_results, past_dict)
-    final_els = len(clean_results)
-    past_els = (final_els - new_els)
-    print(past_els, "biens conservés pour ventes à venir.")
     
     ###########
     #WARNINGS
     ###########
     
-    warnings = build_warnings(clean_results)
+    warnings = build_warnings(clean_results, MODE)
     
     ###########
     #SAUVEGARDE
     ###########
 
-    save_output(clean_results, output_path, "auctions.json")
+    save_output(clean_results, output_path, "sales.json")
     save_output(errors, debug_path, "errors.json")
     save_output(warnings, debug_path, "warnings.json")
     save_output(dbls, debug_path, "doublons.json")    
@@ -156,7 +151,7 @@ def run_scrapper(
     )
     
     print(
-        f"Annonces récupérées : {new_els}"
+        f"Ventes récupérées : {new_els}"
     )
     
     print(
@@ -164,11 +159,10 @@ def run_scrapper(
     )
     
     print(
-        f"Annonces avec warnings : {len(warnings)}"
+        f"Ventes avec warnings : {len(warnings)}"
     )
     
     print("=" * 50)
-    """
     
     return results
 
@@ -201,8 +195,8 @@ def scrapper_handler(max_pages, max_announces,
     except NameError:
         BASE_DIR = Path.cwd() / "Documents" / "licitor_app"
     
-    OUTPUT_PATH = BASE_DIR / "front" / "data"
-    DEBUG_PATH = BASE_DIR / "tests" / "scrapper_debug"
+    OUTPUT_PATH = BASE_DIR / "historical_database" / "data"
+    DEBUG_PATH = BASE_DIR / "tests" / "scrapper_debug" / "histo"
     
     #NEW DATA
     

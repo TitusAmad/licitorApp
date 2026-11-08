@@ -18,8 +18,9 @@ from back.scrapper_licit.licitor_scrapper import (build_soup_session,
                              parse_announcement,
                              build_warnings,
                              save_output)
-                             
 
+MODE = "visits"
+                             
 def run_scrapper(past_dict,
          session,
          request_delay,
@@ -151,7 +152,7 @@ def run_scrapper(past_dict,
     #WARNINGS
     ###########
     
-    warnings = build_warnings(clean_results)
+    warnings = build_warnings(clean_results, MODE)
     
     ###########
     #SAUVEGARDE
@@ -199,13 +200,17 @@ def keep_next_selling(past_dict):
     out_dict = {}
     
     for ann_id in past_dict.keys():
+        
         bien = past_dict[ann_id]
-        dt_vente =  datetime.strptime(bien["dt_vente"], "%Y-%m-%d %H:%M").date()
-        raw_visite_dt = bien["visite_dt"]
-        if raw_visite_dt == "":
+
+        dt_vente = datetime.strptime(bien["dt_vente"], "%Y-%m-%d %H:%M").date()
+        
+        try:
+            visite_dt = datetime.strptime(bien["visite_dt"], "%Y-%m-%d %H:%M").date()
+        except:
             visite_dt = datetime.now().date() - timedelta(days=1)
-        else:
-            visite_dt  =  datetime.strptime(bien["visite_dt"], "%Y-%m-%d %H:%M").date()
+            
+        
         if (now_date > visite_dt) and (now_date <= dt_vente):
             bien["visite_dt"] = ""
             out_dict[ann_id] = bien
@@ -250,7 +255,7 @@ def scrapper_handler(max_pages, max_announces,
         BASE_DIR = Path.cwd() / "Documents" / "licitor_app"
     
     OUTPUT_PATH = BASE_DIR / "front" / "data"
-    DEBUG_PATH = BASE_DIR / "tests" / "scrapper_debug"
+    DEBUG_PATH = BASE_DIR / "tests" / "scrapper_debug" / "visits"
     
     #OLD DATA
     past_path = OUTPUT_PATH / "auctions.json"
