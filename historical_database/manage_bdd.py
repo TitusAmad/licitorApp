@@ -12,12 +12,7 @@ import psycopg
 from psycopg.types.json import Jsonb
 from dotenv import load_dotenv
 
-# =====================================================
-# VARIABLES GLOBALES
-# =====================================================
-
-BASE_DIR = Path(r"C:/Users/benja/Documents/licitor_app")
-ENV_FILE = BASE_DIR / "historical_database" / ".env.txt"
+from config import BASE_DIR, ENV_FILE
 
 # =====================================================
 # CONFIGURATION BDD

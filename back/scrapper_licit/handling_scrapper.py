@@ -9,9 +9,10 @@ from pathlib import Path
 from back.scrapper_licit.utils import build_urls
 from back.scrapper_licit.running_scrapper import run_scrapper
 from historical_database.manage_bdd import get_max_dt
+from config import BASE_DIR
 
 
-def manage_scrap_urls():
+def manage_scrap_urls(method):
     
     BASE_URL = "https://www.licitor.com"
     
@@ -26,58 +27,49 @@ def manage_scrap_urls():
                  ]
     
     BIENS_CATEGS = ['appartement', 'studio-chambre', 'maison-pavillon-propriete', 'immeuble-residentiel']
-    
-    VISITES_SEARCH_URLS = build_urls("VISITE", STRUCT_URL, GEO_ZONES, BIENS_CATEGS)
-    VENTES_SEARCH_URLS = build_urls("VENTE", STRUCT_URL, GEO_ZONES, BIENS_CATEGS)
+        
+    URLS = build_urls(method, STRUCT_URL, GEO_ZONES, BIENS_CATEGS)
     
     #OUTPUT
     
-    visites = {"BASE_URL": BASE_URL,
-               "SEARCH_URLS": VISITES_SEARCH_URLS}
+    out = {"BASE_URL": BASE_URL,
+               "SEARCH_URLS": URLS}
     
-    ventes = {"BASE_URL": BASE_URL,
-               "SEARCH_URLS": VENTES_SEARCH_URLS}
-    
-    urls = {"VISITE": visites,
-            "VENTE": ventes}
-    
-    return urls
+    return out
 
-def manage_params():
+def manage_params(method):
     
-    urls_dict = manage_scrap_urls()
+    urls_dict = manage_scrap_urls(method)
     
-    BASE_DIR = Path(r"C:/Users/benja/Documents/licitor_app")
-    
-    visites = {"MAX_PAGES": None,
+    if method == "VISITE":
+        max_dt = None
+        out_folder_path = BASE_DIR / "front" / "data"
+        out_name = "auctions.json"
+        debug_folder = "visits"
+    else:
+        max_dt = get_max_dt()
+        out_folder_path = BASE_DIR / "historical_database" / "data"
+        out_name = "sales.json"
+        debug_folder = "histo"
+        
+    out = {"MAX_PAGES": None,
                "MAX_ANNOUNCES": None,
-               "MAX_DT": None,
-               "OUTPUT_FOLDER_PATH": BASE_DIR / "front" / "data",
-               "OUTPUT_FILE_NAME": "auctions.json",
-               "DEBUG_PATH": BASE_DIR / "tests" / "scrapper_debug" / "visits",
-               "BASE_URL": urls_dict["VISITE"]["BASE_URL"],
-               "SEARCH_URLS": urls_dict["VISITE"]["SEARCH_URLS"]
+               "MAX_DT": max_dt,
+               "OUTPUT_FOLDER_PATH": out_folder_path,
+               "OUTPUT_FILE_NAME": out_name,
+               "DEBUG_PATH": BASE_DIR / "tests" / "scrapper_debug" / debug_folder,
+               "BASE_URL": urls_dict["BASE_URL"],
+               "SEARCH_URLS": urls_dict["SEARCH_URLS"]
                }
     
-    ventes = {"MAX_PAGES": None,
-               "MAX_ANNOUNCES": None,
-               "MAX_DT": get_max_dt(),
-               "OUTPUT_FOLDER_PATH": BASE_DIR / "historical_database" / "data",
-               "OUTPUT_FILE_NAME": "sales.json",
-               "DEBUG_PATH": BASE_DIR / "tests" / "scrapper_debug" / "histo",
-               "BASE_URL": urls_dict["VENTE"]["BASE_URL"],
-               "SEARCH_URLS": urls_dict["VENTE"]["SEARCH_URLS"]
-               }
-    
-    params = {"VISITE": visites,
-              "VENTE": ventes}
-    
-    return params
+    return out
 
 
 def scrapper_handler(method):
     
-    params = manage_params()[method]
+    params = manage_params(method)
+    
+    return params
     
     output = run_scrapper(method, params)
     

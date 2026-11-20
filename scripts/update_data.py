@@ -16,4 +16,3 @@ new_sales = scrapper_handler("VENTE")
 
 #IMPORT SALES TO POSTGREE
 import_bl = update_sales()
-

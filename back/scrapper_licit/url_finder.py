@@ -189,7 +189,7 @@ def extract_announcement_urls(session,
         if max_announces is not None and nbr_announces >= max_announces:
     
             print(
-                f"\Limite de {max_announces} annonce(s) atteinte."
+                f"\nLimite de {max_announces} annonce(s) atteinte."
             )
     
             break
