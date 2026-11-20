@@ -69,8 +69,6 @@ def scrapper_handler(method):
     
     params = manage_params(method)
     
-    return params
-    
     output = run_scrapper(method, params)
     
     return output
