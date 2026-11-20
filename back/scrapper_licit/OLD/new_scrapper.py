@@ -196,6 +196,8 @@ def run_scrapper(past_dict,
 
 def keep_next_selling(past_dict):
     
+    """ CONSERVER ANNONCES TANT QUE VENTE PAS REALISE """
+    
     now_date = datetime.date(datetime.now())
     out_dict = {}
     
@@ -208,8 +210,7 @@ def keep_next_selling(past_dict):
         try:
             visite_dt = datetime.strptime(bien["visite_dt"], "%Y-%m-%d %H:%M").date()
         except:
-            visite_dt = datetime.now().date() - timedelta(days=1)
-            
+            visite_dt = datetime.date(datetime.now()) - timedelta(days=1)
         
         if (now_date > visite_dt) and (now_date <= dt_vente):
             bien["visite_dt"] = ""

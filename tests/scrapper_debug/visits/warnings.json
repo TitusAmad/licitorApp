@@ -1,23 +1,528 @@
 [
   {
-    "url": "https://www.licitor.com/annonce/11/00/87/vente-aux-encheres/un-immeuble/la-charite-sur-loire/nievre/110087.html",
-    "id": "110087",
+    "url": "https://www.licitor.com/annonce/11/06/76/vente-aux-encheres/un-appartement/paris-16eme/paris/110676.html",
+    "id": "110676",
+    "warnings": [
+      "visite manquant"
+    ]
+  },
+  {
+    "url": "https://www.licitor.com/annonce/11/04/67/vente-aux-encheres/un-studio/paris-17eme/paris/110467.html",
+    "id": "110467",
+    "warnings": [
+      "visite manquant"
+    ]
+  },
+  {
+    "url": "https://www.licitor.com/annonce/11/04/66/vente-aux-encheres/un-appartement-en-duplex/paris-13eme/paris/110466.html",
+    "id": "110466",
+    "warnings": [
+      "visite manquant"
+    ]
+  },
+  {
+    "url": "https://www.licitor.com/annonce/11/04/68/vente-aux-encheres/un-immeuble/paris-15eme/paris/110468.html",
+    "id": "110468",
+    "warnings": [
+      "visite manquant"
+    ]
+  },
+  {
+    "url": "https://www.licitor.com/annonce/11/05/65/vente-aux-encheres/parts-sociales-de-la-sci-daitouch/reims-et-courbevoie/hauts-de-seine/110565.html",
+    "id": "110565",
+    "warnings": [
+      "adresse manquante",
+      "coordonnées géographiques manquantes",
+      "visite manquant"
+    ]
+  },
+  {
+    "url": "https://www.licitor.com/annonce/11/06/81/vente-aux-encheres/un-terrain-a-batir/l-ha�-les-roses/val-de-marne/110681.html",
+    "id": "110681",
+    "warnings": [
+      "visite manquant"
+    ]
+  },
+  {
+    "url": "https://www.licitor.com/annonce/11/03/33/vente-aux-encheres/une-maison-individuelle-a-usage-d-habitation/vayres-sur-essonne/essonne/110333.html",
+    "id": "110333",
+    "warnings": [
+      "visite manquant"
+    ]
+  },
+  {
+    "url": "https://www.licitor.com/annonce/11/03/38/vente-aux-encheres/un-appartement/mennecy/essonne/110338.html",
+    "id": "110338",
+    "warnings": [
+      "visite manquant"
+    ]
+  },
+  {
+    "url": "https://www.licitor.com/annonce/11/04/38/vente-aux-encheres/un-appartement/grigny/essonne/110438.html",
+    "id": "110438",
+    "warnings": [
+      "visite manquant"
+    ]
+  },
+  {
+    "url": "https://www.licitor.com/annonce/11/05/16/vente-aux-encheres/une-maison-d-habitation/villabe/essonne/110516.html",
+    "id": "110516",
+    "warnings": [
+      "visite manquant"
+    ]
+  },
+  {
+    "url": "https://www.licitor.com/annonce/11/05/70/vente-aux-encheres/une-maison-d-habitation/ormoy-la-riviere/essonne/110570.html",
+    "id": "110570",
+    "warnings": [
+      "visite manquant"
+    ]
+  },
+  {
+    "url": "https://www.licitor.com/annonce/11/06/17/vente-aux-encheres/un-appartement/eragny-sur-oise/val-d-oise/110617.html",
+    "id": "110617",
+    "warnings": [
+      "coordonnées géographiques manquantes"
+    ]
+  },
+  {
+    "url": "https://www.licitor.com/annonce/11/04/32/vente-aux-encheres/parts-sociales-de-la-sarl-emma-ambulances/-/seine-et-marne/110432.html",
+    "id": "110432",
+    "warnings": [
+      "adresse manquante",
+      "coordonnées géographiques manquantes",
+      "visite manquant"
+    ]
+  },
+  {
+    "url": "https://www.licitor.com/annonce/11/04/99/vente-aux-encheres/un-appartement/lille/nord/110499.html",
+    "id": "110499",
+    "warnings": [
+      "visite manquant"
+    ]
+  },
+  {
+    "url": "https://www.licitor.com/annonce/11/06/33/vente-aux-encheres/un-immeuble-a-usage-professionnel/quievrechain/nord/110633.html",
+    "id": "110633",
+    "warnings": [
+      "visite manquant"
+    ]
+  },
+  {
+    "url": "https://www.licitor.com/annonce/11/05/66/vente-aux-encheres/parts-sociales-de-la-sci-daitouch/reims-et-courbevoie/marne/110566.html",
+    "id": "110566",
+    "warnings": [
+      "adresse manquante",
+      "coordonnées géographiques manquantes",
+      "visite manquant"
+    ]
+  },
+  {
+    "url": "https://www.licitor.com/annonce/11/05/64/vente-aux-encheres/une-maison-d-habitation/pierry/marne/110564.html",
+    "id": "110564",
+    "warnings": [
+      "visite manquant"
+    ]
+  },
+  {
+    "url": "https://www.licitor.com/annonce/11/05/56/vente-aux-encheres/un-immeuble-a-usage-commercial-et-d-habitation/avenay-val-d-or/marne/110556.html",
+    "id": "110556",
+    "warnings": [
+      "visite manquant"
+    ]
+  },
+  {
+    "url": "https://www.licitor.com/annonce/11/06/34/vente-aux-encheres/un-emplacement-de-parking/reims/marne/110634.html",
+    "id": "110634",
+    "warnings": [
+      "visite manquant"
+    ]
+  },
+  {
+    "url": "https://www.licitor.com/annonce/11/06/72/vente-aux-encheres/un-appartement/reims/marne/110672.html",
+    "id": "110672",
+    "warnings": [
+      "visite manquant"
+    ]
+  },
+  {
+    "url": "https://www.licitor.com/annonce/11/05/07/vente-aux-encheres/une-parcelle-en-nature-de-terre-et-vigne/baroville/aube/110507.html",
+    "id": "110507",
+    "warnings": [
+      "visite manquant"
+    ]
+  },
+  {
+    "url": "https://www.licitor.com/annonce/11/05/09/vente-aux-encheres/une-parcelle-en-nature-de-terre-et-vigne/baroville/aube/110509.html",
+    "id": "110509",
+    "warnings": [
+      "visite manquant"
+    ]
+  },
+  {
+    "url": "https://www.licitor.com/annonce/11/06/13/vente-aux-encheres/biens/fontenoy-le-chateau/vosges/110613.html",
+    "id": "110613",
     "warnings": [
       "adresse manquante"
     ]
   },
   {
-    "url": "https://www.licitor.com/annonce/11/01/48/vente-aux-encheres/un-ensemble-immobilier/cesny-les-sources/calvados/110148.html",
-    "id": "110148",
+    "url": "https://www.licitor.com/annonce/11/06/30/vente-aux-encheres/une-maison-a-usage-d-habitation/mirecourt/vosges/110630.html",
+    "id": "110630",
+    "warnings": [
+      "visite manquant"
+    ]
+  },
+  {
+    "url": "https://www.licitor.com/annonce/11/06/92/vente-aux-encheres/une-maison-d-habitation/saint-marcel/saone-et-loire/110692.html",
+    "id": "110692",
+    "warnings": [
+      "visite manquant"
+    ]
+  },
+  {
+    "url": "https://www.licitor.com/annonce/11/04/81/vente-aux-encheres/une-maison-d-habitation/nevers/nievre/110481.html",
+    "id": "110481",
+    "warnings": [
+      "visite manquant"
+    ]
+  },
+  {
+    "url": "https://www.licitor.com/annonce/11/04/76/vente-aux-encheres/une-villa/crozon-morgat/finistere/110476.html",
+    "id": "110476",
+    "warnings": [
+      "visite manquant"
+    ]
+  },
+  {
+    "url": "https://www.licitor.com/annonce/11/05/35/vente-aux-encheres/un-batiment-en-pierre/scaer/finistere/110535.html",
+    "id": "110535",
+    "warnings": [
+      "visite manquant"
+    ]
+  },
+  {
+    "url": "https://www.licitor.com/annonce/11/06/16/vente-aux-encheres/une-maison-d-habitation/evran/cotes-d-armor/110616.html",
+    "id": "110616",
     "warnings": [
       "coordonnées géographiques manquantes"
     ]
   },
   {
-    "url": "https://www.licitor.com/annonce/11/00/35/vente-aux-encheres/une-parcelle-en-nature-de-vigne/belleville-en-beaujolais/rhone/110035.html",
-    "id": "110035",
+    "url": "https://www.licitor.com/annonce/11/06/22/vente-aux-encheres/une-maison-a-usage-d-habitation/plumelin/morbihan/110622.html",
+    "id": "110622",
+    "warnings": [
+      "visite manquant"
+    ]
+  },
+  {
+    "url": "https://www.licitor.com/annonce/11/06/25/vente-aux-encheres/une-propriete-a-usage-agricole-et-d-habitation/donges/loire-atlantique/110625.html",
+    "id": "110625",
+    "warnings": [
+      "visite manquant"
+    ]
+  },
+  {
+    "url": "https://www.licitor.com/annonce/11/07/19/vente-aux-encheres/un-studio/nantes/loire-atlantique/110719.html",
+    "id": "110719",
+    "warnings": [
+      "visite manquant"
+    ]
+  },
+  {
+    "url": "https://www.licitor.com/annonce/11/04/14/vente-aux-encheres/une-maison-d-habitation/la-roche-sur-yon/vendee/110414.html",
+    "id": "110414",
+    "warnings": [
+      "visite manquant"
+    ]
+  },
+  {
+    "url": "https://www.licitor.com/annonce/11/04/77/vente-aux-encheres/une-maison-d-habitation/ruaudin/sarthe/110477.html",
+    "id": "110477",
+    "warnings": [
+      "visite manquant"
+    ]
+  },
+  {
+    "url": "https://www.licitor.com/annonce/11/03/14/vente-aux-encheres/une-parcelle-terrain-a-batir/ecouves-anciennement-vingt-hanaps/orne/110314.html",
+    "id": "110314",
     "warnings": [
       "coordonnées géographiques manquantes"
+    ]
+  },
+  {
+    "url": "https://www.licitor.com/annonce/11/03/14/vente-aux-encheres/une-parcelle-terrain-a-batir/ecouves-anciennement-vingt-hanaps/orne/110314.html",
+    "id": "110314_1",
+    "warnings": [
+      "coordonnées géographiques manquantes"
+    ]
+  },
+  {
+    "url": "https://www.licitor.com/annonce/11/06/90/vente-aux-encheres/une-maison-d-habitation/chailly-en-gatinais/loiret/110690.html",
+    "id": "110690",
+    "warnings": [
+      "visite manquant"
+    ]
+  },
+  {
+    "url": "https://www.licitor.com/annonce/11/03/58/vente-aux-encheres/une-maison-a-usage-d-habitation/sambin/loir-et-cher/110358.html",
+    "id": "110358",
+    "warnings": [
+      "visite manquant"
+    ]
+  },
+  {
+    "url": "https://www.licitor.com/annonce/11/07/15/vente-aux-encheres/une-maison-d-habitation/mennetou-sur-cher/loir-et-cher/110715.html",
+    "id": "110715",
+    "warnings": [
+      "visite manquant"
+    ]
+  },
+  {
+    "url": "https://www.licitor.com/annonce/11/04/10/vente-aux-encheres/quatre-parcelles-de-terrain/vayres/haute-vienne/110410.html",
+    "id": "110410",
+    "warnings": [
+      "visite manquant"
+    ]
+  },
+  {
+    "url": "https://www.licitor.com/annonce/11/04/12/vente-aux-encheres/un-immeuble-a-usage-d-habitation/limoges/haute-vienne/110412.html",
+    "id": "110412",
+    "warnings": [
+      "visite manquant"
+    ]
+  },
+  {
+    "url": "https://www.licitor.com/annonce/11/07/21/vente-aux-encheres/un-appartement/limoges/haute-vienne/110721.html",
+    "id": "110721",
+    "warnings": [
+      "visite manquant"
+    ]
+  },
+  {
+    "url": "https://www.licitor.com/annonce/11/05/10/vente-aux-encheres/une-maison-d-habitation/tourzel-ronzieres/puy-de-dome/110510.html",
+    "id": "110510",
+    "warnings": [
+      "visite manquant"
+    ]
+  },
+  {
+    "url": "https://www.licitor.com/annonce/11/03/89/vente-aux-encheres/un-appartement/poitiers/vienne/110389.html",
+    "id": "110389",
+    "warnings": [
+      "visite manquant"
+    ]
+  },
+  {
+    "url": "https://www.licitor.com/annonce/11/03/63/vente-aux-encheres/une-maison-a-usage-d-habitation/saint-maurice-la-clouere/vienne/110363.html",
+    "id": "110363",
+    "warnings": [
+      "visite manquant"
+    ]
+  },
+  {
+    "url": "https://www.licitor.com/annonce/11/01/60/vente-aux-encheres/un-ensemble-immobilier/proissans/dordogne/110160.html",
+    "id": "110160",
+    "warnings": [
+      "visite manquant"
+    ]
+  },
+  {
+    "url": "https://www.licitor.com/annonce/11/02/80/vente-aux-encheres/diverses-terres-agricoles/proissans/dordogne/110280.html",
+    "id": "110280",
+    "warnings": [
+      "visite manquant"
+    ]
+  },
+  {
+    "url": "https://www.licitor.com/annonce/11/02/80/vente-aux-encheres/diverses-terres-agricoles/proissans/dordogne/110280.html",
+    "id": "110280_1",
+    "warnings": [
+      "visite manquant"
+    ]
+  },
+  {
+    "url": "https://www.licitor.com/annonce/11/02/80/vente-aux-encheres/diverses-terres-agricoles/proissans/dordogne/110280.html",
+    "id": "110280_2",
+    "warnings": [
+      "visite manquant"
+    ]
+  },
+  {
+    "url": "https://www.licitor.com/annonce/11/02/80/vente-aux-encheres/diverses-terres-agricoles/proissans/dordogne/110280.html",
+    "id": "110280_3",
+    "warnings": [
+      "visite manquant"
+    ]
+  },
+  {
+    "url": "https://www.licitor.com/annonce/11/02/80/vente-aux-encheres/diverses-terres-agricoles/proissans/dordogne/110280.html",
+    "id": "110280_4",
+    "warnings": [
+      "coordonnées géographiques manquantes",
+      "visite manquant"
+    ]
+  },
+  {
+    "url": "https://www.licitor.com/annonce/11/04/92/vente-aux-encheres/un-appartement/talence/gironde/110492.html",
+    "id": "110492_3",
+    "warnings": [
+      "adresse manquante",
+      "visite manquant"
+    ]
+  },
+  {
+    "url": "https://www.licitor.com/annonce/11/05/59/vente-aux-encheres/une-maison-a-usage-d-habitation/galgon/gironde/110559.html",
+    "id": "110559",
+    "warnings": [
+      "visite manquant"
+    ]
+  },
+  {
+    "url": "https://www.licitor.com/annonce/11/06/39/vente-aux-encheres/une-maison/libourne/gironde/110639.html",
+    "id": "110639",
+    "warnings": [
+      "visite manquant"
+    ]
+  },
+  {
+    "url": "https://www.licitor.com/annonce/11/06/39/vente-aux-encheres/une-maison/libourne/gironde/110639.html",
+    "id": "110639_1",
+    "warnings": [
+      "coordonnées géographiques manquantes"
+    ]
+  },
+  {
+    "url": "https://www.licitor.com/annonce/11/04/56/vente-aux-encheres/une-maison-d-habitation/saint-orens-de-gameville/haute-garonne/110456.html",
+    "id": "110456",
+    "warnings": [
+      "visite manquant"
+    ]
+  },
+  {
+    "url": "https://www.licitor.com/annonce/11/04/57/vente-aux-encheres/une-maison-d-habitation/toulouse/haute-garonne/110457.html",
+    "id": "110457",
+    "warnings": [
+      "visite manquant"
+    ]
+  },
+  {
+    "url": "https://www.licitor.com/annonce/11/06/69/vente-aux-encheres/une-maison/gimat/tarn-et-garonne/110669.html",
+    "id": "110669",
+    "warnings": [
+      "visite manquant"
+    ]
+  },
+  {
+    "url": "https://www.licitor.com/annonce/11/02/13/vente-aux-encheres/diverses-parcelles/payrignac/lot/110213.html",
+    "id": "110213",
+    "warnings": [
+      "visite manquant"
+    ]
+  },
+  {
+    "url": "https://www.licitor.com/annonce/11/04/11/vente-aux-encheres/un-parking/lyon-8eme/rhone/110411.html",
+    "id": "110411",
+    "warnings": [
+      "visite manquant"
+    ]
+  },
+  {
+    "url": "https://www.licitor.com/annonce/11/04/11/vente-aux-encheres/un-parking/lyon-8eme/rhone/110411.html",
+    "id": "110411_1",
+    "warnings": [
+      "visite manquant"
+    ]
+  },
+  {
+    "url": "https://www.licitor.com/annonce/11/04/11/vente-aux-encheres/un-parking/lyon-8eme/rhone/110411.html",
+    "id": "110411_2",
+    "warnings": [
+      "visite manquant"
+    ]
+  },
+  {
+    "url": "https://www.licitor.com/annonce/11/06/63/vente-aux-encheres/une-maison-a-usage-d-habitation/genay/rhone/110663.html",
+    "id": "110663",
+    "warnings": [
+      "visite manquant"
+    ]
+  },
+  {
+    "url": "https://www.licitor.com/annonce/11/04/86/vente-aux-encheres/un-appartement/annemasse/haute-savoie/110486.html",
+    "id": "110486",
+    "warnings": [
+      "visite manquant"
+    ]
+  },
+  {
+    "url": "https://www.licitor.com/annonce/11/07/11/vente-aux-encheres/un-appartement/albiez-montrond/savoie/110711.html",
+    "id": "110711",
+    "warnings": [
+      "adresse manquante"
+    ]
+  },
+  {
+    "url": "https://www.licitor.com/annonce/11/06/21/vente-aux-encheres/vingt-quatre-parcelles-de-terrain-agricoles-ou-naturelle/flacheres/isere/110621.html",
+    "id": "110621",
+    "warnings": [
+      "mise_a_prix manquante",
+      "adresse manquante",
+      "visite manquant"
+    ]
+  },
+  {
+    "url": "https://www.licitor.com/annonce/11/06/21/vente-aux-encheres/vingt-quatre-parcelles-de-terrain-agricoles-ou-naturelle/flacheres/isere/110621.html",
+    "id": "110621_1",
+    "warnings": [
+      "adresse manquante",
+      "visite manquant"
+    ]
+  },
+  {
+    "url": "https://www.licitor.com/annonce/11/06/21/vente-aux-encheres/vingt-quatre-parcelles-de-terrain-agricoles-ou-naturelle/flacheres/isere/110621.html",
+    "id": "110621_2",
+    "warnings": [
+      "mise_a_prix manquante",
+      "adresse manquante",
+      "visite manquant"
+    ]
+  },
+  {
+    "url": "https://www.licitor.com/annonce/11/06/21/vente-aux-encheres/vingt-quatre-parcelles-de-terrain-agricoles-ou-naturelle/flacheres/isere/110621.html",
+    "id": "110621_3",
+    "warnings": [
+      "adresse manquante",
+      "visite manquant"
+    ]
+  },
+  {
+    "url": "https://www.licitor.com/annonce/11/03/00/vente-aux-encheres/parts-sociales-de-la-sci-trait-d-union/uzes/gard/110300.html",
+    "id": "110300",
+    "warnings": [
+      "adresse manquante",
+      "visite manquant"
+    ]
+  },
+  {
+    "url": "https://www.licitor.com/annonce/11/05/00/vente-aux-encheres/diverses-parcelles-de-terres-agricoles/boucoiran-et-nozieres/gard/110500.html",
+    "id": "110500",
+    "warnings": [
+      "visite manquant"
+    ]
+  },
+  {
+    "url": "https://www.licitor.com/annonce/11/03/57/vente-aux-encheres/diverses-parcelles-de-terre-agricoles/saint-chaptes/gard/110357.html",
+    "id": "110357",
+    "warnings": [
+      "visite manquant"
+    ]
+  },
+  {
+    "url": "https://www.licitor.com/annonce/11/06/66/vente-aux-encheres/une-maison-a-usage-d-habitation/millas/pyrenees-orientales/110666.html",
+    "id": "110666",
+    "warnings": [
+      "visite manquant"
     ]
   }
 ]

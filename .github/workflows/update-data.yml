@@ -3,7 +3,8 @@ name: Mise à jour des données Licitor
 
 on:
   schedule:
-    - cron: '17 8 * * 6' # Tous les samedis à 08:17 UTC
+    # Exécution à 6h00 UTC (= 7h00 heure de Paris en hiver) tous les jours impairs du mois
+    - cron: '0 6 */2 * *'
   workflow_dispatch:
 
 permissions:
@@ -39,11 +40,35 @@ jobs:
       - name: Exécuter le scraper
         run: python scripts/update_data.py
 
-      - name: Enregistrer les nouveaux CSV
+      - name: Enregistrer les Données visites
         run: |
           git add front/data/
           if git diff --cached --quiet; then
-            echo "Aucune modification des CSV."
+            echo "Aucune modification des données visites."
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -m "Mise à jour automatique des données"
+            git push origin HEAD:main
+          fi
+
+      - name: Enregistrer les Données ventes
+        run: |
+          git add historical_database/data/
+          if git diff --cached --quiet; then
+            echo "Aucune modification des données ventes."
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -m "Mise à jour automatique des données"
+            git push origin HEAD:main
+          fi
+
+      - name: Enregistrer les Données Debug
+        run: |
+          git add tests/scrapper_debug/
+          if git diff --cached --quiet; then
+            echo "Aucune modification des données debug."
           else
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

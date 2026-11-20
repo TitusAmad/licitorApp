@@ -4,10 +4,20 @@ Created on Fri Oct 30 18:42:46 2026
 
 @author: benja
 """
+
+"""
+#TEST
+import os
+path = "C:/Users/benja/Documents/licitor_app/"
+os.chdir(path)
+"""
+
 import json
 from pathlib import Path
 import requests
 import time
+from datetime import datetime
+from datetime import timedelta
 
 from back.scrapper_licit.licitor_scrapper import (build_soup_session, 
                              extract_announcement_urls, 
@@ -17,41 +27,66 @@ from back.scrapper_licit.licitor_scrapper import (build_soup_session,
 
 from back.geo_infos.geo_data import enrich_handler
 
+#VARIABLES GLOBALES
+
 MODE = "histo"
 
 def run_scrapper(
          session,
          request_delay,
-         base_url, search_url, 
+         base_url, search_urls, 
          output_path, debug_path,
          max_pages = None, max_announces = None, 
-         max_pub_dt = None, max_vis_dt = None
+         max_dt = None
          ):
+    
+    """
+    base_url = BASE_URL
+    search_urls = SEARCH_URLS
+    output_path = ""
+    debug_path = ""
+    max_pages = None
+    max_announces = None
+    max_dt = None
+    scrap_mode = "vente"
+    """
 
     print("Recherche des annonces...")
-    print(search_url)
-
-
-    urls = extract_announcement_urls(
-        session,
-        request_delay,
-        base_url, search_url,
-        max_pages=max_pages,
-        max_announces=max_announces,
-        max_pub_dt = max_pub_dt,
-        max_vis_dt = max_vis_dt
-    )
+    print(len(search_urls), " liens à scrapper")
+    
+    urls = []
+    
+    for search_url in search_urls:
+    
+        occ_urls = extract_announcement_urls(
+            session,
+            request_delay,
+            base_url, search_url,
+            max_pages=max_pages,
+            max_announces=max_announces,
+            max_dt=max_dt,
+            scrap_mode = "vente"
+        )
+        
+        print(
+            f"\n{len(occ_urls)} annonces trouvées pour le lien suivant\n"
+        )
+        print(search_url)
+        
+        urls.extend(occ_urls)
     
     print(
         f"\n{len(urls)} annonces trouvées au total."
     )
 
-    # Échantillon uniquement.
-    urls = urls[:max_announces]
-
-    print(
-        f"Test sur {len(urls)} annonces."
-    )
+    if not max_announces is None:
+        
+        # Échantillon uniquement.
+        urls = urls[:max_announces]
+    
+        print(
+            f"\nEchantillon sur {len(urls)} annonces."
+            )
 
     results = {}
     errors = []
@@ -116,6 +151,9 @@ def run_scrapper(
                 time.sleep(request_delay)
                 
                 
+    print("\n*************************\n", 
+          "Enrichissement Géographique...", 
+          "\n**************************")
 
     ###########
     #ENRICHISSEMENT DONNEES AVEC INFOS GEO
@@ -123,8 +161,6 @@ def run_scrapper(
     
     clean_results = enrich_handler(results)
     new_els = len(clean_results)
-    print(new_els, " nouveaux biens identifiés.")
-    
     
     ###########
     #WARNINGS
@@ -168,8 +204,7 @@ def run_scrapper(
 
 
 def scrapper_handler(max_pages, max_announces,
-                     max_pub_dt,
-                     max_visit_dt = None,
+                     max_dt = None,
                      request_delay = 2.0):
     
     #POINT DENTREE SCRAPPING
@@ -186,9 +221,13 @@ def scrapper_handler(max_pages, max_announces,
                  "sud-est-mediterrannee"
                  ]
     
-    URLS = ["/".join([STRUCT_URL, el, "historique-des-adjudications.html"]) for el in GEO_ZONES]
-
-    SEARCH_URL = URLS[0]
+    BIENS_CATEGS = ['appartement', 'studio-chambre', 'maison-pavillon-propriete', 'immeuble-residentiel']
+    
+    SEARCH_URLS = build_urls(STRUCT_URL, GEO_ZONES, BIENS_CATEGS)
+    
+    #GESTION SCRAP
+    start = 12
+    SEARCH_URLS = SEARCH_URLS[start:]
     
     try:
         BASE_DIR = Path(__file__).resolve().parents[2]
@@ -205,9 +244,29 @@ def scrapper_handler(max_pages, max_announces,
     scrapper_out = run_scrapper(
          session,
          request_delay,
-         BASE_URL, SEARCH_URL, 
+         BASE_URL, SEARCH_URLS, 
          OUTPUT_PATH, DEBUG_PATH, 
          max_pages, max_announces,
-         max_pub_dt, max_visit_dt)
+         max_dt)
     
     return scrapper_out
+
+#HELPERS
+
+def build_urls(struct_url, geo_zones, biens_categs):
+    
+    urls = []
+    
+    for zone in geo_zones:
+        
+        for categ in biens_categs:
+            
+            url = "/".join([struct_url, zone, categ]) + ".html?type=H"
+            
+            #print(f"{url}\n")
+            
+            urls.append(url)
+            
+    return urls
+        
+        

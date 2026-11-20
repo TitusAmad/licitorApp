@@ -1,0 +1,1710 @@
+
+/* ==================================================
+   ANALYSIS SHEET - STYLES ISOLÉS
+================================================== */
+
+/* Variables locales à la fiche */
+
+#analysis-sheet-overlay .analysis-sheet {
+    --as-bg: #f5f6f8;
+    --as-surface: #ffffff;
+    --as-surface-soft: #f8f9fb;
+
+    --as-text: #202631;
+    --as-text-secondary: #707987;
+
+    --as-border: #e8ebef;
+
+    --as-primary: #344d68;
+    --as-primary-soft: #edf2f7;
+
+    --as-success: #25835d;
+    --as-success-bg: #eaf5ef;
+
+    --as-warning: #a87525;
+    --as-warning-bg: #faf3e7;
+
+    --as-radius-sm: 8px;
+    --as-radius-md: 12px;
+    --as-radius-lg: 16px;
+
+    --as-shadow: 0 12px 40px rgba(20, 30, 45, 0.12);
+
+    --as-font: Inter, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", sans-serif;
+
+    display: flex;
+    flex-direction: column;
+
+    width: min(900px, 100%);
+    height: 100%;
+    max-height: 100dvh;
+
+    overflow: hidden;
+
+    background: var(--as-bg);
+    color: var(--as-text);
+
+    font-family: var(--as-font);
+    box-shadow: var(--as-shadow);
+}
+
+
+/* ==================================================
+   OVERLAY
+================================================== */
+
+#analysis-sheet-overlay.analysis-sheet-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: flex-end;
+
+    background: rgba(20, 27, 37, 0.48);
+    backdrop-filter: blur(3px);
+}
+
+#analysis-sheet-overlay[hidden] {
+    display: none;
+}
+
+
+/* ==================================================
+   HEADER
+================================================== */
+
+#analysis-sheet-overlay .analysis-sheet-header {
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 25px 32px;
+
+    background: var(--as-surface);
+    border-bottom: 1px solid var(--as-border);
+}
+
+#analysis-sheet-overlay .analysis-sheet-eyebrow {
+    margin-bottom: 6px;
+
+    color: var(--as-primary);
+
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+}
+
+#analysis-sheet-overlay .analysis-sheet-heading h2 {
+    margin: 0;
+
+    color: var(--as-text);
+    font-size: 23px;
+    font-weight: 650;
+    letter-spacing: -0.5px;
+}
+
+#analysis-sheet-overlay .analysis-sheet-subtitle {
+    margin-top: 5px;
+
+    color: var(--as-text-secondary);
+    font-size: 13px;
+}
+
+#analysis-sheet-overlay .analysis-sheet-close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 38px;
+    height: 38px;
+
+    border: 1px solid var(--as-border);
+    border-radius: 50%;
+
+    background: var(--as-surface);
+    color: var(--as-text-secondary);
+
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#analysis-sheet-overlay .analysis-sheet-close:hover {
+    background: var(--as-surface-soft);
+    color: var(--as-text);
+}
+
+
+/* ==================================================
+   CONTENT
+================================================== */
+
+#analysis-sheet-overlay .analysis-sheet-content {
+    flex: 1;
+    min-height: 0;
+
+    overflow-y: auto;
+
+    padding: 28px 32px 50px;
+
+    scrollbar-width: thin;
+    scrollbar-color: #cbd1d9 transparent;
+}
+
+
+/* ==================================================
+   GENERIC SECTIONS
+================================================== */
+
+#analysis-sheet-overlay .analysis-section {
+    margin-bottom: 28px;
+}
+
+#analysis-sheet-overlay .analysis-section-heading {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    margin-bottom: 16px;
+}
+
+#analysis-sheet-overlay .analysis-section-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 29px;
+    height: 29px;
+    flex-shrink: 0;
+
+    border-radius: 8px;
+
+    background: var(--as-primary-soft);
+    color: var(--as-primary);
+
+    font-size: 11px;
+    font-weight: 700;
+}
+
+#analysis-sheet-overlay .analysis-section-heading h3 {
+    margin: 0;
+
+    color: var(--as-text);
+    font-size: 17px;
+    font-weight: 650;
+    letter-spacing: -0.25px;
+}
+
+
+
+/* ==================================================
+   PROPERTY SECTION
+================================================== */
+
+#analysis-sheet-overlay .property-summary {
+    padding: 22px;
+
+    background: var(--as-surface);
+    border: 1px solid var(--as-border);
+    border-radius: var(--as-radius-lg);
+}
+
+#analysis-sheet-overlay .property-summary-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+#analysis-sheet-overlay .property-type {
+    margin-bottom: 5px;
+
+    color: var(--as-primary);
+
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+}
+
+#analysis-sheet-overlay .property-address {
+    color: var(--as-text);
+    font-size: 19px;
+    font-weight: 650;
+    letter-spacing: -0.4px;
+}
+
+#analysis-sheet-overlay .property-location {
+    margin-top: 5px;
+
+    color: var(--as-text-secondary);
+    font-size: 13px;
+}
+
+
+/* Status */
+
+#analysis-sheet-overlay .property-status {
+    flex-shrink: 0;
+
+    padding: 6px 11px;
+
+    border-radius: 20px;
+
+    font-size: 11px;
+    font-weight: 650;
+}
+
+#analysis-sheet-overlay .property-status-sold {
+    background: var(--as-success-bg);
+    color: var(--as-success);
+}
+
+#analysis-sheet-overlay .property-status-pending {
+    background: var(--as-warning-bg);
+    color: var(--as-warning);
+}
+
+
+/* Characteristics */
+
+#analysis-sheet-overlay .property-characteristics {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+
+    margin-top: 22px;
+    padding: 16px 0;
+
+    border-top: 1px solid var(--as-border);
+    border-bottom: 1px solid var(--as-border);
+}
+
+#analysis-sheet-overlay .property-characteristic {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#analysis-sheet-overlay .property-label {
+    color: var(--as-text-secondary);
+    font-size: 11px;
+}
+
+#analysis-sheet-overlay .property-characteristic strong {
+    color: var(--as-text);
+    font-size: 15px;
+    font-weight: 650;
+}
+
+
+/* Description */
+
+#analysis-sheet-overlay .property-description {
+    margin-top: 18px;
+
+    color: var(--as-text-secondary);
+
+    font-size: 13px;
+    line-height: 1.65;
+}
+
+
+/* Financial information */
+
+#analysis-sheet-overlay .property-financial {
+    margin-top: 22px;
+}
+
+#analysis-sheet-overlay .property-financial-heading {
+    margin-bottom: 13px;
+
+    color: var(--as-text);
+    font-size: 13px;
+    font-weight: 650;
+}
+
+#analysis-sheet-overlay .property-financial-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+}
+
+#analysis-sheet-overlay .property-financial-item {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+
+    min-width: 0;
+    padding: 13px 14px;
+
+    background: var(--as-surface-soft);
+    border: 1px solid var(--as-border);
+    border-radius: var(--as-radius-sm);
+}
+
+#analysis-sheet-overlay .property-financial-item strong {
+    color: var(--as-text);
+    font-size: 16px;
+    font-weight: 650;
+    letter-spacing: -0.3px;
+    overflow-wrap: anywhere;
+}
+
+
+/* ==================================================
+   RESPONSIVE
+================================================== */
+
+@media (max-width: 640px) {
+
+    #analysis-sheet-overlay .analysis-sheet {
+        width: 100%;
+    }
+
+    #analysis-sheet-overlay .analysis-sheet-header {
+        padding: 20px;
+    }
+
+    #analysis-sheet-overlay .analysis-sheet-heading h2 {
+        font-size: 20px;
+    }
+
+    #analysis-sheet-overlay .analysis-sheet-content {
+        padding: 22px 16px 35px;
+    }
+
+    #analysis-sheet-overlay .property-summary {
+        padding: 17px;
+    }
+
+    #analysis-sheet-overlay .property-address {
+        font-size: 17px;
+    }
+
+    #analysis-sheet-overlay .property-financial-item strong {
+        font-size: 14px;
+    }
+
+}
+
+
+/* ==================================================
+   SECTION 02 - MARKET SUMMARY
+================================================== */
+
+#analysis-sheet-overlay .market-summary {
+    padding: 22px;
+
+    background: var(--as-surface);
+    border: 1px solid var(--as-border);
+    border-radius: var(--as-radius-lg);
+}
+
+
+/* HEADER */
+
+#analysis-sheet-overlay .market-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+
+    margin-bottom: 20px;
+}
+
+#analysis-sheet-overlay .market-radius {
+    padding: 6px 11px;
+
+    background: var(--as-primary-soft);
+    color: var(--as-primary);
+
+    border-radius: 20px;
+
+    font-size: 11px;
+    font-weight: 650;
+}
+
+#analysis-sheet-overlay .market-dates {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 16px;
+
+    color: var(--as-text-secondary);
+    font-size: 11px;
+}
+
+#analysis-sheet-overlay .market-dates strong {
+    color: var(--as-text);
+    font-weight: 650;
+}
+
+
+/* INDICATORS */
+
+#analysis-sheet-overlay .market-indicators {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+}
+
+#analysis-sheet-overlay .market-indicator {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+
+    min-width: 0;
+    padding: 15px;
+
+    background: var(--as-surface-soft);
+    border: 1px solid var(--as-border);
+    border-radius: var(--as-radius-sm);
+}
+
+#analysis-sheet-overlay .market-label {
+    color: var(--as-text-secondary);
+    font-size: 11px;
+}
+
+#analysis-sheet-overlay .market-indicator-value {
+    color: var(--as-text);
+
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+
+    overflow-wrap: anywhere;
+}
+
+#analysis-sheet-overlay .market-indicator-detail {
+    color: var(--as-text-secondary);
+    font-size: 11px;
+}
+
+
+/* PRICE RANGE */
+
+#analysis-sheet-overlay .market-range {
+    margin-top: 18px;
+    padding: 17px;
+
+    border: 1px solid var(--as-border);
+    border-radius: var(--as-radius-sm);
+}
+
+#analysis-sheet-overlay .market-range-heading {
+    margin-bottom: 15px;
+
+    font-size: 13px;
+    font-weight: 650;
+}
+
+#analysis-sheet-overlay .market-range-values {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 16px;
+}
+
+#analysis-sheet-overlay .market-range-values > div:not(.market-range-separator) {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+#analysis-sheet-overlay .market-range-values strong {
+    font-size: 17px;
+    font-weight: 650;
+}
+
+#analysis-sheet-overlay .market-range-separator {
+    width: 1px;
+    height: 32px;
+
+    background: var(--as-border);
+}
+
+
+/* PERIOD TABLE */
+
+#analysis-sheet-overlay .market-periods {
+    margin-top: 24px;
+}
+
+#analysis-sheet-overlay .market-periods-heading {
+    margin-bottom: 14px;
+
+    font-size: 13px;
+    font-weight: 650;
+}
+
+#analysis-sheet-overlay .market-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+#analysis-sheet-overlay .market-table {
+    width: 100%;
+    min-width: 520px;
+
+    border-collapse: collapse;
+
+    text-align: left;
+    font-size: 12px;
+}
+
+#analysis-sheet-overlay .market-table th {
+    padding: 11px 10px;
+
+    background: var(--as-surface-soft);
+    border-bottom: 1px solid var(--as-border);
+
+    color: var(--as-text-secondary);
+
+    font-size: 10px;
+    font-weight: 650;
+    white-space: nowrap;
+}
+
+#analysis-sheet-overlay .market-table td {
+    padding: 13px 10px;
+
+    border-bottom: 1px solid var(--as-border);
+
+    color: var(--as-text);
+    vertical-align: middle;
+}
+
+#analysis-sheet-overlay .market-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+#analysis-sheet-overlay .market-period-label {
+    font-weight: 650;
+    white-space: nowrap;
+}
+
+#analysis-sheet-overlay .market-price-value {
+    font-weight: 650;
+    white-space: nowrap;
+}
+
+#analysis-sheet-overlay .market-range-value {
+    white-space: nowrap;
+}
+
+#analysis-sheet-overlay .market-additional {
+    color: var(--as-success);
+    font-size: 11px;
+    font-weight: 650;
+}
+
+#analysis-sheet-overlay .market-usable-count {
+    display: block;
+
+    margin-top: 4px;
+
+    color: var(--as-text-secondary);
+    font-size: 10px;
+    white-space: nowrap;
+}
+
+#analysis-sheet-overlay .market-table-legend {
+    margin-top: 12px;
+
+    color: var(--as-text-secondary);
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+
+/* EMPTY STATE */
+
+#analysis-sheet-overlay .market-empty {
+    padding: 20px;
+
+    background: var(--as-surface);
+    border: 1px solid var(--as-border);
+    border-radius: var(--as-radius-md);
+
+    color: var(--as-text-secondary);
+    font-size: 13px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 640px) {
+
+    #analysis-sheet-overlay .market-summary {
+        padding: 16px;
+    }
+
+    #analysis-sheet-overlay .market-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    #analysis-sheet-overlay .market-dates {
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    #analysis-sheet-overlay .market-indicator {
+        padding: 12px;
+    }
+
+    #analysis-sheet-overlay .market-indicator-value {
+        font-size: 17px;
+    }
+
+    #analysis-sheet-overlay .market-range {
+        padding: 14px;
+    }
+
+    #analysis-sheet-overlay .market-range-values {
+        gap: 10px;
+    }
+
+    #analysis-sheet-overlay .market-range-values strong {
+        font-size: 14px;
+    }
+
+}
+
+
+
+/* ==================================================
+   SECTION 03 - EVOLUTION
+================================================== */
+
+#analysis-sheet-overlay .evolution-container {
+    padding: 22px;
+
+    background: var(--as-surface);
+    border: 1px solid var(--as-border);
+    border-radius: var(--as-radius-lg);
+}
+
+#analysis-sheet-overlay .evolution-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+
+    margin-bottom: 24px;
+}
+
+#analysis-sheet-overlay .evolution-title {
+    font-size: 14px;
+    font-weight: 650;
+    color: var(--as-text);
+}
+
+#analysis-sheet-overlay .evolution-subtitle {
+    margin-top: 5px;
+
+    font-size: 11px;
+    color: var(--as-text-secondary);
+}
+
+#analysis-sheet-overlay .evolution-period {
+    padding: 5px 10px;
+
+    background: var(--as-surface-soft);
+    border-radius: 20px;
+
+    color: var(--as-text-secondary);
+    font-size: 11px;
+    white-space: nowrap;
+}
+
+#analysis-sheet-overlay .evolution-chart-wrapper {
+    position: relative;
+
+    width: 100%;
+    height: 300px;
+}
+
+#analysis-sheet-overlay .evolution-legend {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 22px;
+
+    margin-top: 18px;
+}
+
+#analysis-sheet-overlay .evolution-legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    color: var(--as-text-secondary);
+    font-size: 11px;
+}
+
+#analysis-sheet-overlay .evolution-dot {
+    width: 9px;
+    height: 9px;
+
+    border-radius: 50%;
+}
+
+#analysis-sheet-overlay .evolution-dot-average {
+    background: #3985C8;
+}
+
+#analysis-sheet-overlay .evolution-dot-median {
+    background: #D69B42;
+}
+
+#analysis-sheet-overlay .evolution-footer {
+    margin-top: 18px;
+    padding-top: 12px;
+
+    border-top: 1px solid var(--as-border);
+
+    color: var(--as-text-secondary);
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+#analysis-sheet-overlay .evolution-empty {
+    padding: 24px;
+
+    background: var(--as-surface);
+    border: 1px solid var(--as-border);
+    border-radius: var(--as-radius-md);
+
+    color: var(--as-text-secondary);
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+@media (max-width: 640px) {
+
+    #analysis-sheet-overlay .evolution-container {
+        padding: 15px;
+    }
+
+    #analysis-sheet-overlay .evolution-chart-wrapper {
+        height: 250px;
+    }
+
+}
+
+
+/* ==================================================
+   SECTION 04 - TRANSACTIONS
+================================================== */
+
+#analysis-sheet-overlay .transactions-container {
+    padding: 22px;
+
+    background: var(--as-surface);
+    border: 1px solid var(--as-border);
+    border-radius: var(--as-radius-lg);
+}
+
+#analysis-sheet-overlay .transactions-heading {
+    margin-bottom: 20px;
+}
+
+#analysis-sheet-overlay .transactions-title {
+    font-size: 14px;
+    font-weight: 650;
+    color: var(--as-text);
+}
+
+#analysis-sheet-overlay .transactions-subtitle {
+    margin-top: 5px;
+
+    color: var(--as-text-secondary);
+    font-size: 11px;
+}
+
+#analysis-sheet-overlay .transactions-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+#analysis-sheet-overlay .transactions-table {
+    width: 100%;
+    min-width: 0;
+
+    table-layout: fixed;
+    border-collapse: collapse;
+
+    font-size: 12px;
+    text-align: left;
+}
+
+/* Date */
+#analysis-sheet-overlay .transactions-table th:nth-child(1),
+#analysis-sheet-overlay .transactions-table td:nth-child(1) {
+    width: 11%;
+}
+
+/* Bien */
+#analysis-sheet-overlay .transactions-table th:nth-child(2),
+#analysis-sheet-overlay .transactions-table td:nth-child(2) {
+    width: 25%;
+}
+
+/* Surface */
+#analysis-sheet-overlay .transactions-table th:nth-child(3),
+#analysis-sheet-overlay .transactions-table td:nth-child(3) {
+    width: 10%;
+}
+
+/* Prix final */
+#analysis-sheet-overlay .transactions-table th:nth-child(4),
+#analysis-sheet-overlay .transactions-table td:nth-child(4) {
+    width: 22%;
+}
+
+/* Prix au m² */
+#analysis-sheet-overlay .transactions-table th:nth-child(5),
+#analysis-sheet-overlay .transactions-table td:nth-child(5) {
+    width: 16%;
+}
+
+/* Référence marché */
+#analysis-sheet-overlay .transactions-table th:nth-child(6),
+#analysis-sheet-overlay .transactions-table td:nth-child(6) {
+    width: 16%;
+}
+
+#analysis-sheet-overlay .transactions-table th {
+    padding: 12px 10px;
+
+    background: var(--as-surface-soft);
+    border-bottom: 1px solid var(--as-border);
+
+    color: var(--as-text-secondary);
+
+    font-size: 10px;
+    font-weight: 650;
+    white-space: nowrap;
+}
+
+#analysis-sheet-overlay .transactions-table td {
+    padding: 14px 10px;
+
+    border-bottom: 1px solid var(--as-border);
+
+    color: var(--as-text);
+    vertical-align: middle;
+}
+
+#analysis-sheet-overlay .transactions-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
+/* ROW */
+
+#analysis-sheet-overlay .transaction-row-clickable {
+    cursor: pointer;
+    transition: background 0.15s ease;
+}
+
+#analysis-sheet-overlay .transaction-row-clickable:hover {
+    background: var(--as-surface-soft);
+}
+
+#analysis-sheet-overlay .transaction-row-clickable:focus-visible {
+    outline: 2px solid var(--as-primary);
+    outline-offset: -2px;
+}
+
+
+/* CELLS */
+
+#analysis-sheet-overlay .transaction-date {
+    color: var(--as-text-secondary);
+    white-space: nowrap;
+}
+
+#analysis-sheet-overlay .transaction-property {
+    min-width: 190px;
+}
+
+#analysis-sheet-overlay .transaction-property strong {
+    
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    margin-bottom: 4px;
+
+    font-weight: 650;
+}
+
+#analysis-sheet-overlay .transaction-property span {
+    display: block;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    color: var(--as-text-secondary);
+    font-size: 11px;
+    line-height: 1.4;
+}
+
+#analysis-sheet-overlay .transaction-surface {
+    white-space: nowrap;
+}
+
+#analysis-sheet-overlay .transaction-final-price strong {
+    display: block;
+    white-space: nowrap;
+
+    font-weight: 700;
+}
+
+#analysis-sheet-overlay .transaction-final-price,
+#analysis-sheet-overlay .transaction-price-m2,
+#analysis-sheet-overlay .transaction-estimated-price {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/* POSITIONING */
+
+#analysis-sheet-overlay .transaction-position {
+    display: inline-block;
+
+    margin-top: 5px;
+    padding: 3px 6px;
+
+    border-radius: 4px;
+
+    font-size: 10px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+#analysis-sheet-overlay .transaction-position-below {
+    background: rgba(37, 145, 105, 0.10);
+    color: #258F69;
+}
+
+#analysis-sheet-overlay .transaction-position-near {
+    background: rgba(214, 155, 66, 0.12);
+    color: #B47A28;
+}
+
+#analysis-sheet-overlay .transaction-position-above {
+    background: rgba(207, 86, 86, 0.10);
+    color: #C45151;
+}
+
+
+/* LEGEND */
+
+#analysis-sheet-overlay .transactions-legend {
+    margin-top: 15px;
+    padding-top: 12px;
+
+    border-top: 1px solid var(--as-border);
+
+    color: var(--as-text-secondary);
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+
+/* EMPTY */
+
+#analysis-sheet-overlay .transactions-empty {
+    padding: 24px;
+
+    background: var(--as-surface);
+    border: 1px solid var(--as-border);
+    border-radius: var(--as-radius-md);
+
+    color: var(--as-text-secondary);
+    font-size: 13px;
+}
+
+
+/* ==================================================
+   SECTION 05 - CARTE
+================================================== */
+
+#analysis-sheet-overlay .analysis-map-container {
+    padding: 22px;
+
+    background: var(--as-surface);
+    border: 1px solid var(--as-border);
+    border-radius: var(--as-radius-lg);
+}
+
+#analysis-sheet-overlay .analysis-map-heading {
+    margin-bottom: 18px;
+}
+
+#analysis-sheet-overlay .analysis-map-title {
+    font-size: 14px;
+    font-weight: 650;
+    color: var(--as-text);
+}
+
+#analysis-sheet-overlay .analysis-map-subtitle {
+    margin-top: 5px;
+
+    font-size: 11px;
+    color: var(--as-text-secondary);
+}
+
+#analysis-sheet-overlay .analysis-leaflet-map {
+    width: 100%;
+    height: 430px;
+
+    border-radius: var(--as-radius-md);
+    overflow: hidden;
+
+    background: var(--as-surface-soft);
+    z-index: 1;
+}
+
+
+/* MARKERS */
+
+#analysis-sheet-overlay .analysis-map-marker-wrapper {
+    background: transparent;
+    border: none;
+}
+
+#analysis-sheet-overlay .analysis-map-marker {
+    width: 14px;
+    height: 14px;
+
+    border: 2px solid #FFFFFF;
+    border-radius: 50%;
+
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.35);
+}
+
+#analysis-sheet-overlay .analysis-map-property-marker {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 22px;
+    height: 22px;
+
+    background: #3985C8;
+    border: 3px solid #FFFFFF;
+    border-radius: 50%;
+
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.4);
+}
+
+#analysis-sheet-overlay .analysis-map-property-marker span {
+    width: 6px;
+    height: 6px;
+
+    background: #FFFFFF;
+    border-radius: 50%;
+}
+
+
+/* LEGEND */
+
+#analysis-sheet-overlay .analysis-map-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 20px;
+
+    margin-top: 18px;
+}
+
+#analysis-sheet-overlay .analysis-map-legend-item {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+    font-size: 11px;
+    color: var(--as-text-secondary);
+}
+
+#analysis-sheet-overlay .analysis-map-legend-dot {
+    width: 9px;
+    height: 9px;
+
+    border-radius: 50%;
+}
+
+#analysis-sheet-overlay .analysis-map-legend-dot.property {
+    background: #3985C8;
+}
+
+#analysis-sheet-overlay .analysis-map-legend-dot.below {
+    background: #258F69;
+}
+
+#analysis-sheet-overlay .analysis-map-legend-dot.near {
+    background: #D69B42;
+}
+
+#analysis-sheet-overlay .analysis-map-legend-dot.above {
+    background: #C45151;
+}
+
+#analysis-sheet-overlay .analysis-map-legend-dot.unavailable {
+    background: #8993A2;
+}
+
+
+/* POPUPS */
+
+#analysis-sheet-overlay .analysis-map-popup {
+    min-width: 190px;
+    font-family: inherit;
+}
+
+#analysis-sheet-overlay .analysis-map-popup-property {
+    margin-bottom: 8px;
+
+    color: #3985C8;
+    font-size: 10px;
+    font-weight: 750;
+    letter-spacing: 0.5px;
+}
+
+#analysis-sheet-overlay .analysis-map-popup-type {
+    font-size: 13px;
+    font-weight: 700;
+    color: #202936;
+
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+.analysis-map-popup-type:hover {
+    text-decoration: underline;
+}
+
+#analysis-sheet-overlay .analysis-map-popup-address {
+    margin-top: 4px;
+
+    font-size: 11px;
+    color: #697586;
+}
+
+#analysis-sheet-overlay .analysis-map-popup-date {
+    margin-top: 5px;
+
+    font-size: 10px;
+    color: #8993A2;
+}
+
+#analysis-sheet-overlay .analysis-map-popup-divider {
+    height: 1px;
+    margin: 10px 0;
+
+    background: #E5E9EF;
+}
+
+#analysis-sheet-overlay .analysis-map-popup-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+
+    margin: 6px 0;
+
+    font-size: 11px;
+    color: #697586;
+}
+
+#analysis-sheet-overlay .analysis-map-popup-row strong {
+    color: #202936;
+    font-weight: 650;
+    white-space: nowrap;
+}
+
+#analysis-sheet-overlay .analysis-map-popup-position {
+    margin-top: 10px;
+    padding-top: 8px;
+
+    border-top: 1px solid #E5E9EF;
+
+    color: #697586;
+    font-size: 10px;
+    font-weight: 650;
+}
+
+#analysis-sheet-overlay .analysis-map-empty {
+    padding: 24px;
+
+    background: var(--as-surface);
+    border: 1px solid var(--as-border);
+    border-radius: var(--as-radius-md);
+
+    color: var(--as-text-secondary);
+    font-size: 13px;
+}
+
+@media (max-width: 640px) {
+
+    #analysis-sheet-overlay .analysis-map-container {
+        padding: 15px;
+    }
+
+    #analysis-sheet-overlay .analysis-leaflet-map {
+        height: 350px;
+    }
+
+    #analysis-sheet-overlay .analysis-map-legend {
+        gap: 10px 14px;
+    }
+
+}
+
+
+/* ==================================================
+   SECTION 06 - DISTRIBUTION
+================================================== */
+
+#analysis-sheet-overlay .distribution-container {
+    padding: 22px;
+
+    background: var(--as-surface);
+    border: 1px solid var(--as-border);
+    border-radius: var(--as-radius-lg);
+}
+
+#analysis-sheet-overlay .distribution-heading {
+    margin-bottom: 22px;
+}
+
+#analysis-sheet-overlay .distribution-title {
+    font-size: 14px;
+    font-weight: 650;
+    color: var(--as-text);
+}
+
+#analysis-sheet-overlay .distribution-subtitle {
+    margin-top: 5px;
+
+    font-size: 11px;
+    color: var(--as-text-secondary);
+}
+
+#analysis-sheet-overlay .distribution-chart-wrapper {
+    position: relative;
+
+    width: 100%;
+    height: 300px;
+}
+
+#analysis-sheet-overlay .distribution-legend {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px 22px;
+
+    margin-top: 20px;
+}
+
+#analysis-sheet-overlay .distribution-legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    font-size: 11px;
+    color: var(--as-text-secondary);
+}
+
+#analysis-sheet-overlay .distribution-legend-dot {
+    width: 10px;
+    height: 10px;
+
+    background: #3985C8;
+    border-radius: 3px;
+}
+
+#analysis-sheet-overlay .distribution-legend-line {
+    width: 18px;
+    height: 0;
+
+    border-top: 2px dashed #3985C8;
+}
+
+#analysis-sheet-overlay .distribution-footer {
+    margin-top: 18px;
+    padding-top: 12px;
+
+    border-top: 1px solid var(--as-border);
+
+    color: var(--as-text-secondary);
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+#analysis-sheet-overlay .distribution-empty {
+    padding: 24px;
+
+    background: var(--as-surface);
+    border: 1px solid var(--as-border);
+    border-radius: var(--as-radius-md);
+
+    color: var(--as-text-secondary);
+    font-size: 13px;
+}
+
+@media (max-width: 640px) {
+
+    #analysis-sheet-overlay .distribution-container {
+        padding: 15px;
+    }
+
+    #analysis-sheet-overlay .distribution-chart-wrapper {
+        height: 260px;
+    }
+
+}
+
+
+/* ==================================================
+   SECTION 07 - POSITIONNEMENT
+================================================== */
+
+#analysis-sheet-overlay .position-container {
+    padding: 22px;
+
+    background: var(--as-surface);
+    border: 1px solid var(--as-border);
+    border-radius: var(--as-radius-lg);
+}
+
+#analysis-sheet-overlay .position-heading {
+    margin-bottom: 20px;
+}
+
+#analysis-sheet-overlay .position-title {
+    font-size: 14px;
+    font-weight: 650;
+    color: var(--as-text);
+}
+
+#analysis-sheet-overlay .position-subtitle {
+    margin-top: 5px;
+
+    font-size: 11px;
+    color: var(--as-text-secondary);
+}
+
+
+/* PRIX DE RÉFÉRENCE */
+
+#analysis-sheet-overlay .position-property-reference {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+
+    padding: 14px 16px;
+    margin-bottom: 25px;
+
+    background: var(--as-surface-soft);
+    border-radius: var(--as-radius-md);
+}
+
+#analysis-sheet-overlay .position-property-reference span {
+    font-size: 12px;
+    color: var(--as-text-secondary);
+}
+
+#analysis-sheet-overlay .position-property-reference strong {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--as-text);
+}
+
+#analysis-sheet-overlay .position-reference-unavailable {
+    padding: 12px;
+    margin-bottom: 20px;
+
+    background: var(--as-surface-soft);
+    border-radius: var(--as-radius-md);
+
+    color: var(--as-text-secondary);
+    font-size: 12px;
+}
+
+
+/* JAUGE */
+
+#analysis-sheet-overlay .position-gauge {
+    padding: 5px 0 20px;
+}
+
+#analysis-sheet-overlay .position-gauge-status {
+    margin-bottom: 20px;
+
+    font-size: 12px;
+    font-weight: 650;
+    color: var(--as-text);
+}
+
+#analysis-sheet-overlay .position-gauge-track {
+    position: relative;
+
+    height: 12px;
+
+    background: var(--as-surface-soft);
+    border-radius: 20px;
+}
+
+#analysis-sheet-overlay .position-gauge-market-range {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+
+    background: rgba(57, 133, 200, 0.18);
+    border-radius: 20px;
+}
+
+#analysis-sheet-overlay .position-gauge-average,
+#analysis-sheet-overlay .position-gauge-median,
+#analysis-sheet-overlay .position-gauge-property {
+    position: absolute;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+#analysis-sheet-overlay .position-gauge-average {
+    width: 2px;
+    height: 24px;
+
+    background: #3985C8;
+}
+
+#analysis-sheet-overlay .position-gauge-median {
+    width: 2px;
+    height: 24px;
+
+    background: #D69B42;
+}
+
+#analysis-sheet-overlay .position-gauge-property {
+    width: 16px;
+    height: 16px;
+
+    background: #202936;
+    border: 3px solid #FFFFFF;
+    border-radius: 50%;
+
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+#analysis-sheet-overlay .position-gauge-labels {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    margin-top: 22px;
+}
+
+#analysis-sheet-overlay .position-gauge-labels > div {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+#analysis-sheet-overlay .position-gauge-labels strong {
+    font-size: 11px;
+    color: var(--as-text);
+}
+
+#analysis-sheet-overlay .position-gauge-labels span {
+    font-size: 10px;
+    color: var(--as-text-secondary);
+}
+
+#analysis-sheet-overlay .position-gauge-property-label {
+    text-align: center;
+}
+
+#analysis-sheet-overlay .position-gauge-labels > div:last-child {
+    text-align: right;
+}
+
+
+/* LÉGENDE */
+
+#analysis-sheet-overlay .position-gauge-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 20px;
+
+    margin-top: 22px;
+}
+
+#analysis-sheet-overlay .position-gauge-legend span {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+    font-size: 10px;
+    color: var(--as-text-secondary);
+}
+
+#analysis-sheet-overlay .position-legend-range {
+    width: 12px;
+    height: 9px;
+
+    background: rgba(57, 133, 200, 0.25);
+    border-radius: 2px;
+}
+
+#analysis-sheet-overlay .position-legend-average {
+    width: 2px;
+    height: 12px;
+
+    background: #3985C8;
+}
+
+#analysis-sheet-overlay .position-legend-median {
+    width: 2px;
+    height: 12px;
+
+    background: #D69B42;
+}
+
+#analysis-sheet-overlay .position-legend-property {
+    width: 10px;
+    height: 10px;
+
+    background: #202936;
+    border: 2px solid #FFFFFF;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px #202936;
+}
+
+
+/* COMPARAISON STATISTIQUE */
+
+#analysis-sheet-overlay .position-statistics {
+    margin-top: 25px;
+
+    border-top: 1px solid var(--as-border);
+}
+
+#analysis-sheet-overlay .position-statistics-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+
+    padding: 12px 3px;
+
+    border-bottom: 1px solid var(--as-border);
+}
+
+#analysis-sheet-overlay .position-statistics-row span {
+    font-size: 12px;
+    color: var(--as-text-secondary);
+}
+
+#analysis-sheet-overlay .position-statistics-row strong {
+    font-size: 12px;
+    font-weight: 650;
+    color: var(--as-text);
+    white-space: nowrap;
+}
+
+#analysis-sheet-overlay .position-statistics-row.property {
+    background: var(--as-surface-soft);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#analysis-sheet-overlay .position-statistics-row.property span,
+#analysis-sheet-overlay .position-statistics-row.property strong {
+    color: var(--as-text);
+    font-weight: 700;
+}
+
+
+/* INTERPRÉTATION */
+
+#analysis-sheet-overlay .position-interpretation {
+    margin-top: 22px;
+    padding: 17px;
+
+    background: var(--as-surface-soft);
+    border-radius: var(--as-radius-md);
+}
+
+#analysis-sheet-overlay .position-interpretation-title {
+    margin-bottom: 12px;
+
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--as-text);
+}
+
+#analysis-sheet-overlay .position-interpretation p {
+    margin: 8px 0;
+
+    font-size: 12px;
+    line-height: 1.65;
+    color: var(--as-text-secondary);
+}
+
+#analysis-sheet-overlay .position-interpretation p strong {
+    color: var(--as-text);
+    font-weight: 700;
+}
+
+#analysis-sheet-overlay .position-interpretation-sample {
+    margin-top: 14px;
+    padding-top: 12px;
+
+    border-top: 1px solid var(--as-border);
+
+    font-size: 10px;
+    color: var(--as-text-secondary);
+}
+
+#analysis-sheet-overlay .position-interpretation-unavailable,
+#analysis-sheet-overlay .position-gauge-unavailable,
+#analysis-sheet-overlay .position-empty {
+    padding: 15px;
+
+    color: var(--as-text-secondary);
+    font-size: 12px;
+}
+
+@media (max-width: 640px) {
+
+    #analysis-sheet-overlay .position-container {
+        padding: 15px;
+    }
+
+    #analysis-sheet-overlay .position-gauge-legend {
+        gap: 10px 14px;
+    }
+
+    #analysis-sheet-overlay .position-gauge-labels strong {
+        font-size: 10px;
+    }
+
+}

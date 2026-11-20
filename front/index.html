@@ -21,15 +21,31 @@
         href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css"
     >
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/analysis-sheet.css">
 </head>
 
-<body>
+<body data-page="visits">
 
 <header class="header">
     <div class="header-content">
-        <h1>Licitor</h1>
-        <p>Ventes immobilières aux enchères</p>
+        <h1>Licitoz</h1>
     </div>
+
+    <!-- Navigation principale -->
+    <nav class="toolbar page-navigation">
+
+        <a href="./index.html" 
+            class="navigation-button active"
+            aria-current="page">
+            Visites
+        </a>
+
+        <a href="./ventes.html"
+           class="navigation-button">
+            Ventes
+        </a>
+
+    </nav>
 </header>
 
 <main class="app">
@@ -129,16 +145,30 @@
                     </div>
                 </section>
 
-                <!-- Prix estimé -->
+                <!-- Prix total -->
                 <section class="filter-section">
-                    <label class="filter-section-title" for="estimation-min">
-                        Prix estimé (€)
+                    <label class="filter-section-title" for="prix-total-min">
+                        Prix total (€)
                     </label>
 
                     <div class="filter-inputs">
-                        <input type="number" id="estimation-min"
+                        <input type="number" id="prix-total-min"
                             min="0" placeholder="Minimum">
-                        <input type="number" id="estimation-max"
+                        <input type="number" id="prix-total-max"
+                            min="0" placeholder="Maximum">
+                    </div>
+                </section>
+
+                <!-- Prix au m² -->
+                <section class="filter-section">
+                    <label class="filter-section-title" for="prix-m2-min">
+                        Prix au m² (€)
+                    </label>
+
+                    <div class="filter-inputs">
+                        <input type="number" id="prix-m2-min"
+                            min="0" placeholder="Minimum">
+                        <input type="number" id="prix-m2-max"
                             min="0" placeholder="Maximum">
                     </div>
                 </section>
@@ -343,14 +373,24 @@
                             <span class="sort-option-check"></span>
                         </button>
 
-                        <button
+                        <button 
                             type="button"
-                            class="sort-option"
-                            data-sort="prix_estime"
+                            class="sort-option" 
+                            data-sort="prix_total"
                         >
-                            <span>Prix estimé</span>
+                            <span>Prix total</span>
                             <span class="sort-option-check"></span>
                         </button>
+
+                        <button 
+                            type="button"
+                            class="sort-option" 
+                            data-sort="prix_m2"
+                        >
+                            <span>Prix au m²</span>
+                            <span class="sort-option-check"></span>
+                        </button>
+
                     </div>
                 </div>
 
@@ -364,13 +404,230 @@
 
     </div>
 
+    <!-- ==================================================
+        TERMSHEET - ANALYSE IMMOBILIÈRE
+    ================================================== -->
+
+    <div id="analysis-sheet-overlay" class="analysis-sheet-overlay" hidden>
+
+        <section
+            id="analysis-sheet"
+            class="analysis-sheet"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="analysis-sheet-title"
+        >
+
+            <!-- HEADER FIXE -->
+
+            <header class="analysis-sheet-header">
+
+                <div class="analysis-sheet-heading">
+
+                    <div class="analysis-sheet-eyebrow">
+                        ANALYSE IMMOBILIÈRE
+                    </div>
+
+                    <h2 id="analysis-sheet-title">
+                        Analyse du marché
+                    </h2>
+
+                    <div
+                        id="analysis-sheet-subtitle"
+                        class="analysis-sheet-subtitle"
+                    >
+                        Chargement des informations...
+                    </div>
+
+                    <div
+                        id="analysis-sheet-address"
+                        class="analysis-sheet-subtitle"
+                    >
+                        Chargement des informations...
+                    </div>
+
+                </div>
+
+                <button
+                    type="button"
+                    id="analysis-sheet-close"
+                    class="analysis-sheet-close"
+                    aria-label="Fermer l'analyse"
+                >
+
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        width="22"
+                        height="22"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.8"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true">
+
+                        <path d="m18 6-12 12"/>
+                        <path d="m6 6 12 12"/>
+
+                    </svg>
+
+                </button>
+
+            </header>
+
+
+            <!-- CONTENU SCROLLABLE -->
+
+            <main class="analysis-sheet-content">
+
+                <!-- 01 - IDENTIFICATION -->
+
+                <section
+                    id="analysis-property-section"
+                    class="analysis-section"
+                >
+
+                    <div class="analysis-section-heading">
+                        <span class="analysis-section-number">01</span>
+                        <h3>Bien analysé</h3>
+                    </div>
+
+                    <div id="analysis-property-content">
+                        <!-- Contenu dynamique -->
+                    </div>
+
+                </section>
+
+
+                <!-- 02 - SYNTHÈSE DU MARCHÉ -->
+
+                <section
+                    id="analysis-market-section"
+                    class="analysis-section"
+                >
+
+                    <div class="analysis-section-heading">
+                        <span class="analysis-section-number">02</span>
+                        <h3>Synthèse du marché</h3>
+                    </div>
+
+                    <div id="analysis-market-content">
+                        <!-- Contenu dynamique -->
+                    </div>
+
+                </section>
+
+
+                <!-- 03 - ÉVOLUTION HISTORIQUE -->
+
+                <section
+                    id="analysis-evolution-section"
+                    class="analysis-section"
+                >
+
+                    <div class="analysis-section-heading">
+                        <span class="analysis-section-number">03</span>
+                        <h3>Évolution des prix</h3>
+                    </div>
+
+                    <div id="analysis-evolution-content">
+                        <!-- Graphique Chart.js -->
+                    </div>
+
+                </section>
+
+
+                <!-- 04 - DERNIÈRES TRANSACTIONS -->
+
+                <section
+                    id="analysis-transactions-section"
+                    class="analysis-section"
+                >
+
+                    <div class="analysis-section-heading">
+                        <span class="analysis-section-number">04</span>
+                        <h3>Dernières transactions</h3>
+                    </div>
+
+                    <div id="analysis-transactions-content">
+                        <!-- Tableau dynamique -->
+                    </div>
+
+                </section>
+
+                <!-- 05 - CARTE DES TRANSACTIONS -->
+
+                <section
+                    id="analysis-map-section"
+                    class="analysis-section"
+                >
+
+                    <div class="analysis-section-heading">
+                        <span class="analysis-section-number">05</span>
+                        <h3>Carte des transactions récentes</h3>
+                    </div>
+
+                    <div id="analysis-map-content">
+                        <!-- Carte Leaflet des transactions -->
+                    </div>
+
+                </section>
+
+
+                <!-- 06 - DISTRIBUTION DES PRIX AU M² -->
+
+                <section
+                    id="analysis-distribution-section"
+                    class="analysis-section"
+                >
+
+                    <div class="analysis-section-heading">
+                        <span class="analysis-section-number">06</span>
+                        <h3>Distribution des prix au m²</h3>
+                    </div>
+
+                    <div id="analysis-distribution-content">
+                        <!-- Histogramme Chart.js -->
+                    </div>
+
+                </section>
+
+                <!-- 07 - POSITIONNEMENT -->
+
+                <section
+                    id="analysis-position-section"
+                    class="analysis-section"
+                >
+
+                    <div class="analysis-section-heading">
+                        <span class="analysis-section-number">07</span>
+                        <h3>Positionnement du bien</h3>
+                    </div>
+
+                    <div id="analysis-position-content">
+                        <!-- Comparaison avec le marché -->
+                    </div>
+
+                </section>
+
+            </main>
+
+        </section>
+
+    </div>
+
+
 </main>
+
+<div id="toast-container" aria-live="polite" aria-atomic="false"></div>
 
 <!-- Leaflet -->
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
 
-<script src="./js/app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js"></script>
+
+<script type="module" src="./js/app.js"></script>
 
 </body>
 </html>

@@ -201,33 +201,32 @@ def enrich_annonce(
     except:
         latitude = None
         longitude = None
+        
+    #MANUAL FIRST
     
-    geo = reverse_geocode(
-        latitude,
-        longitude
-    )
-
-    if geo:
-        #print(f"Objet Géographique trouvé: {the_id}")
-        code_insee = geo["code_insee"]
-        annonce["code_insee"] = code_insee
-        key = code_insee
-        commune = codes_dict.get(key)
-        if not commune:
-            manual_bl = True
-        else:
-            manual_bl = False
-    else:
-        manual_bl = True
+    key = normalize_string(annonce["ville"])
+    commune = noms_dict.get(key)
+    if not commune:
+        sec_key = key.split("(")[0].strip()
+        if sec_key != key:
+            commune = noms_dict.get(sec_key)
             
-    if manual_bl:
-        #print(f"Objet Géographique non trouvé: {the_id}")
-        key = normalize_string(annonce["ville"])
-        commune = noms_dict.get(key)
-        if not commune:
-            sec_key = key.split("(")[0].strip()
-            if sec_key != key:
-                commune = noms_dict.get(sec_key)
+    if not commune:
+        
+        #print("Geo Reverse Method")
+        
+        geo = reverse_geocode(
+            latitude,
+            longitude
+        )
+
+        if geo:
+            
+            #print(f"Objet Géographique trouvé: {the_id}")
+            code_insee = geo["code_insee"]
+            annonce["code_insee"] = code_insee
+            key = code_insee
+            commune = codes_dict.get(key)
 
     if commune:
         

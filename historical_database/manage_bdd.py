@@ -6,49 +6,72 @@ import argparse
 
 from pathlib import Path
 from decimal import Decimal, InvalidOperation
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 
 import psycopg
 from psycopg.types.json import Jsonb
 from dotenv import load_dotenv
 
+# =====================================================
+# VARIABLES GLOBALES
+# =====================================================
+
+BASE_DIR = Path(r"C:/Users/benja/Documents/licitor_app")
+ENV_FILE = BASE_DIR / "historical_database" / ".env.txt"
 
 # =====================================================
-# CONFIGURATION
+# CONFIGURATION BDD
 # =====================================================
 
-try:
-    BASE_DIR = Path(__file__).resolve().parents[2]
-except NameError:
-    BASE_DIR = Path.cwd()
+def build_bdd_config(env_file):
     
-ENV_FILE = BASE_DIR / "licitor_app" / "historical_database" / ".env.txt"
+    """ RECUPERER CONFIG BDD """
 
-load_dotenv(dotenv_path=ENV_FILE, override=True)
+    load_dotenv(dotenv_path=env_file, override=True)
+    
+    db_config = {
+        "host": os.getenv("DB_HOST"),
+        "port": os.getenv("DB_PORT"),
+        "dbname": os.getenv("DB_NAME"),
+        "user": os.getenv("DB_USER"),
+        "password": os.getenv("DB_PASSWORD"),
+    }
+    
+    if not all(db_config.values()):
+        raise ValueError(
+            "Configuration Supabase incomplète dans .env.txt"
+        )
+    
+    return db_config
 
-DB_CONFIG = {
-    "host": os.getenv("DB_HOST"),
-    "port": os.getenv("DB_PORT"),
-    "dbname": os.getenv("DB_NAME"),
-    "user": os.getenv("DB_USER"),
-    "password": os.getenv("DB_PASSWORD"),
-}
+# =====================================================
+# CONFIGURATION FILE
+# =====================================================
 
-SOURCE_NAME = "licitor"
-
-DEFAULT_JSON_FILE = Path("data/sales.json")
-
-# Vérification de la configuration
-if not all(DB_CONFIG.values()):
-    raise ValueError(
-        "Configuration Supabase incomplète dans .env.txt"
+def init_file_obj(rel_path, desc_txt = "Import des ventes immobilières", help_txt = "Chemin du fichier JSON à importer"):
+    
+    """ CONSTRUIRE UN OBJET CONTENANT DES INFOS SUR LE LIEN DU FICHIER A TRAITER """
+    
+    parser = argparse.ArgumentParser(
+        description=desc_txt
     )
+
+    parser.add_argument(
+        "--file",
+        type=Path,
+        default=rel_path,
+        help=help_txt
+    )
+
+    args = parser.parse_args()
+    
+    return args.file
 
 # =====================================================
 # CHARGEMENT ET VALIDATION DU JSON
 # =====================================================
 
-def load_json(file_path):
+def load_sales(file_path):
 
     if not file_path.exists():
         raise FileNotFoundError(
@@ -193,18 +216,17 @@ def normalize_sale(source_id, sale):
 # CONVERSION DES VALEURS JSONB
 # =====================================================
 
-JSON_COLUMNS = {
-    "type",
-    "description",
-    "stats_bien",
-    "avocats",
-    "telephones",
-    "documents",
-    "raw_data"
-}
-
-
 def prepare_value(column, value):
+    
+    JSON_COLUMNS = {
+        "type",
+        "description",
+        "stats_bien",
+        "avocats",
+        "telephones",
+        "documents",
+        "raw_data"
+    }
 
     if column in JSON_COLUMNS:
 
@@ -220,50 +242,49 @@ def prepare_value(column, value):
 # INSERTION D'UNE NOUVELLE VENTE
 # =====================================================
 
-INSERT_COLUMNS = [
-    "id",
-    "titre",
-    "url",
-    "date_publication",
-    "dt_vente",
-    "dt_vente_limit",
-    "tribunal",
-    "type_vente",
-    "sell_state",
-    "mise_a_prix",
-    "est_price",
-    "fac_baisse",
-    "prix_final",
-    "trib_anom",
-    "ville",
-    "adresse",
-    "code_postal",
-    "code_insee",
-    "code_departement",
-    "code_region",
-    "nom_departement",
-    "nom_region",
-    "latitude",
-    "longitude",
-    "location",
-    "type",
-    "description",
-    "occupation",
-    "surface_m2",
-    "stats_bien",
-    "est_price_m2",
-    "visite",
-    "visite_dt",
-    "visite_state",
-    "avocats",
-    "telephones",
-    "documents",
-    "raw_data",
-    "import_id"
-]
-
-
 def insert_sale(cur, sale, import_id):
+    
+    INSERT_COLUMNS = [
+        "id",
+        "titre",
+        "url",
+        "date_publication",
+        "dt_vente",
+        "dt_vente_limit",
+        "tribunal",
+        "type_vente",
+        "sell_state",
+        "mise_a_prix",
+        "est_price",
+        "fac_baisse",
+        "prix_final",
+        "trib_anom",
+        "ville",
+        "adresse",
+        "code_postal",
+        "code_insee",
+        "code_departement",
+        "code_region",
+        "nom_departement",
+        "nom_region",
+        "latitude",
+        "longitude",
+        "location",
+        "type",
+        "description",
+        "occupation",
+        "surface_m2",
+        "stats_bien",
+        "est_price_m2",
+        "visite",
+        "visite_dt",
+        "visite_state",
+        "avocats",
+        "telephones",
+        "documents",
+        "raw_data",
+        "import_id"
+    ]
 
     columns = ", ".join(
         f'"{column}"' for column in INSERT_COLUMNS
@@ -275,12 +296,15 @@ def insert_sale(cur, sale, import_id):
 
         if column == "location":
 
+            # AJOUT DE ::double precision pour gestion d'un bug
+
             placeholders.append("""
                 CASE
-                    WHEN %s IS NULL OR %s IS NULL
+                    WHEN %s::double precision IS NULL
+                      OR %s::double precision IS NULL
                     THEN NULL
                     ELSE ST_SetSRID(
-                        ST_MakePoint(%s, %s),
+                        ST_MakePoint(%s::double precision, %s::double precision),
                         4326
                     )::extensions.geography
                 END
@@ -319,8 +343,29 @@ def insert_sale(cur, sale, import_id):
         ON CONFLICT (id) DO NOTHING
         RETURNING id
     """
-
-    cur.execute(query, values)
+    
+    try:
+        
+        cur.execute(query, values)
+    
+    except Exception as e:
+        print("\n" + "=" * 60)
+        print("ERREUR INSERTION VENTE")
+        print("=" * 60)
+    
+        print("ID :", sale["id"])
+        print("Erreur :", repr(e))
+    
+        if isinstance(e, psycopg.Error):
+            print("SQLSTATE :", e.sqlstate)
+            print("DETAIL :", e.diag.message_detail)
+            print("CONSTRAINT :", e.diag.constraint_name)
+            print("COLUMN :", e.diag.column_name)
+            print("TABLE :", e.diag.table_name)
+    
+        print("=" * 60)
+    
+        raise
 
     return cur.fetchone()
 
@@ -410,15 +455,14 @@ def process_sale(cur, source_id, raw_sale, import_id):
 
 
 # =====================================================
-# IMPORT PRINCIPAL
+# IMPORT VENTES
 # =====================================================
 
-def import_sales(file_path):
-
+def import_sales(file_obj, db_config):
 
     print("\nChargement du fichier JSON...")
 
-    data = load_json(file_path)
+    data = load_sales(file_obj)
 
     total = len(data)
 
@@ -432,7 +476,7 @@ def import_sales(file_path):
     # On la valide séparément afin de conserver une trace
     # même si le traitement des ventes échoue.
 
-    with psycopg.connect(**DB_CONFIG) as conn:
+    with psycopg.connect(**db_config) as conn:
 
         with conn.cursor() as cur:
 
@@ -446,8 +490,8 @@ def import_sales(file_path):
                 VALUES (%s, %s, 'running', %s)
                 RETURNING id
             """, (
-                SOURCE_NAME,
-                file_path.name,
+                "licitor",
+                file_obj.name,
                 total
             ))
 
@@ -458,7 +502,7 @@ def import_sales(file_path):
     try:
 
         # Transaction contenant toutes les ventes.
-        with psycopg.connect(**DB_CONFIG) as conn:
+        with psycopg.connect(**db_config) as conn:
 
             with conn.cursor() as cur:
 
@@ -512,7 +556,7 @@ def import_sales(file_path):
         # La transaction des ventes a été annulée.
         # On conserve néanmoins le statut d'échec de l'import.
 
-        with psycopg.connect(**DB_CONFIG) as conn:
+        with psycopg.connect(**db_config) as conn:
 
             with conn.cursor() as cur:
 
@@ -538,32 +582,56 @@ def import_sales(file_path):
     print("IMPORT TERMINÉ AVEC SUCCÈS")
     print("=" * 45)
 
-    print(f"Fichier              : {file_path}")
+    print(f"Fichier              : {file_obj}")
     print(f"Total des ventes     : {total}")
     print(f"Nouvelles ventes     : {inserted}")
     print(f"Prix modifiés        : {updated}")
     print(f"Ventes inchangées    : {unchanged}")
 
     print("=" * 45)
+    
+
+# =================================================
+# ACTUALISER BDD
+# =================================================
+
+def update_sales():
+    
+    rel_path = BASE_DIR / "historical_database/data/sales.json"
+    file_obj = init_file_obj(rel_path)
+    
+    db_config = build_bdd_config(ENV_FILE)
+    
+    import_sales(file_obj, db_config)
+    
+    return True
 
 
-# =====================================================
-# POINT D'ENTRÉE
-# =====================================================
+# =================================================
+# RECUPERER DT MAX VENTES
+# =================================================
 
-if __name__ == "__main__":
+def get_max_dt(secur_delay = 30):
+    
+    db_config = build_bdd_config(ENV_FILE)
+    
+    with psycopg.connect(**db_config) as conn:
 
-    parser = argparse.ArgumentParser(
-        description="Import des ventes immobilières"
-    )
-
-    parser.add_argument(
-        "--file",
-        type=Path,
-        default=DEFAULT_JSON_FILE,
-        help="Chemin du fichier JSON à importer"
-    )
-
-    args = parser.parse_args()
-
-    import_sales(args.file)
+        with conn.cursor() as cur:
+    
+            cur.execute("""
+                SELECT MAX(dt_vente)
+                FROM public.sales
+            """,)
+        
+            result = cur.fetchone()
+        
+            if result is None:
+                print("Impossible de retrouver la vente max dans la table des Ventes", 
+                      "Utilisation d'un délai de 7 jours par rapport à la date actuelle.", 
+                      sep = "\n")
+                dt_vente = datetime.now() - timedelta(days = secur_delay)
+            else: 
+                dt_vente = result[0] - timedelta(days = secur_delay)
+                
+            return dt_vente

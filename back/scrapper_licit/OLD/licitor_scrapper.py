@@ -21,6 +21,8 @@ def clean_text(value):
 
 def handle_prices(lot, price):
     
+    """Récupération Mise à Prix et Prix vente final"""
+    
     mise_obj = None
     vente_obj = None
     
@@ -114,12 +116,15 @@ def extract_announcement_urls(session,
                               request_delay,
                               base_url, search_url, 
                               max_pages=None, max_announces = None, 
-                              max_pub_dt = None, max_vis_dt = None):
+                              max_dt = None,
+                              scrap_mode = "visite"):
     
     
     """
     TEST
-    search_url = SEARCH_URL
+    scrap_mode = "visite"
+    search_url = "https://www.licitor.com/ventes-aux-encheres-immobilieres/visites-sur-place.html"
+    search_url = SEARCH_URLS[0]
     max_pages = MAX_PAGES
     max_dt = None
     """
@@ -139,6 +144,17 @@ def extract_announcement_urls(session,
     de pages parcourues pendant les tests.
     """
     
+    #MODE PARAMS
+    
+    if scrap_mode == "visite":
+        url_page_operator="?"
+    elif scrap_mode == "vente":
+        url_page_operator="&"
+    else:
+        print("Mode de scrap inconnu:", scrap_mode, sep="\n")
+        return []
+        
+
     urls = []
     page = 1
     
@@ -151,15 +167,9 @@ def extract_announcement_urls(session,
         if page == 1:
             page_url = search_url
         else:
-            page_url = f"{search_url}?p={page}"
+            page_url = f"{search_url}{url_page_operator}p={page}"
     
-        print(
-            f"\nRecherche des annonces - page {page}"
-        )
-        print(
-            f"  → {page_url}"
-        )
-    
+        #PAGE PRINCIPALE
         try:
             soup = get_soup(session, page_url)
     
@@ -170,19 +180,47 @@ def extract_announcement_urls(session,
             )
     
             break
-    
+        
+        #MAX PAGES
+        if page == 1 and max_pages == None:
+            
+            obj = soup.find("span", attrs={"class": "PageTotal"})
+            raw_pages = obj.get_text(" ", strip = True).split("/")[1].strip()
+            try:
+                max_pages = int(raw_pages)
+                print("\nMax Pages:", max_pages)
+            except:
+                print("\nMax Pages introuvable - Pas de Scrap", page_url, sep = "\n")
+                break
+            
+        #GET MAX_DATE
+        if not max_dt is None:
+            page_max_date = get_max_date(soup, scrap_mode)
+            if scrap_mode == "visite":
+                cond_bl = (page_max_date > max_dt)
+            elif scrap_mode == "vente":
+                cond_bl = (page_max_date < max_dt)
+            if cond_bl:
+                print("\nDate Max atteinte - Fin scrapping", f"Page {page}", f"Page Max Date: {page_max_date}", f"User Max Date: {max_dt}", sep = "\n")
+                break
+            
+            
+        print(
+            f"\nRecherche des annonces - page {page}"
+        )
+        print(
+            f"  → {page_url}"
+        )
+            
         # -----------------------------------------------------
         # RÉCUPÉRATION DES URLS
         # -----------------------------------------------------
-        
-        #A ADAPTER POUR PERMETTRE UN STOP SUR LES DATES DE VISITE
     
         page_urls = []
+        
+        links = soup.find_all("a", href=True)
     
-        for link in soup.find_all(
-            "a",
-            href=True,
-        ):
+        for link in links:
     
             href = link["href"]
     
@@ -202,42 +240,9 @@ def extract_announcement_urls(session,
             # Évite les doublons sur la page.
             if absolute_url not in page_urls:
                 
-                try:
-                    page_soup = get_soup(session, absolute_url)
-            
-                except requests.RequestException as error:
-            
-                    print(
-                        f"  ⚠️ Erreur lors du chargement de l'annonce sur la page ({page}) : {error}"
-                    )
-                    print(
-                        f"Annonce: {absolute_url}")
-            
-                    pass
-                
-                #Date treshing
-                
-                if max_pub_dt is None:
-                    max_pub_dt = datetime(1900,1,1).date()
-                if max_vis_dt is None:
-                    max_vis_dt = datetime(1900,1,1).date()
-
-                ad = page_soup.select_one(".AdContent")
-                publication = ad.select_one(".PublishingDate time")
-                
-                if publication:
-                    ann_dt_str = publication.get("datetime")[0:10]
-                    annonce_dt = datetime.strptime(ann_dt_str, "%Y-%m-%d").date()
-                    end_bl = (annonce_dt < max_pub_dt)
-                    if end_bl:
-                        break
-                
                 page_urls.append(
                     absolute_url
                 )
-                
-                #AJOUTER LA LOGIQUE POUR VISITE
-                #XXX
 
     
         # -----------------------------------------------------
@@ -296,17 +301,6 @@ def extract_announcement_urls(session,
             )
     
             break
-        
-        # -----------------------------------------------------
-        # FIN SCRAPPING - MAX DATE ATTEINT
-        # -----------------------------------------------------
-        
-        if end_bl:
-            print(
-                f"\n→ Date max de scrappîng atteinte ({max_pub_dt}) pour l'annonce publiée le {annonce_dt}."
-            )
-            break
-    
     
         page += 1
     
@@ -315,6 +309,19 @@ def extract_announcement_urls(session,
     
     return urls
 
+def get_max_date(soup, scrap_mode):
+    
+    if scrap_mode == "visite":
+        obj = soup.find("p", attrs={"class": "VisitDate First"}).find("span", attrs = {"class": "Day"})
+        raw = obj.get_text(" ", strip = True).split(" ")[1]
+        raw_dt = "-".join([raw, str(datetime.now().year)])
+        out = datetime.strptime(raw_dt, "%d-%m-%Y").date()
+    elif scrap_mode == "vente":
+        obj = soup.find("ul", attrs={"class": "AdResults"}).find("li").find("p", attrs = {"class": "Result"})
+        raw_dt = obj.get_text(" ", strip = True).split(":")[0].strip()
+        out = datetime.strptime(raw_dt, "%d-%m-%Y").date()
+        
+    return out
 
 def get_page_text(soup):
     """

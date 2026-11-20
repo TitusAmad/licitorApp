@@ -1,8 +1,28 @@
+import {
+    loadAnnouncements as fetchAnnouncements,
+    loadNearbySales
+} from "./data-loader.js";
+
+import {
+    prepareNearbySalesAnalysis
+} from "./sales-analysis.js";
+
+import {
+    initializeAnalysisSheet,
+    openAnalysisSheet
+} from "./analysis-sheet.js";
+
+import { formatDate } from "./date-utils.js";
+
+import { showToast } from './toast.js';
+
 // --------------------------------------------------
 // Variables globales
 // --------------------------------------------------
 
 let announcements = [];
+let searchTerm = "";
+
 const announcementElements = new Map();
 
 let map;
@@ -10,17 +30,76 @@ let markerClusterGroup;
 const activeMarkerIds = new Set();
 let markers = new Map();
 
-let sortField = "dt_vente";
-let searchTerm = "";
+// --------------------------------------------------
+// ANALYSE GÉOGRAPHIQUE
+// --------------------------------------------------
+
+let selectedAnalysisAnnouncement = null;
+
+// RADIUS
+
+const ANALYSIS_RADIUS_KEY = "analysis_radius";
+const DEFAULT_ANALYSIS_RADIUS = 5;
+
+let analysisRadius = Number(
+    sessionStorage.getItem(ANALYSIS_RADIUS_KEY)
+) || DEFAULT_ANALYSIS_RADIUS;
+
+// SURFACE
+
+// SURFACE MIN
+
+const ANALYSIS_SURFACE_KEY = "analysis_surface_min";
+const DEFAULT_ANALYSIS_SURFACE = -1;
+
+let analysisSurface = sessionStorage.getItem(ANALYSIS_SURFACE_KEY) || DEFAULT_ANALYSIS_SURFACE;
+
+// --------------------------------------------------
+// CONFIGURATION DE LA PAGE
+// --------------------------------------------------
+
+const PAGE_TYPE = document.body.dataset.page || "visits";
+
+const PAGE_CONFIG = {
+
+    visits: {
+        defaultSort: "visite_dt",
+        sortDirection: "asc",
+
+        totalPriceField: "estimated",
+        priceM2Field: "estimated"
+    },
+
+    sales: {
+        defaultSort: "dt_vente",
+        sortDirection: "desc",
+
+        totalPriceField: "final",
+        priceM2Field: "final"
+    }
+
+};
+
+let sortField = PAGE_CONFIG[PAGE_TYPE]?.defaultSort || "dt_vente";
+
+let sortDirection =
+    PAGE_CONFIG[PAGE_TYPE]?.sortDirection || "asc";
 
 const appliedFilters = {
     surfaceMin: null,
     surfaceMax: null,
+
     prixMin: null,
     prixMax: null,
-    estimationMin: null,
-    estimationMax: null,
+
+    prixTotalMin: null,
+    prixTotalMax: null,
+
+    prixM2Min: null,
+    prixM2Max: null,
+
     tribunaux: [],
+
     dateField: "dt_vente",
     dateStart: null,
     dateEnd: null
@@ -50,6 +129,9 @@ document.addEventListener("DOMContentLoaded", async () => {
     updateFilterButtonStates();
 
     await loadAnnouncements();
+
+    initializeAnalysisSheet();
+    
 });
 
 
@@ -132,25 +214,18 @@ function initializeMap() {
 // Chargement des données
 // --------------------------------------------------
 
+// --------------------------------------------------
+// VISITES A VENIR
+// --------------------------------------------------
+
 async function loadAnnouncements() {
 
     try {
 
-        const response = await fetch("./data/auctions.json");
-
-        if (!response.ok) {
-            throw new Error(
-                `Erreur HTTP : ${response.status}`
-            );
-        }
-
-        const data = await response.json();
-
-        // Convertir le dictionnaire en tableau d'annonces
-        announcements = Object.values(data);
+        announcements = await fetchAnnouncements(PAGE_TYPE);
 
         console.log(
-            `${announcements.length} annonces chargées`
+            `${announcements.length} annonces chargées (${PAGE_TYPE})`
         );
 
         updateTribunalFilters();
@@ -172,6 +247,7 @@ async function loadAnnouncements() {
         `;
     }
 }
+
 
 // --------------------------------------------------
 // Recherche
@@ -294,8 +370,13 @@ function updateFilterButtonStates() {
     ) activeCount++;
 
     if (
-        appliedFilters.estimationMin !== null ||
-        appliedFilters.estimationMax !== null
+        appliedFilters.prixTotalMin !== null ||
+        appliedFilters.prixTotalMax !== null
+    ) activeCount++;
+
+    if (
+        appliedFilters.prixM2Min !== null ||
+        appliedFilters.prixM2Max !== null
     ) activeCount++;
 
     if (
@@ -324,8 +405,14 @@ function applyFilters() {
     appliedFilters.prixMin = getNumericInput("prix-min");
     appliedFilters.prixMax = getNumericInput("prix-max");
 
-    appliedFilters.estimationMin = getNumericInput("estimation-min");
-    appliedFilters.estimationMax = getNumericInput("estimation-max");
+    appliedFilters.prixTotalMin =
+        getNumericInput("prix-total-min");
+    appliedFilters.prixTotalMax =
+        getNumericInput("prix-total-max");
+    appliedFilters.prixM2Min =
+        getNumericInput("prix-m2-min");
+    appliedFilters.prixM2Max =
+        getNumericInput("prix-m2-max");
 
     // Période de dates
     appliedFilters.dateField =
@@ -371,8 +458,10 @@ function resetFilters() {
         "surface-max",
         "prix-min",
         "prix-max",
-        "estimation-min",
-        "estimation-max",
+        "prix-total-min",
+        "prix-total-max",
+        "prix-m2-min",
+        "prix-m2-max",
         "date-start",
         "date-end"
     ].forEach(id => {
@@ -395,8 +484,10 @@ function resetFilters() {
         surfaceMax: null,
         prixMin: null,
         prixMax: null,
-        estimationMin: null,
-        estimationMax: null,
+        prixTotalMin: null,
+        prixTotalMax: null,
+        prixM2Min: null,
+        prixM2Max: null,
         tribunaux: [],
         dateField: "dt_vente",
         dateStart: null,
@@ -548,20 +639,44 @@ function getFilteredAnnouncements() {
         if (appliedFilters.prixMax !== null &&
             prix > appliedFilters.prixMax) return false;
 
-        // Prix estimé
-        const estimation = toNumber(announcement.stats_bien?.avg);
+        // Prix total
+        const prixTotal = getTotalPrice(announcement);
 
         if (
-            (appliedFilters.estimationMin !== null ||
-             appliedFilters.estimationMax !== null) &&
-            estimation === null
+            (appliedFilters.prixTotalMin !== null ||
+            appliedFilters.prixTotalMax !== null) &&
+            prixTotal === null
         ) return false;
 
-        if (appliedFilters.estimationMin !== null &&
-            estimation < appliedFilters.estimationMin) return false;
+        if (
+            appliedFilters.prixTotalMin !== null &&
+            prixTotal < appliedFilters.prixTotalMin
+        ) return false;
 
-        if (appliedFilters.estimationMax !== null &&
-            estimation > appliedFilters.estimationMax) return false;
+        if (
+            appliedFilters.prixTotalMax !== null &&
+            prixTotal > appliedFilters.prixTotalMax
+        ) return false;
+
+
+        // Prix au m²
+        const prixM2 = getPricePerM2(announcement);
+
+        if (
+            (appliedFilters.prixM2Min !== null ||
+            appliedFilters.prixM2Max !== null) &&
+            prixM2 === null
+        ) return false;
+
+        if (
+            appliedFilters.prixM2Min !== null &&
+            prixM2 < appliedFilters.prixM2Min
+        ) return false;
+
+        if (
+            appliedFilters.prixM2Max !== null &&
+            prixM2 > appliedFilters.prixM2Max
+        ) return false;
 
         // Tribunaux : correspondance avec au moins un tribunal sélectionné
         if (
@@ -646,6 +761,17 @@ function initializeSorting() {
         option.addEventListener("click", () => {
             sortField = option.dataset.sort;
 
+            if (sortField === "dt_vente") {
+
+                sortDirection =
+                    PAGE_TYPE === "sales" ? "desc" : "asc";
+
+            } else {
+
+                sortDirection = "asc";
+
+            }
+
             updateSortButton();
 
             sortMenu.hidden = true;
@@ -689,7 +815,8 @@ function updateSortButton() {
         visite_dt: "Visite",
         mise_a_prix: "Mise à prix",
         surface_m2: "Surface",
-        prix_estime: "Prix estimé"
+        prix_total: "Prix total",
+        prix_m2: "Prix au m²"
     };
 
     currentLabel.textContent = labels[sortField] || "Vente";
@@ -770,43 +897,50 @@ function displayAnnouncements(filteredAnnouncements) {
         return;
     }
 
-
     sortedAnnouncements.sort((a, b) => {
 
-        // Critères numériques
-        if (sortField === "mise_a_prix") {
-            return compareNumbers(
-                a.mise_a_prix,
-                b.mise_a_prix
-            );
+        let valueA;
+        let valueB;
+
+        switch (sortField) {
+
+            case "mise_a_prix":
+                valueA = toNumber(a.mise_a_prix);
+                valueB = toNumber(b.mise_a_prix);
+                break;
+
+            case "surface_m2":
+                valueA = toNumber(a.surface_m2);
+                valueB = toNumber(b.surface_m2);
+                break;
+
+            case "prix_total":
+                valueA = getTotalPrice(a);
+                valueB = getTotalPrice(b);
+                break;
+
+            case "prix_m2":
+                valueA = getPricePerM2(a);
+                valueB = getPricePerM2(b);
+                break;
+
+            default: {
+                const dateA = parseSaleDate(a[sortField]);
+                const dateB = parseSaleDate(b[sortField]);
+
+                // Dates absentes en dernier
+                if (dateA === null && dateB !== null) return 1;
+                if (dateA !== null && dateB === null) return -1;
+
+                if (dateA === null && dateB === null) return 0;
+
+                return sortDirection === "desc"
+                    ? dateB - dateA
+                    : dateA - dateB;
+            }
         }
 
-        if (sortField === "surface_m2") {
-            return compareNumbers(
-                a.surface_m2,
-                b.surface_m2
-            );
-        }
-
-        if (sortField === "prix_estime") {
-            const prixA = getEstimatedTotalPrice(a);
-            const prixB = getEstimatedTotalPrice(b);
-
-            return compareNumbers(prixA, prixB);
-        }
-
-        // Critères de date : du plus proche dans le temps
-        // au plus éloigné dans le futur
-        const dateA = parseSaleDate(a[sortField]);
-        const dateB = parseSaleDate(b[sortField]);
-
-        // Dates absentes en dernier
-        if (dateA === null && dateB !== null) return 1;
-        if (dateA !== null && dateB === null) return -1;
-
-        if (dateA === null && dateB === null) return 0;
-
-        return dateA - dateB;
+        return compareNumbers(valueA, valueB);
     });
 
     sortedAnnouncements.forEach(announcement => {
@@ -834,41 +968,75 @@ function createAnnouncementElement(announcement) {
     element.className = "announcement";
     element.dataset.id = announcement.id;
 
-    const price = formatPrice(
-        announcement.mise_a_prix
-    );
+    // --------------------------------------------------
+    // DONNÉES COMMUNES
+    // --------------------------------------------------
 
-    // Les propriétés sont directement dans l'annonce,
-    // et non dans announcement.lots[0].
+    const price = formatPrice(announcement.mise_a_prix);
+
     const surface = announcement.surface_m2 != null
         ? Math.round(announcement.surface_m2)
         : null;
 
-    const avg = announcement.stats_bien?.avg;
+    const dateVente = formatDate(announcement.dt_vente);
 
-    const estPricePerSquareMeter = avg != null
-        ? formatPrice(avg)
-        : null;
+    const dateVisite = formatDate(announcement.visite_dt);
 
-    const estPrice = formatPrice(getEstimatedTotalPrice(announcement));
+    const tribunal = announcement.tribunal || "";
 
-    const dateVente = formatDate(
-        announcement.dt_vente
-    );
-
-    const dateVisite = formatDate(
-        announcement.visite_dt
-    );
-
-    // Le champ "type" est un tableau dans le JSON.
     const typeBien = Array.isArray(announcement.type)
         ? announcement.type.join(", ")
         : announcement.type || "Annonce";
 
     const adresseBien = announcement.adresse || "";
 
-    element.innerHTML = `
+    // --------------------------------------------------
+    // DONNÉES FINANCIÈRES
+    // --------------------------------------------------
 
+    // Prix estimé total
+    const estimatedTotal = getEstimatedTotalPrice(announcement);
+
+    // Prix final total
+    const finalPrice = toNumber(announcement.prix_final);
+
+    // Prix final au m²
+    const finalPricePerM2 =
+        getFinalPricePerSquareMeter(announcement);
+
+    // Ratio par rapport à l'estimation
+    const saleRatio = getSaleRatio(announcement);
+
+    // Formatage
+    const estPrice = estimatedTotal !== null
+        ? formatPrice(estimatedTotal)
+        : null;
+
+    const finalPriceFormatted = finalPrice !== null
+        ? formatPrice(finalPrice)
+        : null;
+
+    const finalPricePerM2Formatted = finalPricePerM2 !== null
+        ? formatPrice(finalPricePerM2)
+        : null;
+
+    // Couleur du ratio
+    let ratioClass = "ratio-neutral";
+
+    if (saleRatio !== null) {
+
+        if (saleRatio < -5) {
+            ratioClass = "ratio-positive";
+        } else if (saleRatio > 5) {
+            ratioClass = "ratio-negative";
+        }
+    }
+
+    // --------------------------------------------------
+    // HTML DE LA CARD
+    // --------------------------------------------------
+
+    element.innerHTML = `
 
         <div class="property-description">
 
@@ -878,28 +1046,21 @@ function createAnnouncementElement(announcement) {
                 </h3>
 
                 <span class="property-type">
-                    ${escapeHtml(
-                        Array.isArray(announcement.type)
-                            ? announcement.type.join(", ")
-                            : announcement.type || "Type non renseigné"
-                    )}
+                    ${escapeHtml(typeBien)}
                 </span>
             </div>
 
             ${adresseBien ? `
                 <div class="property-address">
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="15"
-                        height="15"
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        width="15" height="15"
                         viewBox="0 0 24 24"
                         fill="none"
                         stroke="currentColor"
                         stroke-width="1.8"
                         stroke-linecap="round"
                         stroke-linejoin="round"
-                        aria-hidden="true"
-                    >
+                        aria-hidden="true">
                         <path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/>
                         <circle cx="12" cy="10" r="2.5"/>
                     </svg>
@@ -911,9 +1072,12 @@ function createAnnouncementElement(announcement) {
         </div>
 
         <div class="property-metrics">
+
             <div class="property-metrics-grid">
+
                 <div class="metric-card">
                     <span class="metric-label">Mise à prix</span>
+
                     <span class="metric-value metric-price">
                         ${price}
                     </span>
@@ -921,36 +1085,109 @@ function createAnnouncementElement(announcement) {
 
                 <div class="metric-card">
                     <span class="metric-label">Surface</span>
+
                     <span class="metric-value">
                         ${surface != null ? surface + " m²" : "N/A"}
                     </span>
                 </div>
+
             </div>
 
-            <div class="metric-estimation">
-                <div class="metric-estimation-header">
-                    <span class="metric-label">
-                        Prix de vente estimé
-                    </span>
+            ${PAGE_TYPE === "sales" ? `
 
-                    <span class="metric-value">
-                        ${estPrice || "N/A"}
-                    </span>
+                <div class="metric-estimation">
+
+                    <div class="metric-estimation-header">
+                        <span class="metric-label">
+                            Prix de vente final
+                        </span>
+
+                        <span class="metric-value">
+                            ${finalPriceFormatted || "N/A"}
+                        </span>
+                    </div>
+
+                    ${finalPricePerM2Formatted ? `
+                        <span class="metric-detail">
+                            Soit ${finalPricePerM2Formatted}/m²
+                        </span>
+                    ` : ""}
+
+                    ${saleRatio !== null ? `
+                        <div class="sale-ratio ${ratioClass}">
+                            <span class="metric-label">
+                                Écart par rapport à l'estimation
+                            </span>
+
+                            <span class="metric-value">
+                                ${saleRatio > 0 ? "+" : ""}${saleRatio.toFixed(1).replace(".", ",")} %
+                            </span>
+                        </div>
+                    ` : ""}
+
+                    ${estimatedTotal !== null ? `
+                        <div class="metric-detail">
+                            Estimation : ${estPrice}
+                        </div>
+                    ` : ""}
+
                 </div>
 
-                ${estPricePerSquareMeter ? `
-                    <span class="metric-detail">
-                        Soit ${estPricePerSquareMeter}/m²
-                    </span>
-                ` : ""}
-            </div>
+            ` : `
+
+                <div class="metric-estimation">
+
+                    <div class="metric-estimation-header">
+                        <span class="metric-label">
+                            Prix de vente estimé
+                        </span>
+
+                        <span class="metric-value">
+                            ${estPrice || "N/A"}
+                        </span>
+                    </div>
+
+                    ${announcement.stats_bien?.avg != null ? `
+                        <span class="metric-detail">
+                            Soit ${formatPrice(announcement.stats_bien.avg)}/m²
+                        </span>
+                    ` : ""}
+
+                </div>
+
+            `}
 
         </div>
 
-
         <div class="date-info">
 
-            ${dateVisite ? `
+            ${PAGE_TYPE === "sales" ? `
+
+                <div class="date-row date-tribunal">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        width="16" height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.8"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true">
+                        <path d="M3 21h18"/>
+                        <path d="M5 21V7l8-4v18"/>
+                        <path d="M19 21V11l-6-4"/>
+                    </svg>
+
+                    <span class="date-label">Tribunal</span>
+
+                    <span class="date-value"
+                        title="${escapeHtml(announcement.tribunal || "")}"
+                    >
+                        ${escapeHtml(announcement.tribunal || "Non renseigné")}
+                    </span>
+                </div>
+
+            ` : dateVisite ? `
                 <div class="date-row date-visite">
                     <svg xmlns="http://www.w3.org/2000/svg"
                         width="16" height="16"
@@ -969,6 +1206,7 @@ function createAnnouncementElement(announcement) {
                     <span class="date-label">Visite</span>
                     <span class="date-value">${dateVisite}</span>
                 </div>
+
             ` : ""}
 
             ${dateVente ? `
@@ -994,51 +1232,84 @@ function createAnnouncementElement(announcement) {
 
         <div class="links-info">
 
-            <button type="button" class="licitor-folder-btn">
+            <button 
+                type="button" 
+                class="licitor-folder-btn"
+                title="Accéder au dossier du bien"
+                aria-label="Accéder au dossier du bien"
+            >
                 <svg xmlns="http://www.w3.org/2000/svg"
-                    width="16" height="16" viewBox="0 0 24 24"
+                    width="20" height="20" viewBox="0 0 24 24"
                     fill="none" stroke="currentColor"
                     stroke-width="1.8" stroke-linecap="round"
                     stroke-linejoin="round" aria-hidden="true">
                     <path d="M3 7a2 2 0 0 1 2-2h5l2 2h7a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/>
                 </svg>
-                <span>Dossier du bien</span>
             </button>
 
-            <button type="button" class="street-view-btn">
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
+            <button 
+                type="button" 
+                class="street-view-btn"
+                title="Visualiser sur la carte"
+                aria-label="Visualiser sur la carte"
+            >
+                <svg xmlns="http://www.w3.org/2000/svg"
+                    width="20" height="20"
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
                     stroke-width="1.8"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    aria-hidden="true"
-                >
+                    aria-hidden="true">
                     <path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/>
                     <circle cx="12" cy="10" r="2.5"/>
                 </svg>
-                <span>Visualiser</span>
+            </button>
+
+            <button
+                type="button"
+                class="analyze-property-btn"
+                title="Analyser le marché local"
+                aria-label="Analyser le marché local"
+            >
+                <svg xmlns="http://www.w3.org/2000/svg"
+                    width="20" height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true">
+                    <circle cx="11" cy="11" r="7"/>
+                    <path d="m20 20-4-4"/>
+                    <path d="M8 13V9"/>
+                    <path d="M11 13V7"/>
+                    <path d="M14 13v-2"/>
+                </svg>
             </button>
 
         </div>
     `;
 
+    // --------------------------------------------------
+    // INTERACTIONS
+    // --------------------------------------------------
+
     element.addEventListener("click", () => {
         selectAnnouncement(announcement.id);
     });
 
-    const licitorFolderBtn = element.querySelector(".licitor-folder-btn");
+    const licitorFolderBtn = element.querySelector(
+        ".licitor-folder-btn"
+    );
 
-    licitorFolderBtn.addEventListener("click", (event) => {
+    licitorFolderBtn.addEventListener("click", event => {
+
         event.stopPropagation();
 
-        if (!announcement.url) {
-            return;
-        }
+        if (!announcement.url) return;
 
         window.open(
             announcement.url,
@@ -1047,18 +1318,22 @@ function createAnnouncementElement(announcement) {
         );
     });
 
-    // Bouton Street View de cette annonce
-    const streetViewBtn = element.querySelector(".street-view-btn");
+    const streetViewBtn = element.querySelector(
+        ".street-view-btn"
+    );
 
-    streetViewBtn.addEventListener("click", (event) => {
-        // Empêche le clic de déclencher aussi
-        // la sélection de l'annonce parente
+    streetViewBtn.addEventListener("click", event => {
+
         event.stopPropagation();
 
-        const latitude = Number(announcement.coords?.latitude);
-        const longitude = Number(announcement.coords?.longitude);
+        const latitude = Number(
+            announcement.coords?.latitude
+        );
 
-        // Vérifier que les coordonnées sont valides
+        const longitude = Number(
+            announcement.coords?.longitude
+        );
+
         if (
             announcement.coords?.latitude == null ||
             announcement.coords?.longitude == null ||
@@ -1067,18 +1342,365 @@ function createAnnouncementElement(announcement) {
             latitude < -90 || latitude > 90 ||
             longitude < -180 || longitude > 180
         ) {
-            console.warn("Coordonnées invalides pour cette annonce", announcement);
-            alert("Les coordonnées géographiques de cette annonce ne sont pas disponibles.");
+            console.warn(
+                "Coordonnées invalides pour cette annonce",
+                announcement
+            );
+
+            alert(
+                "Les coordonnées géographiques de cette annonce ne sont pas disponibles."
+            );
+
             return;
         }
 
         const url =
             `https://www.google.com/maps/search/?api=1&query=${latitude},${longitude}`;
 
-        window.open(url, "_blank", "noopener,noreferrer");
+        window.open(
+            url,
+            "_blank",
+            "noopener,noreferrer"
+        );
+    });
+
+    const analyzeBtn = element.querySelector(
+        ".analyze-property-btn"
+    );
+
+    analyzeBtn.addEventListener("click", event => {
+
+        event.stopPropagation();
+
+        console.log(announcement);
+
+        openAnalysisSelector(announcement);
+
     });
 
     return element;
+}
+
+// --------------------------------------------------
+// SÉLECTEUR D'ANALYSE
+// --------------------------------------------------
+
+function openAnalysisSelector(announcement) {
+
+    selectedAnalysisAnnouncement = announcement;
+
+    // Supprimer une éventuelle fenêtre précédente
+    document.querySelector(
+        ".analysis-modal-overlay"
+    )?.remove();
+
+    const overlay = document.createElement("div");
+
+    overlay.className = "analysis-modal-overlay";
+
+    overlay.innerHTML = `
+
+        <div class="analysis-modal">
+
+            <div class="analysis-modal-header">
+
+                <h3>Analyser le marché local</h3>
+
+                <button
+                    type="button"
+                    class="analysis-modal-close"
+                    aria-label="Fermer"
+                >
+                    &times;
+                </button>
+
+            </div>
+
+            <div class="analysis-modal-params">
+
+                <div class="analysis-modal-radius">
+
+                    <label
+                        for="analysis-radius"
+                        class="analysis-label"
+                    >
+                        Rayon
+                    </label>
+
+                    <select
+                        id="analysis-radius"
+                        class="analysis-select"
+                    >
+                        <option value="0.5">500 m</option>
+                        <option value="1">1 km</option>
+                        <option value="2">2 km</option>
+                        <option value="5">5 km</option>
+                        <option value="10">10 km</option>
+                        <option value="15">15 km</option>
+                        <option value="20">20 km</option>
+                    </select>
+
+                </div>
+
+                <div class="analysis-modal-surface">
+
+                    <label
+                        for="analysis-surface"
+                        class="analysis-label"
+                    >
+                        Surface
+                    </label>
+
+                    <select
+                        id="analysis-surface"
+                        class="analysis-select"
+                    >
+                        <option value="-1">Toutes les surfaces</option>
+                        <option value="5">+/- 5 m²</option>
+                        <option value="10">+/- 10 m²</option>
+                        <option value="15">+/- 15 m²</option>
+                        <option value="20">+/- 20 m²</option>
+                        <option value="30">+/- 30 m²</option>
+                    </select>
+
+                </div>
+
+            </div>
+
+            <div class="analysis-modal-actions">
+
+                <button
+                    type="button"
+                    class="analysis-cancel-btn"
+                >
+                    Annuler
+                </button>
+
+                <button
+                    type="button"
+                    class="analysis-confirm-btn"
+                >
+                    Confirmer
+                </button>
+
+            </div>
+
+        </div>
+
+    `;
+
+    document.body.appendChild(overlay);
+
+    // GET MEMORY VALUES
+
+    // RADIUS
+
+    const radiusSelect = overlay.querySelector(
+        "#analysis-radius"
+    );
+
+    radiusSelect.value = String(analysisRadius);
+
+    // SURFACE
+
+    const surfaceSelect = overlay.querySelector(
+        "#analysis-surface"
+    );
+
+    surfaceSelect.value = String(analysisSurface != null ? analysisSurface : -1);
+
+    // Fermeture
+    function closeModal() {
+
+        overlay.remove();
+
+        document.removeEventListener(
+            "keydown",
+            handleEscape
+        );
+
+    }
+
+    function handleEscape(event) {
+
+        if (event.key === "Escape") {
+            closeModal();
+        }
+
+    }
+
+    overlay.querySelector(
+        ".analysis-modal-close"
+    ).addEventListener("click", closeModal);
+
+    overlay.querySelector(
+        ".analysis-cancel-btn"
+    ).addEventListener("click", closeModal);
+
+    overlay.addEventListener("click", event => {
+
+        if (event.target === overlay) {
+            closeModal();
+        }
+
+    });
+
+    document.addEventListener(
+        "keydown",
+        handleEscape
+    );
+
+
+    // --------------------------------------------------
+    // CONFIRMATION ET LANCEMENT DE L'ANALYSE
+    // --------------------------------------------------
+
+    const confirmBtn = overlay.querySelector(
+        ".analysis-confirm-btn"
+    );
+
+    confirmBtn.addEventListener("click", async () => {
+
+        // TCHECK RADIUS
+
+        const radius = Number(radiusSelect.value);
+
+        if (![0.5, 1, 2, 5, 10, 15, 20].includes(radius)) {
+            return;
+        }
+
+        const rawLatitude =
+            announcement.latitude ??
+            announcement.coords?.latitude;
+
+        const rawLongitude =
+            announcement.longitude ??
+            announcement.coords?.longitude;
+
+        const latitude = Number(rawLatitude);
+        const longitude = Number(rawLongitude);
+
+        if (
+            rawLatitude == null ||
+            rawLongitude == null ||
+            !Number.isFinite(latitude) ||
+            !Number.isFinite(longitude) ||
+            latitude < -90 || latitude > 90 ||
+            longitude < -180 || longitude > 180
+        ) {
+
+            alert(
+                "Les coordonnées géographiques de ce bien sont indisponibles."
+            );
+
+            return;
+        }
+
+        // Mémoriser le rayon
+        analysisRadius = radius;
+
+        sessionStorage.setItem(
+            ANALYSIS_RADIUS_KEY,
+            String(radius)
+        );
+
+        // CODE DE TCHECK DES VALEURS DE SURFACE 
+
+        const surfaceAdj = Number(surfaceSelect.value);
+
+        if (![-1, 5, 10, 15, 20, 25, 30].includes(surfaceAdj)) {
+            return;
+        }
+
+        // Mémoriser l'ajustement de surface
+        analysisSurface = surfaceAdj;
+
+        sessionStorage.setItem(
+            ANALYSIS_SURFACE_KEY,
+            String(surfaceAdj)
+        );
+
+        const surface = toNumber(announcement.surface_m2);
+
+        // État de chargement
+        confirmBtn.disabled = true;
+        confirmBtn.textContent = "Recherche...";
+
+        try {
+
+            const nearbySales = await loadNearbySales({
+                latitude,
+                longitude,
+                radiusKm: radius,
+                surfaceBien: surface,
+                surfaceAdj: surfaceAdj
+            });
+
+            const nbrMktTransactions = nearbySales.length - 1;
+
+            if (nbrMktTransactions === 0) {
+
+                showToast("Aucune transaction n'a été trouvée pour les paramètres sélectionnés", 'warning');
+
+                confirmBtn.disabled = false;
+                confirmBtn.textContent = "Confirmer";
+
+            }
+
+            else {
+
+                // Préparation des données pour la termsheet
+                const nearbyAnalysis = prepareNearbySalesAnalysis({
+
+                    sales: nearbySales,
+
+                    latitude,
+
+                    longitude,
+
+                    radiusKm: radius,
+
+                    announcementId: announcement.id,
+
+                });
+
+                console.log("Analyse géographique préparée :", {
+                    announcementId: announcement.id,
+                    radiusKm: radius,
+                    totalTransactions: nearbySales.length,
+                    transactions: nearbySales,
+                    analysis: nearbyAnalysis
+                });
+
+                openAnalysisSheet(
+                    nearbyAnalysis,
+                    announcement,
+                    PAGE_TYPE
+                );
+
+                closeModal();
+
+            }
+
+        } catch (error) {
+
+            console.error(
+                "Impossible de réaliser l'analyse :",
+                error
+            );
+
+            alert(
+                "Une erreur est survenue lors de la récupération des transactions."
+            );
+
+            confirmBtn.disabled = false;
+            confirmBtn.textContent = "Confirmer";
+
+        }
+
+    });
+
+
 }
 
 // --------------------------------------------------
@@ -1093,8 +1715,10 @@ function displayMarkers(filteredAnnouncements) {
 
     filteredAnnouncements.forEach(announcement => {
 
-        const rawLatitude = announcement.coords?.latitude;
-        const rawLongitude = announcement.coords?.longitude;
+        const rawLatitude =
+            announcement.latitude ?? announcement.coords?.latitude;
+        const rawLongitude =
+            announcement.longitude ?? announcement.coords?.longitude;
 
         const latitude = Number(rawLatitude);
         const longitude = Number(rawLongitude);
@@ -1119,11 +1743,14 @@ function displayMarkers(filteredAnnouncements) {
         // Création uniquement si ce marqueur n'existe pas encore.
         if (!marker) {
 
-            marker = L.marker([
+            marker = createPropertyMarker(
+                announcement,
                 latitude,
                 longitude
-            ]);
+            );
 
+            // DESACTIVATION DES POPUPS AU CLICK
+            /*
             marker.bindPopup(`
                 <strong>
                     ${escapeHtml(announcement.ville || "Ville non renseignée")}
@@ -1139,6 +1766,7 @@ function displayMarkers(filteredAnnouncements) {
                     Voir l'annonce
                 </a>
             `);
+            */
 
             marker.on("click", () => {
                 selectAnnouncement(id, false);
@@ -1206,6 +1834,81 @@ function displayMarkers(filteredAnnouncements) {
 
         map.invalidateSize();
     }
+}
+
+// --------------------------------------------------
+// Style des marqueurs individuels
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Création des marqueurs individuels
+// --------------------------------------------------
+
+function createPropertyMarker(
+    announcement,
+    latitude,
+    longitude
+) {
+
+    // Page visites : marqueur Leaflet classique
+    if (PAGE_TYPE !== "sales") {
+
+        return L.marker([
+            latitude,
+            longitude
+        ]);
+    }
+
+    // Prix affiché
+    const finalPrice = toNumber(announcement.prix_final);
+
+    const priceLabel = finalPrice !== null
+        ? formatMarkerPrice(finalPrice)
+        : "N/A";
+
+    // Couleur selon le prix au m² ou le prix total
+    const markerColor = getMarkerColor(announcement);
+
+    // Indicateur de comparaison avec l'estimation
+    const ratioIndicator = getMarkerRatioIndicator(announcement);
+
+    // HTML de l'indicateur
+    const ratioHtml = ratioIndicator
+        ? `
+            <span
+                class="property-marker-ratio ${ratioIndicator.className}"
+                title="${ratioIndicator.label}"
+                aria-label="${ratioIndicator.label}"
+            >
+                ${ratioIndicator.symbol}
+            </span>
+        `
+        : "";
+
+    const icon = L.divIcon({
+
+        html: `
+            <div class="property-price-marker marker-${markerColor}">
+
+                <span class="property-marker-price">
+                    ${escapeHtml(priceLabel)}
+                </span>
+
+                ${ratioHtml}
+
+            </div>
+        `,
+
+        className: "property-price-marker-container",
+
+        iconSize: [88, 44],
+        iconAnchor: [44, 44]
+    });
+
+    return L.marker(
+        [latitude, longitude],
+        { icon }
+    );
 }
 
 // --------------------------------------------------
@@ -1326,29 +2029,116 @@ function formatPrice(price) {
     ).format(price);
 }
 
+function formatMarkerPrice(price) {
 
-function formatDate(dateString) {
+    const value = toNumber(price);
 
-    if (!dateString) {
-        return "";
+    if (value === null) {
+        return "N/A";
     }
 
-    const date = new Date(
-        dateString.replace(" ", "T")
-    );
+    if (value >= 1000000) {
 
-    if (isNaN(date)) {
-        return dateString;
+        return new Intl.NumberFormat("fr-FR", {
+            maximumFractionDigits: 1
+        }).format(value / 1000000) + " M€";
+
     }
 
-    return new Intl.DateTimeFormat(
-        "fr-FR",
-        {
-            day: "2-digit",
-            month: "2-digit",
-            year: "numeric"
+    else {
+
+        if (value < 1000) {
+            return new Intl.NumberFormat("fr-FR", {
+                maximumFractionDigits: 0
+            }).format(value) + " €";
         }
-    ).format(date);
+
+        else {
+
+            return new Intl.NumberFormat("fr-FR", {
+                maximumFractionDigits: 0
+            }).format(value / 1000) + " K€";
+
+        }
+
+    }
+}
+
+// --------------------------------------------------
+// Couleur des marqueurs - PAGE VENTES
+// --------------------------------------------------
+
+function getMarkerColor(announcement) {
+
+    const finalPrice = toNumber(announcement.prix_final);
+
+    // Aucun prix final : marqueur gris
+    if (finalPrice === null) {
+        return "gray";
+    }
+
+    // Priorité au prix final au m²
+    const priceM2 = getPricePerM2(announcement);
+
+    if (priceM2 !== null) {
+
+        if (priceM2 <= 3000) {
+            return "green";
+        }
+
+        if (priceM2 <= 6000) {
+            return "orange";
+        }
+
+        return "red";
+    }
+
+    // Sinon, utilisation du prix final total
+    if (finalPrice <= 200000) {
+        return "green";
+    }
+
+    if (finalPrice <= 400000) {
+        return "orange";
+    }
+
+    return "red";
+}
+
+// --------------------------------------------------
+// Indicateur du ratio - PAGE VENTES
+// --------------------------------------------------
+
+function getMarkerRatioIndicator(announcement) {
+
+    const ratio = getSaleRatio(announcement);
+
+    // Pas d'estimation ou de prix final exploitable
+    if (ratio === null) {
+        return null;
+    }
+
+    if (ratio < -5) {
+        return {
+            className: "ratio-down",
+            symbol: "↓",
+            label: "Prix inférieur à l'estimation"
+        };
+    }
+
+    if (ratio > 5) {
+        return {
+            className: "ratio-up",
+            symbol: "↑",
+            label: "Prix supérieur à l'estimation"
+        };
+    }
+
+    return {
+        className: "ratio-neutral",
+        symbol: "−",
+        label: "Prix proche de l'estimation"
+    };
 }
 
 
@@ -1435,8 +2225,27 @@ function compareNumbers(a, b) {
 
     if (numberA === null && numberB === null) return 0;
 
-    // Ordre croissant
-    return numberA - numberB;
+    return sortDirection === "desc"
+        ? numberB - numberA
+        : numberA - numberB;
+}
+
+function getTotalPrice(announcement) {
+
+    if (PAGE_CONFIG[PAGE_TYPE].totalPriceField === "final") {
+        return toNumber(announcement.prix_final);
+    }
+
+    return toNumber(getEstimatedTotalPrice(announcement));
+}
+
+function getPricePerM2(announcement) {
+
+    if (PAGE_CONFIG[PAGE_TYPE].priceM2Field === "final") {
+        return toNumber(getFinalPricePerSquareMeter(announcement));
+    }
+
+    return toNumber(announcement.stats_bien?.avg);
 }
 
 function getEstimatedTotalPrice(announcement) {
@@ -1450,4 +2259,32 @@ function getEstimatedTotalPrice(announcement) {
 
     // avg correspond au prix estimé au m²
     return avg * surface;
+}
+
+function getFinalPricePerSquareMeter(announcement) {
+
+    const finalPrice = toNumber(announcement.prix_final);
+    const surface = toNumber(announcement.surface_m2);
+
+    if (finalPrice === null || surface === null || surface <= 0) {
+        return null;
+    }
+
+    return finalPrice / surface;
+}
+
+function getSaleRatio(announcement) {
+
+    const finalPrice = toNumber(announcement.prix_final);
+    const estimatedPrice = getEstimatedTotalPrice(announcement);
+
+    if (
+        finalPrice === null ||
+        estimatedPrice === null ||
+        estimatedPrice <= 0
+    ) {
+        return null;
+    }
+
+    return ((finalPrice - estimatedPrice) / estimatedPrice) * 100;
 }
