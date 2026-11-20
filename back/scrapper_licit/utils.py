@@ -302,6 +302,7 @@ def extract_partner_stats(partner_content):
     return stats
 
 def parse_visite_dt(visite):
+    
     """
     Transforme un texte de visite en liste de dates.
 
@@ -342,6 +343,7 @@ def parse_visite_dt(visite):
     pattern = re.compile(
         r"""
         (?P<jour>\d{1,2})
+        (?:er)?
         \s+
         (?P<mois>[a-zéèêëàâäîïôöùûüç]+)
         \s+

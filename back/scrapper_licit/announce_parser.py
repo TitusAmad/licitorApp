@@ -84,6 +84,12 @@ def parse_handler(session, request_delay, urls, params):
 
 def parse_announcement(session, url, debug_path):
     
+    """
+    #TEST
+    session = utils.build_soup_session()
+    url = "https://www.licitor.com/annonce/11/04/28/vente-aux-encheres/un-appartement/vincennes/val-de-marne/110428.html"
+    """
+    
     print(f"  → {url}")
     
     soup = utils.get_soup(session, url)

@@ -2603,7 +2603,7 @@
     "trib_anom": true,
     "visite": "Visite sur place vendredi 20 novembre 2026 de 14h à 15h",
     "visite_dt": "2026-11-20 14:00",
-    "visite_state": 1,
+    "visite_state": 0,
     "type": [
       "Un appartement",
       "Une cave"
@@ -2859,8 +2859,8 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place mardi 1er décembre 2026 de 14h à 15h",
-    "visite_dt": null,
-    "visite_state": -1,
+    "visite_dt": "2026-12-01 14:00",
+    "visite_state": 1,
     "type": [
       "Un appartement",
       "Une cave"
@@ -3267,8 +3267,8 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place mardi 1er décembre 2026 de 9h15 à 10h15",
-    "visite_dt": null,
-    "visite_state": -1,
+    "visite_dt": "2026-12-01 09:15",
+    "visite_state": 1,
     "type": [
       "Un local commercial",
       "Six parkings"
@@ -3319,8 +3319,8 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place mardi 1er décembre 2026 à 9h",
-    "visite_dt": null,
-    "visite_state": -1,
+    "visite_dt": "2026-12-01 09:00",
+    "visite_state": 1,
     "type": [
       "Un pavillon d'habitation",
       "Un grenier",
@@ -3429,8 +3429,8 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place mardi 1er décembre 2026 de 13h à 14h",
-    "visite_dt": null,
-    "visite_state": -1,
+    "visite_dt": "2026-12-01 13:00",
+    "visite_state": 1,
     "type": [
       "Une maison à usage d'habitation"
     ],
@@ -4134,8 +4134,8 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place mardi 1er décembre 2026 de 9h à 10h",
-    "visite_dt": null,
-    "visite_state": -1,
+    "visite_dt": "2026-12-01 09:00",
+    "visite_state": 1,
     "type": [
       "Un appartement",
       "Un parking"
@@ -4691,8 +4691,8 @@
     },
     "trib_anom": true,
     "visite": "Visites sur place mardi 1er décembre 2026 de 9h à 11h et de 11h30 à 13h30",
-    "visite_dt": null,
-    "visite_state": -1,
+    "visite_dt": "2026-12-01 09:00",
+    "visite_state": 1,
     "type": [
       "Un appartement",
       "Un placard"
@@ -5988,7 +5988,7 @@
     "trib_anom": true,
     "visite": "Visite sur place vendredi 20 novembre 2026 à 14h",
     "visite_dt": "2026-11-20 14:00",
-    "visite_state": 1,
+    "visite_state": 0,
     "type": [
       "Un appartement",
       "Un parking"
@@ -7256,7 +7256,7 @@
     },
     "trib_anom": true,
     "visite": "Visites sur place mardi 1er décembre 2026 à 14h et lundi 7 décembre 2026 à 14h",
-    "visite_dt": "2026-12-07 14:00",
+    "visite_dt": "2026-12-01 14:00",
     "visite_state": 1,
     "type": [
       "Une maison"
@@ -7412,8 +7412,8 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place mardi 1er décembre 2026 à 14h",
-    "visite_dt": null,
-    "visite_state": -1,
+    "visite_dt": "2026-12-01 14:00",
+    "visite_state": 1,
     "type": [
       "Un ensemble immobilier à usage d'habitation"
     ],
@@ -10100,7 +10100,7 @@
     "trib_anom": true,
     "visite": "Visite sur place vendredi 20 novembre 2026 à 14h",
     "visite_dt": "2026-11-20 14:00",
-    "visite_state": 1,
+    "visite_state": 0,
     "type": [
       "Une maison d'habitation"
     ],
@@ -10303,8 +10303,8 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place mardi 1er décembre 2026 de 10h à 12h",
-    "visite_dt": null,
-    "visite_state": -1,
+    "visite_dt": "2026-12-01 10:00",
+    "visite_state": 1,
     "type": [
       "Un ensemble immobilier"
     ],
@@ -10862,8 +10862,8 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place mardi 1er décembre 2026 de 14h à 15h",
-    "visite_dt": null,
-    "visite_state": -1,
+    "visite_dt": "2026-12-01 14:00",
+    "visite_state": 1,
     "type": [
       "Un appartement"
     ],
@@ -11838,8 +11838,8 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place mardi 1er décembre 2026 de 15h à 17h",
-    "visite_dt": null,
-    "visite_state": -1,
+    "visite_dt": "2026-12-01 15:00",
+    "visite_state": 1,
     "type": [
       "Une maison à usage d'habitation"
     ],
@@ -12307,7 +12307,7 @@
     "type_vente": "Vente aux enchères publiques",
     "dt_vente": "2026-11-20 14:00",
     "dt_vente_limit": "2026-11-30",
-    "sell_state": 0,
+    "sell_state": 1,
     "avocats": [
       "Maître Hélène Debroutelle, Avocat"
     ],
@@ -13324,8 +13324,8 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place mardi 1er décembre 2026 à 14h15",
-    "visite_dt": null,
-    "visite_state": -1,
+    "visite_dt": "2026-12-01 14:15",
+    "visite_state": 1,
     "type": [
       "Une maison individuelle à usage d'habitation"
     ],
@@ -13376,8 +13376,8 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place mardi 1er décembre 2026 à 10h30",
-    "visite_dt": null,
-    "visite_state": -1,
+    "visite_dt": "2026-12-01 10:30",
+    "visite_state": 1,
     "type": [
       "Un appartement"
     ],
@@ -14283,8 +14283,8 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place mardi 1er décembre 2026 de 14h à 16h",
-    "visite_dt": null,
-    "visite_state": -1,
+    "visite_dt": "2026-12-01 14:00",
+    "visite_state": 1,
     "type": [
       "Un local à usage commercial"
     ],
@@ -14840,7 +14840,7 @@
     "trib_anom": true,
     "visite": "Visite sur place vendredi 20 novembre 2026 à 14h",
     "visite_dt": "2026-11-20 14:00",
-    "visite_state": 1,
+    "visite_state": 0,
     "type": [
       "Une maison d'habitation"
     ],
@@ -14892,7 +14892,7 @@
     "trib_anom": true,
     "visite": "Visite sur place vendredi 20 novembre 2026 à 14h",
     "visite_dt": "2026-11-20 14:00",
-    "visite_state": 1,
+    "visite_state": 0,
     "type": [
       "Des dépendances"
     ],
@@ -15081,7 +15081,7 @@
     "type_vente": "Vente aux enchères publiques en deux lots",
     "dt_vente": "2026-11-20 14:00",
     "dt_vente_limit": "2026-11-30",
-    "sell_state": 0,
+    "sell_state": 1,
     "avocats": [
       "Maître Aurélie Giraudier, de la SELARL Juris Aquitaine, Avocat associé"
     ],
@@ -15133,7 +15133,7 @@
     "type_vente": "Vente aux enchères publiques en deux lots",
     "dt_vente": "2026-11-20 14:00",
     "dt_vente_limit": "2026-11-30",
-    "sell_state": 0,
+    "sell_state": 1,
     "avocats": [
       "Maître Aurélie Giraudier, de la SELARL Juris Aquitaine, Avocat associé"
     ],
@@ -15181,7 +15181,7 @@
     "type_vente": "Vente aux enchères publiques",
     "dt_vente": "2026-11-20 14:00",
     "dt_vente_limit": "2026-11-30",
-    "sell_state": 0,
+    "sell_state": 1,
     "avocats": [
       "Maître Aurélie Giraudier, de la SELARL Juris Aquitaine, Avocat associé"
     ],
@@ -15229,7 +15229,7 @@
     "type_vente": "Vente aux enchères publiques",
     "dt_vente": "2026-11-20 14:00",
     "dt_vente_limit": "2026-11-30",
-    "sell_state": 0,
+    "sell_state": 1,
     "avocats": [
       "Maître Aurélie Giraudier, de la SELARL Juris Aquitaine, Avocat associé"
     ],
@@ -15277,7 +15277,7 @@
     "type_vente": "Vente aux enchères publiques",
     "dt_vente": "2026-11-20 14:00",
     "dt_vente_limit": "2026-11-30",
-    "sell_state": 0,
+    "sell_state": 1,
     "avocats": [
       "Maître Aurélie Giraudier, de la SELARL Juris Aquitaine, Avocat associé"
     ],
@@ -15325,7 +15325,7 @@
     "type_vente": "Vente aux enchères publiques",
     "dt_vente": "2026-11-20 14:00",
     "dt_vente_limit": "2026-11-30",
-    "sell_state": 0,
+    "sell_state": 1,
     "avocats": [
       "Maître Aurélie Giraudier, de la SELARL Juris Aquitaine, Avocat associé"
     ],
@@ -15373,7 +15373,7 @@
     "type_vente": "Vente aux enchères publiques",
     "dt_vente": "2026-11-20 14:00",
     "dt_vente_limit": "2026-11-30",
-    "sell_state": 0,
+    "sell_state": 1,
     "avocats": [
       "Maître Aurélie Giraudier, de la SELARL Juris Aquitaine, Avocat associé"
     ],
@@ -17228,8 +17228,8 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place mardi 1er décembre 2026 de 10h à 11h",
-    "visite_dt": null,
-    "visite_state": -1,
+    "visite_dt": "2026-12-01 10:00",
+    "visite_state": 1,
     "type": [
       "Un appartement"
     ],
@@ -17378,8 +17378,8 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place mardi 1er décembre 2026 de 11h à 12h",
-    "visite_dt": null,
-    "visite_state": -1,
+    "visite_dt": "2026-12-01 11:00",
+    "visite_state": 1,
     "type": [
       "Une maison individuelle"
     ],
@@ -18559,8 +18559,8 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place mardi 1er décembre 2026 de 10h à 12h",
-    "visite_dt": null,
-    "visite_state": -1,
+    "visite_dt": "2026-12-01 10:00",
+    "visite_state": 1,
     "type": [
       "Un local commercial"
     ],
@@ -20406,8 +20406,8 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place mardi 1er décembre 2026 de 11h à 12h",
-    "visite_dt": null,
-    "visite_state": -1,
+    "visite_dt": "2026-12-01 11:00",
+    "visite_state": 1,
     "type": [
       "Un appartement"
     ],
@@ -20555,8 +20555,8 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place mardi 1er décembre 2026 de 14h à 16h",
-    "visite_dt": null,
-    "visite_state": -1,
+    "visite_dt": "2026-12-01 14:00",
+    "visite_state": 1,
     "type": [
       "Une maison individuelle"
     ],
@@ -22847,7 +22847,7 @@
     },
     "trib_anom": true,
     "visite": "Visites sur place mardi 1er décembre 2026 de 14h à 15h et mardi 8 décembre 2026 de 10h à 11h",
-    "visite_dt": "2026-12-08 10:00",
+    "visite_dt": "2026-12-01 14:00",
     "visite_state": 1,
     "type": [
       "Un studio"
@@ -22929,7 +22929,7 @@
     "type_vente": "Vente aux enchères publiques",
     "dt_vente": "2026-11-20 14:00",
     "dt_vente_limit": "2026-11-30",
-    "sell_state": 0,
+    "sell_state": 1,
     "avocats": [
       "SELARL Dubois et Associés, Commissaires de Justice Associés"
     ],
@@ -23456,8 +23456,8 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place mardi 1er décembre 2026 de 10h30 à 11h30",
-    "visite_dt": null,
-    "visite_state": -1,
+    "visite_dt": "2026-12-01 10:30",
+    "visite_state": 1,
     "type": [
       "Une maison"
     ],
@@ -24149,8 +24149,8 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place mardi 1er décembre 2026 de 8h à 9h30",
-    "visite_dt": null,
-    "visite_state": -1,
+    "visite_dt": "2026-12-01 08:00",
+    "visite_state": 1,
     "type": [
       "Une chambre d'hôtel"
     ],
@@ -24224,8 +24224,8 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place mardi 1er décembre 2026 de 9h30 à 11h",
-    "visite_dt": null,
-    "visite_state": -1,
+    "visite_dt": "2026-12-01 09:30",
+    "visite_state": 1,
     "type": [
       "Une chambre d'hôtel"
     ],
@@ -24299,8 +24299,8 @@
     },
     "trib_anom": true,
     "visite": "Visite sur place mardi 1er décembre 2026 de 11h à 12h30",
-    "visite_dt": null,
-    "visite_state": -1,
+    "visite_dt": "2026-12-01 11:00",
+    "visite_state": 1,
     "type": [
       "Une chambre d'hôtel"
     ],
