@@ -79,6 +79,15 @@
     ]
   },
   {
+    "url": "https://www.licitor.com/annonce/11/06/98/vente-aux-encheres/parts-sociales-de-la-sas-saving/-/essonne/110698.html",
+    "id": "110698",
+    "warnings": [
+      "adresse manquante",
+      "coordonnées géographiques manquantes",
+      "visite manquant"
+    ]
+  },
+  {
     "url": "https://www.licitor.com/annonce/11/06/17/vente-aux-encheres/un-appartement/eragny-sur-oise/val-d-oise/110617.html",
     "id": "110617",
     "warnings": [
@@ -188,6 +197,20 @@
     ]
   },
   {
+    "url": "https://www.licitor.com/annonce/11/07/47/vente-aux-encheres/une-parcelle-en-nature-de-terre/villenavotte/yonne/110747.html",
+    "id": "110747",
+    "warnings": [
+      "visite manquant"
+    ]
+  },
+  {
+    "url": "https://www.licitor.com/annonce/11/07/47/vente-aux-encheres/une-parcelle-en-nature-de-terre/villenavotte/yonne/110747.html",
+    "id": "110747_1",
+    "warnings": [
+      "visite manquant"
+    ]
+  },
+  {
     "url": "https://www.licitor.com/annonce/11/04/76/vente-aux-encheres/une-villa/crozon-morgat/finistere/110476.html",
     "id": "110476",
     "warnings": [
@@ -225,13 +248,6 @@
   {
     "url": "https://www.licitor.com/annonce/11/07/19/vente-aux-encheres/un-studio/nantes/loire-atlantique/110719.html",
     "id": "110719",
-    "warnings": [
-      "visite manquant"
-    ]
-  },
-  {
-    "url": "https://www.licitor.com/annonce/11/04/14/vente-aux-encheres/une-maison-d-habitation/la-roche-sur-yon/vendee/110414.html",
-    "id": "110414",
     "warnings": [
       "visite manquant"
     ]
@@ -307,59 +323,9 @@
     ]
   },
   {
-    "url": "https://www.licitor.com/annonce/11/03/89/vente-aux-encheres/un-appartement/poitiers/vienne/110389.html",
-    "id": "110389",
-    "warnings": [
-      "visite manquant"
-    ]
-  },
-  {
     "url": "https://www.licitor.com/annonce/11/03/63/vente-aux-encheres/une-maison-a-usage-d-habitation/saint-maurice-la-clouere/vienne/110363.html",
     "id": "110363",
     "warnings": [
-      "visite manquant"
-    ]
-  },
-  {
-    "url": "https://www.licitor.com/annonce/11/01/60/vente-aux-encheres/un-ensemble-immobilier/proissans/dordogne/110160.html",
-    "id": "110160",
-    "warnings": [
-      "visite manquant"
-    ]
-  },
-  {
-    "url": "https://www.licitor.com/annonce/11/02/80/vente-aux-encheres/diverses-terres-agricoles/proissans/dordogne/110280.html",
-    "id": "110280",
-    "warnings": [
-      "visite manquant"
-    ]
-  },
-  {
-    "url": "https://www.licitor.com/annonce/11/02/80/vente-aux-encheres/diverses-terres-agricoles/proissans/dordogne/110280.html",
-    "id": "110280_1",
-    "warnings": [
-      "visite manquant"
-    ]
-  },
-  {
-    "url": "https://www.licitor.com/annonce/11/02/80/vente-aux-encheres/diverses-terres-agricoles/proissans/dordogne/110280.html",
-    "id": "110280_2",
-    "warnings": [
-      "visite manquant"
-    ]
-  },
-  {
-    "url": "https://www.licitor.com/annonce/11/02/80/vente-aux-encheres/diverses-terres-agricoles/proissans/dordogne/110280.html",
-    "id": "110280_3",
-    "warnings": [
-      "visite manquant"
-    ]
-  },
-  {
-    "url": "https://www.licitor.com/annonce/11/02/80/vente-aux-encheres/diverses-terres-agricoles/proissans/dordogne/110280.html",
-    "id": "110280_4",
-    "warnings": [
-      "coordonnées géographiques manquantes",
       "visite manquant"
     ]
   },
@@ -456,6 +422,13 @@
     ]
   },
   {
+    "url": "https://www.licitor.com/annonce/11/07/28/vente-aux-encheres/un-appartement/bonneville/haute-savoie/110728.html",
+    "id": "110728",
+    "warnings": [
+      "visite manquant"
+    ]
+  },
+  {
     "url": "https://www.licitor.com/annonce/11/07/11/vente-aux-encheres/un-appartement/albiez-montrond/savoie/110711.html",
     "id": "110711",
     "warnings": [
@@ -491,14 +464,6 @@
   {
     "url": "https://www.licitor.com/annonce/11/06/21/vente-aux-encheres/vingt-quatre-parcelles-de-terrain-agricoles-ou-naturelle/flacheres/isere/110621.html",
     "id": "110621_3",
-    "warnings": [
-      "adresse manquante",
-      "visite manquant"
-    ]
-  },
-  {
-    "url": "https://www.licitor.com/annonce/11/03/00/vente-aux-encheres/parts-sociales-de-la-sci-trait-d-union/uzes/gard/110300.html",
-    "id": "110300",
     "warnings": [
       "adresse manquante",
       "visite manquant"

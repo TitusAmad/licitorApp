@@ -176,7 +176,45 @@ export function getFilteredAnnouncements(
 
             }
 
+            // ------------------------------------------
+            // OCCUPATION
+            // ------------------------------------------
 
+            const occupation = appliedFilters.occupation;
+
+            if ( 
+                occupation != "Toutes" &&
+                occupation != announcement.occupation
+            ) {
+                return false
+            }
+
+            // ------------------------------------------
+            // FACULTE BAISSE
+            // ------------------------------------------
+
+            const faculteBaisse = appliedFilters.faculteBaisse;
+
+            if ( 
+                faculteBaisse &&
+                !(announcement.fac_baisse === true)
+            ) {
+                return false
+            }
+
+            // ------------------------------------------
+            // ANOMALIE TRIBUNAL
+            // ------------------------------------------
+
+            const tribunalAnomalie = appliedFilters.tribunalAnomalie;
+
+            if ( 
+                tribunalAnomalie &&
+                !(announcement.trib_anom === true)
+            ) {
+                return false
+            }
+        
             // ------------------------------------------
             // TRIBUNAUX
             // ------------------------------------------

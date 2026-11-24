@@ -52,15 +52,16 @@ def manage_params(method):
         out_name = "sales.json"
         debug_folder = "histo"
         
-    out = {"MAX_PAGES": None,
-               "MAX_ANNOUNCES": None,
-               "MAX_DT": max_dt,
-               "OUTPUT_FOLDER_PATH": out_folder_path,
-               "OUTPUT_FILE_NAME": out_name,
-               "DEBUG_PATH": BASE_DIR / "tests" / "scrapper_debug" / debug_folder,
-               "BASE_URL": urls_dict["BASE_URL"],
-               "SEARCH_URLS": urls_dict["SEARCH_URLS"]
-               }
+    out = {
+            "MAX_PAGES": None,
+            "MAX_ANNOUNCES": None,
+            "MAX_DT": max_dt,
+            "OUTPUT_FOLDER_PATH": out_folder_path,
+            "OUTPUT_FILE_NAME": out_name,
+            "DEBUG_PATH": BASE_DIR / "tests" / "scrapper_debug" / debug_folder,
+            "BASE_URL": urls_dict["BASE_URL"],
+            "SEARCH_URLS": urls_dict["SEARCH_URLS"]
+        }
     
     return out
 

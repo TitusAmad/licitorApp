@@ -11,6 +11,7 @@ import requests
 from datetime import datetime
 from datetime import timedelta
 import json
+import unicodedata
 
 #GENERIQUE
 
@@ -56,6 +57,14 @@ def save_output(obj, full_path):
         )
 
 #NETTOYAGE
+
+def normalize_string(s: str) -> str:
+    s = unicodedata.normalize("NFD", s)
+    s = "".join(c for c in s if unicodedata.category(c) != "Mn")
+    s = s.lower()
+    s = re.sub(r"[^a-z0-9]", " ", s)
+    s = re.sub(r"\s+", " ", s).strip()
+    return s
 
 def pluralize(text: str, nbr: int, genre: str):
     
@@ -243,26 +252,23 @@ def extract_occupation(lots_content):
 
     if not text:
         return None
+    
+    normText = normalize_string(text)
+    
+    if "a verifier" in normText:
+        return None
 
-    patterns = [
-        r"\bLes biens sont occupés\b",
-        r"\bBien occupé\b",
-        r"\bBien loué\b",
-        r"\bLoué\b",
-        r"\bLibre\b",
-    ]
+    lib_keys = ["inoccupe", "libre"]
+    occup_keys = ["occup"]
 
-    for pattern in patterns:
-
-        match = re.search(
-            pattern,
-            text,
-            flags=re.IGNORECASE
-        )
-
-        if match:
-            return match.group(0)
-
+    for el in lib_keys:
+        if el in normText:
+            return "Libre"
+    
+    for el in occup_keys:
+        if el in normText:
+            return "Occupé"
+    
     return None
 
 def extract_coordinates(href):

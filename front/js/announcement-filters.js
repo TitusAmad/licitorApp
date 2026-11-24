@@ -184,7 +184,11 @@ const FILTER_METHODS = {
     surencheres: {
         source: "historiques",
         filter: announcement =>
-            Number(announcement.sell_state) === 1
+            isDateInRange(
+                announcement.dt_vente,
+                announcement.dt_vente,
+                surenchereDate(announcement.dt_vente)
+            )
     }
 
 };
@@ -243,6 +247,11 @@ export function filterAnnouncements(
 // --------------------------------------------------
 // CONTEXTE TEMPOREL
 // --------------------------------------------------
+
+function surenchereDate(referenceDate) {
+    const now = new Date(referenceDate);
+    return addDays(now, 11)
+}
 
 function createDateContext(referenceDate) {
 

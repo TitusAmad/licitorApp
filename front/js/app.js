@@ -13,6 +13,7 @@ import {
 } from "./analysis-sheet.js";
 
 import {
+    pageDefaultMode,
     saveAppState,
     restoreAppState
 } from "./appState.js"
@@ -34,15 +35,9 @@ import { showToast } from './toast.js';
 // Variables globales
 // --------------------------------------------------
 
-// FILTRES PRÉDÉFINIS
+// DEFAULT FAST FILTERS
 
-const predefinedFiltersByPage = {
-
-    visits: "toutes",
-
-    sales: "toutes"
-
-};
+const predefinedFiltersByPage = pageDefaultMode ;
 
 // SEARCH
 
@@ -160,11 +155,16 @@ const appliedFilters = {
     prixM2Min: null,
     prixM2Max: null,
 
-    tribunaux: [],
+    occupation: "Toutes",
+    faculteBaisse: false,
+    tribunalAnomalie: false,
 
     dateField: PAGE_CONFIG[PAGE_TYPE].defaultDateField,
     dateStart: null,
-    dateEnd: null
+    dateEnd: null,
+
+    tribunaux: []
+
 };
 
 
@@ -649,6 +649,19 @@ function updateFilterButtonStates() {
     ) activeCount++;
 
     if (
+        appliedFilters.occupation !== "Toutes" &&
+        appliedFilters.occupation !== null
+    ) activeCount++;
+
+    if (
+        appliedFilters.faculteBaisse === true
+    ) activeCount++;
+
+    if (
+        appliedFilters.tribunalAnomalie === true
+    ) activeCount++;
+
+    if (
         appliedFilters.dateStart ||
         appliedFilters.dateEnd
     ) activeCount++;
@@ -692,6 +705,18 @@ function applyFilters() {
 
     newFilters.prixM2Max =
         getNumericInput("prix-m2-max");
+
+    //Occupation
+    newFilters.occupation = 
+        getTextInput("occupation-filter");
+
+    //Faculte Baisse
+    newFilters.faculteBaisse = 
+        document.getElementById("faculte-baisse-filter").checked;
+
+    //Anomalie Tribunal
+    newFilters.tribunalAnomalie = 
+        document.getElementById("tribunal-anomalie-filter").checked;
 
     // Dates
     newFilters.dateField =
@@ -747,6 +772,14 @@ function applyFilters() {
         newFilters.prixM2Max,
         "prix au m²"
     )) return;
+
+    // --------------------------------------------------
+    // VALIDATION CONTENU TEXTE / BOOLEAN
+    // --------------------------------------------------
+
+    if (newFilters.occupation == null) {
+        return
+    }
 
     // --------------------------------------------------
     // TRIBUNAUX
@@ -835,6 +868,21 @@ function restoreFiltersForCurrentPage() {
 
     });
 
+    // Restaurer le champ d'occupation
+    document.getElementById(
+        "occupation-filter"
+    ).value = appliedFilters.occupation;
+
+    // Restaurer le champ faculte baisse
+    document.getElementById(
+        "faculte-baisse-filter"
+    ).checked = appliedFilters.faculteBaisse;
+
+    // Restaurer le champ d'anomalie tribunal
+    document.getElementById(
+        "tribunal-anomalie-filter"
+    ).checked = appliedFilters.tribunalAnomalie;
+
     // Restaurer le champ de date
     document.getElementById(
         "date-filter-field"
@@ -878,14 +926,18 @@ function resetFiltersState() {
         prixM2Min: null,
         prixM2Max: null,
 
-        tribunaux: [],
+        occupation: "Toutes",
+        faculteBaisse: false,
+        tribunalAnomalie: false,
 
         dateField: PAGE_TYPE === "sales"
             ? "dt_vente"
             : "visite_dt",
 
         dateStart: null,
-        dateEnd: null
+        dateEnd: null,
+
+        tribunaux: []
 
     });
 
@@ -910,6 +962,21 @@ function resetFilters() {
         document.getElementById(id).value = "";
 
     });
+
+    // Restaurer le champ d'occupation
+    document.getElementById(
+        "occupation-filter"
+    ).value = "Toutes";
+
+    // Restaurer le champ faculte baisse
+    document.getElementById(
+        "faculte-baisse-filter"
+    ).checked = false;
+
+    // Restaurer le champ d'anomalie tribunal
+    document.getElementById(
+        "tribunal-anomalie-filter"
+    ).checked = false;
 
     // Réinitialiser le champ de date
     document.getElementById(
@@ -2884,6 +2951,16 @@ function getNumericInput(id) {
     return Number.isFinite(number) ? number : null;
 }
 
+function getTextInput(id) {
+
+    const value = document.getElementById(id).value.trim();
+
+    if (value === "" || value == null) {
+        return null;
+    }
+
+    return value
+}
 
 function toNumber(value) {
 

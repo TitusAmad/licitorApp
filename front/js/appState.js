@@ -5,6 +5,14 @@
 const APP_STATE_KEY = "immobilier_app_state";
 const APP_STATE_VERSION = 1;
 
+export const pageDefaultMode = {
+
+    visits: "visites_a_venir",
+
+    sales: "toutes"
+
+};
+
 export function getDefaultAppState() {
 
     return {
@@ -14,13 +22,13 @@ export function getDefaultAppState() {
             visits: {
                 search: "",
                 filters: null,
-                predefinedFilter: "toutes"
+                predefinedFilter: pageDefaultMode["visits"]
             },
 
             sales: {
                 search: "",
                 filters: null,
-                predefinedFilter: "toutes"
+                predefinedFilter: pageDefaultMode["sales"]
             }
         }
     };
@@ -86,14 +94,14 @@ export function saveAppState(
                     search: searchByPage.visits,
                     filters: filtersByPage.visits,
                     predefinedFilter:
-                        predefinedFiltersByPage.visits || "toutes"
+                        predefinedFiltersByPage.visits || pageDefaultMode["visits"]
                 },
 
                 sales: {
                     search: searchByPage.sales,
                     filters: filtersByPage.sales,
                     predefinedFilter:
-                        predefinedFiltersByPage.sales || "toutes"
+                        predefinedFiltersByPage.sales || pageDefaultMode["sales"]
                 }
 
             }
@@ -140,9 +148,9 @@ export function restoreAppState(
 
     // Restaurer les filtres prédéfinis
     predefinedFiltersByPage.visits =
-        state.pages.visits.predefinedFilter || "toutes";
+        state.pages.visits.predefinedFilter || pageDefaultMode["visits"];
 
     predefinedFiltersByPage.sales =
-        state.pages.sales.predefinedFilter || "toutes";
+        state.pages.sales.predefinedFilter || pageDefaultMode["sales"];
 
 }
