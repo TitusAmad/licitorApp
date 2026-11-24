@@ -170,28 +170,32 @@ const appliedFilters = {
 
 const PREDEFINED_FILTER_LABELS = {
 
+    // ALL
     toutes: "Toutes les annonces",
 
     mise_a_prix_inferieure_30000:
         "Mise à prix inférieure à 30 000 €",
 
+    // A VENIR
+
     visites_a_venir: "Visites à venir",
-    visites_passees: "Visites passées",
     visites_aujourdhui: "Visites aujourd'hui",
+    visites_demain: "Visites demain",
     visites_semaine_en_cours: "Visites cette semaine",
     visites_semaine_prochaine: "Visites la semaine prochaine",
-    visites_7_prochains_jours: "Visites dans les 7 prochains jours",
-    visites_sans_date: "Visites sans date",
+    visites_passees: "Visites passées",
 
     ventes_a_venir: "Ventes à venir",
     ventes_aujourdhui: "Ventes aujourd'hui",
     ventes_semaine_en_cours: "Ventes cette semaine",
     ventes_semaine_prochaine: "Ventes la semaine prochaine",
+    ventes_sans_visite: "Ventes sans visites",
 
-    ventes_7_derniers_jours: "Ventes des 7 derniers jours",
+    // HISTORIQUE
+
+    ventes_realisees_semaine_en_cours: "Ventes de la semaine",
+    ventes_semaine_precedente: "Ventes de la semaine précédente",
     ventes_30_derniers_jours: "Ventes des 30 derniers jours",
-    ventes_mois_en_cours: "Ventes du mois en cours",
-
     surencheres: "Surenchères"
 
 };

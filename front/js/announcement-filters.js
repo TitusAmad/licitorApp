@@ -49,15 +49,6 @@ const FILTER_METHODS = {
             )
     },
 
-    visites_passees: {
-        source: "non_realisees",
-        filter: (announcement, context) =>
-            isDateBefore(
-                announcement.visite_dt,
-                context.now
-            )
-    },
-
     visites_aujourdhui: {
         source: "non_realisees",
         filter: (announcement, context) =>
@@ -65,6 +56,16 @@ const FILTER_METHODS = {
                 announcement.visite_dt,
                 context.todayStart,
                 context.tomorrowStart
+            )
+    },
+
+    visites_demain: {
+        source: "non_realisees",
+        filter: (announcement, context) =>
+            isDateInRange(
+                announcement.visite_dt,
+                context.todayStart,
+                context.nextTomorrowStart
             )
     },
 
@@ -88,22 +89,14 @@ const FILTER_METHODS = {
             )
     },
 
-    visites_7_prochains_jours: {
+    visites_passees: {
         source: "non_realisees",
         filter: (announcement, context) =>
-            isDateInRange(
+            isDateBefore(
                 announcement.visite_dt,
-                context.now,
-                context.next7Days
+                context.now
             )
     },
-
-    visites_sans_date: {
-        source: "non_realisees",
-        filter: announcement =>
-            !parseAnnouncementDate(announcement.visite_dt)
-    },
-
 
     // ----------------------------------------------
     // VENTES À VENIR
@@ -148,18 +141,33 @@ const FILTER_METHODS = {
             )
     },
 
+    ventes_sans_visite: {
+        source: "non_realisees",
+        filter: announcement =>
+            !parseAnnouncementDate(announcement.visite_dt)
+    },
 
     // ----------------------------------------------
     // VENTES HISTORIQUES
     // ----------------------------------------------
 
-    ventes_7_derniers_jours: {
+    ventes_realisees_semaine_en_cours: {
         source: "historiques",
         filter: (announcement, context) =>
             isDateInRange(
                 announcement.dt_vente,
-                context.last7Days,
-                context.now
+                context.currentWeekStart,
+                context.nextWeekStart
+            )
+    },
+
+    ventes_semaine_precedente: {
+        source: "historiques",
+        filter: (announcement, context) =>
+            isDateInRange(
+                announcement.dt_vente,
+                context.pastWeekStart,
+                context.currentWeekStart
             )
     },
 
@@ -170,16 +178,6 @@ const FILTER_METHODS = {
                 announcement.dt_vente,
                 context.last30Days,
                 context.now
-            )
-    },
-
-    ventes_mois_en_cours: {
-        source: "historiques",
-        filter: (announcement, context) =>
-            isDateInRange(
-                announcement.dt_vente,
-                context.currentMonthStart,
-                context.nextMonthStart
             )
     },
 
@@ -265,6 +263,12 @@ function createDateContext(referenceDate) {
         1
     );
 
+    // Début du surlendemain
+    const nextTomorrowStart = addDays(
+        todayStart,
+        2
+    );
+
     // ----------------------------------------------
     // SEMAINES
     // ----------------------------------------------
@@ -282,6 +286,12 @@ function createDateContext(referenceDate) {
 
     // Lundi de la semaine prochaine
     const nextWeekStart = addDays(
+        currentWeekStart,
+        7
+    );
+
+    // Lundi de la semaine précédente
+    const pastWeekStart = addDays(
         currentWeekStart,
         7
     );
@@ -336,9 +346,11 @@ function createDateContext(referenceDate) {
 
         todayStart,
         tomorrowStart,
+        nextTomorrowStart,
 
         currentWeekStart,
         nextWeekStart,
+        pastWeekStart,
         weekAfterNextStart,
 
         next7Days,
