@@ -335,6 +335,25 @@ export function renderTransactionsSection(transactions) {
 
     `;
 
+    // Attribution automatique des labels aux cellules
+    const table = container.querySelector(".transactions-table");
+
+    const headers = Array.from(
+        table.querySelectorAll("thead th")
+    ).map(th => th.textContent.trim());
+
+    table.querySelectorAll("tbody tr").forEach(row => {
+
+        row.querySelectorAll("td").forEach((cell, index) => {
+
+            cell.setAttribute(
+                "data-label",
+                headers[index] || ""
+            );
+
+        });
+
+    });
 
     // Gestion des clics et du clavier
     container.querySelectorAll(

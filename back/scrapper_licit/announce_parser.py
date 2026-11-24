@@ -201,9 +201,6 @@ def parse_announcement(session, url, debug_path):
                     datetime_value
                 )
                 
-                if number == 110197:
-                    print(dt)
-                
                 limit_out = utils.resell_thresh(dt)
                 
                 page_dt_limit = limit_out[0]

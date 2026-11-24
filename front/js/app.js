@@ -1,5 +1,5 @@
 import {
-    loadAnnouncements as fetchAnnouncements,
+    loadAnnouncementsWithMeta,
     loadNearbySales
 } from "./data-loader.js";
 
@@ -12,6 +12,20 @@ import {
     openAnalysisSheet
 } from "./analysis-sheet.js";
 
+import {
+    saveAppState,
+    restoreAppState
+} from "./appState.js"
+
+import {
+    getFilteredAnnouncements as applyAllFilters
+} from "./announcement-filtering.js";
+
+import {
+    getAvailableFilterMethods,
+    getFilterMethodsBySource
+} from "./announcement-filters.js";
+
 import { formatDate } from "./date-utils.js";
 
 import { showToast } from './toast.js';
@@ -20,51 +34,94 @@ import { showToast } from './toast.js';
 // Variables globales
 // --------------------------------------------------
 
-let announcements = [];
+// FILTRES PRÉDÉFINIS
+
+const predefinedFiltersByPage = {
+
+    visits: "toutes",
+
+    sales: "toutes"
+
+};
+
+// SEARCH
+
 let searchTerm = "";
 
-const announcementElements = new Map();
+const searchByPage = {
+    visits: "",
+    sales: ""
+};
+
+// FILTRES MNAUELS
+
+const filtersByPage = {
+
+    visits: null,
+
+    sales: null
+
+};
+
+// ANNOUNCEMENTS
+
+let selectedAnalysisAnnouncement = null;
+let announcements = [];
+
+const announcementElements = {
+
+    visits: {
+        fingerprint: null,
+        elements: new Map()
+    },
+
+    sales: {
+        fingerprint: null,
+        elements: new Map()
+    }
+
+};
+
+// MAP
 
 let map;
 let markerClusterGroup;
 const activeMarkerIds = new Set();
 let markers = new Map();
 
-// --------------------------------------------------
-// ANALYSE GÉOGRAPHIQUE
-// --------------------------------------------------
 
-let selectedAnalysisAnnouncement = null;
+// ANALYSIS PARAMETERS
 
 // RADIUS
 
 const ANALYSIS_RADIUS_KEY = "analysis_radius";
-const DEFAULT_ANALYSIS_RADIUS = 5;
-
-let analysisRadius = Number(
-    sessionStorage.getItem(ANALYSIS_RADIUS_KEY)
-) || DEFAULT_ANALYSIS_RADIUS;
+const DEFAULT_ANALYSIS_RADIUS = 1;
+let analysisRadius = getStoredNumber(
+    ANALYSIS_RADIUS_KEY,
+    DEFAULT_ANALYSIS_RADIUS,
+    [0.5, 1, 2, 5, 10, 15, 20]
+);
 
 // SURFACE
 
-// SURFACE MIN
-
 const ANALYSIS_SURFACE_KEY = "analysis_surface_min";
-const DEFAULT_ANALYSIS_SURFACE = -1;
-
-let analysisSurface = sessionStorage.getItem(ANALYSIS_SURFACE_KEY) || DEFAULT_ANALYSIS_SURFACE;
+const DEFAULT_ANALYSIS_SURFACE = 10;
+let analysisSurface = getStoredNumber(
+    ANALYSIS_SURFACE_KEY,
+    DEFAULT_ANALYSIS_SURFACE,
+    [-1, 5, 10, 15, 20, 30]
+);
 
 // --------------------------------------------------
 // CONFIGURATION DE LA PAGE
 // --------------------------------------------------
-
-const PAGE_TYPE = document.body.dataset.page || "visits";
 
 const PAGE_CONFIG = {
 
     visits: {
         defaultSort: "visite_dt",
         sortDirection: "asc",
+        defaultDateField: "visite_dt",
 
         totalPriceField: "estimated",
         priceM2Field: "estimated"
@@ -73,12 +130,17 @@ const PAGE_CONFIG = {
     sales: {
         defaultSort: "dt_vente",
         sortDirection: "desc",
+        defaultDateField: "dt_vente",
 
         totalPriceField: "final",
         priceM2Field: "final"
     }
 
 };
+
+let PAGE_TYPE = PAGE_CONFIG[document.body.dataset.page]
+    ? document.body.dataset.page
+    : "visits";
 
 let sortField = PAGE_CONFIG[PAGE_TYPE]?.defaultSort || "dt_vente";
 
@@ -100,46 +162,254 @@ const appliedFilters = {
 
     tribunaux: [],
 
-    dateField: "dt_vente",
+    dateField: PAGE_CONFIG[PAGE_TYPE].defaultDateField,
     dateStart: null,
     dateEnd: null
 };
 
 
-// --------------------------------------------------
-// Initialisation
-// --------------------------------------------------
+const PREDEFINED_FILTER_LABELS = {
+
+    toutes: "Toutes les annonces",
+
+    mise_a_prix_inferieure_30000:
+        "Mise à prix inférieure à 30 000 €",
+
+    visites_a_venir: "Visites à venir",
+    visites_passees: "Visites passées",
+    visites_aujourdhui: "Visites aujourd'hui",
+    visites_semaine_en_cours: "Visites cette semaine",
+    visites_semaine_prochaine: "Visites la semaine prochaine",
+    visites_7_prochains_jours: "Visites dans les 7 prochains jours",
+    visites_sans_date: "Visites sans date",
+
+    ventes_a_venir: "Ventes à venir",
+    ventes_aujourdhui: "Ventes aujourd'hui",
+    ventes_semaine_en_cours: "Ventes cette semaine",
+    ventes_semaine_prochaine: "Ventes la semaine prochaine",
+
+    ventes_7_derniers_jours: "Ventes des 7 derniers jours",
+    ventes_30_derniers_jours: "Ventes des 30 derniers jours",
+    ventes_mois_en_cours: "Ventes du mois en cours",
+
+    surencheres: "Surenchères"
+
+};
+
+
+
+ // --------------------------------------------------
+ // INITIALISATION DE L'APPLICATION
+ // --------------------------------------------------
 
 document.addEventListener("DOMContentLoaded", async () => {
 
+    const page = getPageFromURL();
+
+    PAGE_TYPE = PAGE_CONFIG[page] ? page : "visits";
+
+    document.body.dataset.page = PAGE_TYPE;
+
+    // Restaurer les préférences
+    restoreAppState(
+        searchByPage,
+        filtersByPage,
+        predefinedFiltersByPage
+    );
+
+    initializePageConfig();
+
+    // Initialisations permanentes
     initializeMap();
     initializeSorting();
     initializeSearch();
-
     initializeFilterDropdowns();
-
+    initializePredefinedFilterDropdown();
     initializeListScrollToTop();
-
-    document.getElementById("apply-filters")
-        .addEventListener("click", applyFilters);
-
-    document.getElementById("reset-filters")
-        .addEventListener("click", resetFilters);
-
-    updateFilterButtonStates();
-
-    await loadAnnouncements();
-
+    initializeGlobalEvents();
     initializeAnalysisSheet();
-    
+
+    // Restaurer les états de la page
+    restoreSearchForCurrentPage();
+    restoreFiltersForCurrentPage();
+
+    await renderAll();
+
 });
 
 
 // --------------------------------------------------
-// Carte
+// NAVIGATION
+// --------------------------------------------------
+
+document.addEventListener("click", async event => {
+
+    const button = event.target.closest("[data-nav]");
+
+    if (!button) return;
+
+    event.preventDefault();
+
+    const page = button.dataset.nav;
+
+    if (!PAGE_CONFIG[page] || page === PAGE_TYPE) return;
+
+    history.pushState({ page }, "", `/${page}`);
+
+    await navigateTo(page);
+
+});
+
+
+// --------------------------------------------------
+// HISTORIQUE NAVIGATEUR
+// --------------------------------------------------
+
+window.addEventListener("popstate", async () => {
+
+    const page = getPageFromURL();
+
+    await navigateTo(
+        PAGE_CONFIG[page] ? page : "visits"
+    );
+
+});
+
+
+// --------------------------------------------------
+// EXTRACTION DE LA PAGE DEPUIS L'URL
+// --------------------------------------------------
+
+function getPageFromURL() {
+
+    const segments = location.pathname
+        .split("/")
+        .filter(Boolean);
+
+    return segments.at(-1) || "visits";
+
+}
+
+
+// --------------------------------------------------
+// INITIALISATION CONFIGURATION PAGE
+// --------------------------------------------------
+
+function initializePageConfig() {
+
+    const config = PAGE_CONFIG[PAGE_TYPE];
+
+    sortField = config.defaultSort;
+    sortDirection = config.sortDirection;
+
+    appliedFilters.dateField = config.defaultDateField
+
+    document.getElementById("date-filter-field").value =
+        config.defaultDateField;
+
+}
+
+
+// --------------------------------------------------
+// NAVIGATION VERS UNE PAGE
+// --------------------------------------------------
+
+async function navigateTo(page) {
+
+    if (!PAGE_CONFIG[page]) return;
+
+    if (page === PAGE_TYPE) return;
+
+    PAGE_TYPE = page;
+
+    document.body.dataset.page = page;
+
+    initializePageConfig();
+
+    // Restaurer les préférences propres à la page
+    restoreSearchForCurrentPage();
+    restoreFiltersForCurrentPage();
+    renderPredefinedFilterOptions();
+
+    clearMarkerCache();
+
+    selectedAnalysisAnnouncement = null;
+
+    updateNavigationButtons();
+
+    await renderAll();
+
+}
+
+
+// --------------------------------------------------
+// MISE À JOUR DU HEADER
+// --------------------------------------------------
+
+function updateNavigationButtons() {
+
+    document.querySelectorAll("[data-nav]").forEach(button => {
+
+        const isActive = button.dataset.nav === PAGE_TYPE;
+
+        button.classList.toggle("active", isActive);
+
+        if (isActive) {
+            button.setAttribute("aria-current", "page");
+        } else {
+            button.removeAttribute("aria-current");
+        }
+
+    });
+
+}
+
+
+// --------------------------------------------------
+// RENDU PRINCIPAL
+// --------------------------------------------------
+
+async function renderAll() {
+
+    updateNavigationButtons();
+
+    updateSortButton();
+    updateClearButton();
+    updateFilterButtonStates();
+
+    await loadAnnouncements();
+
+    // La carte peut avoir été masquée puis réaffichée
+    map.invalidateSize();
+
+}
+
+
+// --------------------------------------------------
+// ÉVÉNEMENTS GLOBAUX
+// --------------------------------------------------
+
+function initializeGlobalEvents() {
+
+    document.getElementById("apply-filters")
+        ?.addEventListener("click", applyFilters);
+
+    document.getElementById("reset-filters")
+        ?.addEventListener("click", resetFilters);
+
+}
+
+// --------------------------------------------------
+// Initialization
+// --------------------------------------------------
+
+// --------------------------------------------------
+// MAP
 // --------------------------------------------------
 
 function initializeMap() {
+
+    if (map) return;
 
     map = L.map("map");
 
@@ -209,46 +479,6 @@ function initializeMap() {
     map.setView([43.5, 5.5], 9);
 }
 
-
-// --------------------------------------------------
-// Chargement des données
-// --------------------------------------------------
-
-// --------------------------------------------------
-// VISITES A VENIR
-// --------------------------------------------------
-
-async function loadAnnouncements() {
-
-    try {
-
-        announcements = await fetchAnnouncements(PAGE_TYPE);
-
-        console.log(
-            `${announcements.length} annonces chargées (${PAGE_TYPE})`
-        );
-
-        updateTribunalFilters();
-        updateDisplay();
-
-    } catch (error) {
-
-        console.error(
-            "Impossible de charger les annonces :",
-            error
-        );
-
-        document.getElementById(
-            "announcement-list"
-        ).innerHTML = `
-            <div class="announcement">
-                Impossible de charger les données.
-            </div>
-        `;
-    }
-}
-
-
 // --------------------------------------------------
 // Recherche
 // --------------------------------------------------
@@ -269,6 +499,15 @@ function initializeSearch() {
             .trim()
             .toLowerCase();
 
+        // Mémoriser la recherche pour la page actuelle
+        searchByPage[PAGE_TYPE] = searchTerm;
+
+        saveAppState(
+            searchByPage,
+            filtersByPage,
+            predefinedFiltersByPage
+        );
+
         updateClearButton();
         updateTribunalFilters();
         updateDisplay();
@@ -280,6 +519,15 @@ function initializeSearch() {
         searchInput.value = "";
 
         searchTerm = "";
+
+        // Effacer uniquement la recherche de la page actuelle
+        searchByPage[PAGE_TYPE] = "";
+
+        saveAppState(
+            searchByPage,
+            filtersByPage,
+            predefinedFiltersByPage
+        );
 
         updateClearButton();
         updateTribunalFilters();
@@ -305,6 +553,23 @@ function updateClearButton() {
         searchInput.value
             ? "block"
             : "none";
+}
+
+function restoreSearchForCurrentPage() {
+
+    // Récupérer la recherche de la page actuelle
+    searchTerm = searchByPage[PAGE_TYPE] || "";
+
+    // Restaurer le champ de recherche
+    const searchInput = document.getElementById(
+        "announcement-search"
+    );
+
+    searchInput.value = searchTerm;
+
+    // Actualiser le bouton d'effacement
+    updateClearButton();
+
 }
 
 // --------------------------------------------------
@@ -399,60 +664,232 @@ function updateFilterButtonStates() {
 
 function applyFilters() {
 
-    appliedFilters.surfaceMin = getNumericInput("surface-min");
-    appliedFilters.surfaceMax = getNumericInput("surface-max");
+    // Préparer les nouveaux filtres sans modifier l'état actuel
+    const newFilters = structuredClone(appliedFilters);
 
-    appliedFilters.prixMin = getNumericInput("prix-min");
-    appliedFilters.prixMax = getNumericInput("prix-max");
+    // Surface
+    newFilters.surfaceMin = getNumericInput("surface-min");
+    newFilters.surfaceMax = getNumericInput("surface-max");
 
-    appliedFilters.prixTotalMin =
+    // Mise à prix
+    newFilters.prixMin = getNumericInput("prix-min");
+    newFilters.prixMax = getNumericInput("prix-max");
+
+    // Prix total
+    newFilters.prixTotalMin =
         getNumericInput("prix-total-min");
-    appliedFilters.prixTotalMax =
+
+    newFilters.prixTotalMax =
         getNumericInput("prix-total-max");
-    appliedFilters.prixM2Min =
+
+    // Prix au m²
+    newFilters.prixM2Min =
         getNumericInput("prix-m2-min");
-    appliedFilters.prixM2Max =
+
+    newFilters.prixM2Max =
         getNumericInput("prix-m2-max");
 
-    // Période de dates
-    appliedFilters.dateField =
+    // Dates
+    newFilters.dateField =
         document.getElementById("date-filter-field").value;
 
-    appliedFilters.dateStart =
+    newFilters.dateStart =
         document.getElementById("date-start").value || null;
 
-    appliedFilters.dateEnd =
+    newFilters.dateEnd =
         document.getElementById("date-end").value || null;
 
-    // Vérifier la cohérence de la période
+    // --------------------------------------------------
+    // VALIDATION DES DATES
+    // --------------------------------------------------
+
     if (
-        appliedFilters.dateStart &&
-        appliedFilters.dateEnd &&
-        appliedFilters.dateStart > appliedFilters.dateEnd
+        newFilters.dateStart &&
+        newFilters.dateEnd &&
+        newFilters.dateStart > newFilters.dateEnd
     ) {
-        alert("La date de début doit précéder la date de fin.");
+
+        alert(
+            "La date de début doit précéder la date de fin."
+        );
+
         return;
     }
 
-    // Tribunaux sélectionnés
-    appliedFilters.tribunaux = [
+    // --------------------------------------------------
+    // VALIDATION DES INTERVALLES
+    // --------------------------------------------------
+
+    if (!validateRange(
+        newFilters.surfaceMin,
+        newFilters.surfaceMax,
+        "surface"
+    )) return;
+
+    if (!validateRange(
+        newFilters.prixMin,
+        newFilters.prixMax,
+        "mise à prix"
+    )) return;
+
+    if (!validateRange(
+        newFilters.prixTotalMin,
+        newFilters.prixTotalMax,
+        "prix total"
+    )) return;
+
+    if (!validateRange(
+        newFilters.prixM2Min,
+        newFilters.prixM2Max,
+        "prix au m²"
+    )) return;
+
+    // --------------------------------------------------
+    // TRIBUNAUX
+    // --------------------------------------------------
+
+    newFilters.tribunaux = [
         ...document.querySelectorAll(
             "#tribunal-filters input[type='checkbox']:checked"
         )
     ].map(checkbox => checkbox.value);
 
+    // --------------------------------------------------
+    // APPLICATION EFFECTIVE
+    // --------------------------------------------------
+
+    Object.assign(
+        appliedFilters,
+        newFilters
+    );
+
+    // Sauvegarder l'état propre à la page
+    saveFiltersForCurrentPage();
+
+    // Actualiser l'interface
     updateFilterButtonStates();
+
     updateDisplay();
 
-    // Fermer le panneau après application
+    // Fermer le panneau
     document.getElementById("filters-panel").hidden = true;
+
     document.getElementById("filters-toggle")
         .setAttribute("aria-expanded", "false");
+
+}
+
+function saveFiltersForCurrentPage() {
+
+    filtersByPage[PAGE_TYPE] = structuredClone(appliedFilters);
+
+    saveAppState(
+        searchByPage,
+        filtersByPage,
+        predefinedFiltersByPage
+    );
+
 }
 
 
+function restoreFiltersForCurrentPage() {
+
+    const savedFilters = filtersByPage[PAGE_TYPE];
+
+    // Première visite : filtres par défaut
+    if (!savedFilters) {
+
+        resetFilters();
+
+    } else {
+
+        Object.assign(
+            appliedFilters,
+            structuredClone(savedFilters)
+        );
+
+    }
+
+    // Restaurer les champs numériques et les dates
+    const fields = {
+        surfaceMin: "surface-min",
+        surfaceMax: "surface-max",
+        prixMin: "prix-min",
+        prixMax: "prix-max",
+        prixTotalMin: "prix-total-min",
+        prixTotalMax: "prix-total-max",
+        prixM2Min: "prix-m2-min",
+        prixM2Max: "prix-m2-max",
+        dateStart: "date-start",
+        dateEnd: "date-end"
+    };
+
+    Object.entries(fields).forEach(([key, id]) => {
+
+        document.getElementById(id).value =
+            appliedFilters[key] ?? "";
+
+    });
+
+    // Restaurer le champ de date
+    document.getElementById(
+        "date-filter-field"
+    ).value = appliedFilters.dateField;
+
+    // Reconstruire les tribunaux disponibles
+    updateTribunalFilters();
+
+    // Restaurer les tribunaux sélectionnés
+    const tribunalCheckboxes = document.querySelectorAll(
+        "#tribunal-filters input[type='checkbox']"
+    );
+
+    tribunalCheckboxes.forEach(checkbox => {
+
+        checkbox.checked =
+            appliedFilters.tribunaux.includes(checkbox.value);
+
+    });
+
+    updateSelectAllState();
+
+    // Actualiser le compteur de filtres actifs
+    updateFilterButtonStates();
+
+}
+
+function resetFiltersState() {
+
+    Object.assign(appliedFilters, {
+
+        surfaceMin: null,
+        surfaceMax: null,
+
+        prixMin: null,
+        prixMax: null,
+
+        prixTotalMin: null,
+        prixTotalMax: null,
+
+        prixM2Min: null,
+        prixM2Max: null,
+
+        tribunaux: [],
+
+        dateField: PAGE_TYPE === "sales"
+            ? "dt_vente"
+            : "visite_dt",
+
+        dateStart: null,
+        dateEnd: null
+
+    });
+
+}
+
 function resetFilters() {
 
+    // Réinitialiser les champs numériques et les dates
     [
         "surface-min",
         "surface-max",
@@ -465,39 +902,38 @@ function resetFilters() {
         "date-start",
         "date-end"
     ].forEach(id => {
+
         document.getElementById(id).value = "";
+
     });
 
-    document.getElementById("date-filter-field").value = "dt_vente";
+    // Réinitialiser le champ de date
+    document.getElementById(
+        "date-filter-field"
+    ).value = PAGE_CONFIG[PAGE_TYPE].defaultDateField;
 
-    document.querySelectorAll(
-        "#tribunal-filters input[type='checkbox']"
-    ).forEach(checkbox => {
-        checkbox.checked = false;
-    });
+    // Réinitialiser l'état JavaScript
+    resetFiltersState();
 
-    document.getElementById("tribunal-select-all").checked = false;
-    document.getElementById("tribunal-select-all").indeterminate = false;
+    // Reconstruire les tribunaux sans sélection
+    updateTribunalFilters();
 
-    Object.assign(appliedFilters, {
-        surfaceMin: null,
-        surfaceMax: null,
-        prixMin: null,
-        prixMax: null,
-        prixTotalMin: null,
-        prixTotalMax: null,
-        prixM2Min: null,
-        prixM2Max: null,
-        tribunaux: [],
-        dateField: "dt_vente",
-        dateStart: null,
-        dateEnd: null
-    });
-
+    // Actualiser le compteur
     updateFilterButtonStates();
-    updateDisplay();
-}
 
+    // Sauvegarder les filtres réinitialisés pour cette page
+    saveFiltersForCurrentPage();
+
+    // Actualiser la liste et la carte
+    updateDisplay();
+
+    // Fermer le panneau
+    document.getElementById("filters-panel").hidden = true;
+
+    document.getElementById("filters-toggle")
+        .setAttribute("aria-expanded", "false");
+
+}
 
 function updateTribunalFilters() {
 
@@ -523,18 +959,23 @@ function updateTribunalFilters() {
         );
     });
 
-    const tribunaux = [
-        ...new Set(
-            searchFilteredAnnouncements
-                .map(a => a.tribunal)
-                .filter(value => value != null && String(value).trim() !== "")
-                .map(value => String(value).trim())
+    const availableTribunaux = searchFilteredAnnouncements
+        .map(a => a.tribunal)
+        .filter(value =>
+            value != null &&
+            String(value).trim() !== ""
         )
+        .map(value => String(value).trim());
+
+    // Conserver également les tribunaux déjà sélectionnés
+    const tribunaux = [
+        ...new Set([
+            ...availableTribunaux,
+            ...appliedFilters.tribunaux
+        ])
     ].sort((a, b) => a.localeCompare(b, "fr"));
 
     container.innerHTML = "";
-    selectAll.checked = false;
-    selectAll.indeterminate = false;
 
     tribunaux.forEach((tribunal, index) => {
 
@@ -542,6 +983,7 @@ function updateTribunalFilters() {
         label.className = "tribunal-option";
 
         const checkbox = document.createElement("input");
+        checkbox.checked = appliedFilters.tribunaux.includes(tribunal);
         checkbox.type = "checkbox";
         checkbox.value = tribunal;
         checkbox.id = `tribunal-${index}`;
@@ -553,6 +995,8 @@ function updateTribunalFilters() {
 
         container.appendChild(label);
     });
+
+    updateSelectAllState();
 
     selectAll.onchange = () => {
         container.querySelectorAll('input[type="checkbox"]')
@@ -583,147 +1027,299 @@ function updateSelectAllState() {
         checkedCount > 0 && checkedCount < checkboxes.length;
 }
 
-// --------------------------------------------------
-// Filtre
-// --------------------------------------------------
+// FILTRES PREDEF
 
-function getFilteredAnnouncements() {
+function setPredefinedFilter(method) {
 
-    return announcements.filter(announcement => {
+    const availableMethods =
+        getAvailableFilterMethods(
+            PAGE_TYPE === "visits"
+                ? "non_realisees"
+                : "historiques"
+        );
 
-        // Recherche textuelle instantanée
-        if (searchTerm) {
+    // Vérifier que la méthode est compatible avec la page
+    if (!availableMethods.includes(method)) {
 
-            const valeursRecherche = [
-                announcement.ville || "",
-                announcement.nom_departement || "",
-                announcement.nom_region || ""
-            ];
+        console.error(
+            `Le filtre "${method}" n'est pas disponible sur la page "${PAGE_TYPE}".`
+        );
 
-            const correspond = valeursRecherche.some(value =>
-                normalizeSearchValue(value).includes(
-                    normalizeSearchValue(searchTerm)
-                )
-            );
+        return false;
 
-            if (!correspond) return false;
-        }
+    }
 
-        // Surface
-        const surface = toNumber(announcement.surface_m2);
+    // Modifier uniquement le filtre prédéfini
+    predefinedFiltersByPage[PAGE_TYPE] = method;
 
-        if (
-            (appliedFilters.surfaceMin !== null ||
-             appliedFilters.surfaceMax !== null) &&
-            surface === null
-        ) return false;
+    // Actualiser l'affichage
+    updateDisplay();
 
-        if (appliedFilters.surfaceMin !== null &&
-            surface < appliedFilters.surfaceMin) return false;
+    return true;
 
-        if (appliedFilters.surfaceMax !== null &&
-            surface > appliedFilters.surfaceMax) return false;
-
-        // Mise à prix
-        const prix = toNumber(announcement.mise_a_prix);
-
-        if (
-            (appliedFilters.prixMin !== null ||
-             appliedFilters.prixMax !== null) &&
-            prix === null
-        ) return false;
-
-        if (appliedFilters.prixMin !== null &&
-            prix < appliedFilters.prixMin) return false;
-
-        if (appliedFilters.prixMax !== null &&
-            prix > appliedFilters.prixMax) return false;
-
-        // Prix total
-        const prixTotal = getTotalPrice(announcement);
-
-        if (
-            (appliedFilters.prixTotalMin !== null ||
-            appliedFilters.prixTotalMax !== null) &&
-            prixTotal === null
-        ) return false;
-
-        if (
-            appliedFilters.prixTotalMin !== null &&
-            prixTotal < appliedFilters.prixTotalMin
-        ) return false;
-
-        if (
-            appliedFilters.prixTotalMax !== null &&
-            prixTotal > appliedFilters.prixTotalMax
-        ) return false;
-
-
-        // Prix au m²
-        const prixM2 = getPricePerM2(announcement);
-
-        if (
-            (appliedFilters.prixM2Min !== null ||
-            appliedFilters.prixM2Max !== null) &&
-            prixM2 === null
-        ) return false;
-
-        if (
-            appliedFilters.prixM2Min !== null &&
-            prixM2 < appliedFilters.prixM2Min
-        ) return false;
-
-        if (
-            appliedFilters.prixM2Max !== null &&
-            prixM2 > appliedFilters.prixM2Max
-        ) return false;
-
-        // Tribunaux : correspondance avec au moins un tribunal sélectionné
-        if (
-            appliedFilters.tribunaux.length > 0 &&
-            !appliedFilters.tribunaux.includes(
-                String(announcement.tribunal ?? "").trim()
-            )
-        ) return false;
-
-        // Période de vente ou de visite
-        if (appliedFilters.dateStart || appliedFilters.dateEnd) {
-
-            const dateValue = parseSaleDate(
-                announcement[appliedFilters.dateField]
-            );
-
-            // Une annonce sans date ne correspond pas à la période
-            if (dateValue === null) {
-                return false;
-            }
-
-            const startDate = appliedFilters.dateStart
-                ? new Date(
-                    appliedFilters.dateStart + "T00:00:00"
-                  ).getTime()
-                : null;
-
-            const endDate = appliedFilters.dateEnd
-                ? new Date(
-                    appliedFilters.dateEnd + "T23:59:59.999"
-                  ).getTime()
-                : null;
-
-            if (startDate !== null && dateValue < startDate) {
-                return false;
-            }
-
-            if (endDate !== null && dateValue > endDate) {
-                return false;
-            }
-        }
-
-        return true;
-    });
 }
 
 
+function getPredefinedFilterGroups() {
+
+    const availableMethods = getAvailableFilterMethods(
+        PAGE_TYPE === "visits"
+            ? "non_realisees"
+            : "historiques"
+    );
+
+    const sources = getFilterMethodsBySource();
+
+    const groups = [
+        {
+            title: "Méthodes communes",
+            methods: availableMethods.filter(method =>
+                sources[method] === "all"
+            )
+        },
+        {
+            title: "Visites",
+            methods: availableMethods.filter(method =>
+                method.startsWith("visites_")
+            )
+        },
+        {
+            title: "Ventes à venir",
+            methods: availableMethods.filter(method =>
+                method.startsWith("ventes_") &&
+                sources[method] === "non_realisees"
+            )
+        },
+        {
+            title: "Ventes historiques",
+            methods: availableMethods.filter(method =>
+                sources[method] === "historiques"
+            )
+        }
+    ];
+
+    return groups.filter(group =>
+        group.methods.length > 0
+    );
+
+}
+
+
+function renderPredefinedFilterOptions() {
+
+    const container = document.getElementById(
+        "predefined-filter-options"
+    );
+
+    if (!container) return;
+
+    const selectedMethod =
+        predefinedFiltersByPage[PAGE_TYPE] || "toutes";
+
+    const groups = getPredefinedFilterGroups();
+
+    container.innerHTML = "";
+
+    groups.forEach(group => {
+
+        const section = document.createElement("section");
+
+        section.className = "predefined-filter-group";
+
+        const title = document.createElement("div");
+
+        title.className = "predefined-filter-group-title";
+        title.textContent = group.title;
+
+        section.appendChild(title);
+
+        group.methods.forEach(method => {
+
+            const button = document.createElement("button");
+
+            button.type = "button";
+            button.className = "predefined-filter-option";
+
+            button.textContent =
+                PREDEFINED_FILTER_LABELS[method] || method;
+
+            const isActive = method === selectedMethod;
+
+            button.classList.toggle("active", isActive);
+
+            button.setAttribute(
+                "aria-pressed",
+                String(isActive)
+            );
+
+            button.addEventListener("click", () => {
+
+                setPredefinedFilter(method);
+
+                renderPredefinedFilterOptions();
+
+                closePredefinedFilterPanel();
+
+            });
+
+            section.appendChild(button);
+
+        });
+
+        container.appendChild(section);
+
+    });
+
+    updatePredefinedFilterButton();
+
+}
+
+
+function updatePredefinedFilterButton() {
+
+    const button = document.getElementById(
+        "predefined-filter-toggle"
+    );
+
+    const label = document.getElementById(
+        "predefined-filter-label"
+    );
+
+    if (!button || !label) return;
+
+    const selectedMethod =
+        predefinedFiltersByPage[PAGE_TYPE] || "toutes";
+
+    const isActive = selectedMethod !== "toutes";
+
+    label.textContent = isActive
+        ? PREDEFINED_FILTER_LABELS[selectedMethod] || "Filtres rapides"
+        : "Filtres rapides";
+
+    button.classList.toggle(
+        "has-active-filter",
+        isActive
+    );
+
+}
+
+
+function closePredefinedFilterPanel() {
+
+    const button = document.getElementById(
+        "predefined-filter-toggle"
+    );
+
+    const panel = document.getElementById(
+        "predefined-filter-panel"
+    );
+
+    if (!button || !panel) return;
+
+    panel.hidden = true;
+
+    button.setAttribute("aria-expanded", "false");
+
+}
+
+
+function initializePredefinedFilterDropdown() {
+
+    const button = document.getElementById(
+        "predefined-filter-toggle"
+    );
+
+    const panel = document.getElementById(
+        "predefined-filter-panel"
+    );
+
+    if (!button || !panel) return;
+
+    button.addEventListener("click", () => {
+
+        const isOpen = !panel.hidden;
+
+        panel.hidden = isOpen;
+
+        button.setAttribute(
+            "aria-expanded",
+            String(!isOpen)
+        );
+
+    });
+
+    document.addEventListener("click", event => {
+
+        if (event.target.closest(".predefined-dropdown")) {
+            return;
+        }
+
+        closePredefinedFilterPanel();
+
+    });
+
+    document.addEventListener("keydown", event => {
+
+        if (event.key === "Escape") {
+
+            closePredefinedFilterPanel();
+
+        }
+
+    });
+
+    renderPredefinedFilterOptions();
+
+}
+
+
+// --------------------------------------------------
+// Gestion Scroll to Top
+// --------------------------------------------------
+
+function initializeListScrollToTop() {
+
+    const counter = document.getElementById(
+        "back-to-announcements"
+    );
+
+    const listContainer = document.querySelector(
+        ".list-container"
+    );
+
+    if (!counter || !listContainer) return;
+
+    function scrollToTop() {
+
+        // Sur mobile, c'est généralement la page entière
+        // qui défile.
+        if (window.matchMedia("(max-width: 800px)").matches) {
+
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+
+            return;
+        }
+
+        // Sur ordinateur, la liste défile dans son conteneur.
+        listContainer.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    }
+
+    counter.addEventListener("click", scrollToTop);
+
+    counter.addEventListener("keydown", event => {
+
+        if (event.key === "Enter" || event.key === " ") {
+            event.preventDefault();
+            scrollToTop();
+        }
+    });
+}
 
 /* --------------------------------------------------
    Tri des annonces
@@ -834,6 +1430,119 @@ function updateSortButton() {
     });
 }
 
+// --------------------------------------------------
+// Chargement des données
+// --------------------------------------------------
+
+let loadVersion = 0;
+
+async function loadAnnouncements() {
+
+    const currentVersion = ++loadVersion;
+    const currentPage = PAGE_TYPE;
+
+    try {
+
+        const result = await loadAnnouncementsWithMeta(currentPage);
+
+        // Ignorer une réponse devenue obsolète
+        if (
+            currentVersion !== loadVersion ||
+            currentPage !== PAGE_TYPE
+        ) {
+            return;
+        }
+
+        const pageCache = announcementElements[currentPage];
+
+        // Vérifier si les données ont réellement changé
+        if (
+            pageCache.fingerprint !== result.fingerprint
+        ) {
+
+            console.log(
+                `Données modifiées : invalidation des cartes ${currentPage}`
+            );
+
+            // Invalidation du cache HTML
+            pageCache.elements.clear();
+
+            // Invalidation du cache des marqueurs
+            clearMarkerCache();
+
+            pageCache.fingerprint = result.fingerprint;
+
+        } else {
+
+            console.log(
+                `Réutilisation des cartes ${currentPage}`
+            );
+
+        }
+
+        // Actualiser les annonces
+        announcements = result.data;
+
+        console.log(
+            `${announcements.length} annonces chargées (${currentPage})`
+        );
+
+        // Restaurer les filtres après chargement des données
+        restoreFiltersForCurrentPage();
+
+        // Actualiser l'affichage
+        updateDisplay();
+
+    } catch (error) {
+
+        // Ignorer une réponse devenue obsolète
+        if (
+            currentVersion !== loadVersion ||
+            currentPage !== PAGE_TYPE
+        ) {
+            return;
+        }
+
+        console.error(
+            "Impossible de charger les annonces :",
+            error
+        );
+
+        document.getElementById(
+            "announcement-list"
+        ).innerHTML = `
+            <div class="announcement">
+                Impossible de charger les données.
+            </div>
+        `;
+    }
+}
+
+// --------------------------------------------------
+// Annonces filtrées
+// --------------------------------------------------
+
+function getFilteredAnnouncements() {
+
+    return applyAllFilters(
+        announcements,
+        {
+            pageType: PAGE_TYPE,
+
+            predefinedMethod:
+                predefinedFiltersByPage[PAGE_TYPE],
+
+            searchTerm,
+
+            appliedFilters,
+
+            getTotalPrice,
+
+            getPricePerM2
+        }
+    );
+
+}
 
 // --------------------------------------------------
 // GESTION AFFICHAGE
@@ -870,6 +1579,10 @@ function displayAnnouncements(filteredAnnouncements) {
     const count = document.getElementById(
         "announcement-count"
     );
+
+    const pageCache = announcementElements[PAGE_TYPE];
+
+    const elements = pageCache.elements;
 
     container.innerHTML = "";
 
@@ -943,15 +1656,17 @@ function displayAnnouncements(filteredAnnouncements) {
         return compareNumbers(valueA, valueB);
     });
 
+    const pageElements = announcementElements[PAGE_TYPE];
+
     sortedAnnouncements.forEach(announcement => {
 
-        let element = announcementElements.get(announcement.id);
+        let element = elements.get(announcement.id);
 
         if (!element) {
 
             element = createAnnouncementElement(announcement);
 
-            announcementElements.set(announcement.id, element);
+            elements.set(announcement.id, element);
         }
 
         // appendChild déplace la carte existante
@@ -1507,7 +2222,7 @@ function openAnalysisSelector(announcement) {
         "#analysis-surface"
     );
 
-    surfaceSelect.value = String(analysisSurface != null ? analysisSurface : -1);
+    surfaceSelect.value = String(analysisSurface);
 
     // Fermeture
     function closeModal() {
@@ -1608,7 +2323,7 @@ function openAnalysisSelector(announcement) {
 
         const surfaceAdj = Number(surfaceSelect.value);
 
-        if (![-1, 5, 10, 15, 20, 25, 30].includes(surfaceAdj)) {
+        if (![-1, 5, 10, 15, 20, 30].includes(surfaceAdj)) {
             return;
         }
 
@@ -1636,9 +2351,12 @@ function openAnalysisSelector(announcement) {
                 surfaceAdj: surfaceAdj
             });
 
-            const nbrMktTransactions = nearbySales.length - 1;
+            const comparableSalesCount = Math.max(
+                0,
+                nearbySales.length - 1
+            );
 
-            if (nbrMktTransactions === 0) {
+            if (comparableSalesCount === 0) {
 
                 showToast("Aucune transaction n'a été trouvée pour les paramètres sélectionnés", 'warning');
 
@@ -1706,6 +2424,18 @@ function openAnalysisSelector(announcement) {
 // --------------------------------------------------
 // Marqueurs
 // --------------------------------------------------
+
+function clearMarkerCache() {
+
+    markers.clear();
+
+    activeMarkerIds.clear();
+
+    if (markerClusterGroup) {
+        markerClusterGroup.clearLayers();
+    }
+
+}
 
 function displayMarkers(filteredAnnouncements) {
 
@@ -1962,54 +2692,6 @@ function selectAnnouncement(
 }
 
 // --------------------------------------------------
-// Gestion Scroll to Top
-// --------------------------------------------------
-
-function initializeListScrollToTop() {
-
-    const counter = document.getElementById(
-        "back-to-announcements"
-    );
-
-    const listContainer = document.querySelector(
-        ".list-container"
-    );
-
-    if (!counter || !listContainer) return;
-
-    function scrollToTop() {
-
-        // Sur mobile, c'est généralement la page entière
-        // qui défile.
-        if (window.matchMedia("(max-width: 800px)").matches) {
-
-            window.scrollTo({
-                top: 0,
-                behavior: "smooth"
-            });
-
-            return;
-        }
-
-        // Sur ordinateur, la liste défile dans son conteneur.
-        listContainer.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
-    }
-
-    counter.addEventListener("click", scrollToTop);
-
-    counter.addEventListener("keydown", event => {
-
-        if (event.key === "Enter" || event.key === " ") {
-            event.preventDefault();
-            scrollToTop();
-        }
-    });
-}
-
-// --------------------------------------------------
 // Utilitaires
 // --------------------------------------------------
 
@@ -2230,6 +2912,48 @@ function compareNumbers(a, b) {
         : numberA - numberB;
 }
 
+function validateRange(min, max, label) {
+
+    if (
+        min !== null &&
+        max !== null &&
+        min > max
+    ) {
+
+        alert(
+            `La valeur minimale de ${label} doit être inférieure ou égale à la valeur maximale.`
+        );
+
+        return false;
+    }
+
+    return true;
+}
+
+function getStoredNumber(key, defaultValue, allowedValues = null) {
+
+    const storedValue = sessionStorage.getItem(key);
+
+    if (storedValue === null) {
+        return defaultValue;
+    }
+
+    const value = Number(storedValue);
+
+    if (!Number.isFinite(value)) {
+        return defaultValue;
+    }
+
+    if (
+        allowedValues &&
+        !allowedValues.includes(value)
+    ) {
+        return defaultValue;
+    }
+
+    return value;
+}
+
 function getTotalPrice(announcement) {
 
     if (PAGE_CONFIG[PAGE_TYPE].totalPriceField === "final") {
@@ -2288,3 +3012,8 @@ function getSaleRatio(announcement) {
 
     return ((finalPrice - estimatedPrice) / estimatedPrice) * 100;
 }
+
+// TEST
+
+window.testPredefinedFilter = setPredefinedFilter;
+window.testAvailableMethods = getAvailableFilterMethods;

@@ -20,6 +20,23 @@ const CACHE_KEYS = {
 // CHARGEMENT PRINCIPAL
 // --------------------------------------------------
 
+export async function loadAnnouncementsWithMeta(
+    pageType = "visits",
+    options = {}
+) {
+
+    const data = await loadAnnouncements(
+        pageType,
+        options
+    );
+
+    return {
+        data,
+        fingerprint: createDataFingerprint(data)
+    };
+
+}
+
 export async function loadAnnouncements(
     pageType = "visits",
     { forceRefresh = false } = {}
@@ -99,6 +116,24 @@ export async function loadAnnouncements(
 // GESTION DU CACHE
 // --------------------------------------------------
 
+function createDataFingerprint(data) {
+
+    const json = JSON.stringify(data);
+
+    let hash = 2166136261;
+
+    for (let i = 0; i < json.length; i++) {
+
+        hash ^= json.charCodeAt(i);
+
+        hash = Math.imul(hash, 16777619);
+
+    }
+
+    return (hash >>> 0).toString(16);
+
+}
+
 function getCachedData(key) {
 
     try {
@@ -118,7 +153,15 @@ function getCachedData(key) {
             return null;
         }
 
-        return parsed;
+        // Compatibilité avec les anciens caches
+        const fingerprint =
+            parsed.fingerprint ||
+            createDataFingerprint(parsed.data);
+
+        return {
+            ...parsed,
+            fingerprint
+        };
 
     } catch (error) {
 
@@ -131,13 +174,13 @@ function getCachedData(key) {
     }
 }
 
-
 function setCachedData(key, data) {
 
     try {
 
         const cache = {
             timestamp: Date.now(),
+            fingerprint: createDataFingerprint(data),
             data
         };
 
@@ -146,14 +189,20 @@ function setCachedData(key, data) {
             JSON.stringify(cache)
         );
 
+        return cache;
+
     } catch (error) {
 
-        // Le cache reste facultatif :
-        // son échec ne doit pas bloquer l'application.
         console.warn(
             "Impossible d'enregistrer le cache local :",
             error
         );
+
+        return {
+            timestamp: Date.now(),
+            fingerprint: createDataFingerprint(data),
+            data
+        };
     }
 }
 

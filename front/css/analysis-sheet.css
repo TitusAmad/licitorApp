@@ -1038,6 +1038,176 @@
     font-size: 13px;
 }
 
+@media (max-width: 640px) {
+
+    /* Conteneur général */
+    #analysis-sheet-overlay .transactions-table-wrapper {
+        width: 100%;
+        overflow: visible;
+    }
+
+    /* Transformation du tableau */
+    #analysis-sheet-overlay .transactions-table,
+    #analysis-sheet-overlay .transactions-table tbody {
+        display: block;
+        width: 100%;
+    }
+
+    /* Suppression des en-têtes */
+    #analysis-sheet-overlay .transactions-table thead {
+        display: none;
+    }
+
+    /* Chaque transaction devient une carte */
+    #analysis-sheet-overlay .transactions-table tbody tr {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 0 0 16px 0;
+        padding: 14px;
+        box-sizing: border-box;
+
+        border: 1px solid #e5e7eb;
+        border-radius: 12px;
+        background: #fff;
+
+        cursor: pointer;
+    }
+
+    /* Chaque cellule devient une ligne indépendante */
+    #analysis-sheet-overlay .transactions-table tbody td {
+        display: grid;
+
+        /* Largeur du libellé / largeur de la valeur */
+        grid-template-columns: minmax(105px, 38%) minmax(0, 1fr);
+
+        align-items: start;
+        gap: 12px;
+
+        width: 100% !important;
+        min-width: 0;
+        max-width: none;
+
+        height: auto;
+        min-height: 38px;
+        max-height: none;
+
+        margin: 0;
+        padding: 9px 0;
+
+        box-sizing: border-box;
+
+        border: none !important;
+        border-bottom: 1px solid #edf0f2 !important;
+
+        white-space: normal;
+        overflow: visible;
+        text-overflow: clip;
+
+        text-align: right;
+    }
+
+    /* =========================================
+    CAS PARTICULIER : CELLULE BIEN IMMOBILIER
+    ========================================= */
+
+    #analysis-sheet-overlay .transactions-table tbody td:has(.transaction-property) {
+        display: block !important;
+        width: 100% !important;
+        padding: 9px 0;
+        text-align: left;
+    }
+
+    /* Masquer le libellé "Bien" dans cette cellule */
+
+    #analysis-sheet-overlay .transactions-table tbody td:has(.transaction-property)::before {
+        display: none;
+        content: none;
+    }
+
+    /* Conteneur description + adresse */
+
+    #analysis-sheet-overlay .transactions-table tbody td .transaction-property {
+        display: flex !important;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 5px;
+
+        width: 100%;
+        min-width: 0;
+        max-width: none;
+    }
+
+    /* Description */
+
+    #analysis-sheet-overlay .transactions-table tbody td .transaction-property strong {
+        display: block;
+        width: 100%;
+        min-width: 0;
+
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 1.4;
+
+        overflow-wrap: anywhere;
+    }
+
+    /* Adresse */
+
+    #analysis-sheet-overlay .transactions-table tbody td .transaction-property span {
+        display: block;
+        width: 100%;
+        min-width: 0;
+
+        font-size: 12px;
+        color: #6b7280;
+        line-height: 1.4;
+
+        overflow-wrap: anywhere;
+    }
+
+    /* Suppression du dernier séparateur */
+    #analysis-sheet-overlay .transactions-table tbody td:last-child {
+        border-bottom: none !important;
+    }
+
+    /* Libellés */
+    #analysis-sheet-overlay .transactions-table tbody td::before {
+        content: attr(data-label);
+
+        display: block;
+        min-width: 0;
+
+        font-size: 12px;
+        font-weight: 600;
+        color: #6b7280;
+
+        text-align: left;
+        white-space: normal;
+        overflow-wrap: normal;
+    }
+
+    /* Neutralisation style desktop */
+    #analysis-sheet-overlay .transaction-property strong,
+    #analysis-sheet-overlay .transaction-property span,
+    #analysis-sheet-overlay .transaction-final-price,
+    #analysis-sheet-overlay .transaction-price-m2,
+    #analysis-sheet-overlay .transaction-estimated-price {
+
+        display: block;
+        min-width: 0;
+        max-width: 100%;
+
+        white-space: normal;
+        overflow: visible;
+        text-overflow: clip;
+
+        overflow-wrap: anywhere;
+        word-break: normal;
+    }
+
+}
 
 /* ==================================================
    SECTION 05 - CARTE
