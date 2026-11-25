@@ -107,6 +107,18 @@ let analysisSurface = getStoredNumber(
     [-1, 5, 10, 15, 20, 30]
 );
 
+// DATE VENTE
+
+const ANALYSIS_DATEVENTE_KEY = "analysis_surface_min";
+const DEFAULT_ANALYSIS_DATEVENTE = 3;
+let analysisdateVente = getStoredNumber(
+    ANALYSIS_DATEVENTE_KEY,
+    DEFAULT_ANALYSIS_DATEVENTE,
+    [-1, 1, 2, 3, 5, 10]
+);
+
+
+
 // --------------------------------------------------
 // CONFIGURATION DE LA PAGE
 // --------------------------------------------------
@@ -2251,6 +2263,29 @@ function openAnalysisSelector(announcement) {
 
                 </div>
 
+                <div class="analysis-modal-dateVente">
+
+                    <label
+                        for="analysis-dateVente"
+                        class="analysis-label"
+                    >
+                        Date de vente
+                    </label>
+
+                    <select
+                        id="analysis-dateVente"
+                        class="analysis-select"
+                    >
+                        <option value="-1">Toutes les ventes</option>
+                        <option value="1">1 an</option>
+                        <option value="2">2 ans</option>
+                        <option value="3">3 ans</option>
+                        <option value="5">5 ans</option>
+                        <option value="10">10 ans</option>
+                    </select>
+
+                </div>
+
             </div>
 
             <div class="analysis-modal-actions">
@@ -2294,6 +2329,12 @@ function openAnalysisSelector(announcement) {
     );
 
     surfaceSelect.value = String(analysisSurface);
+
+    const dateVenteSelect = overlay.querySelector(
+        "#analysis-dateVente"
+    );
+
+    dateVenteSelect.value = String(analysisdateVente);
 
     // Fermeture
     function closeModal() {
@@ -2392,10 +2433,16 @@ function openAnalysisSelector(announcement) {
 
         // CODE DE TCHECK DES VALEURS DE SURFACE 
 
+        const surface = toNumber(announcement.surface_m2);
         const surfaceAdj = Number(surfaceSelect.value);
 
         if (![-1, 5, 10, 15, 20, 30].includes(surfaceAdj)) {
             return;
+        }
+
+        if (!surface > 0) {
+            alert("Le bien selectionné n'a aucune surface connue ! Impossible de choisir une plage de surface.")
+            return
         }
 
         // Mémoriser l'ajustement de surface
@@ -2406,7 +2453,21 @@ function openAnalysisSelector(announcement) {
             String(surfaceAdj)
         );
 
-        const surface = toNumber(announcement.surface_m2);
+        // TCHECK DES VALEURS DE DATE VENTE
+
+        const dateVenteAdj = Number(dateVenteSelect.value);
+
+        if (![-1, 1, 2, 3, 5, 10].includes(surfaceAdj)) {
+            return;
+        }
+
+        // Mémoriser l'ajustement de surface
+        analysisdateVente = dateVenteAdj;
+
+        sessionStorage.setItem(
+            ANALYSIS_DATEVENTE_KEY,
+            String(dateVenteAdj)
+        );
 
         // État de chargement
         confirmBtn.disabled = true;
@@ -2419,7 +2480,8 @@ function openAnalysisSelector(announcement) {
                 longitude,
                 radiusKm: radius,
                 surfaceBien: surface,
-                surfaceAdj: surfaceAdj
+                surfaceAdj,
+                dateVenteAdj
             });
 
             const comparableSalesCount = Math.max(
@@ -2449,7 +2511,11 @@ function openAnalysisSelector(announcement) {
 
                     radiusKm: radius,
 
-                    announcementId: announcement.id,
+                    surfaceAdj,
+
+                    dateVenteAdj,
+
+                    announcement
 
                 });
 

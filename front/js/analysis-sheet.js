@@ -85,22 +85,29 @@ export function openAnalysisSheet(
         pageType
     };
 
-    // Sous-titre
-    const subtitle = document.getElementById(
-        "analysis-sheet-subtitle"
-    );
+    // En tete dynamique
 
-    subtitle.textContent = [
-        announcement.ville || "Ville non renseignée",
-        `${analysis.metadata.radiusKm} km de rayon`,
-        `${analysis.metadata.totalTransactions} transactions`
-    ].join(" · ");
+    const commLabel = announcement.ville || "ns"
+    const adrLabel = announcement.adresse || "ns"
 
-    const address = document.getElementById(
-        "analysis-sheet-address"
-    );
+    document.getElementById("analysis-sheet-comm").textContent =
+        commLabel;
 
-    address.textContent = announcement.adresse || "Adresse non renseignée";
+    document.getElementById("analysis-sheet-address").textContent =
+        adrLabel;
+
+    document.getElementById("analysis-sheet-radius").textContent =
+        `${analysis.metadata.radiusKm} km`;
+
+    document.getElementById("analysis-sheet-surface").textContent =
+        analysis.metadata.surfaceParamsLabel;
+
+    document.getElementById("analysis-sheet-period").textContent =
+        `${analysis.metadata.dateVenteParamsLabel}`;
+
+    document.getElementById("analysis-sheet-transactions").textContent =
+        analysis.metadata.totalTransactions;
+
 
     // Génération du contenu
     generateAnalysisSheet({

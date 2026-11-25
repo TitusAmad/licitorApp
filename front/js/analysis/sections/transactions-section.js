@@ -121,22 +121,22 @@ function getPositionLabel(category) {
 function renderPosition(transaction) {
 
     const label = getPositionLabel(
-        transaction.ratioCategory
+        transaction.compRatioCategory
     );
 
     if (!label) return "";
 
-    const ratio = transaction.saleRatio === null ||
-                transaction.saleRatio === undefined
+    const ratio = transaction.compRatio === null ||
+                transaction.compRatio === undefined
         ? NaN
-        : Number(transaction.saleRatio);
+        : Number(transaction.compRatio);
 
     const ratioLabel = Number.isFinite(ratio)
         ? ` (${ratio > 0 ? "+" : ""}${ratio.toFixed(1).replace(".", ",")} %)`
         : "";
 
     return `
-        <span class="transaction-position transaction-position-${transaction.ratioCategory}">
+        <span class="transaction-position transaction-position-${transaction.compRatioCategory}">
             ${label}${ratioLabel}
         </span>
     `;
@@ -147,7 +147,7 @@ function renderPosition(transaction) {
 /**
  * Génère une ligne du tableau.
  */
-function renderTransactionRow(transaction) {
+function renderTransactionRow(transaction, initId) {
 
     const url = typeof transaction.url === "string"
         ? transaction.url
@@ -197,13 +197,16 @@ function renderTransactionRow(transaction) {
 
     const priceM2 = transaction.priceM2;
 
-    const estimatedPriceM2 = transaction.estimatedPriceM2;
-
     const position = renderPosition(transaction);
+
+    const initLineBl = (transaction.id === initId);
 
     return `
         <tr
-            class="transaction-row ${safeUrl ? "transaction-row-clickable" : ""}"
+            class="transaction-row 
+                    ${safeUrl ? "transaction-row-clickable" : ""}
+                    ${initLineBl ? "is-origin" : ""}
+                    "
             ${safeUrl ? `data-url="${escapeHTML(safeUrl)}" tabindex="0" role="link" aria-label="Consulter l'annonce ${escapeHTML(transaction.id)}"` : ""}
         >
 
@@ -215,7 +218,10 @@ function renderTransactionRow(transaction) {
 
             <td class="transaction-property">
 
-                <strong>${type}</strong>
+                <strong>
+                    ${type}
+                    ${initLineBl ? '<span class="origin-badge">Bien analysé</span>' : ''}
+                </strong>
 
                 <span title="${address || "Adresse non renseignée"}">
                     ${address || "Adresse non renseignée"}
@@ -241,8 +247,8 @@ function renderTransactionRow(transaction) {
                 ${formatTransactionPriceM2(priceM2)}
             </td>
 
-            <td class="transaction-estimated-price">
-                ${formatTransactionPriceM2(estimatedPriceM2)}
+            <td class="transaction-reference-market">
+                ${formatTransactionPriceM2(transaction.compRef)}
             </td>
 
         </tr>
@@ -254,7 +260,7 @@ function renderTransactionRow(transaction) {
 /**
  * Génère la section 04 - Dernières transactions.
  */
-export function renderTransactionsSection(transactions) {
+export function renderTransactionsSection(transactions, initId) {
 
     const container = document.getElementById(
         "analysis-transactions-content"
@@ -317,7 +323,10 @@ export function renderTransactionsSection(transactions) {
                     </thead>
 
                     <tbody>
-                        ${transactions.map(renderTransactionRow).join("")}
+                        ${transactions.map(transaction =>
+                            renderTransactionRow(transaction, initId)
+                        ).join("")
+                        }
                     </tbody>
 
                 </table>

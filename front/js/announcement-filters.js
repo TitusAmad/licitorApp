@@ -64,7 +64,7 @@ const FILTER_METHODS = {
         filter: (announcement, context) =>
             isDateInRange(
                 announcement.visite_dt,
-                context.todayStart,
+                context.tomorrowStart,
                 context.nextTomorrowStart
             )
     },

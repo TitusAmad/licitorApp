@@ -37,35 +37,8 @@ function prepareTransaction(sale) {
             ? estimatedPriceM2 * surface
             : null;
 
-    // Ratio par rapport à l'estimation
-    let saleRatio = null;
-
-    if (
-        finalPrice !== null &&
-        estimatedTotal !== null &&
-        estimatedTotal > 0
-    ) {
-
-        saleRatio =
-            ((finalPrice - estimatedTotal) /
-                estimatedTotal) * 100;
-
-    }
-
-    // Classification du ratio
-    let ratioCategory = "unavailable";
-
-    if (saleRatio !== null) {
-
-        if (saleRatio < -5) {
-            ratioCategory = "below";
-        } else if (saleRatio > 5) {
-            ratioCategory = "above";
-        } else {
-            ratioCategory = "near";
-        }
-
-    }
+    const ratioOut =
+        refRatio(finalPrice, estimatedTotal);
 
     return {
 
@@ -80,9 +53,9 @@ function prepareTransaction(sale) {
 
         estimatedTotal,
 
-        saleRatio,
+        estRatio: ratioOut.ratio,
 
-        ratioCategory,
+        estRatioCategory: ratioOut.category,
 
         saleDate: date,
 
@@ -118,6 +91,10 @@ function getPeriodStatistics(
         {
             key: "12months",
             months: 12
+        },
+        {
+            key: "24months",
+            months: 24
         }
     ];
 
@@ -181,6 +158,10 @@ function getPeriodStatistics(
     result["12months"].additionalTransactions =
         periodCounts["12months"] -
         periodCounts["6months"];
+
+    result["24months"].additionalTransactions =
+        periodCounts["24months"] -
+        periodCounts["12months"];
 
 
     // Historique complet
@@ -267,6 +248,40 @@ function prepareMonthlyEvolution(transactions) {
         );
 }
 
+function enrichWithStatistics(radius, market, statistics) {
+
+    return {
+        radius: radius.map(transaction => {
+            const ratioOut = refRatio(
+                transaction.priceM2,
+                statistics.all.median
+            );
+
+            return {
+                ...transaction,
+                compRatio: ratioOut.ratio,
+                compRatioCategory: ratioOut.category,
+                compRef: ratioOut.ref
+            };
+        }),
+
+        market: market.map(transaction => {
+            const ratioOut = refRatio(
+                transaction.priceM2,
+                statistics.all.median
+            );
+
+            return {
+                ...transaction,
+                compRatio: ratioOut.ratio,
+                compRatioCategory: ratioOut.category,
+                compRef: ratioOut.ref
+            };
+        })
+    };
+}
+
+
 // --------------------------------------------------
 // PRÉPARATION COMPLÈTE DE L'ANALYSE
 // --------------------------------------------------
@@ -276,12 +291,12 @@ export function prepareNearbySalesAnalysis({
     latitude,
     longitude,
     radiusKm,
-    announcementId,
+    surfaceAdj,
+    dateVenteAdj,
+    announcement,
     referenceDate = new Date()
 }) {
 
-    // ADAPTER: id du bien initialement analysé ne doit pas exister dans la liste des ventes à proximité !!
-    // XXXX
 
     // 1. Normalisation
     const transactions = sales
@@ -302,12 +317,12 @@ export function prepareNearbySalesAnalysis({
         );
 
     // Transactions conservées après normalisation et filtrage
-    const radiusTransactions = [...transactions];
+    let radiusTransactions = [...transactions];
 
     // Transactions utilisées pour qualifier le marché
-    const marketTransactions = radiusTransactions.filter(
+    let marketTransactions = radiusTransactions.filter(
         transaction =>
-            String(transaction.id) !== String(announcementId)
+            String(transaction.id) !== String(announcement.announcementId)
     );
 
     // 2. Statistiques par période
@@ -315,6 +330,16 @@ export function prepareNearbySalesAnalysis({
         marketTransactions,
         referenceDate
     );
+
+    // 2 Bis. Comparaison Bien & Statistiques Historiques
+    const enriched = enrichWithStatistics(
+        radiusTransactions,
+        marketTransactions,
+        statistics
+    );
+
+    radiusTransactions = enriched.radius;
+    marketTransactions = enriched.market;
 
     // 3. Évolution mensuelle
     const monthlyEvolution =
@@ -350,6 +375,7 @@ export function prepareNearbySalesAnalysis({
     };
 
     // 6. Métadonnées
+
     const firstSale = marketTransactions.length
         ? marketTransactions[marketTransactions.length - 1].saleDate
         : null;
@@ -357,6 +383,22 @@ export function prepareNearbySalesAnalysis({
     const lastSale = marketTransactions.length
         ? marketTransactions[0].saleDate
         : null;
+
+    
+    const surfaceBien = announcement.surface_m2
+    let surfaceParamsLabel = "Toutes"
+
+    if (surfaceAdj > 0 && surfaceBien > 0) {
+        let minSurface = Math.floor(Math.max(0, surfaceBien - surfaceAdj));
+        let maxSurface = Math.ceil(surfaceBien + surfaceAdj)
+        surfaceParamsLabel = `${minSurface}-${maxSurface} m2`
+    }
+
+    const dateVenteParamsLabel = dateVenteAdj <= 0
+        ? "Toutes"
+        : dateVenteAdj == 1
+            ? "1 an"
+            : `${dateVenteAdj} ans`;
 
     // 6. Métadonnées
     return {
@@ -368,6 +410,14 @@ export function prepareNearbySalesAnalysis({
             longitude: Number(longitude),
 
             radiusKm: Number(radiusKm),
+
+            surfaceAdj,
+
+            dateVenteAdj,
+
+            surfaceParamsLabel,
+
+            dateVenteParamsLabel,
 
             analysisDate: referenceDate.toISOString(),
 
@@ -488,4 +538,43 @@ function calculateStatistics(transactions) {
     };
 }
 
+function refRatio(price, ref) {
+
+    // Ratio par rapport à l'estimation
+    let saleRatio = null;
+
+    if (
+        price !== null &&
+        ref !== null &&
+        ref > 0
+    ) {
+
+        saleRatio =
+            ((price - ref) /
+                ref) * 100;
+
+    }
+
+    // Classification du ratio
+    let ratioCategory = "unavailable";
+
+    if (saleRatio !== null) {
+
+        if (saleRatio < -5) {
+            ratioCategory = "below";
+        } else if (saleRatio > 5) {
+            ratioCategory = "above";
+        } else {
+            ratioCategory = "near";
+        }
+
+    }
+
+    return {
+        ratio: saleRatio,
+        category: ratioCategory,
+        ref
+    };
+
+}
 

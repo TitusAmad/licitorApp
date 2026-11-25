@@ -257,7 +257,8 @@ export async function loadNearbySales({
     longitude,
     radiusKm,
     surfaceBien,
-    surfaceAdj
+    surfaceAdj,
+    dateVenteAdj
 }) {
 
     const lat = Number(latitude);
@@ -266,13 +267,27 @@ export async function loadNearbySales({
 
     const surface = Number(surfaceBien);
     const adjustedSurface = Number(surfaceAdj);
+    const adjustedDateVente = Number(dateVenteAdj);
     
     let minSurface = null
     let maxSurface = null
+    let minDateVente = null
 
     if (adjustedSurface > 0 && surface > 0) {
         minSurface = Math.floor(Math.max(0, surface - adjustedSurface));
         maxSurface = Math.ceil(surface + adjustedSurface)
+    }
+
+    if (adjustedDateVente > 0) {
+        const date = new Date();
+        date.setFullYear(date.getFullYear() - adjustedDateVente);
+        date.setHours(0, 0, 0, 0);
+
+        minDateVente = date.getFullYear() + '-' +
+            String(date.getMonth() + 1).padStart(2, '0') + '-' +
+            String(date.getDate()).padStart(2, '0') + ' 00:00:00';
+    } else {
+        minDateVente = null;
     }
 
     // Vérification des paramètres
@@ -298,6 +313,7 @@ export async function loadNearbySales({
         longitude: lng,
         radiusKm: radius,
         SurfaceAdjusted: adjustedSurface,
+        DateVenteAdjusted: adjustedDateVente
     });
 
     const { data, error } = await supabase.rpc(
@@ -307,7 +323,8 @@ export async function loadNearbySales({
             p_longitude: lng,
             p_radius_km: radius,
             p_surface_min: minSurface,
-            p_surface_max: maxSurface
+            p_surface_max: maxSurface,
+            p_dt_vente_min: minDateVente
         }
     );
 
@@ -323,19 +340,9 @@ export async function loadNearbySales({
     const normalizedData = data.map(sale => ({
         ...normalizeSale(sale),
 
-        distance_m: Number(sale.distance_m)
-    }));
+        distance_m: Number(sale.distance_m),
 
-    if (minSurface !== null && maxSurface !== null) {
-        console.log(
-            `${normalizedData.length} transactions trouvées dans un rayon de ${radius} km avec une surface entre ${minSurface} m² et ${maxSurface} m²`
-        );
-    }
-    else {
-        console.log(
-            `${normalizedData.length} transactions trouvées dans un rayon de ${radius} km`
-        );
-    }
+    }));
 
     return normalizedData;
 }

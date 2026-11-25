@@ -197,7 +197,10 @@ export function renderMarketSection(metadata, statistics) {
     const periodsHTML = [
         renderPeriodRow("3 mois", statistics["3months"]),
         renderPeriodRow("6 mois", statistics["6months"]),
-        renderPeriodRow("12 mois", statistics["12months"])
+        renderPeriodRow("12 mois", statistics["12months"]),
+        ...((metadata.dateVenteAdj != 1) ? [
+            renderPeriodRow("24 mois", statistics["24months"])
+        ] : [])
     ].join("");
 
 

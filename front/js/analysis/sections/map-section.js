@@ -212,7 +212,7 @@ function renderTransactionPopup(transaction) {
         near: "Proche du marché",
         above: "Au-dessus du marché",
         unavailable: "Positionnement indisponible"
-    }[transaction.ratioCategory] ?? "Positionnement indisponible";
+    }[transaction.compRatioCategory] ?? "Positionnement indisponible";
 
     return `
 
@@ -291,9 +291,9 @@ function renderPropertyPopup(announcement) {
                 BIEN ANALYSÉ
             </div>
 
-            <div class="analysis-map-popup-type">
+            <a class="analysis-map-popup-type" href="${escapeHTML(announcement.url)}" target="_blank" rel="noopener noreferrer">
                 ${escapeHTML(type)}
-            </div>
+            </a>
 
             <div class="analysis-map-popup-address">
                 ${escapeHTML(address)}
@@ -546,7 +546,7 @@ export function renderMapSection(announcement, radiusTransactions) {
             transaction.mapCoordinates,
             {
                 icon: createTransactionIcon(
-                    transaction.ratioCategory
+                    transaction.compRatioCategory
                 )
             }
         );

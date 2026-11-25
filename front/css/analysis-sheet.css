@@ -108,12 +108,36 @@
     letter-spacing: -0.5px;
 }
 
-#analysis-sheet-overlay .analysis-sheet-subtitle {
-    margin-top: 5px;
-
-    color: var(--as-text-secondary);
-    font-size: 13px;
+.analysis-sheet-parameters, .analysis-sheet-zone {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
 }
+
+.analysis-sheet-parameter {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 6px 12px;
+    background: #f3f5f7;
+    border: 1px solid #e5e8eb;
+    border-radius: 6px;
+    font-size: 12px;
+    color: #495463;
+    white-space: nowrap;
+}
+
+.analysis-sheet-parameter .parameter-label {
+    color: #7b8491;
+}
+
+.analysis-sheet-parameter strong {
+    color: #303945;
+    font-weight: 600;
+}
+
 
 #analysis-sheet-overlay .analysis-sheet-close {
     display: flex;
@@ -922,6 +946,26 @@
 #analysis-sheet-overlay .transaction-row-clickable:focus-visible {
     outline: 2px solid var(--as-primary);
     outline-offset: -2px;
+}
+
+/* ORIGINE ROX */
+
+.transaction-row.is-origin {
+    background: #eff6ff;
+    border-left: 3px solid #3b82f6;
+}
+
+.origin-badge {
+    display: inline-block;
+    margin-left: 7px;
+    padding: 3px 7px;
+    border-radius: 4px;
+    background: #dbeafe;
+    color: #1d4ed8;
+    font-size: 10px;
+    font-weight: 600;
+    vertical-align: middle;
+    white-space: nowrap;
 }
 
 

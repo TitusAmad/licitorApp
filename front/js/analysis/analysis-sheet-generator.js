@@ -49,7 +49,8 @@ export function generateAnalysisSheet({
     );
 
     renderTransactionsSection(
-        nearbyAnalysis.latestTransactions
+        nearbyAnalysis.latestTransactions,
+        announcement.id
     );
 
     renderMapSection(
