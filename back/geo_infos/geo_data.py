@@ -215,7 +215,6 @@ DEPARTEMENTS = {
     
     }
 
-ANOM_THRESH = 300
 
 def normalize_string(text):
     """
@@ -284,7 +283,11 @@ def get_dep_from_trib(tribunal_name):
     if "(" in tribunal_name:
         raw = tribunal_name.split("(")[1].replace(")", "")
     else:
-        return ""
+        t_norm = normalize_string(tribunal_name)
+        if "paris" in t_norm:
+            return "paris"
+        else:
+            return None
     
     clean_dep = normalize_string(raw)
     
@@ -295,23 +298,36 @@ def tribunal_anom(dep_bien, tribunal_vente):
     #EXTRAIRE DEPARTEMENT DU NOM DU TRIBUNAL
     trib_dep = get_dep_from_trib(tribunal_vente)
     
-    if trib_dep == "":
-        return False
-    
     clean_dep = normalize_string(dep_bien)
     
-    valid_keys = (trib_dep in DEPARTEMENTS) and (clean_dep in DEPARTEMENTS)
+    return is_anom_trib(trib_dep, clean_dep)
+
+
+def is_anom_trib(trib_dep, bien_dep, method = "dep", anom_thresh = 300):
     
-    if not valid_keys:
-        return valid_keys
+    if trib_dep is None or bien_dep is None:
+        
+        return False
     
-    c1 = DEPARTEMENTS[trib_dep]
-    c2 = DEPARTEMENTS[clean_dep]
-    
-    distance = compute_distance(c1, c2)
-    
-    return (distance >= ANOM_THRESH)
-    
+    else:
+        if method == "dep":
+        
+            return (trib_dep != bien_dep)
+        
+        elif method == "dist":
+        
+            valid_keys = (trib_dep in DEPARTEMENTS) and (bien_dep in DEPARTEMENTS)
+            
+            if not valid_keys:
+                return valid_keys
+            
+            c1 = DEPARTEMENTS[trib_dep]
+            c2 = DEPARTEMENTS[bien_dep]
+            
+            distance = compute_distance(c1, c2)
+            
+            return (distance >= anom_thresh)
+        
 
 def reverse_geocode(latitude, longitude):
     """
