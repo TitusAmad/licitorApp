@@ -2457,7 +2457,8 @@ function openAnalysisSelector(announcement) {
 
         const dateVenteAdj = Number(dateVenteSelect.value);
 
-        if (![-1, 1, 2, 3, 5, 10].includes(surfaceAdj)) {
+        if (![-1, 1, 2, 3, 5, 10].includes(dateVenteAdj)) {
+            alert("Période selectionnée non disponible !")
             return;
         }
 
