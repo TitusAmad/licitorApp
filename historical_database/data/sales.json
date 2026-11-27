@@ -1,4 +1,287 @@
 {
+  "110317": {
+    "titre": "Annonce n°110317 : un appartement à Thiais (Val-de-Marne), mise à prix : 32 000 €",
+    "date_publication": "2026-10-19T00:00:00+02:00",
+    "tribunal": "Tribunal Judiciaire de Créteil (Val de Marne)",
+    "type_vente": "Vente aux enchères publiques",
+    "dt_vente": "2026-11-26 09:30",
+    "dt_vente_limit": "2026-12-06",
+    "sell_state": 1,
+    "avocats": [
+      "Maître Olivier Tournillon, membre de la SELARL Modéré Avocats, Avocat"
+    ],
+    "telephones": [
+      "01 43 75 31 55"
+    ],
+    "documents": [],
+    "url": "https://www.licitor.com/annonce/11/03/17/vente-aux-encheres/un-appartement/thiais/val-de-marne/110317.html",
+    "id": "110317",
+    "mise_a_prix": 32000,
+    "est_price": null,
+    "fac_baisse": null,
+    "prix_final": 63000,
+    "ville": "Thiais",
+    "adresse": "13, allée du Perruchet",
+    "coords": {
+      "latitude": 48.7595711,
+      "longitude": 2.3892241
+    },
+    "trib_anom": false,
+    "visite": null,
+    "visite_dt": null,
+    "visite_state": -1,
+    "type": [
+      "Un appartement",
+      "Une cave",
+      "Un emplacement de stationnement"
+    ],
+    "description": [
+      "Un appartement de 42,32 m² , bâtiment E, escalier 13, au 1er étage, de deux pièces principales",
+      "Une cave",
+      "Un emplacement de stationnement Occupé"
+    ],
+    "occupation": "Occupé",
+    "surface_m2": 42.32,
+    "stats_bien": {
+      "min": 2734,
+      "avg": 3201,
+      "max": 3948
+    },
+    "est_price_m2": 3201,
+    "code_insee": "94073",
+    "code_postal": 94320,
+    "code_departement": "94",
+    "code_region": 11.0,
+    "nom_departement": "Val-de-Marne",
+    "nom_region": "Île-de-France"
+  },
+  "110318": {
+    "titre": "Annonce n°110318 : un appartement à Villeneuve-le-Roi (Val-de-Marne), mise à prix : 12 000 €",
+    "date_publication": "2026-10-19T00:00:00+02:00",
+    "tribunal": "Tribunal Judiciaire de Créteil (Val de Marne)",
+    "type_vente": "Vente aux enchères publiques",
+    "dt_vente": "2026-11-26 09:30",
+    "dt_vente_limit": "2026-12-06",
+    "sell_state": 1,
+    "avocats": [
+      "Maître Loren Maquin-Joffre, membre de la SELARL A.K.P.R., Avocat"
+    ],
+    "telephones": [
+      "01 43 74 74 94"
+    ],
+    "documents": [
+      {
+        "type": "Cahier des conditions de vente",
+        "url": "https://www.licitor.com/data/pub/media/annonce/11/03/18/110318.000.001.7ef518569be5.pdf"
+      },
+      {
+        "type": "PV descriptif",
+        "url": "https://www.licitor.com/data/pub/media/annonce/11/03/18/110318.000.002.1cb77d7eff89.pdf"
+      },
+      {
+        "type": "Attestation de superficie",
+        "url": "https://www.licitor.com/data/pub/media/annonce/11/03/18/110318.000.003.cfdd752632cb.pdf"
+      }
+    ],
+    "url": "https://www.licitor.com/annonce/11/03/18/vente-aux-encheres/un-appartement/villeneuve-le-roi/val-de-marne/110318.html",
+    "id": "110318",
+    "mise_a_prix": 12000,
+    "est_price": null,
+    "fac_baisse": null,
+    "prix_final": 71000,
+    "ville": "Villeneuve-le-Roi",
+    "adresse": "26, rue Amédée Simon",
+    "coords": {
+      "latitude": 48.7286797,
+      "longitude": 2.4395022
+    },
+    "trib_anom": false,
+    "visite": null,
+    "visite_dt": null,
+    "visite_state": -1,
+    "type": [
+      "Un appartement",
+      "Une cave"
+    ],
+    "description": [
+      "Un appartement de 31,86 m² , au 4ème étage porte gauche, comprenant : entrée, séjour, chambre avec douche, cuisine et wc Consommation énergétique : G GES : C",
+      "Une cave Libre"
+    ],
+    "occupation": "Libre",
+    "surface_m2": 31.86,
+    "stats_bien": {
+      "min": 2110,
+      "avg": 2519,
+      "max": 3203
+    },
+    "est_price_m2": 2519,
+    "code_insee": "94077",
+    "code_postal": 94290,
+    "code_departement": "94",
+    "code_region": 11.0,
+    "nom_departement": "Val-de-Marne",
+    "nom_region": "Île-de-France"
+  },
+  "110281": {
+    "titre": "Annonce n°110281 : un appartement à Palaiseau (Essonne), mise à prix : 70 000 €",
+    "date_publication": "2026-10-14T00:00:00+02:00",
+    "tribunal": "Tribunal Judiciaire d'Évry-Courcouronnes (Essonne)",
+    "type_vente": "Vente aux enchères publiques",
+    "dt_vente": "2026-11-25 10:00",
+    "dt_vente_limit": "2026-12-05",
+    "sell_state": 1,
+    "avocats": [
+      "Maître Charlotte Guittard, membre de la SCP Damoiseau et Associés, Avocat"
+    ],
+    "telephones": [
+      "01 60 78 23 81"
+    ],
+    "documents": [],
+    "url": "https://www.licitor.com/annonce/11/02/81/vente-aux-encheres/un-appartement/palaiseau/essonne/110281.html",
+    "id": "110281",
+    "mise_a_prix": 70000,
+    "est_price": null,
+    "fac_baisse": null,
+    "prix_final": 171000,
+    "ville": "Palaiseau",
+    "adresse": "1, allée du Clos Tonnerre",
+    "coords": {
+      "latitude": 48.7130775,
+      "longitude": 2.2592363
+    },
+    "trib_anom": false,
+    "visite": null,
+    "visite_dt": null,
+    "visite_state": -1,
+    "type": [
+      "Un appartement",
+      "Un emplacement pour véhicule automobile"
+    ],
+    "description": [
+      "Un appartement de 56,38 m² , bâtiment D, au rez-de-chaussée, de trois pièces principales, comprenant : entrée avec placard, wc, séjour, cuisine, deux chambres, salle de bains Jouissance exclusive d' une terrasse et d' une jardinière incluse dans ce lot",
+      "Un emplacement pour véhicule automobile groupe de bâtiments C et D (parking Q), escalier D, au sous-sol Les biens sont, semble-t-il, inoccupés"
+    ],
+    "occupation": "Libre",
+    "surface_m2": 56.38,
+    "stats_bien": {
+      "min": 2670,
+      "avg": 3177,
+      "max": 3983
+    },
+    "est_price_m2": 3177,
+    "code_insee": "91477",
+    "code_postal": 91120,
+    "code_departement": "91",
+    "code_region": 11.0,
+    "nom_departement": "Essonne",
+    "nom_region": "Île-de-France"
+  },
+  "110338": {
+    "titre": "Annonce n°110338 : un appartement à Mennecy (Essonne), mise à prix : 44 000 €",
+    "date_publication": "2026-10-19T00:00:00+02:00",
+    "tribunal": "Tribunal Judiciaire d'Évry-Courcouronnes (Essonne)",
+    "type_vente": "Vente aux enchères publiques en un seul lot",
+    "dt_vente": "2026-11-25 10:00",
+    "dt_vente_limit": "2026-12-05",
+    "sell_state": 1,
+    "avocats": [
+      "Maître T. Floquet, de la SCP Floquet - Garet - Noachovitch, Avocat associé"
+    ],
+    "telephones": [
+      "01 60 79 39 45"
+    ],
+    "documents": [],
+    "url": "https://www.licitor.com/annonce/11/03/38/vente-aux-encheres/un-appartement/mennecy/essonne/110338.html",
+    "id": "110338",
+    "mise_a_prix": 44000,
+    "est_price": null,
+    "fac_baisse": null,
+    "prix_final": 85000,
+    "ville": "Mennecy",
+    "adresse": "18 et 16, av. Darblay",
+    "coords": {
+      "latitude": 48.5683289,
+      "longitude": 2.4276006
+    },
+    "trib_anom": false,
+    "visite": null,
+    "visite_dt": null,
+    "visite_state": -1,
+    "type": [
+      "Un appartement",
+      "Un emplacement de stationnement pour véhicule automobile"
+    ],
+    "description": [
+      "Un appartement",
+      "Un emplacement de stationnement pour véhicule automobile Correspondant aux lots numéros 41 et 980 du RCP Inoccupés"
+    ],
+    "occupation": "Libre",
+    "surface_m2": null,
+    "stats_bien": {
+      "min": 2715,
+      "avg": 3376,
+      "max": 4426
+    },
+    "est_price_m2": 3376,
+    "code_insee": "91386",
+    "code_postal": 91540,
+    "code_departement": "91",
+    "code_region": 11.0,
+    "nom_departement": "Essonne",
+    "nom_region": "Île-de-France"
+  },
+  "110527": {
+    "titre": "Annonce n°110527 : un appartement à Morsang-sur-Orge (Essonne), mise à prix : 30 000 €",
+    "date_publication": "2026-10-30T00:00:00+01:00",
+    "tribunal": "Tribunal Judiciaire d'Évry-Courcouronnes (Essonne)",
+    "type_vente": "Vente aux enchères publiques",
+    "dt_vente": "2026-11-25 10:00",
+    "dt_vente_limit": "2026-12-05",
+    "sell_state": 1,
+    "avocats": [
+      "Maître Jean-Sébastien Tesler, de la SELARL Ad Litem Juris, Avocat"
+    ],
+    "telephones": [
+      "01 69 06 21 44"
+    ],
+    "documents": [],
+    "url": "https://www.licitor.com/annonce/11/05/27/vente-aux-encheres/un-appartement/morsang-sur-orge/essonne/110527.html",
+    "id": "110527",
+    "mise_a_prix": 30000,
+    "est_price": null,
+    "fac_baisse": null,
+    "prix_final": 88000,
+    "ville": "Morsang-sur-Orge",
+    "adresse": "Résidence Les Hauts du Parc 4, rue André Malraux",
+    "coords": {
+      "latitude": 48.663559,
+      "longitude": 2.3485315
+    },
+    "trib_anom": false,
+    "visite": null,
+    "visite_dt": null,
+    "visite_state": -1,
+    "type": [
+      "Un appartement"
+    ],
+    "description": [
+      "Un appartement de 39,16 m², bâtiment 2, escalier 2, au 2ème étage gauche, comprenant : entrée, séjour avec coin-cuisine, chambre, salle d'eau, wc, balcon Parking Occupé"
+    ],
+    "occupation": "Occupé",
+    "surface_m2": 39.16,
+    "stats_bien": {
+      "min": 2764,
+      "avg": 3317,
+      "max": 4306
+    },
+    "est_price_m2": 3317,
+    "code_insee": "91434",
+    "code_postal": 91390,
+    "code_departement": "91",
+    "code_region": 11.0,
+    "nom_departement": "Essonne",
+    "nom_region": "Île-de-France"
+  },
   "110073": {
     "titre": "Annonce n°110073 : un appartement à Paris 15ème, mise à prix : 250 000 €",
     "date_publication": "2026-09-23T00:00:00+02:00",
@@ -35,7 +318,7 @@
       "latitude": 48.8358231,
       "longitude": 2.2802684
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -45,7 +328,7 @@
     "description": [
       "Un appartement de 54,35 m² , au 5ème étage à gauche, porte 6, comprenant : une pièce principale, cuisine et demi-étage escalier intérieur loggia, dégagement, salle de bains avec wc (Jouissance de la terrasse) Le bien est libre de toute occupation"
     ],
-    "occupation": "libre",
+    "occupation": "Libre",
     "surface_m2": 54.35,
     "stats_bien": {
       "min": 7829,
@@ -104,7 +387,7 @@
       "latitude": 48.8659859,
       "longitude": 2.3066697
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -118,7 +401,7 @@
       "Deux caves au 2ème sous-sol, n°14 et 40",
       "Deux parkings au 1er sous-sol, n°12 et 13 Le bien est occupé"
     ],
-    "occupation": null,
+    "occupation": "Occupé",
     "surface_m2": 155.21,
     "stats_bien": {
       "min": 18131,
@@ -177,7 +460,7 @@
       "latitude": 48.8659859,
       "longitude": 2.3066697
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -187,7 +470,7 @@
     "description": [
       "Un appartement de 17,14 m² (loi Carrez) , dans le bâtiment B, au 1er étage, de deux pièces , comprenant : entrée/cuisine, une chambre, salle de bains avec wc Le bien est libre de toute occupation"
     ],
-    "occupation": "libre",
+    "occupation": "Libre",
     "surface_m2": 17.14,
     "stats_bien": {
       "min": 18131,
@@ -242,7 +525,7 @@
       "latitude": 48.8657074,
       "longitude": 2.3471968
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -309,7 +592,7 @@
       "latitude": 48.9759369,
       "longitude": 2.391716
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -321,7 +604,7 @@
       "Un appartement de 52,73 m² , au 1er étage, comprenant : entrée, wc, cuisine/balcon, salle d'eau, deux chambres, séjour, balcon",
       "Une cave au sous-sol ( Occupé )"
     ],
-    "occupation": null,
+    "occupation": "Occupé",
     "surface_m2": 52.73,
     "stats_bien": {
       "min": 1789,
@@ -329,7 +612,7 @@
       "max": 2503
     },
     "est_price_m2": 2116,
-    "code_insee": null,
+    "code_insee": "95268",
     "code_postal": 95140,
     "code_departement": "95",
     "code_region": 11.0,
@@ -382,7 +665,7 @@
       "latitude": 48.9347572,
       "longitude": 2.5189891
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -392,7 +675,7 @@
     "description": [
       "Un appartement de 75,54 m² , au 3ème étage, 1ère porte gauche, de type 3PA, comprenant : entrée, dégagement, salle de séjour, cuisine, wc, salle de bains, deux chambres, balcon Ce bien est occupé"
     ],
-    "occupation": null,
+    "occupation": "Occupé",
     "surface_m2": 75.54,
     "stats_bien": {
       "min": 1670,
@@ -400,7 +683,7 @@
       "max": 2557
     },
     "est_price_m2": 1930,
-    "code_insee": null,
+    "code_insee": "93071",
     "code_postal": 93270,
     "code_departement": "93",
     "code_region": 11.0,
@@ -435,7 +718,7 @@
       "latitude": 48.8995094,
       "longitude": 2.4731297
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -445,7 +728,7 @@
     "description": [
       "Un appartement de 39,44 m², dans le bâtiment A, au 2ème étage, escalier A, comprenant : pièce principale, terrasse, cuisine ouverte, chambre, salle de bains avec wc Cave, parking Loué"
     ],
-    "occupation": "Loué",
+    "occupation": null,
     "surface_m2": 39.44,
     "stats_bien": {
       "min": 2383,
@@ -453,7 +736,7 @@
       "max": 3720
     },
     "est_price_m2": 2907,
-    "code_insee": null,
+    "code_insee": "93010",
     "code_postal": 93140,
     "code_departement": "93",
     "code_region": 11.0,
@@ -487,7 +770,7 @@
       "latitude": 48.9067116,
       "longitude": 2.5391386
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -497,7 +780,7 @@
     "description": [
       "Un appartement de 68,59 m², au 3ème étage gauche du bâtiment D, escalier F, comprenant : séjour, trois chambres, cuisine, salle d'eau, wc, loggia Cellier, parking Occupé"
     ],
-    "occupation": null,
+    "occupation": "Occupé",
     "surface_m2": 68.59,
     "stats_bien": {
       "min": 1062,
@@ -505,7 +788,7 @@
       "max": 1857
     },
     "est_price_m2": 1418,
-    "code_insee": null,
+    "code_insee": "93014",
     "code_postal": 93390,
     "code_departement": "93",
     "code_region": 11.0,
@@ -537,7 +820,7 @@
       "latitude": 48.9022522,
       "longitude": 2.3995717
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -555,7 +838,7 @@
       "max": 6174
     },
     "est_price_m2": 5117,
-    "code_insee": null,
+    "code_insee": "93055",
     "code_postal": 93500,
     "code_departement": "93",
     "code_region": 11.0,
@@ -587,7 +870,7 @@
       "latitude": 48.8984756,
       "longitude": 2.5472431
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -597,7 +880,7 @@
     "description": [
       "Un appartement de 47,35 m², au 1er étage Parking double Loué"
     ],
-    "occupation": "Loué",
+    "occupation": null,
     "surface_m2": 47.35,
     "stats_bien": {
       "min": 1327,
@@ -605,7 +888,7 @@
       "max": 4520
     },
     "est_price_m2": 2906,
-    "code_insee": null,
+    "code_insee": "93047",
     "code_postal": 93370,
     "code_departement": "93",
     "code_region": 11.0,
@@ -619,7 +902,7 @@
     "type_vente": "Vente aux enchères publiques",
     "dt_vente": "2026-11-12 09:30",
     "dt_vente_limit": "2026-11-22",
-    "sell_state": 1,
+    "sell_state": -1,
     "avocats": [
       "Maître Harry Orhon, de la SELARL Makosso - Orhon, Avocat"
     ],
@@ -639,7 +922,7 @@
       "latitude": 48.7520027,
       "longitude": 2.452328
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -651,13 +934,9 @@
     ],
     "occupation": "Libre",
     "surface_m2": 80.39,
-    "stats_bien": {
-      "min": 1533,
-      "avg": 1928,
-      "max": 2465
-    },
-    "est_price_m2": 1928,
-    "code_insee": null,
+    "stats_bien": null,
+    "est_price_m2": null,
+    "code_insee": "94078",
     "code_postal": 94190,
     "code_departement": "94",
     "code_region": 11.0,
@@ -671,7 +950,7 @@
     "type_vente": "Vente aux enchères publiques",
     "dt_vente": "2026-11-12 09:30",
     "dt_vente_limit": "2026-11-22",
-    "sell_state": 1,
+    "sell_state": -1,
     "avocats": [
       "Maître Patrick Varinot, Avocat",
       "Maître Justin Berest, Avocat"
@@ -693,7 +972,7 @@
       "latitude": 48.7291336,
       "longitude": 2.4472787
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -703,15 +982,11 @@
     "description": [
       "Un appartement de 73,15 m², dans le bâtiment A, au 2ème étage, porte gauche, divisé en deux parties, comprenant : 1ère partie : dégagement, séjour avec coin-cuisine, chambre, salle d'eau avec wc 2ème partie : dégagement, séjour, chambre, cuisine, sanitaire avec wc Cave Occupé"
     ],
-    "occupation": null,
+    "occupation": "Occupé",
     "surface_m2": 73.15,
-    "stats_bien": {
-      "min": 1961,
-      "avg": 2465,
-      "max": 3151
-    },
-    "est_price_m2": 2465,
-    "code_insee": null,
+    "stats_bien": null,
+    "est_price_m2": null,
+    "code_insee": "94078",
     "code_postal": 94190,
     "code_departement": "94",
     "code_region": 11.0,
@@ -725,7 +1000,7 @@
     "type_vente": "Vente aux enchères publiques",
     "dt_vente": "2026-11-12 09:30",
     "dt_vente_limit": "2026-11-22",
-    "sell_state": 1,
+    "sell_state": -1,
     "avocats": [
       "Maître Patrick Varinot, Avocat",
       "Maître Justin Berest, Avocat"
@@ -747,7 +1022,7 @@
       "latitude": 48.7291336,
       "longitude": 2.4472787
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -757,15 +1032,11 @@
     "description": [
       "Un appartement de 22,51 m², bâtiment A, au 4ème étage, porte face gauche, comprenant : entrée, séjour, cuisine, chambre, salle d'eau avec wc Cave Occupé"
     ],
-    "occupation": null,
+    "occupation": "Occupé",
     "surface_m2": 22.51,
-    "stats_bien": {
-      "min": 1961,
-      "avg": 2465,
-      "max": 3151
-    },
-    "est_price_m2": 2465,
-    "code_insee": null,
+    "stats_bien": null,
+    "est_price_m2": null,
+    "code_insee": "94078",
     "code_postal": 94190,
     "code_departement": "94",
     "code_region": 11.0,
@@ -779,7 +1050,7 @@
     "type_vente": "Vente aux enchères publiques en un lot",
     "dt_vente": "2026-11-10 14:00",
     "dt_vente_limit": "2026-11-20",
-    "sell_state": 1,
+    "sell_state": -1,
     "avocats": [
       "SCP Wuilque - Bosqué - Taouil - Baraniack - Dewinne, Avocats"
     ],
@@ -799,7 +1070,7 @@
       "latitude": 48.9306641,
       "longitude": 2.3562677
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -815,18 +1086,14 @@
     ],
     "occupation": null,
     "surface_m2": 69.49,
-    "stats_bien": {
-      "min": 3296,
-      "avg": 4164,
-      "max": 4721
-    },
-    "est_price_m2": 4164,
-    "code_insee": null,
-    "code_postal": 11310,
-    "code_departement": "11",
-    "code_region": 76.0,
-    "nom_departement": "Aude",
-    "nom_region": "Occitanie"
+    "stats_bien": null,
+    "est_price_m2": null,
+    "code_insee": "93066",
+    "code_postal": 93200,
+    "code_departement": "93",
+    "code_region": 11.0,
+    "nom_departement": "Seine-Saint-Denis",
+    "nom_region": "Île-de-France"
   },
   "110127": {
     "titre": "Annonce n°110127 : un appartement à Sevran (Seine-Saint-Denis), mise à prix : 20 000 €",
@@ -835,7 +1102,7 @@
     "type_vente": "Vente aux enchères publiques",
     "dt_vente": "2026-11-10 14:00",
     "dt_vente_limit": "2026-11-20",
-    "sell_state": 1,
+    "sell_state": -1,
     "avocats": [
       "SCP Droux - Baquet, Avocats"
     ],
@@ -855,7 +1122,7 @@
       "latitude": 48.9484291,
       "longitude": 2.5224977
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -867,15 +1134,11 @@
       "Un appartement de 51,46 m² (hors balcon), bâtiment B, au niveau rez-de-chaussée droite, comprenant : séjour en entrant avec cuisine ouverte, chambre, salle de bain, wc et balcon Occupé à la date du P.V.D (18.03.2026)",
       "Un parking"
     ],
-    "occupation": null,
+    "occupation": "Occupé",
     "surface_m2": 51.46,
-    "stats_bien": {
-      "min": 1527,
-      "avg": 1769,
-      "max": 2342
-    },
-    "est_price_m2": 1769,
-    "code_insee": null,
+    "stats_bien": null,
+    "est_price_m2": null,
+    "code_insee": "93071",
     "code_postal": 93270,
     "code_departement": "93",
     "code_region": 11.0,
@@ -889,7 +1152,7 @@
     "type_vente": "Vente aux enchères publiques en un lot",
     "dt_vente": "2026-11-10 14:00",
     "dt_vente_limit": "2026-11-20",
-    "sell_state": 1,
+    "sell_state": -1,
     "avocats": [
       "Maître Myriam Calestroupat, de la SCP Calestroupat - Thomas et Associés, Avocat associé",
       "Maître Martin Isal, Avocat"
@@ -898,20 +1161,7 @@
       "01 48 58 17 06",
       "01 89 38 50 89"
     ],
-    "documents": [
-      {
-        "type": "Cahier des conditions de vente",
-        "url": "https://www.licitor.com/data/pub/media/annonce/11/01/65/110165.000.001.84a2ca587295.pdf"
-      },
-      {
-        "type": "PV descriptif",
-        "url": "https://www.licitor.com/data/pub/media/annonce/11/01/65/110165.000.002.6450c53d9f45.pdf"
-      },
-      {
-        "type": "Diagnostics",
-        "url": "https://www.licitor.com/data/pub/media/annonce/11/01/65/110165.000.003.927f5f102573.pdf"
-      }
-    ],
+    "documents": [],
     "url": "https://www.licitor.com/annonce/11/01/65/vente-aux-encheres/un-appartement/rosny-sous-bois/seine-saint-denis/110165.html",
     "id": "110165",
     "mise_a_prix": 30000,
@@ -924,7 +1174,7 @@
       "latitude": 48.865406,
       "longitude": 2.4864986
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -936,15 +1186,11 @@
       "Un appartement de 67,67 m² , comprenant : entrée, wc, pièce principale avec cuisine, deux chambres, couloir, alcôve, salle de bains, balcon",
       "Un emplacement de stationnement au 2ème sous-sol Occupé"
     ],
-    "occupation": null,
+    "occupation": "Occupé",
     "surface_m2": 67.67,
-    "stats_bien": {
-      "min": 3269,
-      "avg": 3958,
-      "max": 4812
-    },
-    "est_price_m2": 3958,
-    "code_insee": null,
+    "stats_bien": null,
+    "est_price_m2": null,
+    "code_insee": "93064",
     "code_postal": 93110,
     "code_departement": "93",
     "code_region": 11.0,
@@ -958,7 +1204,7 @@
     "type_vente": "Vente aux enchères publiques",
     "dt_vente": "2026-11-10 14:00",
     "dt_vente_limit": "2026-11-20",
-    "sell_state": 1,
+    "sell_state": -1,
     "avocats": [
       "SCP Droux - Baquet, Avocats"
     ],
@@ -978,7 +1224,7 @@
       "latitude": 48.9515762,
       "longitude": 2.510565
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -990,15 +1236,11 @@
       "Un appartement de 62,08 m² (hors balcon), bâtiment B, escalier B, au 5ème étage, porte face droite, comprenant : entrée, séjour, deux chambres, cuisine, couloir, salle de bains, wc et balcon Occupé",
       "Une cave au sous-sol"
     ],
-    "occupation": null,
+    "occupation": "Occupé",
     "surface_m2": 62.08,
-    "stats_bien": {
-      "min": 1824,
-      "avg": 1970,
-      "max": 2288
-    },
-    "est_price_m2": 1970,
-    "code_insee": null,
+    "stats_bien": null,
+    "est_price_m2": null,
+    "code_insee": "93005",
     "code_postal": 93600,
     "code_departement": "93",
     "code_region": 11.0,
@@ -1012,7 +1254,7 @@
     "type_vente": "Vente aux enchères publiques",
     "dt_vente": "2026-11-10 14:00",
     "dt_vente_limit": "2026-11-20",
-    "sell_state": 1,
+    "sell_state": -1,
     "avocats": [
       "Maître Myriam Calestroupat, de la SCP Calestroupat - Thomas et Associés, Avocat associé",
       "Maître Matthieu Roquel, de la SCP Axiojuris - Lexiens, Avocat"
@@ -1033,7 +1275,7 @@
       "latitude": 48.8928185,
       "longitude": 2.5135937
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -1045,14 +1287,10 @@
     ],
     "occupation": null,
     "surface_m2": null,
-    "stats_bien": {
-      "min": 3609,
-      "avg": 4389,
-      "max": 5156
-    },
-    "est_price_m2": 4389,
-    "code_insee": null,
-    "code_postal": 93390,
+    "stats_bien": null,
+    "est_price_m2": null,
+    "code_insee": "93062",
+    "code_postal": 93340,
     "code_departement": "93",
     "code_region": 11.0,
     "nom_departement": "Seine-Saint-Denis",
@@ -1065,7 +1303,7 @@
     "type_vente": "Vente aux enchères publiques",
     "dt_vente": "2026-11-10 14:00",
     "dt_vente_limit": "2026-11-20",
-    "sell_state": 1,
+    "sell_state": -1,
     "avocats": [
       "Maître Alain Cieol, du Cabinet BCMH, Avocat"
     ],
@@ -1085,7 +1323,7 @@
       "latitude": 48.9489174,
       "longitude": 2.3297863
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -1095,19 +1333,66 @@
     "description": [
       "Un appartement de 67,06 m², au 9ème étage du bâitment G, ecalier B, 1ère porte à gauche, comprenant : entrée, séjour, balcon, cuisine, couloir, trois chambres, wc, deux salle d'eau Occupé"
     ],
-    "occupation": null,
+    "occupation": "Occupé",
     "surface_m2": 67.06,
-    "stats_bien": {
-      "min": 2059,
-      "avg": 2478,
-      "max": 3172
-    },
-    "est_price_m2": 2478,
-    "code_insee": null,
+    "stats_bien": null,
+    "est_price_m2": null,
+    "code_insee": "93031",
     "code_postal": 93800,
     "code_departement": "93",
     "code_region": 11.0,
     "nom_departement": "Seine-Saint-Denis",
+    "nom_region": "Île-de-France"
+  },
+  "110136": {
+    "titre": "Annonce n°110136 : un appartement à Chaville (Hauts-de-Seine), mise à prix : 57 000 €",
+    "date_publication": "2026-09-28T00:00:00+02:00",
+    "tribunal": "À l'Annexe du Tribunal Judiciaire de Nanterre (Hauts de Seine)",
+    "type_vente": "Vente aux enchères publiques",
+    "dt_vente": "2026-11-05 14:00",
+    "dt_vente_limit": "2026-11-15",
+    "sell_state": -1,
+    "avocats": [
+      "Maître Florence Fricaudet, membre de la SARL Fricaudet - Larroumet - Salomoni, Avocat",
+      "Maître Dominique Demeyere, Avocat"
+    ],
+    "telephones": [
+      "01 88 61 05 18"
+    ],
+    "documents": [],
+    "url": "https://www.licitor.com/annonce/11/01/36/vente-aux-encheres/un-appartement/chaville/hauts-de-seine/110136.html",
+    "id": "110136",
+    "mise_a_prix": 57000,
+    "est_price": null,
+    "fac_baisse": null,
+    "prix_final": 146000,
+    "ville": "Chaville",
+    "adresse": "67, av. Roger Salengro",
+    "coords": {
+      "latitude": 48.8190041,
+      "longitude": 2.1992314
+    },
+    "trib_anom": false,
+    "visite": null,
+    "visite_dt": null,
+    "visite_state": -1,
+    "type": [
+      "Un appartement",
+      "Une cave"
+    ],
+    "description": [
+      "Un appartement de 42,08 m² , bâtiment A, escalier unique, au 10ème étage, 1ère porte à droite, comprenant : entrée, séjour, chambre, cuisine, salle de bain, wc, dégagement, loggia, placard Inoccupé",
+      "Une cave au rez-de-chaussée"
+    ],
+    "occupation": "Libre",
+    "surface_m2": 42.08,
+    "stats_bien": null,
+    "est_price_m2": null,
+    "code_insee": "92022",
+    "code_postal": 92370,
+    "code_departement": "92",
+    "code_region": 11.0,
+    "nom_departement": "Hauts-de-Seine",
     "nom_region": "Île-de-France"
   },
   "110137": {
@@ -1137,7 +1422,7 @@
       "latitude": 48.8486404,
       "longitude": 2.3264999
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -1147,7 +1432,7 @@
     "description": [
       "Un appartement de 67,52 m² , au 3ème étage avec accès porte droite sur le palier, comprenant : entrée, séjour avec cuisine ouverte, chambre, salle de bain, wc Occupé"
     ],
-    "occupation": null,
+    "occupation": "Occupé",
     "surface_m2": 67.52,
     "stats_bien": null,
     "est_price_m2": null,
@@ -1185,7 +1470,7 @@
       "latitude": 48.9897652,
       "longitude": 1.7147566
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -1199,11 +1484,11 @@
       "Une cave au 2ème sous-sol",
       "Un box au 2ème sous-sol, pour voiture automobile Les lieux sont occupés"
     ],
-    "occupation": null,
+    "occupation": "Occupé",
     "surface_m2": 39.17,
     "stats_bien": null,
     "est_price_m2": null,
-    "code_insee": null,
+    "code_insee": "78361",
     "code_postal": 78200,
     "code_departement": "78",
     "code_region": 11.0,
@@ -1237,7 +1522,7 @@
       "latitude": 49.0033875,
       "longitude": 2.1082377
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -1253,7 +1538,7 @@
     "surface_m2": 69.89,
     "stats_bien": null,
     "est_price_m2": null,
-    "code_insee": null,
+    "code_insee": "78172",
     "code_postal": 78700,
     "code_departement": "78",
     "code_region": 11.0,
@@ -1287,7 +1572,7 @@
       "latitude": 48.9349442,
       "longitude": 2.4214716
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -1299,11 +1584,11 @@
       "Un appartement de 59,64 m² , au 3ème étage, comprenant : salon/cuisine, balcon, wc, salle de bains, deux chambres",
       "Double parking au sous-sol Occupés"
     ],
-    "occupation": null,
+    "occupation": "Occupé",
     "surface_m2": 59.64,
     "stats_bien": null,
     "est_price_m2": null,
-    "code_insee": null,
+    "code_insee": "93013",
     "code_postal": 93350,
     "code_departement": "93",
     "code_region": 11.0,
@@ -1336,7 +1621,7 @@
       "latitude": 48.9128151,
       "longitude": 2.5389566
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -1352,11 +1637,11 @@
       "Un jardin",
       "Un emplacement de stationnement double en sous-sol Occupé"
     ],
-    "occupation": null,
+    "occupation": "Occupé",
     "surface_m2": 65.62,
     "stats_bien": null,
     "est_price_m2": null,
-    "code_insee": null,
+    "code_insee": "93046",
     "code_postal": 93190,
     "code_departement": "93",
     "code_region": 11.0,
@@ -1391,7 +1676,7 @@
       "latitude": 48.8668861,
       "longitude": 2.5381711
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -1405,11 +1690,11 @@
       "Une cave",
       "Un emplacement pour véhicule automobile Occupé à la date du PVD (au 26.04.2024)"
     ],
-    "occupation": null,
+    "occupation": "Occupé",
     "surface_m2": 97.79,
     "stats_bien": null,
     "est_price_m2": null,
-    "code_insee": null,
+    "code_insee": "93050",
     "code_postal": 93330,
     "code_departement": "93",
     "code_region": 11.0,
@@ -1443,7 +1728,7 @@
       "latitude": 48.9395943,
       "longitude": 2.3570254
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -1457,16 +1742,16 @@
       "Une cave",
       "Un parking Occupé à la date du P.V de constat (19.03.2026)"
     ],
-    "occupation": null,
+    "occupation": "Occupé",
     "surface_m2": 60.48,
     "stats_bien": null,
     "est_price_m2": null,
-    "code_insee": null,
-    "code_postal": 11310,
-    "code_departement": "11",
-    "code_region": 76.0,
-    "nom_departement": "Aude",
-    "nom_region": "Occitanie"
+    "code_insee": "93066",
+    "code_postal": 93200,
+    "code_departement": "93",
+    "code_region": 11.0,
+    "nom_departement": "Seine-Saint-Denis",
+    "nom_region": "Île-de-France"
   },
   "110109": {
     "titre": "Annonce n°110109 : un logement à Bagnolet (Seine-Saint-Denis), mise à prix : 42 000 €",
@@ -1497,7 +1782,7 @@
       "latitude": 48.8719559,
       "longitude": 2.4144347
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -1513,7 +1798,7 @@
     "surface_m2": null,
     "stats_bien": null,
     "est_price_m2": null,
-    "code_insee": null,
+    "code_insee": "93006",
     "code_postal": 93170,
     "code_departement": "93",
     "code_region": 11.0,
@@ -1549,7 +1834,7 @@
       "latitude": 48.9006271,
       "longitude": 2.5557604
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -1565,7 +1850,7 @@
     "surface_m2": null,
     "stats_bien": null,
     "est_price_m2": null,
-    "code_insee": null,
+    "code_insee": "93047",
     "code_postal": 93370,
     "code_departement": "93",
     "code_region": 11.0,
@@ -1601,7 +1886,7 @@
       "latitude": 48.9030991,
       "longitude": 2.3962307
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -1615,7 +1900,7 @@
     "surface_m2": null,
     "stats_bien": null,
     "est_price_m2": null,
-    "code_insee": null,
+    "code_insee": "93055",
     "code_postal": 93500,
     "code_departement": "93",
     "code_region": 11.0,
@@ -1649,7 +1934,7 @@
       "latitude": 48.8886299,
       "longitude": 2.3600709
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -1698,7 +1983,7 @@
       "latitude": 48.8375816,
       "longitude": 2.413882
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -1712,7 +1997,7 @@
     "surface_m2": null,
     "stats_bien": null,
     "est_price_m2": null,
-    "code_insee": null,
+    "code_insee": "94067",
     "code_postal": 94160,
     "code_departement": "94",
     "code_region": 11.0,
@@ -1748,7 +2033,7 @@
       "latitude": 48.8463249,
       "longitude": 2.4903953
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -1760,11 +2045,11 @@
       "Un appartement de 52,53 m² (hors balcon), au 7ème étage, 1ère porte à droite après l'ascenseur, comprenant : pièce principale avec cuisine ouverte en entrant, chambre, salle de bain, wc, dégagement, placards et balcon (2,77 m²)",
       "Une cave Loué en meublé au 10/04/2025 (date du PVD)"
     ],
-    "occupation": "Loué",
+    "occupation": null,
     "surface_m2": 52.53,
     "stats_bien": null,
     "est_price_m2": null,
-    "code_insee": null,
+    "code_insee": "94052",
     "code_postal": 94130,
     "code_departement": "94",
     "code_region": 11.0,
@@ -1798,7 +2083,7 @@
       "latitude": 48.7223167,
       "longitude": 2.4113476
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -1814,7 +2099,7 @@
     "surface_m2": 137.36,
     "stats_bien": null,
     "est_price_m2": null,
-    "code_insee": null,
+    "code_insee": "94001",
     "code_postal": 94480,
     "code_departement": "94",
     "code_region": 11.0,
@@ -1849,7 +2134,7 @@
       "latitude": 48.845089,
       "longitude": 2.236095
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -1863,11 +2148,11 @@
       "Une cave",
       "Un parking ( 11,5 m² ) fermé Occupé à la date du PVD (16/04/2026)"
     ],
-    "occupation": null,
+    "occupation": "Occupé",
     "surface_m2": 95.1,
     "stats_bien": null,
     "est_price_m2": null,
-    "code_insee": null,
+    "code_insee": "92012",
     "code_postal": 92100,
     "code_departement": "92",
     "code_region": 11.0,
@@ -1901,7 +2186,7 @@
       "latitude": 48.8895302,
       "longitude": 2.165329
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -1919,7 +2204,7 @@
     "surface_m2": 93.32,
     "stats_bien": null,
     "est_price_m2": null,
-    "code_insee": null,
+    "code_insee": "92063",
     "code_postal": 92500,
     "code_departement": "92",
     "code_region": 11.0,
@@ -1953,7 +2238,7 @@
       "latitude": 48.9417038,
       "longitude": 2.0369453
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -1965,11 +2250,11 @@
       "Un appartement de 46,62 m² , dans le bâtiment 1, escalier B, au 2ème étage de type F2, comprenant : entrée, salon/séjour, cuisine, chambre, salle de bains, rangement, wc",
       "Un parking dans le bâtiment 1, escalier C, au sous-sol Dans un ensemble immobilier dénommé \"Les demeures des Coteaux\" sis 241, 243, 248 et 252 avenue Charles de Gaulle, figurant au cadastre section AI n°583 lieudit \"241 avenue Charles de Gaulle\" pour 22a et 23ca et section AI n°586 lieudit \"241 avenue Charles de Gaulle\" pour 18a et 1ca, soit une surface totale de 40a et 34ca Les biens sont libres"
     ],
-    "occupation": null,
+    "occupation": "Libre",
     "surface_m2": 46.62,
     "stats_bien": null,
     "est_price_m2": null,
-    "code_insee": null,
+    "code_insee": "78123",
     "code_postal": 78955,
     "code_departement": "78",
     "code_region": 11.0,
@@ -2003,7 +2288,7 @@
       "latitude": 48.9438858,
       "longitude": 2.1658461
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -2015,11 +2300,11 @@
       "Un appartement de 47,21 m² , bâtiment II, au 3ème étage, porte droite à la sortie de l'escalier B, de deux pièces principales , comprenant : entrée, salon, deux chambres, cuisine, salle de bains avec wc, placards",
       "Un emplacement pour voiture automobile au sous-sol Le bien est classé F au diagnostic de performance énergétique Les lieux sont occupés"
     ],
-    "occupation": null,
+    "occupation": "Occupé",
     "surface_m2": 47.21,
     "stats_bien": null,
     "est_price_m2": null,
-    "code_insee": null,
+    "code_insee": "78586",
     "code_postal": 78500,
     "code_departement": "78",
     "code_region": 11.0,
@@ -2053,7 +2338,7 @@
       "latitude": 48.9892769,
       "longitude": 1.7135737
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -2071,11 +2356,11 @@
       "Une cave au sous-sol (Lot n°5)",
       "Un cellier bâtiment B, au rez-de-chaussée (Lot n°6) Les biens sont occupés"
     ],
-    "occupation": "Les biens sont occupés",
+    "occupation": "Occupé",
     "surface_m2": 84.74000000000001,
     "stats_bien": null,
     "est_price_m2": null,
-    "code_insee": null,
+    "code_insee": "78361",
     "code_postal": 78200,
     "code_departement": "78",
     "code_region": 11.0,
@@ -2111,7 +2396,7 @@
       "latitude": 48.6371193,
       "longitude": 2.3041105
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -2125,11 +2410,11 @@
       "Une cave au sous-sol, n°19",
       "Un emplacement de parking dans le jardin, n°88 Les biens sont, semble-t-il, occupés"
     ],
-    "occupation": null,
+    "occupation": "Occupé",
     "surface_m2": 66.42,
     "stats_bien": null,
     "est_price_m2": null,
-    "code_insee": null,
+    "code_insee": "91570",
     "code_postal": 91240,
     "code_departement": "91",
     "code_region": 11.0,
@@ -2163,7 +2448,7 @@
       "latitude": 48.6385651,
       "longitude": 2.4350083
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -2173,7 +2458,7 @@
     "description": [
       "Un appartement de 78,90 m² , bâtiment T2, au 1er étage, à gauche, de quatre pièces principales, comprenant : entrée, couloir avec placards, trois chambres, salle d'eau, wc, cuisine donnant sur loggia, salon Les biens sont, semble-t-il, occupés"
     ],
-    "occupation": null,
+    "occupation": "Occupé",
     "surface_m2": 78.9,
     "stats_bien": null,
     "est_price_m2": null,
@@ -2211,7 +2496,7 @@
       "latitude": 48.640213,
       "longitude": 2.4403956
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -2221,7 +2506,7 @@
     "description": [
       "Un appartement de 68,21 m², bâtiment A, au 2ème étage droite, comprenant : entrée, séjour, trois chambres, cuisine, salle de bains, wc, dégagement, placards Cave Loué"
     ],
-    "occupation": "Loué",
+    "occupation": null,
     "surface_m2": 68.21,
     "stats_bien": null,
     "est_price_m2": null,
@@ -2261,7 +2546,7 @@
       "latitude": 48.8917503,
       "longitude": 2.4283423
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -2275,11 +2560,11 @@
       "Une cave au sous-sol, n°20",
       "Un box bâtiment D, n°16 Inoccupé"
     ],
-    "occupation": null,
+    "occupation": "Libre",
     "surface_m2": 49.64,
     "stats_bien": null,
     "est_price_m2": null,
-    "code_insee": null,
+    "code_insee": "93063",
     "code_postal": 93230,
     "code_departement": "93",
     "code_region": 11.0,
@@ -2313,7 +2598,7 @@
       "latitude": 48.9390945,
       "longitude": 2.3466811
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -2323,16 +2608,16 @@
     "description": [
       "Un appartement de 23,20 m², bâtiment B, au rez-de-chaussée, comprenant : entrée, salle de bains avec wc, pièce à usage de salon/séjour/chambre, cuisine Cave au sous-sol Loué"
     ],
-    "occupation": "Loué",
+    "occupation": null,
     "surface_m2": 23.2,
     "stats_bien": null,
     "est_price_m2": null,
-    "code_insee": null,
-    "code_postal": 11310,
-    "code_departement": "11",
-    "code_region": 76.0,
-    "nom_departement": "Aude",
-    "nom_region": "Occitanie"
+    "code_insee": "93066",
+    "code_postal": 93200,
+    "code_departement": "93",
+    "code_region": 11.0,
+    "nom_departement": "Seine-Saint-Denis",
+    "nom_region": "Île-de-France"
   },
   "110006": {
     "titre": "Annonce n°110006 : un appartement à Bondy (Seine-Saint-Denis), mise à prix : 27 000 €",
@@ -2362,7 +2647,7 @@
       "latitude": 48.9001465,
       "longitude": 2.4796863
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -2372,65 +2657,15 @@
     "description": [
       "Un appartement de 17,33 m² , escalier rue Louis Auguste Blanqui, au 3ème étage, couloir de gauche porte face, comprenant : entrée, séjour, cuisine/salle d'eau, wc Occupé à la date du PVD (18.12.2024)"
     ],
-    "occupation": null,
+    "occupation": "Occupé",
     "surface_m2": 17.33,
     "stats_bien": null,
     "est_price_m2": null,
-    "code_insee": null,
+    "code_insee": "93010",
     "code_postal": 93140,
     "code_departement": "93",
     "code_region": 11.0,
     "nom_departement": "Seine-Saint-Denis",
-    "nom_region": "Île-de-France"
-  },
-  "109619": {
-    "titre": "Annonce n°109619 : un appartement à Paris 15ème, mise à prix : 20 000 €",
-    "date_publication": "2026-08-18T00:00:00+02:00",
-    "tribunal": "Tribunal Judiciaire de Paris",
-    "type_vente": "Vente aux enchères publiques",
-    "dt_vente": "2026-10-15 14:00",
-    "dt_vente_limit": "2026-10-25",
-    "sell_state": -1,
-    "avocats": [
-      "Maître Éric Simonnet, membre de la SELARL Simonnet Avocats, Avocat"
-    ],
-    "telephones": [
-      "01 47 64 48 00"
-    ],
-    "documents": [],
-    "url": "https://www.licitor.com/annonce/10/96/19/vente-aux-encheres/un-appartement/paris-15eme/paris/109619.html",
-    "id": "109619",
-    "mise_a_prix": 20000,
-    "est_price": null,
-    "fac_baisse": null,
-    "prix_final": 132000,
-    "ville": "Paris 15ème",
-    "adresse": "52, rue de l'Amiral Roussin",
-    "coords": {
-      "latitude": 48.8431664,
-      "longitude": 2.2998517
-    },
-    "trib_anom": true,
-    "visite": null,
-    "visite_dt": null,
-    "visite_state": -1,
-    "type": [
-      "Un appartement",
-      "Une cave"
-    ],
-    "description": [
-      "Un appartement de 18,79 m² , au rez-de-chaussée, se composant de : entrée, pièce principale, cuisine et salle d'eau avec wc",
-      "Une cave n°18 Les biens sont occupés"
-    ],
-    "occupation": "Les biens sont occupés",
-    "surface_m2": 18.79,
-    "stats_bien": null,
-    "est_price_m2": null,
-    "code_insee": "75115",
-    "code_postal": 75015,
-    "code_departement": "75",
-    "code_region": 11.0,
-    "nom_departement": "Paris",
     "nom_region": "Île-de-France"
   },
   "110183": {
@@ -2465,7 +2700,7 @@
       "latitude": 49.0326767,
       "longitude": 2.472667
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -2483,12 +2718,12 @@
       "max": 3916
     },
     "est_price_m2": 3031,
-    "code_insee": null,
-    "code_postal": 28410,
-    "code_departement": "28",
-    "code_region": 24.0,
-    "nom_departement": "Eure-et-Loir",
-    "nom_region": "Centre-Val de Loire"
+    "code_insee": "95280",
+    "code_postal": 95190,
+    "code_departement": "95",
+    "code_region": 11.0,
+    "nom_departement": "Val-d'Oise",
+    "nom_region": "Île-de-France"
   },
   "110270": {
     "titre": "Annonce n°110270 : un studio à Paris 18ème, mise à prix : 20 000 €",
@@ -2517,7 +2752,7 @@
       "latitude": 48.8870239,
       "longitude": 2.3533368
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -2527,7 +2762,7 @@
     "description": [
       "Un studio de 17,04 m², au 2ème étage, porte en face, sur la gauche dans le dégagement, comprenant : pièce principale avec coin-cuisine, salle de douche avec lave-mains et wc Occupé"
     ],
-    "occupation": null,
+    "occupation": "Occupé",
     "surface_m2": 17.04,
     "stats_bien": null,
     "est_price_m2": null,
@@ -2565,7 +2800,7 @@
       "latitude": 48.8653297,
       "longitude": 2.3784778
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -2614,7 +2849,7 @@
       "latitude": 48.7349052,
       "longitude": 2.4097123
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -2628,7 +2863,7 @@
     "surface_m2": null,
     "stats_bien": null,
     "est_price_m2": null,
-    "code_insee": null,
+    "code_insee": "94077",
     "code_postal": 94290,
     "code_departement": "94",
     "code_region": 11.0,
@@ -2662,7 +2897,7 @@
       "latitude": 48.8535614,
       "longitude": 2.2162266
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -2672,15 +2907,351 @@
     "description": [
       "Une pièce de 10,10 m² , en rez-de-jardin numéro 1, 3ème porte à gauche en sortant de l'ascenseur B, avec droit de jouissance en commun aux wc, cabinet de toilette et douche situés près de la chaufferie Occupé"
     ],
-    "occupation": null,
+    "occupation": "Occupé",
     "surface_m2": 10.1,
     "stats_bien": null,
     "est_price_m2": null,
-    "code_insee": null,
+    "code_insee": "92064",
     "code_postal": 92210,
     "code_departement": "92",
     "code_region": 11.0,
     "nom_departement": "Hauts-de-Seine",
+    "nom_region": "Île-de-France"
+  },
+  "110202": {
+    "titre": "Annonce n°110202 : une maison individuelle à Chennevières-sur-Marne (Val-de-Marne), mise à prix : 500 000 €",
+    "date_publication": "2026-10-02T00:00:00+02:00",
+    "tribunal": "Tribunal Judiciaire de Créteil (Val de Marne)",
+    "type_vente": "Vente aux enchères publiques",
+    "dt_vente": "2026-11-26 09:30",
+    "dt_vente_limit": "2026-12-06",
+    "sell_state": 1,
+    "avocats": [
+      "Maître Olivier Tournillon, membre de la SELARL Modéré Avocats, Avocat",
+      "Maître Éric Simonnet, membre de la SELARL Simonnet Avocats, Avocat"
+    ],
+    "telephones": [
+      "01 43 75 31 55",
+      "01 47 64 48 00"
+    ],
+    "documents": [
+      {
+        "type": "Attestation de superficie",
+        "url": "https://www.licitor.com/data/pub/media/annonce/11/02/02/110202.000.001.5a2b938cbc57.pdf"
+      },
+      {
+        "type": "Cahier des conditions de vente",
+        "url": "https://www.licitor.com/data/pub/media/annonce/11/02/02/110202.000.002.305b326710db.pdf"
+      },
+      {
+        "type": "PV descriptif",
+        "url": "https://www.licitor.com/data/pub/media/annonce/11/02/02/110202.000.003.b354d6fae709.pdf"
+      }
+    ],
+    "url": "https://www.licitor.com/annonce/11/02/02/vente-aux-encheres/une-maison-individuelle/chennevieres-sur-marne/val-de-marne/110202.html",
+    "id": "110202",
+    "mise_a_prix": 500000,
+    "est_price": null,
+    "fac_baisse": null,
+    "prix_final": 616000,
+    "ville": "Chennevières-sur-Marne",
+    "adresse": "15, rue Gabriel Péri",
+    "coords": {
+      "latitude": 48.800766,
+      "longitude": 2.5289047
+    },
+    "trib_anom": false,
+    "visite": null,
+    "visite_dt": null,
+    "visite_state": -1,
+    "type": [
+      "Une maison individuelle",
+      "Un garage"
+    ],
+    "description": [
+      "Une maison individuelle de 343,76 m² , comprenant : Au sous-sol : grand salon donnant sur le jardin, dégagement, wc, chaufferie, buanderie, cave avec accès direct sur le jardin Au rez-de-chaussée : hall d'entrée, cuisine, salle à manger, salon donnant sur un balcon filant et une terrasse, bureau, deux chambres, wc avec lave mains, salle de bains, dégagement avec grand placard À l'étage : mezzanine en forme de L, chambre, salle de bains avec wc",
+      "Un garage Cadastrée section AV n°550 pour 10a 59ca Les biens sont occupés"
+    ],
+    "occupation": "Occupé",
+    "surface_m2": 343.76,
+    "stats_bien": {
+      "min": 3367,
+      "avg": 4105,
+      "max": 5749
+    },
+    "est_price_m2": 4105,
+    "code_insee": "94019",
+    "code_postal": 94430,
+    "code_departement": "94",
+    "code_region": 11.0,
+    "nom_departement": "Val-de-Marne",
+    "nom_region": "Île-de-France"
+  },
+  "110339": {
+    "titre": "Annonce n°110339 : une maison à Thiais (Val-de-Marne), mise à prix : 160 000 €",
+    "date_publication": "2026-10-19T00:00:00+02:00",
+    "tribunal": "Tribunal Judiciaire de Créteil (Val de Marne)",
+    "type_vente": "Vente aux enchères publiques sur licitation en un seul lot",
+    "dt_vente": "2026-11-26 09:30",
+    "dt_vente_limit": "2026-12-06",
+    "sell_state": 1,
+    "avocats": [
+      "Maître Martin Isal, Avocat"
+    ],
+    "telephones": [],
+    "documents": [
+      {
+        "type": "Diagnostics",
+        "url": "https://www.licitor.com/data/pub/media/annonce/11/03/39/110339.000.001.71634a5d0f70.pdf"
+      },
+      {
+        "type": "PV descriptif",
+        "url": "https://www.licitor.com/data/pub/media/annonce/11/03/39/110339.000.002.c743b96fe4d1.pdf"
+      }
+    ],
+    "url": "https://www.licitor.com/annonce/11/03/39/vente-aux-encheres/une-maison/thiais/val-de-marne/110339.html",
+    "id": "110339",
+    "mise_a_prix": 160000,
+    "est_price": null,
+    "fac_baisse": null,
+    "prix_final": 81000,
+    "ville": "Thiais",
+    "adresse": "2 bis, rue d'Estienne d'Orves",
+    "coords": {
+      "latitude": 48.7616158,
+      "longitude": 2.3892174
+    },
+    "trib_anom": false,
+    "visite": null,
+    "visite_dt": null,
+    "visite_state": -1,
+    "type": [
+      "Une maison"
+    ],
+    "description": [
+      "Une maison de 91 m² , comprenant : 1ère partie : entrée, salon, chambre, cuisine, salle de bains, wc 2ème partie : entrée, salon, cuisine, deux chambres, salle d'eau, wc Terrasse Jardin Occupée"
+    ],
+    "occupation": "Occupé",
+    "surface_m2": 91.0,
+    "stats_bien": {
+      "min": 3743,
+      "avg": 4297,
+      "max": 5111
+    },
+    "est_price_m2": 4297,
+    "code_insee": "94073",
+    "code_postal": 94320,
+    "code_departement": "94",
+    "code_region": 11.0,
+    "nom_departement": "Val-de-Marne",
+    "nom_region": "Île-de-France"
+  },
+  "110174": {
+    "titre": "Annonce n°110174 : une maison d'habitation à Montesson (Yvelines), mise à prix : 500 000 €",
+    "date_publication": "2026-10-01T00:00:00+02:00",
+    "tribunal": "Tribunal Judiciaire de Versailles (Yvelines)",
+    "type_vente": "Vente aux enchères publiques sur licitation judiciaire et sur réitération des enchères en un seul lot",
+    "dt_vente": "2026-11-25 09:30",
+    "dt_vente_limit": "2026-12-05",
+    "sell_state": 1,
+    "avocats": [
+      "Maître Élisa Gueilhers, Avocat"
+    ],
+    "telephones": [
+      "01 88 60 37 37"
+    ],
+    "documents": [],
+    "url": "https://www.licitor.com/annonce/11/01/74/vente-aux-encheres/une-maison-d-habitation/montesson/yvelines/110174.html",
+    "id": "110174",
+    "mise_a_prix": 500000,
+    "est_price": null,
+    "fac_baisse": null,
+    "prix_final": 466000,
+    "ville": "Montesson",
+    "adresse": "11, rue Félix Philippe",
+    "coords": {
+      "latitude": 48.9068222,
+      "longitude": 2.148632
+    },
+    "trib_anom": false,
+    "visite": null,
+    "visite_dt": null,
+    "visite_state": -1,
+    "type": [
+      "Une maison d'habitation"
+    ],
+    "description": [
+      "Une maison d'habitation de 301,45 m² , sur trois niveaux, de treize pièces principales, comprenant : Au rez-de-chaussée : entrée, deux pièces, wc, cave et garage Au 1er étage : cuisine et séjour, deux pièces, deux chambres, wc, terrasse à l'arrière de la maison et un studio et douche/hammam Au 2ème étage : cinq chambres, salle de bains Passage aboutissant rue Félix Philippe Inoccupée"
+    ],
+    "occupation": "Libre",
+    "surface_m2": 301.45,
+    "stats_bien": {
+      "min": 4782,
+      "avg": 5387,
+      "max": 6653
+    },
+    "est_price_m2": 5387,
+    "code_insee": "78418",
+    "code_postal": 78360,
+    "code_departement": "78",
+    "code_region": 11.0,
+    "nom_departement": "Yvelines",
+    "nom_region": "Île-de-France"
+  },
+  "110235": {
+    "titre": "Annonce n°110235 : une maison d'habitation à Yerres (Essonne), mise à prix : 190 000 €",
+    "date_publication": "2026-10-16T00:00:00+02:00",
+    "tribunal": "Tribunal Judiciaire d'Évry-Courcouronnes (Essonne)",
+    "type_vente": "Vente aux enchères publiques",
+    "dt_vente": "2026-11-25 10:00",
+    "dt_vente_limit": "2026-12-05",
+    "sell_state": 1,
+    "avocats": [
+      "Maître Emmanuelle Guedj, de la Société d'Avocats Guedj - Haas-Biri, Avocat"
+    ],
+    "telephones": [
+      "01 60 87 41 00"
+    ],
+    "documents": [],
+    "url": "https://www.licitor.com/annonce/11/02/35/vente-aux-encheres/une-maison-d-habitation/yerres/essonne/110235.html",
+    "id": "110235",
+    "mise_a_prix": 190000,
+    "est_price": null,
+    "fac_baisse": null,
+    "prix_final": 259000,
+    "ville": "Yerres",
+    "adresse": "5, rue Marguerite",
+    "coords": {
+      "latitude": 48.7191963,
+      "longitude": 2.5017428
+    },
+    "trib_anom": false,
+    "visite": null,
+    "visite_dt": null,
+    "visite_state": -1,
+    "type": [
+      "Une maison d'habitation"
+    ],
+    "description": [
+      "Une maison d'habitation de 115,14 m² , comprenant : Au rez-de-chaussée : hall d'entrée, pièce principale, chambre, cuisine, salle de bain, wc, cellier À l'étage : palier, trois chambres, pièce d'eau et wc Avec cave, garage, terrasse non couverte et abri de jardin Sur un terrain de 7a 2ca Occupée"
+    ],
+    "occupation": "Occupé",
+    "surface_m2": 115.14,
+    "stats_bien": {
+      "min": 2984,
+      "avg": 3590,
+      "max": 4255
+    },
+    "est_price_m2": 3590,
+    "code_insee": "91691",
+    "code_postal": 91330,
+    "code_departement": "91",
+    "code_region": 11.0,
+    "nom_departement": "Essonne",
+    "nom_region": "Île-de-France"
+  },
+  "110315": {
+    "titre": "Annonce n°110315 : une maison d'habitation divisée en un studio et deux appartements à Montgeron (Essonne), mise à prix : 20 000 €",
+    "date_publication": "2026-10-17T00:00:00+02:00",
+    "tribunal": "Tribunal Judiciaire d'Évry-Courcouronnes (Essonne)",
+    "type_vente": "Vente aux enchères publiques après subrogation",
+    "dt_vente": "2026-11-25 10:00",
+    "dt_vente_limit": "2026-12-05",
+    "sell_state": 1,
+    "avocats": [
+      "Maître Charlotte Guittard, membre de la SCP Damoiseau et Associés, Avocat"
+    ],
+    "telephones": [
+      "01 60 78 23 81"
+    ],
+    "documents": [],
+    "url": "https://www.licitor.com/annonce/11/03/15/vente-aux-encheres/une-maison-d-habitation-divisee-en-un-studio-et-deux-appartements/montgeron/essonne/110315.html",
+    "id": "110315",
+    "mise_a_prix": 20000,
+    "est_price": null,
+    "fac_baisse": null,
+    "prix_final": 106000,
+    "ville": "Montgeron",
+    "adresse": "15, av. de la République",
+    "coords": {
+      "latitude": 48.708889,
+      "longitude": 2.4527283
+    },
+    "trib_anom": false,
+    "visite": null,
+    "visite_dt": null,
+    "visite_state": -1,
+    "type": [
+      "Une maison d'habitation divisée en un studio et deux appartements"
+    ],
+    "description": [
+      "Une maison d'habitation divisée en un studio et deux appartements élevée sur terre-plein, rez-de-chaussée, étage et combles et comprenant : Au rez-de-chaussée droite : UN STUDIO de 27,97 m² , comprenant : dégagement, pièce principale avec coin-cuisine, salle d'eau avec wc Au 1er étage porte gauche : UN APPARTEMENT de 35,97 m² , comprenant : dégagement, pièce principale, une chambre, un petit coin-cuisine et salle d'eau avec wc Au 2ème étage : deux locaux techniques Au 2ème étage et sous combles : UN APPARTEMENT de 14,07 m² accessible depuis le 2ème étage et comprenant : Au 2ème étage : entrée avec escalier menant à l'étage supérieur À l'étage supérieur (combles) : pièce principale, une chambre, cuisine et salle d'eau avec wc Droit à la cour commune Les lieux sont loués"
+    ],
+    "occupation": null,
+    "surface_m2": 78.00999999999999,
+    "stats_bien": {
+      "min": 3167,
+      "avg": 3772,
+      "max": 4876
+    },
+    "est_price_m2": 3772,
+    "code_insee": "91421",
+    "code_postal": 91230,
+    "code_departement": "91",
+    "code_region": 11.0,
+    "nom_departement": "Essonne",
+    "nom_region": "Île-de-France"
+  },
+  "110333": {
+    "titre": "Annonce n°110333 : une maison individuelle à usage d'habitation à Vayres-sur-Essonne (Essonne), mise à prix : 210 000 €",
+    "date_publication": "2026-10-20T00:00:00+02:00",
+    "tribunal": "Tribunal Judiciaire d'Évry-Courcouronnes (Essonne)",
+    "type_vente": "Vente aux enchères publiques sur licitation en un seul lot",
+    "dt_vente": "2026-11-25 10:00",
+    "dt_vente_limit": "2026-12-05",
+    "sell_state": 1,
+    "avocats": [
+      "Maître T. Floquet, de la SCP Floquet - Garet et Noachovitch, Avocat associé"
+    ],
+    "telephones": [
+      "01 60 79 39 45"
+    ],
+    "documents": [],
+    "url": "https://www.licitor.com/annonce/11/03/33/vente-aux-encheres/une-maison-individuelle-a-usage-d-habitation/vayres-sur-essonne/essonne/110333.html",
+    "id": "110333",
+    "mise_a_prix": 210000,
+    "est_price": null,
+    "fac_baisse": null,
+    "prix_final": 105000,
+    "ville": "Vayres-sur-Essonne",
+    "adresse": "2 bis, chemin du Four à Chaux",
+    "coords": {
+      "latitude": 48.4389458,
+      "longitude": 2.3534117
+    },
+    "trib_anom": false,
+    "visite": null,
+    "visite_dt": null,
+    "visite_state": -1,
+    "type": [
+      "Une maison individuelle à usage d'habitation"
+    ],
+    "description": [
+      "Une maison individuelle à usage d'habitation de cinq pièces principales Occupée par le propriétaire"
+    ],
+    "occupation": "Occupé",
+    "surface_m2": null,
+    "stats_bien": {
+      "min": 2259,
+      "avg": 2724,
+      "max": 3556
+    },
+    "est_price_m2": 2724,
+    "code_insee": "91639",
+    "code_postal": 91820,
+    "code_departement": "91",
+    "code_region": 11.0,
+    "nom_departement": "Essonne",
     "nom_region": "Île-de-France"
   },
   "110045": {
@@ -2719,7 +3290,7 @@
       "latitude": 49.0973434,
       "longitude": 2.5080941
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -2729,7 +3300,7 @@
     "description": [
       "Un pavillon d'habitation d'une superficie de 95,26 m² Aux termes du procès-verbal de description dressé le 12 décembre 2025 : une maison d'habitation en simple mitoyenneté, construite sur un terrain de forme rectangulaire de 207 m², gros oeuvre en parpaings, façades enduites, toiture en tuiles mécaniques sur charpente en bois, menuiseries extérieures en PVC à double vitrage, comprenant : Au rez-de-chaussée : une entrée, un séjour double avec cheminée, une cuisine, un rangement, un garage, une buanderie et un wc Au 1er étage : trois chambres, une salle de bains, un wc et des placards Au 2ème étage : deux chambres Jardin en arrière de la maison avec abri de jardin Bien cadastré section AC n°743, pour une contenance de 2a 7ca Occupé"
     ],
-    "occupation": null,
+    "occupation": "Occupé",
     "surface_m2": 302.26,
     "stats_bien": {
       "min": 2714,
@@ -2737,7 +3308,7 @@
       "max": 3871
     },
     "est_price_m2": 3117,
-    "code_insee": null,
+    "code_insee": "95250",
     "code_postal": 95470,
     "code_departement": "95",
     "code_region": 11.0,
@@ -2771,7 +3342,7 @@
       "latitude": 48.9491577,
       "longitude": 2.3820076
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -2793,7 +3364,7 @@
       "max": 4461
     },
     "est_price_m2": 3220,
-    "code_insee": null,
+    "code_insee": "93072",
     "code_postal": 93240,
     "code_departement": "93",
     "code_region": 11.0,
@@ -2827,7 +3398,7 @@
       "latitude": 48.9093475,
       "longitude": 2.5127306
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -2845,7 +3416,7 @@
       "max": 4788
     },
     "est_price_m2": 3835,
-    "code_insee": null,
+    "code_insee": "93057",
     "code_postal": 93320,
     "code_departement": "93",
     "code_region": 11.0,
@@ -2879,7 +3450,7 @@
       "latitude": 48.9230957,
       "longitude": 2.5234158
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -2889,7 +3460,7 @@
     "description": [
       "Une maison à usage d'habitation de 94 m², comprenant : Au rez-de-chaussée surélevé : entrée, couloir, salon, véranda, cuisine, wc, salle de bains, deux chambres Combles : palier, deux chambres, salle de bains Au sous-sol : garage, hall, bureau, buanderie, wc, pièce, terrasse, jardin Occupée"
     ],
-    "occupation": null,
+    "occupation": "Occupé",
     "surface_m2": 94.0,
     "stats_bien": {
       "min": 2941,
@@ -2897,7 +3468,7 @@
       "max": 4685
     },
     "est_price_m2": 3485,
-    "code_insee": null,
+    "code_insee": "93046",
     "code_postal": 93190,
     "code_departement": "93",
     "code_region": 11.0,
@@ -2911,7 +3482,7 @@
     "type_vente": "Vente aux enchères publiques sur licitation",
     "dt_vente": "2026-11-12 09:30",
     "dt_vente_limit": "2026-11-22",
-    "sell_state": 1,
+    "sell_state": -1,
     "avocats": [
       "Maître Julie Gallais, Avocat associé",
       "Maître Laurent Laloum Alkan, de la SCP Referens, Avocat"
@@ -2932,7 +3503,7 @@
       "latitude": 48.8061371,
       "longitude": 2.5127671
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -2944,13 +3515,9 @@
     ],
     "occupation": null,
     "surface_m2": 194.53,
-    "stats_bien": {
-      "min": 5743,
-      "avg": 6754,
-      "max": 8885
-    },
-    "est_price_m2": 6754,
-    "code_insee": null,
+    "stats_bien": null,
+    "est_price_m2": null,
+    "code_insee": "94068",
     "code_postal": 94100,
     "code_departement": "94",
     "code_region": 11.0,
@@ -2994,7 +3561,7 @@
     "description": [
       "Un pavillon composé d'un rez-de-chaussée, d'un 1er étage et d'un 2ème étage sous toiture, comprenant : Au rez-de-chaussée : un espace à usage de laboratoire, un espace à usage de stockage, un quai de livraison et chambres froides Au 1er étage : un appartement utilisé à usage de stockage, comprenant : palier avec dégagement, trois pièces, terrasse extérieure, cuisine, wc, salle d'eau Au 2ème étage : un espace sous les toits aménagé en lieu de stockage et dortoir Cadastré section AE 61 pour 4a 25ca Les lieux sont occupés"
     ],
-    "occupation": null,
+    "occupation": "Occupé",
     "surface_m2": null,
     "stats_bien": null,
     "est_price_m2": null,
@@ -3032,7 +3599,7 @@
       "latitude": 48.9309196,
       "longitude": 1.8543819
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -3044,11 +3611,11 @@
       "Une maison de 212 m², de neuf pièces principales , élevée d'un étage sur sous-sol total avec garage (Occupée)",
       "Une piscine"
     ],
-    "occupation": null,
+    "occupation": "Occupé",
     "surface_m2": 212.0,
     "stats_bien": null,
     "est_price_m2": null,
-    "code_insee": null,
+    "code_insee": "78049",
     "code_postal": 78580,
     "code_departement": "78",
     "code_region": 11.0,
@@ -3082,7 +3649,7 @@
       "latitude": 48.8244667,
       "longitude": 2.55335
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -3096,7 +3663,7 @@
     "surface_m2": 339.69,
     "stats_bien": null,
     "est_price_m2": null,
-    "code_insee": null,
+    "code_insee": "94079",
     "code_postal": 94350,
     "code_departement": "94",
     "code_region": 11.0,
@@ -3130,7 +3697,7 @@
       "latitude": 48.9083366,
       "longitude": 2.1392229
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -3142,11 +3709,11 @@
       "Une maison d'habitation Surface Loi Carrez : 115,91 m²",
       "Un jardin Les lieux sont occupés"
     ],
-    "occupation": null,
+    "occupation": "Occupé",
     "surface_m2": null,
     "stats_bien": null,
     "est_price_m2": null,
-    "code_insee": null,
+    "code_insee": "78146",
     "code_postal": 78400,
     "code_departement": "78",
     "code_region": 11.0,
@@ -3182,7 +3749,7 @@
       "latitude": 48.6631165,
       "longitude": 2.358654
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -3196,11 +3763,11 @@
       "Un garage au sous-sol",
       "Un jardin Cadastrée section AD n°191, pour 8a 22ca Le bien est occupé par les actuels propriétaires"
     ],
-    "occupation": null,
+    "occupation": "Occupé",
     "surface_m2": 109.98,
     "stats_bien": null,
     "est_price_m2": null,
-    "code_insee": null,
+    "code_insee": "91434",
     "code_postal": 91390,
     "code_departement": "91",
     "code_region": 11.0,
@@ -3234,7 +3801,7 @@
       "latitude": 48.6537247,
       "longitude": 2.3645897
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -3250,11 +3817,11 @@
       "Un appartement au niveau R+1, comprenant : entrée avec dégagement, deux chambres, salle d'eau, wc, cuisine donnant sur balcon, séjour/salle à manger, dressing Occupation : les biens sont, semble-t-il, occupés par un locataire Bail d'un an du 01/08/2025 Loyer hors charges : 1.000 €",
       "Un appartement au dernier étage, accès par escalier privatif, comprenant : palier, couloir, trois chambres dont deux avec placard, salle de bains, wc, cuisine, dressing Occupation : gracieuse Jardin avant et arrière avec terrasse surélevée et abri de jardin"
     ],
-    "occupation": null,
+    "occupation": "Libre",
     "surface_m2": 589.27,
     "stats_bien": null,
     "est_price_m2": null,
-    "code_insee": null,
+    "code_insee": "91687",
     "code_postal": 91170,
     "code_departement": "91",
     "code_region": 11.0,
@@ -3290,7 +3857,7 @@
       "latitude": 48.8578339,
       "longitude": 2.5016375
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -3304,7 +3871,7 @@
     "surface_m2": 40.7,
     "stats_bien": null,
     "est_price_m2": null,
-    "code_insee": null,
+    "code_insee": "93049",
     "code_postal": 93360,
     "code_departement": "93",
     "code_region": 11.0,
@@ -3339,7 +3906,7 @@
       "latitude": 48.8926086,
       "longitude": 2.4660037
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -3353,11 +3920,11 @@
       "Un jardin (Lot n°27) Sur un terrain de 8a 93ca Occupé au 04.02.2026 (date PVD)",
       "Deux caves en face, au 1er sous-sol, couloir de gauche (Lots n°s 12 et 13)"
     ],
-    "occupation": null,
+    "occupation": "Occupé",
     "surface_m2": 50.52,
     "stats_bien": null,
     "est_price_m2": null,
-    "code_insee": null,
+    "code_insee": "93053",
     "code_postal": 93130,
     "code_departement": "93",
     "code_region": 11.0,
@@ -3392,7 +3959,7 @@
       "latitude": 48.9269562,
       "longitude": 2.1983063
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -3402,63 +3969,15 @@
     "description": [
       "Une maison d'habitation composée de : Niveau habitation : un perron, entrée et circulation, salon, salle à manger, deux chambres, salle de bains, wc, cuisine Au sous-sol : trois pièces, garage Combles Jardin et terrasse Cadastrée section AI n°338, lieudit 43, rue Faidherbe, pour une contenance de 4a 22ca Occupation : Les lieux sont occupés"
     ],
-    "occupation": null,
+    "occupation": "Occupé",
     "surface_m2": null,
     "stats_bien": null,
     "est_price_m2": null,
-    "code_insee": null,
+    "code_insee": "78311",
     "code_postal": 78800,
     "code_departement": "78",
     "code_region": 11.0,
     "nom_departement": "Yvelines",
-    "nom_region": "Île-de-France"
-  },
-  "109457": {
-    "titre": "Annonce n°109457 : un pavillon d'habitation à Argenteuil (Val-d'Oise), mise à prix : 25 000 €",
-    "date_publication": "2026-08-11T00:00:00+02:00",
-    "tribunal": "Tribunal Judiciaire de Pontoise (Val d'Oise)",
-    "type_vente": "Vente aux enchères publiques en un seul lot",
-    "dt_vente": "2026-10-13 14:00",
-    "dt_vente_limit": "2026-10-23",
-    "sell_state": -1,
-    "avocats": [
-      "Maître Pascal Pibault, membre de la SCP Petit - Marçot - Houillon et Associés, Avocat"
-    ],
-    "telephones": [
-      "01 34 35 34 35"
-    ],
-    "documents": [],
-    "url": "https://www.licitor.com/annonce/10/94/57/vente-aux-encheres/un-pavillon-d-habitation/argenteuil/val-d-oise/109457.html",
-    "id": "109457",
-    "mise_a_prix": 25000,
-    "est_price": null,
-    "fac_baisse": null,
-    "prix_final": 88000,
-    "ville": "Argenteuil",
-    "adresse": "311, av. Jean Jaurès",
-    "coords": {
-      "latitude": 48.941288,
-      "longitude": 2.2119303
-    },
-    "trib_anom": true,
-    "visite": null,
-    "visite_dt": null,
-    "visite_state": -1,
-    "type": [
-      "Un pavillon d'habitation"
-    ],
-    "description": [
-      "Un pavillon d'habitation élevé sur sous-sol total, d'un rez-de-chaussée surélevé divisé en : entrée, cuisine, salle de bains, séjour, deux chambres et wc Faux grenier au-dessus Cour devant et derrière Aux termes du procès verbal de description dressé le 12/12/2025 : Maison d'habitation du début du XXème siècle, en simple mitoyenneté, édifiée sur un terrain clos de forme rectangulaire de 110 m², gros oeuvre en briques et béton, toiture en tuiles mécaniques Extension en façade arrière donnant sur une cour intérieure desservant la cave Distribution : Au rez-de-chaussée : séjour-salle à manger, cuisine ouverte et salle de bains En combles aménagés : deux chambres Cave en sous-sol Cadastré section CH n°505, pour une contenance de 1a 10ca Bien occupé"
-    ],
-    "occupation": "Bien occupé",
-    "surface_m2": 110.0,
-    "stats_bien": null,
-    "est_price_m2": null,
-    "code_insee": null,
-    "code_postal": 95100,
-    "code_departement": "95",
-    "code_region": 11.0,
-    "nom_departement": "Val-d'Oise",
     "nom_region": "Île-de-France"
   },
   "109839": {
@@ -3488,7 +4007,7 @@
       "latitude": 48.892807,
       "longitude": 1.6354367
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -3510,7 +4029,7 @@
     "surface_m2": 306.0,
     "stats_bien": null,
     "est_price_m2": null,
-    "code_insee": null,
+    "code_insee": "78417",
     "code_postal": 78790,
     "code_departement": "78",
     "code_region": 11.0,
@@ -3546,7 +4065,7 @@
       "latitude": 48.7080803,
       "longitude": 2.3715999
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -3558,11 +4077,11 @@
       "Un immeuble de 539,51 m² (surface au sol totale), comprenant : Au sous-sol : palier, local technique, couloir, garage/espace libre et trois caves Au rez-de-chaussée : entrée, sept bureaux, salle de réunion, cuisine, couloir, petite pièce de stockage et wc Au 1er étage : palier, trois bureaux, dégagement et wc Au 2ème étage : palier, trois bureaux, dégagement et wc",
       "Une cour Sur un terrain de 3a 72ca Inoccupé"
     ],
-    "occupation": "libre",
+    "occupation": "Libre",
     "surface_m2": 539.51,
     "stats_bien": null,
     "est_price_m2": null,
-    "code_insee": null,
+    "code_insee": "91027",
     "code_postal": 91200,
     "code_departement": "91",
     "code_region": 11.0,
@@ -3596,7 +4115,7 @@
       "latitude": 48.8670425,
       "longitude": 2.4938724
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -3610,11 +4129,11 @@
       "Un bâtiment sur rue de 152,35 m² (surface au sol), sur rez-de-chaussée et deux niveaux Occupé sans droit ni titre",
       "Deux bâtiments en cours de construction l'un de 210,91 m² (surface au sol), divisé en trois logements, et l'autre de 41,23 m² , divisé en un logement Inoccupés Le tout sur un terrain de 4a 36ca"
     ],
-    "occupation": null,
+    "occupation": "Libre",
     "surface_m2": 404.49,
     "stats_bien": null,
     "est_price_m2": null,
-    "code_insee": null,
+    "code_insee": "93064",
     "code_postal": 93110,
     "code_departement": "93",
     "code_region": 11.0,
@@ -3648,7 +4167,7 @@
       "latitude": 48.8301468,
       "longitude": 2.3526349
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -3680,7 +4199,7 @@
       "Un studio de 16,46 m² , porte droite, avec salle d'eau et wc Occupé",
       "Un studio de 17,32 m² , porte gauche, avec salle d'eau et wc Occupé"
     ],
-    "occupation": null,
+    "occupation": "Occupé",
     "surface_m2": 240.17000000000002,
     "stats_bien": null,
     "est_price_m2": null,
@@ -3718,7 +4237,7 @@
       "latitude": 48.9383202,
       "longitude": 2.2434416
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -3742,7 +4261,7 @@
     "surface_m2": 419.4,
     "stats_bien": null,
     "est_price_m2": null,
-    "code_insee": null,
+    "code_insee": "95018",
     "code_postal": 95100,
     "code_departement": "95",
     "code_region": 11.0,
@@ -3838,7 +4357,7 @@
     "description": [
       "Un immeuble comprenant : Au rez-de-chaussée : TROIS LOCAUX COMMERCIAUX : - Un local à usage de restaurant (de 34,03 m² au sol) Loué - Un local à usage de salon de coiffure (de 28,98 m² au sol) Occupé - Un local à usage de magasin d'ameublement (de 34,22 m² au sol) Loué Au 1er étage : DEUX APPARTEMENTS (de 53,08 m² et 57,49 m²) de deux pièces principales Le premier est loué, le second est libre Au 2ème étage : DEUX APPARTEMENTS (de 58,65 m² et 59,77 m²) de deux pièces principales Le premier est loué, le second est libre Avec grenier non aménagé et caves en sous-sol"
     ],
-    "occupation": "Loué",
+    "occupation": "Libre",
     "surface_m2": 208.96,
     "stats_bien": null,
     "est_price_m2": null,
@@ -3876,7 +4395,7 @@
       "latitude": 49.9696274,
       "longitude": 2.3489547
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -3886,11 +4405,11 @@
     "description": [
       "Un immeuble en cours de construction Inoccupé"
     ],
-    "occupation": null,
+    "occupation": "Libre",
     "surface_m2": null,
     "stats_bien": null,
     "est_price_m2": null,
-    "code_insee": null,
+    "code_insee": "80661",
     "code_postal": 80260,
     "code_departement": "80",
     "code_region": 32.0,
@@ -3924,7 +4443,7 @@
       "latitude": 50.2498817,
       "longitude": 1.8727711
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -3938,7 +4457,7 @@
     "surface_m2": null,
     "stats_bien": null,
     "est_price_m2": null,
-    "code_insee": null,
+    "code_insee": "80222",
     "code_postal": 80150,
     "code_departement": "80",
     "code_region": 32.0,
@@ -3992,7 +4511,7 @@
       "Un appartement de 102,12 m² , comprenant : Au rez-de-chaussée : entrée, chaufferie, cave, escalier Au 1er étage : dégagement, salle d'eau, wc, dressing, escalier Au 2ème étage : palier, deux chambres, grenier Occupé Formant les lots de volume 1 et 2 de l'EDD en volume Le tout cadastré section AK 191 pour 1a 12ca, AK 193 pour 1a 1ca, AK 194 pour 33ca, AK 195 pour 36ca --",
       "Une parcelle de terrain non bâtie Cadastrée section AK 196 pour 45ca"
     ],
-    "occupation": null,
+    "occupation": "Occupé",
     "surface_m2": 231.31,
     "stats_bien": null,
     "est_price_m2": null,
@@ -4030,7 +4549,7 @@
       "latitude": 49.9336281,
       "longitude": 2.9473107
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -4040,16 +4559,16 @@
     "description": [
       "Un immeuble à usage d'habitation comprenant : Au rez-de-chaussée : entrée, wc, salle d'eau, pièce de vie, cuisine équipée Au 1er étage : palier, deux chambres dont une avec rangement, débarras, wc Garage - Cave - Jardin Occupé"
     ],
-    "occupation": null,
+    "occupation": "Occupé",
     "surface_m2": null,
     "stats_bien": null,
     "est_price_m2": null,
-    "code_insee": null,
-    "code_postal": 71260,
-    "code_departement": "71",
-    "code_region": 27.0,
-    "nom_departement": "Saône-et-Loire",
-    "nom_region": "Bourgogne-Franche-Comté"
+    "code_insee": "80620",
+    "code_postal": 80200,
+    "code_departement": "80",
+    "code_region": 32.0,
+    "nom_departement": "Somme",
+    "nom_region": "Hauts-de-France"
   },
   "110074": {
     "titre": "Annonce n°110074 : une maison d'habitation à Noth (Creuse), mise à prix : 30 000 €",
@@ -4058,7 +4577,7 @@
     "type_vente": "Vente aux enchères publiques",
     "dt_vente": "2026-11-12 09:30",
     "dt_vente_limit": "2026-11-22",
-    "sell_state": 1,
+    "sell_state": -1,
     "avocats": [
       "Maître Natacha Sodji, Avocat",
       "Maître Éric Assouline, du Cabinet Ethic All, Avocat"
@@ -4067,16 +4586,7 @@
       "01 48 80 20 63",
       "09 75 40 31 39"
     ],
-    "documents": [
-      {
-        "type": "Cahier des conditions de vente",
-        "url": "https://www.licitor.com/data/pub/media/annonce/11/00/74/110074.000.001.3c8f652f57dc.pdf"
-      },
-      {
-        "type": "PV descriptif",
-        "url": "https://www.licitor.com/data/pub/media/annonce/11/00/74/110074.000.002.ceb539748643.pdf"
-      }
-    ],
+    "documents": [],
     "url": "https://www.licitor.com/annonce/11/00/74/vente-aux-encheres/une-maison-d-habitation/noth/creuse/110074.html",
     "id": "110074",
     "mise_a_prix": 30000,
@@ -4101,14 +4611,10 @@
       "Une maison d'habitation d'une superficie de 125,50 m² , comprenant : Au rez-de-chaussée : salon/salle à manger avec cuisine intégrée, buanderie, wc Au 1er étage : palier, wc, deux chambres, salle de bains et douche, deux pièces et une partie dressing Grenier Appentis Cadastrée section B, lieudit \"Le Charrat\", 918 pour 3a 60ca, 919 pour 70ca Soit une contenance totale de 4a 30ca",
       "Deux parcelles de terrain d'une contenance totale de 1.789 m² Cadastrées section D, lieudit \"Le Bourg\", 165 pour 5a 95ca, jardin - 1.644 pour 11a 94ca, terre Soit une contenance totale de 17a 49ca Les biens sont inoccupés"
     ],
-    "occupation": null,
+    "occupation": "Libre",
     "surface_m2": 127.289,
-    "stats_bien": {
-      "min": 972,
-      "avg": 1362,
-      "max": 2101
-    },
-    "est_price_m2": 1362,
+    "stats_bien": null,
+    "est_price_m2": null,
     "code_insee": "23143",
     "code_postal": 23300,
     "code_departement": "23",
@@ -4143,7 +4649,7 @@
       "latitude": 46.0285149,
       "longitude": 1.3337467
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -4157,7 +4663,7 @@
     "surface_m2": null,
     "stats_bien": null,
     "est_price_m2": null,
-    "code_insee": null,
+    "code_insee": "87122",
     "code_postal": 87640,
     "code_departement": "87",
     "code_region": 75.0,
@@ -4191,7 +4697,7 @@
       "latitude": 45.8565865,
       "longitude": 1.2847421
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -4205,7 +4711,7 @@
     "surface_m2": null,
     "stats_bien": null,
     "est_price_m2": null,
-    "code_insee": null,
+    "code_insee": "87085",
     "code_postal": 87000,
     "code_departement": "87",
     "code_region": 75.0,
@@ -4239,7 +4745,7 @@
       "latitude": 45.8485336,
       "longitude": 1.2681524
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -4253,7 +4759,7 @@
     "surface_m2": null,
     "stats_bien": null,
     "est_price_m2": null,
-    "code_insee": null,
+    "code_insee": "87085",
     "code_postal": 87000,
     "code_departement": "87",
     "code_region": 75.0,
@@ -4287,7 +4793,7 @@
       "latitude": 45.9951935,
       "longitude": 1.2704386
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -4297,11 +4803,11 @@
     "description": [
       "Une maison d'habitation abri et terrain boisé Occupée"
     ],
-    "occupation": null,
+    "occupation": "Occupé",
     "surface_m2": null,
     "stats_bien": null,
     "est_price_m2": null,
-    "code_insee": null,
+    "code_insee": "87047",
     "code_postal": 87140,
     "code_departement": "87",
     "code_region": 75.0,
@@ -4335,7 +4841,7 @@
       "latitude": 45.838974,
       "longitude": 1.2665946
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -4349,8 +4855,56 @@
     "surface_m2": null,
     "stats_bien": null,
     "est_price_m2": null,
-    "code_insee": null,
+    "code_insee": "87085",
     "code_postal": 87000,
+    "code_departement": "87",
+    "code_region": 75.0,
+    "nom_departement": "Haute-Vienne",
+    "nom_region": "Nouvelle-Aquitaine"
+  },
+  "110086": {
+    "titre": "Annonce n°110086 : un immeuble à Aixe-sur-Vienne (Haute-Vienne), mise à prix : 40 000 €",
+    "date_publication": "2026-09-22T00:00:00+02:00",
+    "tribunal": "Tribunal Judiciaire de Limoges (Haute Vienne)",
+    "type_vente": "Vente aux enchères publiques sur liquidation judiciaire",
+    "dt_vente": "2026-11-16 14:30",
+    "dt_vente_limit": "2026-11-26",
+    "sell_state": -1,
+    "avocats": [
+      "Maître Florence Mausset, Avocat"
+    ],
+    "telephones": [
+      "05 55 05 95 84"
+    ],
+    "documents": [],
+    "url": "https://www.licitor.com/annonce/11/00/86/vente-aux-encheres/un-immeuble/aixe-sur-vienne/haute-vienne/110086.html",
+    "id": "110086",
+    "mise_a_prix": 40000,
+    "est_price": null,
+    "fac_baisse": null,
+    "prix_final": 61000,
+    "ville": "Aixe-sur-Vienne",
+    "adresse": "2, av. du Général de Gaulle",
+    "coords": {
+      "latitude": 45.797657,
+      "longitude": 1.1439881
+    },
+    "trib_anom": false,
+    "visite": null,
+    "visite_dt": null,
+    "visite_state": -1,
+    "type": [
+      "Un immeuble"
+    ],
+    "description": [
+      "Un immeuble de 195 m², comprenant : Un sous-sol Au rez-de-chaussée : deux grandes pièces Aux étages : onze pièces et six salles de bains Petit jardin avec terrasse Inoccupé"
+    ],
+    "occupation": "Libre",
+    "surface_m2": 195.0,
+    "stats_bien": null,
+    "est_price_m2": null,
+    "code_insee": "87001",
+    "code_postal": 87700,
     "code_departement": "87",
     "code_region": 75.0,
     "nom_departement": "Haute-Vienne",
@@ -4397,7 +4951,7 @@
       "Partie commerciale Au rez-de-chaussée : un accès aux combles, un magasin, bureau 1, chaufferie, bureau 2, dégagement, wc",
       "Partie habitation Au 1er étage : entrée/cage d'escalier, palier, quatre pièces, dégagement, wc, cuisine, salle de bains Au 2ème étage : palier, salle de jeux, deux chambres, salle de bains avec wc Cour et/ou jardin, dépendances Cadastré section AC 394 pour 5a 75ca Les lieux sont inoccupés et fortement encombrés"
     ],
-    "occupation": null,
+    "occupation": "Libre",
     "surface_m2": 206.3,
     "stats_bien": null,
     "est_price_m2": null,
@@ -4433,7 +4987,7 @@
       "latitude": 45.8339996,
       "longitude": 1.2972616
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -4447,7 +5001,7 @@
     "surface_m2": null,
     "stats_bien": null,
     "est_price_m2": null,
-    "code_insee": null,
+    "code_insee": "87114",
     "code_postal": 87350,
     "code_departement": "87",
     "code_region": 75.0,
@@ -4481,7 +5035,7 @@
       "latitude": 45.8149681,
       "longitude": 1.2164055
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -4495,7 +5049,7 @@
     "surface_m2": null,
     "stats_bien": null,
     "est_price_m2": null,
-    "code_insee": null,
+    "code_insee": "87085",
     "code_postal": 87000,
     "code_departement": "87",
     "code_region": 75.0,
@@ -4529,7 +5083,7 @@
       "latitude": 47.1219749,
       "longitude": 2.4099889
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -4539,7 +5093,7 @@
     "description": [
       "Un ensemble immobilier de 187,59 m², à usage d'habitation Occupé"
     ],
-    "occupation": null,
+    "occupation": "Occupé",
     "surface_m2": 187.59,
     "stats_bien": null,
     "est_price_m2": null,
@@ -4549,54 +5103,6 @@
     "code_region": 24.0,
     "nom_departement": "Cher",
     "nom_region": "Centre-Val de Loire"
-  },
-  "106111": {
-    "titre": "Annonce n°106111 : un immeuble à Cosne-Cours-sur-Loire (Cher), mise à prix : 40 000 €",
-    "date_publication": "2025-10-08T00:00:00+02:00",
-    "tribunal": "Tribunal Judiciaire de Bourges (Cher)",
-    "type_vente": "Vente aux enchères publiques",
-    "dt_vente": "2025-11-12 09:00",
-    "dt_vente_limit": "2025-11-22",
-    "sell_state": -1,
-    "avocats": [
-      "SCP Sorel et Associés, Avocats"
-    ],
-    "telephones": [
-      "02 48 69 73 33"
-    ],
-    "documents": [],
-    "url": "https://www.licitor.com/annonce/10/61/11/vente-aux-encheres/un-immeuble/cosne-cours-sur-loire/cher/106111.html",
-    "id": "106111",
-    "mise_a_prix": 40000,
-    "est_price": null,
-    "fac_baisse": null,
-    "prix_final": 86000,
-    "ville": "Cosne-Cours-sur-Loire",
-    "adresse": "12, av. du 14 Juillet et 5/7, square Gambon",
-    "coords": {
-      "latitude": 48.9150543,
-      "longitude": 2.4921601
-    },
-    "trib_anom": true,
-    "visite": null,
-    "visite_dt": null,
-    "visite_state": -1,
-    "type": [
-      "Un immeuble"
-    ],
-    "description": [
-      "Un immeuble de 317,74 m² loi Carrez, comprenant : deux surfaces commerciales, deux caves, trois appartements, une pièce mansardée Inoccupé"
-    ],
-    "occupation": null,
-    "surface_m2": 317.74,
-    "stats_bien": null,
-    "est_price_m2": null,
-    "code_insee": null,
-    "code_postal": 58200,
-    "code_departement": "58",
-    "code_region": 27.0,
-    "nom_departement": "Nièvre",
-    "nom_region": "Bourgogne-Franche-Comté"
   },
   "110173": {
     "titre": "Annonce n°110173 : un appartement à Cagnes-sur-Mer (Alpes-Maritimes), mise à prix : 30 000 €",
@@ -4625,7 +5131,7 @@
       "latitude": 43.6641159,
       "longitude": 7.1530509
     },
-    "trib_anom": true,
+    "trib_anom": null,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -4635,16 +5141,16 @@
     "description": [
       "Un appartement de 30,61 m², bâtiment B, au 3ème étage, de deux pièces, comprenant : salon avec coin-cuisine, chambre, salle d'eau, wc Balcon, parking Loué à des saisonniers, actuellement inoccupés Emplacement de stationnement"
     ],
-    "occupation": "Loué",
+    "occupation": "Libre",
     "surface_m2": 30.61,
     "stats_bien": null,
     "est_price_m2": null,
-    "code_insee": null,
-    "code_postal": 6800,
-    "code_departement": "6",
-    "code_region": 93.0,
-    "nom_departement": "Alpes-Maritimes",
-    "nom_region": "Provence-Alpes-Côte d'Azur"
+    "code_insee": "06027",
+    "code_postal": null,
+    "code_departement": null,
+    "code_region": null,
+    "nom_departement": null,
+    "nom_region": null
   },
   "110063": {
     "titre": "Annonce n°110063 : un appartement à Perpignan (Pyrénées-Orientales), mise à prix : 25 000 €",
@@ -4675,7 +5181,7 @@
       "latitude": 42.6901741,
       "longitude": 2.9102032
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -4689,7 +5195,7 @@
     "surface_m2": 70.6,
     "stats_bien": null,
     "est_price_m2": null,
-    "code_insee": null,
+    "code_insee": "66136",
     "code_postal": 66000,
     "code_departement": "66",
     "code_region": 76.0,
@@ -4723,7 +5229,7 @@
       "latitude": 42.6979828,
       "longitude": 2.8705306
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -4733,11 +5239,11 @@
     "description": [
       "Un appartement bâtiment A, au 1er étage, comprenant : entrée, séjour-cuisine, deux chambres, débarras, wc, salle de bains, terrasse Parking, au rez-de-chaussée, portant le n°69 Loué"
     ],
-    "occupation": "Loué",
+    "occupation": null,
     "surface_m2": null,
     "stats_bien": null,
     "est_price_m2": null,
-    "code_insee": null,
+    "code_insee": "66136",
     "code_postal": 66000,
     "code_departement": "66",
     "code_region": 76.0,
@@ -4771,7 +5277,7 @@
       "latitude": 43.7058296,
       "longitude": 7.2329721
     },
-    "trib_anom": true,
+    "trib_anom": null,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -4781,16 +5287,16 @@
     "description": [
       "Un appartement de 62,21 m², au 3ème étage, de trois pièces principales, comprenant : hall d'entrée, cuisine, wc, deux chambres, salle de bains, salon-séjour, loggia Local à usage de cave, au sous-sol, portant le n°9 Emplacement de parking, au rez-de-chaussée, portant le n°3 Occupé"
     ],
-    "occupation": null,
+    "occupation": "Occupé",
     "surface_m2": 62.21,
     "stats_bien": null,
     "est_price_m2": null,
-    "code_insee": null,
-    "code_postal": 6000,
-    "code_departement": "6",
-    "code_region": 93.0,
-    "nom_departement": "Alpes-Maritimes",
-    "nom_region": "Provence-Alpes-Côte d'Azur"
+    "code_insee": "06088",
+    "code_postal": null,
+    "code_departement": null,
+    "code_region": null,
+    "nom_departement": null,
+    "nom_region": null
   },
   "109866": {
     "titre": "Annonce n°109866 : un appartement à Toulon (Var), mise à prix : 25 500 €",
@@ -4819,7 +5325,7 @@
       "latitude": 43.1208992,
       "longitude": 5.9406996
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -4833,7 +5339,7 @@
     "surface_m2": null,
     "stats_bien": null,
     "est_price_m2": null,
-    "code_insee": null,
+    "code_insee": "83137",
     "code_postal": 83000,
     "code_departement": "83",
     "code_region": 93.0,
@@ -4867,7 +5373,7 @@
       "latitude": 43.2372856,
       "longitude": 6.0703173
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -4877,11 +5383,11 @@
     "description": [
       "Un appartement de 35,91 m², au 2ème étage, comprenant : pièce principale avec cuisine, chambre, salle d'eau avec wc Occupé"
     ],
-    "occupation": null,
+    "occupation": "Occupé",
     "surface_m2": 35.91,
     "stats_bien": null,
     "est_price_m2": null,
-    "code_insee": null,
+    "code_insee": "83049",
     "code_postal": 83390,
     "code_departement": "83",
     "code_region": 93.0,
@@ -4915,7 +5421,7 @@
       "latitude": 43.1275482,
       "longitude": 5.9636345
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -4929,7 +5435,7 @@
     "surface_m2": 54.9,
     "stats_bien": null,
     "est_price_m2": null,
-    "code_insee": null,
+    "code_insee": "83137",
     "code_postal": 83000,
     "code_departement": "83",
     "code_region": 93.0,
@@ -4963,7 +5469,7 @@
       "latitude": 43.1275482,
       "longitude": 5.9636345
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -4977,7 +5483,7 @@
     "surface_m2": 55.45,
     "stats_bien": null,
     "est_price_m2": null,
-    "code_insee": null,
+    "code_insee": "83137",
     "code_postal": 83000,
     "code_departement": "83",
     "code_region": 93.0,
@@ -5011,7 +5517,7 @@
       "latitude": 43.1114006,
       "longitude": 5.9386191
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -5021,11 +5527,11 @@
     "description": [
       "Un appartement de 51,90 m² environ, au rez-de-chaussée, comprenant : entrée avec couloir de dégagement, chambre, salle d'eau avec wc, dressing, séjour, cuisine avec cellier ouverte sur séjour Cave, au sous-sol Vide et non occupé"
     ],
-    "occupation": null,
+    "occupation": "Occupé",
     "surface_m2": 51.9,
     "stats_bien": null,
     "est_price_m2": null,
-    "code_insee": null,
+    "code_insee": "83137",
     "code_postal": 83000,
     "code_departement": "83",
     "code_region": 93.0,
@@ -5059,7 +5565,7 @@
       "latitude": 43.7168274,
       "longitude": 7.2849307
     },
-    "trib_anom": true,
+    "trib_anom": null,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -5069,16 +5575,16 @@
     "description": [
       "Un appartement de 19,05 m² loi Carrez, au 3ème étage, comprenant : entrée/coin-cuisine, séjour, salle d'eau/wc Inoccupé"
     ],
-    "occupation": null,
+    "occupation": "Libre",
     "surface_m2": 19.05,
     "stats_bien": null,
     "est_price_m2": null,
-    "code_insee": null,
-    "code_postal": 6000,
-    "code_departement": "6",
-    "code_region": 93.0,
-    "nom_departement": "Alpes-Maritimes",
-    "nom_region": "Provence-Alpes-Côte d'Azur"
+    "code_insee": "06088",
+    "code_postal": null,
+    "code_departement": null,
+    "code_region": null,
+    "nom_departement": null,
+    "nom_region": null
   },
   "110046": {
     "titre": "Annonce n°110046 : une maison à usage d'habitation à Perpignan (Pyrénées-Orientales), mise à prix : 96 800 €",
@@ -5107,7 +5613,7 @@
       "latitude": 42.7198257,
       "longitude": 2.8930161
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -5117,11 +5623,11 @@
     "description": [
       "Une maison à usage d'habitation élevée de trois étages sur rez-de-chaussée, comprenant : huit appartements Cour et combles Six appartements sont occupés et loués"
     ],
-    "occupation": null,
+    "occupation": "Occupé",
     "surface_m2": null,
     "stats_bien": null,
     "est_price_m2": null,
-    "code_insee": null,
+    "code_insee": "66136",
     "code_postal": 66000,
     "code_departement": "66",
     "code_region": 76.0,
@@ -5155,7 +5661,7 @@
       "latitude": 43.2092018,
       "longitude": 6.0477262
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -5165,11 +5671,11 @@
     "description": [
       "Une villa de 89,60 m², en mauvais état d'entretien, comprenant : cuisine, pièce à vivre, dégagement, trois chambres, wc, salle d'eau, cellier Garage, parcelle non bâtie Occupée"
     ],
-    "occupation": null,
+    "occupation": "Occupé",
     "surface_m2": 89.6,
     "stats_bien": null,
     "est_price_m2": null,
-    "code_insee": null,
+    "code_insee": "83130",
     "code_postal": 83210,
     "code_departement": "83",
     "code_region": 93.0,
@@ -5204,7 +5710,7 @@
       "latitude": 43.312439,
       "longitude": 6.280653
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -5218,7 +5724,7 @@
     "surface_m2": null,
     "stats_bien": null,
     "est_price_m2": null,
-    "code_insee": null,
+    "code_insee": "83067",
     "code_postal": 83590,
     "code_departement": "83",
     "code_region": 93.0,
@@ -5252,7 +5758,7 @@
       "latitude": 43.594883,
       "longitude": 6.6470466
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -5266,7 +5772,7 @@
     "surface_m2": null,
     "stats_bien": null,
     "est_price_m2": null,
-    "code_insee": null,
+    "code_insee": "83124",
     "code_postal": 83440,
     "code_departement": "83",
     "code_region": 93.0,
@@ -5300,7 +5806,7 @@
       "latitude": 43.7908233727,
       "longitude": 7.49365612374
     },
-    "trib_anom": true,
+    "trib_anom": false,
     "visite": null,
     "visite_dt": null,
     "visite_state": -1,
@@ -5310,7 +5816,7 @@
     "description": [
       "Une propriété comprenant : villa de 548,93 m², sur trois niveaux, maison de gardien de 153,53 m² Terrain alentour en nature de jardin d'agrément Garage Piscine Occupée"
     ],
-    "occupation": null,
+    "occupation": "Occupé",
     "surface_m2": 702.4599999999999,
     "stats_bien": null,
     "est_price_m2": null,
