@@ -81,15 +81,6 @@
     ]
   },
   {
-    "url": "https://www.licitor.com/annonce/11/04/32/vente-aux-encheres/parts-sociales-de-la-sarl-emma-ambulances/-/seine-et-marne/110432.html",
-    "id": "110432",
-    "warnings": [
-      "adresse manquante",
-      "coordonnées géographiques manquantes",
-      "visite manquant"
-    ]
-  },
-  {
     "url": "https://www.licitor.com/annonce/11/04/99/vente-aux-encheres/un-appartement/lille/nord/110499.html",
     "id": "110499",
     "warnings": [
@@ -246,20 +237,6 @@
     ]
   },
   {
-    "url": "https://www.licitor.com/annonce/11/03/14/vente-aux-encheres/une-parcelle-terrain-a-batir/ecouves-anciennement-vingt-hanaps/orne/110314.html",
-    "id": "110314",
-    "warnings": [
-      "coordonnées géographiques manquantes"
-    ]
-  },
-  {
-    "url": "https://www.licitor.com/annonce/11/03/14/vente-aux-encheres/une-parcelle-terrain-a-batir/ecouves-anciennement-vingt-hanaps/orne/110314.html",
-    "id": "110314_1",
-    "warnings": [
-      "coordonnées géographiques manquantes"
-    ]
-  },
-  {
     "url": "https://www.licitor.com/annonce/11/06/90/vente-aux-encheres/une-maison-d-habitation/chailly-en-gatinais/loiret/110690.html",
     "id": "110690",
     "warnings": [
@@ -311,6 +288,13 @@
   {
     "url": "https://www.licitor.com/annonce/11/03/63/vente-aux-encheres/une-maison-a-usage-d-habitation/saint-maurice-la-clouere/vienne/110363.html",
     "id": "110363",
+    "warnings": [
+      "visite manquant"
+    ]
+  },
+  {
+    "url": "https://www.licitor.com/annonce/11/07/77/vente-aux-encheres/une-maison-d-habitation/la-foye-monjault/deux-sevres/110777.html",
+    "id": "110777",
     "warnings": [
       "visite manquant"
     ]
@@ -368,34 +352,6 @@
   {
     "url": "https://www.licitor.com/annonce/11/06/69/vente-aux-encheres/une-maison/gimat/tarn-et-garonne/110669.html",
     "id": "110669",
-    "warnings": [
-      "visite manquant"
-    ]
-  },
-  {
-    "url": "https://www.licitor.com/annonce/11/02/13/vente-aux-encheres/diverses-parcelles/payrignac/lot/110213.html",
-    "id": "110213",
-    "warnings": [
-      "visite manquant"
-    ]
-  },
-  {
-    "url": "https://www.licitor.com/annonce/11/04/11/vente-aux-encheres/un-parking/lyon-8eme/rhone/110411.html",
-    "id": "110411",
-    "warnings": [
-      "visite manquant"
-    ]
-  },
-  {
-    "url": "https://www.licitor.com/annonce/11/04/11/vente-aux-encheres/un-parking/lyon-8eme/rhone/110411.html",
-    "id": "110411_1",
-    "warnings": [
-      "visite manquant"
-    ]
-  },
-  {
-    "url": "https://www.licitor.com/annonce/11/04/11/vente-aux-encheres/un-parking/lyon-8eme/rhone/110411.html",
-    "id": "110411_2",
     "warnings": [
       "visite manquant"
     ]
